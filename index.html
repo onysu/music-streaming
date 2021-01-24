@@ -8,6 +8,11 @@
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
 	<title>Online Music Streaming</title>
+	<style>
+		.container{
+			padding: 10px;
+		}
+	</style>
 </head>
 
 <body>
@@ -40,7 +45,7 @@
 		const ap = new APlayer({
 			container: document.getElementById('player'),
 			listFolded: false,
-			listmaxheight: '500px',
+			listmaxheight: '575px',
 			lrcType: 2,
 			audio: [{
 					name: 'A Feast Of Friends',
