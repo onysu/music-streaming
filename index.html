@@ -30,9 +30,6 @@
 			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
 			border-radius: 2px;
 			overflow: hidden;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
 			user-select: none;
 			line-height: normal;
 			position: relative;
@@ -48,7 +45,7 @@
 		}
 
 		.aplayer-list {
-			max-height: 250px;
+			max-height: 600px;
 			background: #222327;
 			color: white;
 			margin-top: 15px;
@@ -96,8 +93,8 @@
 	<script>
 		const ap = new APlayer({
 			container: document.getElementById('aplayer'),
-			// listFolded: false,
-			// listMaxHeight: 90,
+			listFolded: false,
+			listMaxHeight: 90,
 			audio: [{
 					name: 'A Feast Of Friends',
 					artist: 'The Doors',
