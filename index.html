@@ -10,11 +10,45 @@
 	<title>Online Music Streaming</title>
 	<style>
 		.container {
+			background: #222327;
 			padding: 10px;
+			color: red;
+		}
+
+		.aplayer {
+			background: #222327;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 5px;
+			box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%), 0 1px 5px 0 rgb(0 0 0 / 10%);
+			border-radius: 2px;
+			overflow: hidden;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			line-height: normal;
+			position: relative;
+		}
+
+		.aplayer .aplayer-body {
+			position: relative;
+			background: #222327;
 		}
 
 		.aplayer .aplayer-list ol {
 			margin-top: 15px;
+			background: #222327;
+			color: white;
+		}
+
+		.aplayer .aplayer-list ol li.aplayer-list-light {
+			background: darkslategray;
+		}
+
+		.aplayer .aplayer-list ol li .aplayer-list-author {
+			color: wheat;
+			float: right;
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -50,7 +84,7 @@
 			container: document.getElementById('player'),
 			listFolded: false,
 			listmaxheight: '575px',
-			lrcType: 2,
+			// lrcType: 2,
 			audio: [{
 					name: 'A Feast Of Friends',
 					artist: 'The Doors',
