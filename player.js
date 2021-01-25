@@ -9,7 +9,7 @@ let songList = [{
 		thumbnail: "img/The-Doors.jpg",
 		audio: "music/The Doors - A Feast Of Friends.mp3",
 		songname: "A Feast Of Friends",
-		artistname: "The Doors",
+		artistname: "The Doors"
 	},
 	{
 		thumbnail: "Bovi.jpg",
