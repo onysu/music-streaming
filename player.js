@@ -6,10 +6,10 @@ function _all(query) {
 	return document.querySelectorAll(query);
 }
 let songList = [{
-		thumbnail: "Bright_Future.jpg",
-		audio: "Bright_Future.mp3",
-		songname: "Bright Future",
-		artistname: "Silent Partner"
+		thumbnail: "img/The-Doors.jpg",
+		audio: "music/The Doors - A Feast Of Friends.mp3",
+		songname: "A Feast Of Friends",
+		artistname: "The Doors"
 	},
 	{
 		thumbnail: "Bovi.jpg",
