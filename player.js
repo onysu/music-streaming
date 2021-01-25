@@ -6,10 +6,10 @@ function _all(query) {
 	return document.querySelectorAll(query);
 }
 let songList = [{
-		thumbnail: "The-Doors.jpg",
-		audio: "The Doors - A Feast Of Friends.mp3",
-		songname: "A Feast Of Friends",
-		artistname: "The Doors",
+		thumbnail: "Bright_Future.jpg",
+		audio: "Bright_Future.mp3",
+		songname: "Bright Future",
+		artistname: "Silent Partner"
 	},
 	{
 		thumbnail: "Bovi.jpg",
@@ -92,7 +92,7 @@ _(".player .player-list .list").innerHTML = (songList.map(function (song, songIn
 	return `
 		<div class="item" songIndex="${songIndex}">
 			<div class="thumbnail">
-				<img src="img/${song.thumbnail}">
+				<img src="./files/${song.thumbnail}">
 			</div>
 			<div class="details">
 				<h2>${song.songname}</h2>
@@ -113,12 +113,12 @@ for (let i = 0; i < songListItems.length; i++) {
 
 function loadSong(songIndex) {
 	let song = songList[songIndex];
-	main.thumbnail.setAttribute("src", "img/" + song.thumbnail);
-	// document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("img/${song.thumbnail}") center no-repeat`;
-	// document.body.style.backgroundSize = "cover";
+	main.thumbnail.setAttribute("src", "./files/" + song.thumbnail);
+	document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("./files/${song.thumbnail}") center no-repeat`;
+	document.body.style.backgroundSize = "cover";
 	main.songname.innerText = song.songname;
 	main.artistname.innerText = song.artistname;
-	main.audio.setAttribute("src", "music/" + song.audio);
+	main.audio.setAttribute("src", "./files/" + song.audio);
 	main.seekbar.setAttribute("value", 0);
 	main.seekbar.setAttribute("min", 0);
 	main.seekbar.setAttribute("max", 0);
