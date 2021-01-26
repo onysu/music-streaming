@@ -10,12 +10,93 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
-  <title>APlayer</title>
+  <title>MyPlayList</title>
+  <style>
+    body {
+      background-color: #222327;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      width: 100%;
+      padding: var(--bs-gutter-x, .75rem);
+      margin: auto;
+    }
+
+    .aplayer {
+      background: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 5px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+      border-radius: 2px;
+      overflow: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      line-height: normal;
+      position: relative;
+    }
+
+    .aplayer .aplayer-info .aplayer-music .aplayer-title {
+      font-size: 14px;
+      color: white;
+    }
+
+    .aplayer.aplayer-withlist .aplayer-info {
+      border-bottom: none;
+    }
+
+    .aplayer .aplayer-lrc::before {
+      top: 0;
+      height: 10%;
+      background: none;
+    }
+
+    .aplayer .aplayer-lrc::after {
+      bottom: 0;
+      height: 33%;
+      background: none;
+    }
+
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+      fill: whitesmoke;
+    }
+
+    .aplayer .aplayer-list ol li {
+      line-height: 32px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .aplayer .aplayer-list ol li .aplayer-list-index {
+      color: white;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    .aplayer .aplayer-list ol li .aplayer-list-title {
+      color: white;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    .aplayer .aplayer-list ol li .aplayer-list-author {
+      color: wheat;
+      float: right;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>APlayer</h1>
+    <h1>MyPlayList</h1>
     <div id="player"></div>
   </div>
 
@@ -30,13 +111,14 @@
       container: document.getElementById('player'),
       listFolded: false,
       listMaxHeight: 90,
-      lrcType: 3,
+      lrcType: 1,
       audio: [{
           name: 'A Feast Of Friends',
           artist: 'The Doors',
           url: '../files/The Doors - A Feast Of Friends.mp3',
           cover: '../files/The-Doors.jpg',
-          lrc: 'lrc1.lrc',
+          // lrc: 'lrc1.lrc',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
           theme: '#ebd0c2'
         },
         {
@@ -44,7 +126,15 @@
           artist: 'Napalm Death',
           url: '../files/Napalm Death - Suffer The Children.mp3',
           cover: '../files/Napalm-Death---suffer-the-children.jpg',
-          lrc: 'lrc2.lrc',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#46718b'
+        },
+        {
+          name: 'Pierced from Within',
+          artist: 'Suffocation',
+          url: '../files/Suffocation - Pierced from Within.mp3',
+          cover: '../files/Pierced-From-Within.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
           theme: '#46718b'
         }
       ]
