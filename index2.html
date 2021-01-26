@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
   <title>MyPlayList</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
     body {
       background-color: #222327;
     }
@@ -26,6 +27,10 @@
       width: 100%;
       padding: var(--bs-gutter-x, .75rem);
       margin: auto;
+    }
+    .top{
+      color: red;
+      font-family: 'UnifrakturMaguntia', cursive;
     }
 
     .aplayer {
@@ -96,7 +101,9 @@
 
 <body>
   <div class="container">
-    <h1>MyPlayList</h1>
+    <div class="top">
+      <h1>MyPlayList</h1>
+    </div>
     <div id="player"></div>
   </div>
 
@@ -115,8 +122,8 @@
       audio: [{
           name: 'A Feast Of Friends',
           artist: 'The Doors',
-          url: '../files/The Doors - A Feast Of Friends.mp3',
-          cover: '../files/The-Doors.jpg',
+          url: 'files/The Doors - A Feast Of Friends.mp3',
+          cover: 'files/The-Doors.jpg',
           // lrc: 'lrc1.lrc',
           lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
           theme: '#ebd0c2'
@@ -124,16 +131,16 @@
         {
           name: 'Suffer The Children',
           artist: 'Napalm Death',
-          url: '../files/Napalm Death - Suffer The Children.mp3',
-          cover: '../files/Napalm-Death---suffer-the-children.jpg',
+          url: 'files/Napalm Death - Suffer The Children.mp3',
+          cover: 'files/Napalm-Death---suffer-the-children.jpg',
           lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
           theme: '#46718b'
         },
         {
           name: 'Pierced from Within',
           artist: 'Suffocation',
-          url: '../files/Suffocation - Pierced from Within.mp3',
-          cover: '../files/Pierced-From-Within.jpg',
+          url: 'files/Suffocation - Pierced from Within.mp3',
+          cover: 'files/Pierced-From-Within.jpg',
           lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
           theme: '#46718b'
         }
