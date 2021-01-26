@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio PlayList</title>
+</head>
+
+<body>
+  <audio src="" controls id="audioPlayer">
+    Sorry browser anda tidak support html5 !
+  </audio>
+
+  <ul id="playlist">
+    <li><a href="music/Terrorizer - After World Obliteration.mp3">After World Obliteration</a></li>
+    <li><a href="music/Bolt Thrower - Through The Eye Of Terror.mp3">Through The Eye Of Terror</a></li>
+    <li><a href="music/Dimmu Borgir - Kings Of The Carnival Creation.mp3">Kings Of The Carnival Creation</a></li>
+    <li><a href="music/Lamb Of God - Redneck.mp3">Redneck</a></li>
+    <li><a href="music/Rammstein - Du Hast.mp3">Du Hast</a></li>
+  </ul>
+
+  <a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+  <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+  <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+  
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="audioPlayer.js"></script>
+  <script>
+    var config = {
+      autoplay: true,
+      loop: true,
+      shuffle: true
+    };
+    var playlist = new AudioPlaylist(config);
+  </script>
+</body>
+
+</html>
