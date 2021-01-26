@@ -13,6 +13,7 @@
   <title>MyPlayList</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
     body {
       background-color: #222327;
     }
@@ -28,7 +29,8 @@
       padding: var(--bs-gutter-x, .75rem);
       margin: auto;
     }
-    .top{
+
+    .top {
       color: red;
       font-family: 'UnifrakturMaguntia', cursive;
     }
@@ -95,6 +97,19 @@
       color: wheat;
       float: right;
       cursor: pointer;
+    }
+
+    .aplayer .aplayer-list ol li {
+      position: relative;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 15px;
+      font-size: 12px;
+      border-top: 1px solid black;
+      cursor: pointer;
+      transition: all .2s ease;
+      overflow: hidden;
+      margin: 0;
     }
   </style>
 </head>
