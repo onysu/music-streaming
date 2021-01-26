@@ -28,10 +28,12 @@
       margin: auto;
     }
 
-    .layer {
-      height: 100vh;
+    #layer {
+      height: 100%;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.8);
+      background-size: cover;
+      background-repeat: round;
       position: absolute;
       z-index: -1;
     }
@@ -90,6 +92,10 @@
       font-size: 14px;
       cursor: pointer;
     }
+    .aplayer .aplayer-list ol li:hover{
+      background: #333333;
+      opacity: 0.5;
+    }
 
     .aplayer .aplayer-list ol li .aplayer-list-index {
       color: white;
@@ -146,7 +152,7 @@
 </head>
 
 <body>
-  <div class="layer"></div>
+  <div id="layer"></div>
   <div class="container">
     <div class="top">
       <h1>MyPlayList</h1>
