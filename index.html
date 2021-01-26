@@ -67,6 +67,18 @@
       cursor: pointer;
     }
 
+    .aplayer .aplayer-lrc::before {
+      top: 0;
+      height: 10%;
+      background: none;
+    }
+
+    .aplayer .aplayer-lrc::after {
+      bottom: 0;
+      height: 33%;
+      background: none;
+    }
+
     .aplayer .aplayer-body {
       position: unset;
       margin-bottom: 10px;
@@ -187,228 +199,302 @@
       container: document.getElementById('player'),
       listFolded: false,
       listMaxHeight: '500px',
-      // lrcType: 3,
+      lrcType: 2,
       audio: [{
           name: 'A Feast Of Friends',
           artist: 'The Doors',
           url: 'files/The Doors - A Feast Of Friends.mp3',
-          cover: 'files/The-Doors.jpg'
+          cover: 'files/The-Doors.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Suffer The Children',
           artist: 'Napalm Death',
           url: 'files/Napalm Death - Suffer The Children.mp3',
-          cover: 'files/Napalm-Death---suffer-the-children.jpg'
+          cover: 'files/Napalm-Death---suffer-the-children.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Harmony Corruption [album]',
           artist: 'Napalm Death',
           url: 'files/Napalm Death - Harmony Corruption [album].mp3',
-          cover: 'files/Harmony-Corruption.jpg'
+          cover: 'files/Harmony-Corruption.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'After World Obliteration',
           artist: 'Terrorizer',
           url: 'files/Terrorizer - After World Obliteration.mp3',
-          cover: 'files/Terrorizer-After-World-Obliteration.jpg'
+          cover: 'files/Terrorizer-After-World-Obliteration.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Pierced from Within',
           artist: 'Suffocation',
           url: 'files/Suffocation - Pierced from Within.mp3',
-          cover: 'files/Pierced-From-Within.jpg'
+          cover: 'files/Pierced-From-Within.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Infecting The Crypts',
           artist: 'Suffocation',
           url: 'files/Suffocation - Infecting The Crypts.mp3',
-          cover: 'files/Suffocation---Infecting-The-Crypts.jpg'
+          cover: 'files/Suffocation---Infecting-The-Crypts.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Her Ghost In The Fog',
           artist: 'Cradle Of Filth',
           url: 'files/Cradle Of Filth - Her Ghost In The Fog.mp3',
-          cover: 'files/Her-Ghost-In-The-Fog.jpg'
+          cover: 'files/Her-Ghost-In-The-Fog.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Nymphetamine',
           artist: 'Cradle Of Filth',
           url: 'files/Cradle Of Filth - Nymphetamine Fix.mp3',
-          cover: 'files/Nymphetamine.jpg'
+          cover: 'files/Nymphetamine.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Coffin Fodder',
           artist: 'Cradle Of Filth',
           url: 'files/Cradle Of Filth - Coffin Fodder.mp3',
-          cover: 'files/Coffin-Fodder.jpg'
+          cover: 'files/Coffin-Fodder.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Phobophile',
           artist: 'Cryptopsy',
           url: 'files/Cryptopsy - Phobophile.mp3',
-          cover: 'files/Cryptopsy---Phobophile.jpg'
+          cover: 'files/Cryptopsy---Phobophile.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Through The Eye Of Terror',
           artist: 'Bolt Thrower',
           url: 'files/Bolt Thrower - Through The Eye Of Terror.mp3',
-          cover: 'files/Bolt-Thrower---Through-the-Eye-of-Terror.jpg'
+          cover: 'files/Bolt-Thrower---Through-the-Eye-of-Terror.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'The Burning Pits Of The Duat',
           artist: 'Nile',
           url: 'files/Nile - The Burning Pits Of The Duat.mp3',
-          cover: 'files/Nile---The-Burning-Pits-of-the-Duat.jpg'
+          cover: 'files/Nile---The-Burning-Pits-of-the-Duat.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Wings',
           artist: 'Vader',
           url: 'files/Vader - Wings.mp3',
-          cover: 'files/Vader---Wings.jpg'
+          cover: 'files/Vader---Wings.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Redneck',
           artist: 'Lamb Of God',
           url: 'files/Lamb Of God - Redneck.mp3',
-          cover: 'files/Lamb-of-God---Redneck.jpg'
+          cover: 'files/Lamb-of-God---Redneck.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Spellbound (By The Devil)',
           artist: 'Dimmu Borgir',
           url: 'files/Dimmu Borgir - Spellbound (By The Devil).mp3',
-          cover: 'files/Spellbound-(By-The-Devil).jpg'
+          cover: 'files/Spellbound-(By-The-Devil).jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Mourning Palace',
           artist: 'Dimmu Borgir',
           url: 'files/Dimmu Borgir - Mourning Palace.mp3',
-          cover: 'files/Dimmu-Borgir---Mourning-Palace.jpg'
+          cover: 'files/Dimmu-Borgir---Mourning-Palace.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Entrance',
           artist: 'Dimmu Borgir',
           url: 'files/Dimmu Borgir - Entrance.mp3',
-          cover: 'files/Dimmu-Borgir-Entrance.jpg'
+          cover: 'files/Dimmu-Borgir-Entrance.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Progenies Of The Great Apocalypse',
           artist: 'Dimmu Borgir',
           url: 'files/Dimmu Borgir - Progenies Of The Great Apocalypse.mp3',
-          cover: 'files/Dimmu-Borgir-Progenies-of-the-Great-Apocalypse.jpg'
+          cover: 'files/Dimmu-Borgir-Progenies-of-the-Great-Apocalypse.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Kings Of The Carnival Creation',
           artist: 'Dimmu Borgir',
           url: 'files/Dimmu Borgir - Kings Of The Carnival Creation.mp3',
-          cover: 'files/Dimmu-Borgir-Kings-of-the-Carnival-Creation.jpg'
+          cover: 'files/Dimmu-Borgir-Kings-of-the-Carnival-Creation.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Cause Of Death',
           artist: 'Obituary',
           url: 'files/Obituary - Cause Of Death.mp3',
-          cover: 'files/Cause-Of-Death.jpg'
+          cover: 'files/Cause-Of-Death.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Slowly We Rot',
           artist: 'Obituary',
           url: 'files/Obituary - Slowly We Rot.mp3',
-          cover: 'files/Slowly-We-Rot.jpg'
+          cover: 'files/Slowly-We-Rot.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Powerslave [album]',
           artist: 'Iron Maiden',
           url: 'files/Iron Maiden - Powerslave [album].mp3',
-          cover: 'files/Powerslave.jpg'
+          cover: 'files/Powerslave.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Extreme Aggression [album]',
           artist: 'Kreator',
           url: 'files/Kreator - Extreme Aggression [album].mp3',
-          cover: 'files/Extreme-Aggression.jpg'
+          cover: 'files/Extreme-Aggression.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Coma Of Souls [album]',
           artist: 'Kreator',
           url: 'files/Kreator - Coma Of Souls [album].mp3',
-          cover: 'files/Coma-Of-Souls.jpg'
+          cover: 'files/Coma-Of-Souls.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Beneath The Remains [album]',
           artist: 'Sepultura',
           url: 'files/Sepultura - Beneath The Remains [album].mp3',
-          cover: 'files/Beneath-The-Remains.jpg'
+          cover: 'files/Beneath-The-Remains.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Chaos A D [album]',
           artist: 'Sepultura',
           url: 'files/Sepultura - Chaos A D [album].mp3',
-          cover: 'files/Chaos.jpg'
+          cover: 'files/Chaos.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Schizophrenia [album]',
           artist: 'Sepultura',
           url: 'files/Sepultura - Schizophrenia [album].mp3',
-          cover: 'files/Schizophrenia.jpg'
+          cover: 'files/Schizophrenia.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Seasons In The Abyss [album]',
           artist: 'Slayer',
           url: 'files/Slayer - Seasons In The Aby̲ss [album].mp3',
-          cover: 'files/Seasons-In-The-Aby̲ss.jpg'
+          cover: 'files/Seasons-In-The-Aby̲ss.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Master Of Puppets [album]',
           artist: 'Metallica',
           url: 'files/Metallica - Master Of Puppets [album].mp3',
-          cover: 'files/Master-Of-Puppets.jpg'
+          cover: 'files/Master-Of-Puppets.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Tobato Manungso',
           artist: 'Batu Nisan',
           url: 'files/Batu Nisan - Tobata Manungsa.mp3',
-          cover: 'files/Tobata-Manungsa.jpg'
+          cover: 'files/Tobata-Manungsa.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Du Hast',
           artist: 'Rammstein',
           url: 'files/Rammstein - Du Hast.mp3',
-          cover: 'files/Du-Hast.jpg'
+          cover: 'files/Du-Hast.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: '... for Victory [Album]',
           artist: 'Bolt Thrower',
           url: 'files/Bolt Thrower - ...for Victory.mp3',
-          cover: 'files/Victory.jpg'
+          cover: 'files/Victory.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Left Hand Path [album]',
           artist: 'Entombed',
           url: 'files/Entombed - Left Hand Path [album].mp3',
-          cover: 'files/Left-Hand-Path.jpg'
+          cover: 'files/Left-Hand-Path.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Persecution Mania [album]',
           artist: 'Sodom',
           url: 'files/Sodom - Persecution Mania [album].mp3',
-          cover: 'files/Persecution.jpg'
+          cover: 'files/Persecution.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'Pull Me Under',
           artist: 'Dream Theater',
           url: 'files/Dream Theater - Pull Me Under.mp3',
-          cover: 'files/Dream-Theater-Pull-Me-Under.jpg'
+          cover: 'files/Dream-Theater-Pull-Me-Under.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'A Change Of Seasons',
           artist: 'Dream Theater',
           url: 'files/Dream Theater - A Change Of Seasons.mp3',
-          cover: 'files/dream-theater-a-change-of-seasons.jpg'
+          cover: 'files/dream-theater-a-change-of-seasons.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         },
         {
           name: 'In the Name of God',
           artist: 'Dream Theater',
           url: 'files/Dream Theater - In The Name Of God.mp3',
-          cover: 'files/Dream-Theater-In-the-Name-of-God.jpg'
+          cover: 'files/Dream-Theater-In-the-Name-of-God.jpg',
+          lrc: '[00:00.00]Selamat datang\n[00:04.01]Ony Music | 08155509153\n[00:08.02]bisa request lagu\n[00:12.03]Online Music Streaming',
+          theme: '#ebd0c2'
         }
       ]
     });
