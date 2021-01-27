@@ -1,82 +1,93 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Online Music Streaming" content="Online Music Streaming">
-  <meta name="ony" content="Online Music Streaming">
-  <meta name="generator" content="Online Music Streaming">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
   <title>Online Music Streaming</title>
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/APlayer.min.css">
-  <link rel="stylesheet" href="dist/css/player.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
     body {
-      background: url('files/bg.png');
+      background-image: url('files/bg.png');
       background-size: cover;
-      color: red;
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+      color: white;
     }
 
-    #blackLayer {
-      height: 100vh;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: -1;
+    .footer.bg-light {
+      background-color: #222327 !important;
     }
 
-    .judul {
-      padding: 12px 5px 0 5px;
-      color: red;
-      font-family: 'UnifrakturMaguntia', cursive;
-    }
-
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-
-    /* .bd-placeholder-img {
+    .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
-    } */
+    }
 
-    /* @media (min-width: 768px) {
+    @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
-    } */
+    }
+
+    main>.container {
+      padding: 60px 15px 0;
+    }
   </style>
+
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="sticky-footer-navbar.css" rel="stylesheet"> -->
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 
-  <div id="blackLayer"></div>
-  <!-- <main> -->
-  <div class="container">
-    <div class="row">
-      <div class="judul">
-        <h1>MyPlayList</h1>
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Online Music Streaming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="row">
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h1>MyPlayList</h1>
       <div id="player"></div>
     </div>
-  </div>
-  <!-- </main> -->
+  </main>
 
-  <footer class="footer mt-auto text-center px-3">
-    <div class="container text-muted fw-lighter">
-      <span>Dev by <a href="#" class="text-muted">Ony &phone; 08155509153</a></span>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted small">Dev by Ony &phone; 08155509153</a></span>
     </div>
   </footer>
 
@@ -87,7 +98,7 @@
     const ap = new APlayer({
       container: document.getElementById('player'),
       listFolded: false,
-      listMaxHeight: '480px',
+      listMaxHeight: 10,
       lrcType: 2,
       audio: [{
           name: 'A Feast Of Friends',
@@ -685,6 +696,7 @@
       ]
     });
   </script>
+
 
 </body>
 
