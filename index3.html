@@ -20,6 +20,16 @@
       background-size: cover;
     }
 
+    #blackLayer {
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: -1;
+    }
+
     h1 {
       color: red;
       font-family: 'UnifrakturMaguntia', cursive;
@@ -90,6 +100,7 @@
   </header>
 
   <!-- Begin page content -->
+  <div id="blackLayer"></div>
   <main class="flex-shrink-0">
     <div class="container">
       <h1>MyPlayList</h1>
