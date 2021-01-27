@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -8,9 +8,9 @@
   <meta name="ony" content="Online Music Streaming">
   <meta name="generator" content="Online Music Streaming">
   <title>Online Music Streaming</title>
-  <link href="bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/APlayer.min.css">
+  <link rel="stylesheet" href="dist/css/player.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
@@ -18,16 +18,18 @@
       background: url('files/bg.png');
       background-size: cover;
       background-repeat: repeat-y;
-      width: 100%;
       height: 100vh;
+      width: 100%;
       color: red;
-      /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     }
 
     #blackLayer {
-      height: 100%;
+      height: 100vh;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.8);
+      background-size: cover;
+      background-repeat: no-repeat;
       position: absolute;
       z-index: -1;
     }
@@ -43,145 +45,26 @@
       text-decoration: none;
     }
 
-    .aplayer {
-      background: transparent;
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 5px;
-      /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%), 0 1px 5px 0 rgb(0 0 0 / 10%); */
-      /* border-radius: 2px; */
-      overflow: hidden;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      line-height: normal;
-      position: relative;
-    }
-
-    .aplayer-list {
-      min-height: 500px;
-    }
-
-    .aplayer .aplayer-list ol li .aplayer-list-index {
-      color: darkcyan;
-      margin-right: 5px;
-      cursor: pointer;
-    }
-
-    .aplayer .aplayer-lrc::before {
-      top: 0;
-      height: 10%;
-      background: none;
-    }
-
-    .aplayer .aplayer-lrc::after {
-      bottom: 0;
-      height: 33%;
-      background: none;
-    }
-
-    .aplayer .aplayer-body {
-      position: unset;
-      margin-bottom: 10px;
-    }
-
-    .aplayer .aplayer-pic {
-      position: relative;
-      float: left;
-      height: 66px;
-      width: 66px;
-      background-size: cover;
-      background-position: 50%;
-      /* transition: all .3s ease; */
-      cursor: pointer;
-      /* border-radius: 5px; */
-    }
-
-    .aplayer .aplayer-info .aplayer-music .aplayer-title {
-      font-size: 16px;
-      color: white;
-    }
-
-    .aplayer .aplayer-info {
-      margin-left: 60px;
-      padding: 10px 7px 0 10px;
-      height: 66px;
-      box-sizing: border-box;
-    }
-
-    .aplayer .aplayer-list ol li .aplayer-list-index {
-      color: darkcyan;
-      margin-right: 12px;
-      cursor: pointer;
-    }
-
-    .aplayer .aplayer-list ol li.aplayer-list-light {
-      background: darkslategray;
-    }
-
-    .aplayer.aplayer-withlist .aplayer-info {
-      border-bottom: none;
-    }
-
-    .aplayer .aplayer-list ol li .aplayer-list-author {
-      color: wheat;
-      float: right;
-      cursor: pointer;
-    }
-
-    .aplayer.aplayer-withlist .aplayer-list {
-      display: block;
-      margin-left: -10px;
-    }
-
-    .aplayer .aplayer-list ol {
-      /* background: #222327; */
-      background: transparent;
-      color: white;
-    }
-
-    .aplayer .aplayer-list ol li {
-      position: relative;
-      height: 32px;
-      line-height: 32px;
-      padding: 0 15px;
-      font-size: 13px;
-      border-top: 1px solid #000000;
-      cursor: pointer;
-      transition: all .2s ease;
-      overflow: hidden;
-      margin: 0;
-    }
-
-    .aplayer .aplayer-list ol li:hover {
-      background: #333333;
-      opacity: 0.5;
-    }
-
-    .container {
-      padding: 0;
-    }
-
-    .bd-placeholder-img {
+    /* .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
-    }
+    } */
 
-    @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
-    }
+    } */
   </style>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
   <div id="blackLayer"></div>
-  <main class="flex-shrink-0">
+  <main>
     <div class="container">
       <div class="judul">
         <h1>MyPlayList</h1>
@@ -197,16 +80,13 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-  </script>
+  <script src="dist/js/APlayer.min.js"></script>
+  <script src="dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const ap = new APlayer({
       container: document.getElementById('player'),
       listFolded: false,
-      listMaxHeight: '520px',
+      listMaxHeight: '480px',
       lrcType: 2,
       audio: [{
           name: 'A Feast Of Friends',
