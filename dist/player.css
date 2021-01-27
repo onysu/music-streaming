@@ -1,0 +1,110 @@
+.aplayer {
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: normal;
+  position: relative;
+}
+
+.aplayer .aplayer-body {
+  margin-bottom: 15px;
+}
+
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  font-size: 14px;
+  color: white;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+  border-bottom: none;
+}
+
+.aplayer .aplayer-lrc::before {
+  top: 0;
+  height: 10%;
+  background: none;
+}
+
+.aplayer .aplayer-lrc::after {
+  bottom: 0;
+  height: 33%;
+  background: none;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+  fill: whitesmoke;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path:hover {
+  background: whitesmoke !important;
+}
+
+.aplayer .aplayer-list ol li {
+  line-height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li:hover {
+  background: #333333;
+  opacity: 0.5;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-index {
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-title {
+  color: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-author {
+  color: wheat;
+  float: right;
+  cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  font-size: 12px;
+  border-top: 1px solid black;
+  cursor: pointer;
+  transition: all .2s ease;
+  overflow: hidden;
+  margin: 0;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-cur {
+  display: none;
+  width: 7px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  cursor: pointer;
+  background-color: red !important;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-index {
+  color: #666666;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: black;
+}
