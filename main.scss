@@ -49,55 +49,52 @@ body {
   width: 395px;
   z-index: 0;
   box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
+
+  .song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 230px;
+
+    .song-info__title {
+      color: #444b59;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .song-info__artist {
+      color: #a5a7af;
+      font-size: 0.7rem;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      background: #fff;
+      border-radius: 3px;
+      cursor: ew-resize;
+      display: flex;
+      flex: 10;
+      flex-basis: 100%;
+      max-height: 5px;
+      position: relative;
+      transition: height 0.3s;
+      width: 100%;
+
+      .progress__filled {
+        background: #fc8da8;
+        flex: 0;
+        flex-basis: 0%;
+        width: 50%;
+      }
+    }
+  }
+
+  &.playing {
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease;
+  }
 }
-
-.song-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 230px;
-}
-
-.song-info__title {
-  color: #444b59;
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.song-info__artist {
-  color: #a5a7af;
-  font-size: 0.7rem;
-  margin-bottom: 10px;
-}
-
-.progress {
-  background: #fff;
-  border-radius: 3px;
-  cursor: ew-resize;
-  display: flex;
-  flex: 10;
-  flex-basis: 100%;
-  max-height: 5px;
-  position: relative;
-  transition: height 0.3s;
-  width: 100%;
-}
-
-.progress__filled {
-  background: #fc8da8;
-  flex: 0;
-  flex-basis: 0%;
-  width: 50%;
-}
-
-
-
-.progress__filled.playing {
-  transform: translate3d(0, 0, 0);
-  transition: all 1s ease;
-}
-
 
 button {
   height: 80px;
@@ -161,56 +158,52 @@ button.play.playing i {
 
 .player-controls {
   position: relative;
+
+  .spinner {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: -40px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.spin {
+      animation: spin 5s linear infinite;
+    }
+
+    .spinner__disc {
+      height: 110px;
+      width: 110px;
+      border-radius: 50%;
+      transition: all 1s ease;
+      background-image: url(http://www.placecage.com/c/127/127);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.scale {
+        transform: scale(1.17);
+        transition: all 1s ease;
+
+        .center__disc {
+          color: #e4d6e9;
+          transition: all 1s ease;
+        }
+      }
+
+      .center__disc {
+        background-color: white;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
-
-.player-controls.spinner {
-  height: 130px;
-  width: 130px;
-  position: absolute;
-  top: -40px;
-  left: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.player-controls.spinner.spin {
-  animation: spin 5s linear infinite;
-}
-
-.spinner__disc {
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  transition: all 1s ease;
-  background-image: url(http://www.placecage.com/c/127/127);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.spinner__disc.scale {
-  transform: scale(1.17);
-  transition: all 1s ease;
-}
-
-.center__disc {
-  color: #e4d6e9;
-  transition: all 1s ease;
-}
-
-
-.center__disc {
-  background-color: white;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-}
-
-
-
 
 @keyframes spin {
   100% {
