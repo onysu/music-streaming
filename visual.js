@@ -151,7 +151,7 @@ function init() {
 
   txtStatus = document.getElementById("txtStatus");
   txtStatus.innerHTML =
-    "Waiting Patiently For You... Please Click the Start Button.";
+    "... Silahkan Klik Tombol Start.";
 }
 
 //---
