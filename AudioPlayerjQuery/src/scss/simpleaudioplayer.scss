@@ -1,0 +1,307 @@
+/*
+ * jQuery Simple Audio Player Plugin
+ * http://github.com/dradl/jquery-simpleaudioplayer
+ * Requires jQuery 1.4.2
+ *
+ * Copyright 2018, Dominik Radl.
+ * Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) 
+ * https://creativecommons.org/licenses/by-nc-sa/4.0/
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+.simpleAudioPlayer,
+.simpleAudioPlayer * {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.simpleAudioPlayer {
+	font-family: 'Karla', Arial, sans-serif;
+	width: 500px;
+	max-width: 100%;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
+	position: relative;
+	overflow: hidden;
+}
+
+.simpleAudioPlayer img {
+	max-width: 100%;
+}
+
+.simpleAudioPlayer .progressBar {
+	width: 100%;
+	height: 10px;
+	position: relative;
+	padding: 0 10px;
+	border-bottom: 1px solid #ddd;
+
+	background: rgba(99,205,218,1);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99,205,218,1)), color-stop(100%, rgba(83,224,237,1)));
+	background: -webkit-gradient(linear, left top, right top, from(rgba(99,205,218,1)), to(rgba(83,224,237,1)));
+	background: linear-gradient(to right, rgba(99,205,218,1) 0%, rgba(83,224,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63cdda', endColorstr='#53e0ed', GradientType=1 );
+}
+
+.simpleAudioPlayer .progressBar .progressBarInner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #1aa1b2;
+	height: 100%;
+	width: 0%;
+	-webkit-transition: width .1s ease;
+	transition: width .1s ease;
+}
+
+.simpleAudioPlayer .progressBar .progressIndicator {
+	width: 2px;
+	height: 100%;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: opacity ease 0.2s;
+	transition: opacity ease 0.2s;
+}
+
+.simpleAudioPlayer .progressBar:hover .progressIndicator {
+	opacity: 0.6;
+}
+
+.simpleAudioPlayer .trackInfo {
+	position: relative;
+	width: 100%;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 8px;
+}
+
+.simpleAudioPlayer .trackInfo .trackTitle {
+	float: left;
+	width: 70%;
+	font-size: 13px;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.simpleAudioPlayer .trackInfo .progressTime {
+	color: #aaa;
+	text-align: left;
+	float: left;
+	width: 15%;
+	padding-left: 10px;
+}
+
+.simpleAudioPlayer .trackInfo .durationTime {
+	color: #aaa;
+	text-align: right;
+	float: left;
+	width: 15%;
+	padding-right: 10px;
+}
+
+.simpleAudioPlayer .waves {
+	height: 100px;
+	margin: 1em 0;
+}
+
+.simpleAudioPlayer .waves canvas {
+	width: 100%;
+}
+
+.simpleAudioPlayer .controls .col {
+	position: relative;
+	text-align: center;
+	height: 30px;
+}
+
+.simpleAudioPlayer .controls .col img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
+}
+
+.simpleAudioPlayer .progressBar,
+.simpleAudioPlayer .controls .col.play,
+.simpleAudioPlayer .controls .col.pause,
+.simpleAudioPlayer.hasChapters .controls .col.menuToggle,
+.simpleAudioPlayer .controls .col.stop,
+.simpleAudioPlayer .controls .col.forward,
+.simpleAudioPlayer .controls .col.backward {
+	cursor: pointer;
+}
+
+.simpleAudioPlayer .controls .col.play:hover,
+.simpleAudioPlayer .controls .col.pause:hover,
+.simpleAudioPlayer.hasChapters .controls .col.menuToggle:hover,
+.simpleAudioPlayer .controls .col.stop:hover,
+.simpleAudioPlayer .controls .col.forward:hover,
+.simpleAudioPlayer .controls .col.backward:hover {
+	opacity: 0.8;
+}
+
+.simpleAudioPlayer .controls .icon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.simpleAudioPlayer .controls .icon-play {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTcgMzU3Ij4gIDxwYXRoIGZpbGw9IiMzZGMxZDMiIGQ9Ik0zOC4zIDB2MzU3bDI4MC41LTE3OC41eiIvPjwvc3ZnPg==);
+	background-size: 25px 25px;
+}
+
+.simpleAudioPlayer .controls  .icon-pause {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTcgMzU3Ij4gIDxwYXRoIGZpbGw9IiMzZGMxZDMiIGQ9Ik0yNS41IDM1N2gxMDJWMGgtMTAydjM1N3ptMjA0LTM1N3YzNTdoMTAyVjBoLTEwMnoiLz48L3N2Zz4=);
+	background-size: 25px 25px;
+}
+
+.simpleAudioPlayer .controls  .icon-stop {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDYgMzA2Ij4gIDxwYXRoIGZpbGw9IiNhYWEiIGQ9Ik0wIDBoMzA2djMwNkgweiIvPjwvc3ZnPg==);
+	background-size: 15px 15px;
+}
+
+.simpleAudioPlayer .controls  .icon-menu {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj4gIDxwYXRoIGZpbGw9IiNhYWEiIGQ9Ik00OTEuMyAyMzUuM0gyMC43YTIwLjcgMjAuNyAwIDEgMCAwIDQxLjRoNDcwLjZhMjAuNyAyMC43IDAgMSAwIDAtNDEuNHptMC0xNTYuOUgyMC43YTIwLjcgMjAuNyAwIDAgMCAwIDQxLjRoNDcwLjZhMjAuNyAyMC43IDAgMSAwIDAtNDEuNHptMCAzMTMuOEgyMC43YTIwLjcgMjAuNyAwIDEgMCAwIDQxLjRoNDcwLjZhMjAuNyAyMC43IDAgMSAwIDAtNDEuNHoiLz48L3N2Zz4=);
+	background-size: 15px 15px;
+}
+
+.simpleAudioPlayer .controls  .icon-backward {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+ICA8cGF0aCBmaWxsPSIjYWFhIiBkPSJNOCA0SDd2NWg0VjhIOHoiLz4gIDxwYXRoIGZpbGw9IiNhYWEiIGQ9Ik04IDBDNSAwIDIuNCAxLjYgMS4xIDQuMUwwIDN2NGg0TDIuNSA1LjVDMy41IDMuNSA1LjYgMiA4IDJjMy4zIDAgNiAyLjcgNiA2cy0yLjcgNi02IDZjLTEuOCAwLTMuNC0uOC00LjUtMi4xTDIgMTMuMkE3LjggNy44IDAgMCAwIDggMTZjNC40IDAgOC0zLjYgOC04cy0zLjYtOC04LTh6Ii8+PC9zdmc+);
+	background-size: 20px 20px;
+}
+
+.simpleAudioPlayer .controls  .icon-forward {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+ICA8cGF0aCBmaWxsPSIjYWFhIiBkPSJNOCA0SDd2NWg0VjhIOHoiLz4gIDxwYXRoIGZpbGw9IiNhYWEiIGQ9Ik0xNiA3VjNsLTEuMSAxLjFBNy43IDcuNyAwIDAgMCA4IDBDMy42IDAgMCAzLjYgMCA4czMuNiA4IDggOGMyLjQgMCA0LjYtMS4xIDYtMi44bC0xLjUtMS4zQTUuOSA1LjkgMCAwIDEgOCAxNGMtMy4zIDAtNi0yLjctNi02czIuNy02IDYtNmMyLjQgMCA0LjUgMS41IDUuNSAzLjVMMTIgN2g0eiIvPjwvc3ZnPg==);
+	background-size: 20px 20px;
+}
+
+.simpleAudioPlayer .containerBottom {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	padding: 10px 12px;
+	color: #444;
+}
+
+.simpleAudioPlayer .containerBottom .chapterList {
+	clear: both;
+	display: none;
+	text-align: left;
+}
+
+.simpleAudioPlayer .containerBottom .chapterList ul {
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;
+}
+
+.simpleAudioPlayer .containerBottom .chapterList ul li {
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+}
+
+.simpleAudioPlayer .containerBottom .chapterList ul li a {
+	cursor: pointer;
+}
+
+.simpleAudioPlayer .containerBottom .chapterList ul li a:hover {
+	opacity: 0.8;
+}
+
+/* GRID */
+
+.hide {
+	display: none;
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+	float: left;
+	clear: left;
+	width: 100%;
+	height: auto;
+	min-height: 14px;
+}
+
+.col {
+	float: left;
+	clear: none;
+	height: auto;
+}
+
+.col:last-child, .col.last-child {
+	margin-right: 0;
+}
+
+/*.col.c12 { width: 100%; }
+.col.c11 { width: 91.66663%; }
+.col.c10 { width: 83.33333%; }
+.col.c9 { width: 74.99997%; }
+.col.c8 { width: 66.66666%; }
+.col.c7 { width: 58.33331%; }
+.col.c6 { width: 50%; }
+.col.c5 { width: 41.66665%; }*/
+.col.c4 { width: 33.33332%; }
+/*.col.c3 { width: 24.99999%; }*/
+.col.c2 { width: 16.66666%; }
+/*.col.c1 { width: 8.33333%; }*/
+
+@media all and (max-width: 519px) {
+	.simpleAudioPlayer .trackInfo {
+		margin-top: 4px;
+	}
+
+	.simpleAudioPlayer .trackInfo .trackTitle {
+		margin: 1.7em 2% 0 2%;
+		width: 96%;
+	}
+
+	.simpleAudioPlayer .trackInfo .progressTime {
+		position: absolute;
+		left: 0;
+		width: 50%;
+	}
+
+	.simpleAudioPlayer .trackInfo .durationTime {
+		position: absolute;
+		right: 0;
+		width: 50%;
+	}
+
+	.simpleAudioPlayer .controls .icon-play,
+	.simpleAudioPlayer .controls  .icon-pause {
+		background-size: 22px 22px;
+	}
+
+	.simpleAudioPlayer .controls  .icon-stop,
+	.simpleAudioPlayer .controls  .icon-menu {
+		background-size: 13px 13px;
+	}
+
+	.simpleAudioPlayer .controls  .icon-backward,
+	.simpleAudioPlayer .controls  .icon-forward {
+		background-size: 17px 17px;
+	}
+
+}
