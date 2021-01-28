@@ -1,6 +1,7 @@
 var audio, audioContext, audioSrc;
 var analyser, analyserBufferLength;
-var audioInfo = "Stel Kendo Stel Kenceng Urip Rasah Spaneng";
+// var audioInfo = "Stel Kendo Stel Kenceng Urip Rasah Spaneng";
+var audioInfo = "...anjing anjing anjing banget";
 
 //---
 
@@ -165,7 +166,8 @@ function userStart() {
   txtStatus.innerHTML = "Loading Audio...";
 
   audioSetup(
-    "https://raw.githubusercontent.com/onysu/music-streaming/main/files/Tiktok%20-%20Stel%20Kendo.mp3"
+    // "https://raw.githubusercontent.com/onysu/music-streaming/main/files/Tiktok%20-%20Stel%20Kendo.mp3"
+    "https://raw.githubusercontent.com/onysu/music-streaming/main/files/tiktok%20-%20anjing-banget.mp3"
   );
   animate();
 }
