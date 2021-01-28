@@ -1,11 +1,6 @@
-/*
-Song: LAKEY INSPIRED - Chill Day (Vlog No Copyright Music) Music provided by Vlog No Copyright Music. Video Link: https://youtu.be/vtHGESuQ22s
-*/
-//---
-
 var audio, audioContext, audioSrc;
 var analyser, analyserBufferLength;
-var audioInfo = "Song: LAKEY INSPIRED - Chill Day";
+var audioInfo = "Stel Kendo Stel Kenceng Urip Rasah Spaneng";
 
 //---
 
@@ -170,7 +165,7 @@ function userStart() {
   txtStatus.innerHTML = "Loading Audio...";
 
   audioSetup(
-    "http://nkunited.de/ExternalImages/jsfiddle/audio/ChillDay_comp.mp3"
+    "https://raw.githubusercontent.com/onysu/music-streaming/main/files/Tiktok%20-%20Stel%20Kendo.mp3"
   );
   animate();
 }
