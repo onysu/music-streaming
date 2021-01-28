@@ -505,7 +505,7 @@ div#player-bottom div#volume-container input[type="range"].amplitude-volume-slid
   width: 75%;
   height: 2px;
   cursor: pointer;
-  animate: 0.2s;
+  /* animate: 0.2s; */
   background: #cfd8dc;
 }
 
@@ -527,7 +527,7 @@ div#player-bottom div#volume-container input[type="range"].amplitude-volume-slid
   width: 100%;
   height: 1px;
   cursor: pointer;
-  animate: 0.2s;
+  /* animate: 0.2s; */
   background: #cfd8dc;
 }
 
@@ -545,7 +545,7 @@ div#player-bottom div#volume-container input[type="range"].amplitude-volume-slid
   width: 100%;
   height: 2px;
   cursor: pointer;
-  animate: 0.2s;
+  /* animate: 0.2s; */
   background: #cfd8dc;
   border-width: 15px 0;
   color: transparent;
