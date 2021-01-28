@@ -24,11 +24,11 @@ new Vue({
           favorited: false
         },
         {
-          name: "Mekanın Sahibi",
-          artist: "Norm Ender",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
-          url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
+          name: "Policia",
+          artist: "Sepultura",
+          cover: "https://i.ytimg.com/vi/3rP_3S_4-ss/hqdefault.jpg",
+          source: "https://raw.githubusercontent.com/onysu/music-streaming/main/files/Sepultura%20-%20Policia.mp3",
+          url: "https://music.youtube.com/watch?v=IZRVBsGKX_I&list=RDAMVMIZRVBsGKX_I",
           favorited: false
         },
         {
