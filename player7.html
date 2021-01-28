@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="player7.css">
+</head>
+
+<body>
+  <div class="player">
+    <audio class="player__audio viewer">
+      <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg" data-trackid="1">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="song-panel">
+      <div class="song-info">
+        <div class="song-info__title">Ukulele</div>
+        <div class="song-info__artist">Bensound</div>
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+      </div>
+    </div>
+    <div class="player-controls">
+      <div class="spinner">
+        <div class="spinner__disc" style="background-image: url(https://www.bensound.com/bensound-img/ukulele.jpg)">
+          <div class="center__disc"></div>
+        </div>
+      </div>
+      <button class="backward"><i class="fas fa-backward fa-2x"></i></button>
+      <button class="play">
+        <i class="fas fa-play fa-3x"></i>
+        <span class="pause left"></span>
+        <span class="pause right"></span>
+      </button>
+      <button class="forward"><i class="fas fa-forward fa-2x"></i></button>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="player7.js"></script>
+</body>
+
+</html>
