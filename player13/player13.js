@@ -18,7 +18,7 @@ new Vue({
       tracks: [{
           name: "A Feast Of Friends",
           artist: "The Doors",
-          cover: "https://raw.githubusercontent.com/onysu/music-streaming/main/files/A%20Feast%20of%20Friends.jpg",
+          cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNROtI3ZJIHzAJO2WPy9EWgwfybOl17mudEw&usqp=CAU",
           source: "https://raw.githubusercontent.com/onysu/music-streaming/main/files/The%20Doors%20-%20A%20Feast%20Of%20Friends.mp3",
           url: "https://music.youtube.com/watch?v=CL5ZvTciyGU&list=RDAMVMCL5ZvTciyGU",
           favorited: false
