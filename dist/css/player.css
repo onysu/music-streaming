@@ -17,6 +17,12 @@
   margin-bottom: 15px;
 }
 
+.aplayer.aplayer-withlrc .aplayer-pic {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
   font-size: 14px;
   color: white;
