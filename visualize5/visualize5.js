@@ -1,35 +1,20 @@
-/*
-     SANDER SAYS:
-     NO WARRANTIES EXPRESSED OR IMPLIED
-     FOR USING THIS CODE. THIS OR SIMILAR
-     CODE WAS WRITTEN BEFORE, AND IT WILL
-     BE WRITTEN AGAIN... BUT IT DOESN'T
-     MATTER - BECAUSE WE ARE IN THIS
-     TOGETHER. EVERY PATH IS THE RIGHT
-     PATH: EVERYTHING COULD HAVE
-     BEEN ANYTHING ELSE, AND IT WOULD
-     HAVE JUST AS MUCH MEANING.
-     COMPLIMENTS? PARTY INVITATIONS?
-     RIGHT ON!
-*/
-
 var maxSideNum = 24,
   maxRectangleNum = 24;
 
 // Dat.gui setup
 var Options = function () {
-  this.height = 400;
-  this.radius = 185;
-  this.sideCount = 12;
+  this.height = 450;
+  this.radius = 150;
+  this.sideCount = 24;
   this.rotSpeed = -0.3;
 
-  this.rectangleCount = 12;
-  this.rectangleWidth = 80;
-  this.vertMargin = 10;
-  this.borderWidth = 3;
+  this.rectangleCount = 24;
+  this.rectangleWidth = 90;
+  this.vertMargin = 2;
+  this.borderWidth = 2;
 
   this.color = 200;
-  this.solidBG = false;
+  this.solidBG = true;
   this.rainbowMode = false;
   this.animateThroughSpectrum = false;
   this.fade = false;
@@ -66,18 +51,17 @@ window.onload = function () {
     listenButton = document.querySelector(".listenButton"),
     playPauseButton = document.querySelector(".playPauseButton");
 
-  var c = 0, // Used to change color over time
+  var c = 0, // Digunakan untuk berubah warna seiring waktu
     paused = true;
 
-  /*Music Downbload URLs= 
-Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
+  /*Download Musik URLs= www.Soundcloud.com/NoiseJam.com untuk mengunduh satu atau dua trek     */
 
   var prism = document.querySelector(".prism"),
     sides = document.querySelectorAll(".side"),
     rectangleArray = [maxSideNum],
     lastTime = Date.now(),
     timeGap = 50,
-    rotAmt = 0; // Starting rotation of prism in degrees
+    rotAmt = 0; // Memulai rotasi prisma dalam derajat
 
   function rectangleSetup() {
     for (var i = 0; i < maxSideNum; i++) {
@@ -221,7 +205,7 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
     "change",
     function (event) {
       if (event.target.files[0]) {
-        // No error checking of file here, could be added
+        // Tidak ada pemeriksaan kesalahan file di sini, dapat ditambahkan
         stream = URL.createObjectURL(event.target.files[0]);
 
         loadSong(stream);
@@ -235,9 +219,9 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
 
   playPauseButton.addEventListener("click", togglePlayPause, false);
 
-  // The music functions
+  // Fungsi musik
   function setup() {
-    // Stop the previous song if there is one
+    // Hentikan lagu sebelumnya jika ada
     if (audio) togglePlayPause();
 
     audio = new Audio();
@@ -286,9 +270,9 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
     loadSong(myMusic[num]);
   }
 
-  // The drawing functions
+  // Fungsi menggambar
   function drawSide(freqSequence, freqPercent) {
-    // Get the # of blocks based on the freqValue
+    // Dapatkan # blok berdasarkan freqValue
     drawRectangles(
       freqSequence,
       Math.floor((freqPercent * myOptions.rectangleCount) / 100)
@@ -317,7 +301,7 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
     var freqArray = new Uint8Array(analyser.frequencyBinCount);
     analyser.getByteTimeDomainData(freqArray);
 
-    // Find the average of the values near to each other (grouping)
+    // Temukan rata-rata nilai yang dekat satu sama lain (pengelompokan)
     var average = 0,
       count = 0,
       numPerSection = 256 / (myOptions.sideCount + 1),
@@ -340,7 +324,7 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
       }
     }
 
-    // Find the average of the values since the last time checked per section (smoothing)
+    // Temukan rata-rata nilai sejak terakhir kali diperiksa per bagian (smoothing)
     if (currTime - lastTime > timeGap) {
       for (var i = 0; i < myOptions.sideCount; i++) {
         drawSide(i, sectionsAveraged[i] / countSinceLast[i], c);
@@ -357,7 +341,7 @@ Go to www.Soundcloud.com/NoiseJam.com to download a track or two     */
     requestAnimationFrame(update);
   }
 
-  // Rotate the cylinder
+  // Putar silinder
   function rotate() {
     prism.style.transform = "rotateY(" + rotAmt + "deg)";
     rotAmt += 3 * myOptions.rotSpeed;
