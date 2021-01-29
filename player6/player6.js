@@ -60,6 +60,13 @@ Amplitude.init({
     32: "play_pause"
   },
   songs: [{
+      name: 'A Feast Of Friends',
+      artist: 'The Doors',
+      album: "",
+      url: '../files/The Doors - A Feast Of Friends.mp3',
+      cover_art_url: "https://m.media-amazon.com/images/I/91u98X6VlhL._SS500_.jpg"
+    },
+    {
       name: "Risin' High (feat Raashan Ahmad)",
       artist: "Ancient Astronauts",
       album: "We Are to Answer",
