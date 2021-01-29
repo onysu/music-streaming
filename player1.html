@@ -255,7 +255,7 @@
       },
     ];
 
-    // Check if Playing
+    // Periksa apakah memutar lagu
     let isPlaying = false;
 
     // Play
@@ -294,10 +294,10 @@
       background.src = cover;
     }
 
-    // Current Song
+    // Lagu Saat Ini
     let songIndex = 0;
 
-    // Previous Song
+    // Lagu Sebelumnya
     function prevSong() {
       songIndex--;
       if (songIndex < 0) {
@@ -307,7 +307,7 @@
       playSong();
     }
 
-    // Next Song
+    // Lagu berikutnya
     function nextSong() {
       songIndex++;
       if (songIndex > songs.length - 1) {
@@ -317,30 +317,30 @@
       playSong();
     }
 
-    // On Load - Select First Song
+    // Saat Dimuat - Pilih Lagu Pertama
     loadSong(songs[songIndex]);
 
-    // Update Progress Bar & Time
+    // Perbarui progres bar & waktu
     function updateProgressBar(e) {
       if (isPlaying) {
         const {
           duration,
           currentTime
         } = e.srcElement;
-        // Update progress bar width
+        // Perbarui lebar bar
         const progressPercent = (currentTime / duration) * 100;
         progress.style.width = `${progressPercent}%`;
-        // Calculate display for duration
+        // Hitung tampilan untuk durasi
         const durationMinutes = Math.floor(duration / 60);
         let durationSeconds = Math.floor(duration % 60);
         if (durationSeconds < 10) {
           durationSeconds = `0${durationSeconds}`;
         }
-        // Delay switching duration Element to avoid NaN
+        // Tunda pengalihan elemen durasi untuk menghindari NaN
         if (durationSeconds) {
           durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
         }
-        // Calculate display for currentTime
+        // Hitung tampilan untuk currentTime
         const currentMinutes = Math.floor(currentTime / 60);
         let currentSeconds = Math.floor(currentTime % 60);
         if (currentSeconds < 10) {
@@ -350,7 +350,7 @@
       }
     }
 
-    // Set Progress Bar
+    // Seting Progress Bar
     function setProgressBar(e) {
       const width = this.clientWidth;
       const clickX = e.offsetX;
