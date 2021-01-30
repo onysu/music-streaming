@@ -14,7 +14,7 @@ var Options = function () {
   this.borderWidth = 2;
 
   this.color = 200;
-  this.solidBG = true;
+  this.solidBG = false;
   this.rainbowMode = false;
   this.animateThroughSpectrum = false;
   this.fade = false;
@@ -76,7 +76,7 @@ window.onload = function () {
   function sideCountChange(newCount) {
     [].forEach.call(sides, function (elem, i) {
       if (i < myOptions.sideCount) {
-        // The circle is inscribed inside of the cyllinder: so use this formula to calculate the side length
+        // Lingkaran itu tertulis di dalam silinder: gunakan rumus ini untuk menghitung panjang sisi
         var sideLength = 2 * myOptions.radius * Math.tan(Math.PI / newCount);
         prism.style.width = sideLength + "px";
         prism.style.left = "calc(50% - " + sideLength / 2 + "px)";
@@ -200,7 +200,7 @@ window.onload = function () {
     else colorChange(myOptions.color);
   }
 
-  // The music player listeners
+  // Para pendengar pemutar musik
   audioInput.addEventListener(
     "change",
     function (event) {
