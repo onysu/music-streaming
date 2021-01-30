@@ -43,8 +43,10 @@ window.onload = function () {
     myAnimateThroughSpectrum = f3.add(myOptions, "animateThroughSpectrum"),
     myFade = f3.add(myOptions, "fade");
 
-  // f2.open();
   gui.close();
+  f1.open();
+  f2.open();
+  f3.open();
 
   var audio, analyser, audioctx, sourceNode, stream;
 
