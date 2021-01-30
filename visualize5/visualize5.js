@@ -256,7 +256,7 @@ window.onload = function () {
     if (paused) {
       document.body.classList.add("loaded");
       audio.play();
-      playPauseButton.innerText = "▮▮";
+      playPauseButton.innerText = "||";
     } else if (!audio.paused && !audio.ended) {
       audio.pause();
       playPauseButton.innerText = "▶";
