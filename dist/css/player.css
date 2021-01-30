@@ -24,8 +24,26 @@
 }
 
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
+}
+
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  font-size: 12px;
+  color: #666;
+}
+
+.aplayer .aplayer-lrc p {
+  font-size: 12px;
+  color: #666;
+  line-height: 16px !important;
+  height: 16px !important;
+  padding: 0 !important;
+  margin: 0 0 0 5px !important;
+  transition: all .5s ease-out;
+  opacity: .4;
+  overflow: hidden;
+  text-align: left;
 }
 
 .aplayer.aplayer-withlist .aplayer-info {
