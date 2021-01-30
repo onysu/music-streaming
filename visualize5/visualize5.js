@@ -44,6 +44,7 @@ window.onload = function () {
     myFade = f3.add(myOptions, "fade");
 
   // f2.open();
+  gui.close();
 
   var audio, analyser, audioctx, sourceNode, stream;
 
