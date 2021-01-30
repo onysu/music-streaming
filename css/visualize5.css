@@ -1,16 +1,6 @@
 /* Default all same color */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   background: #000;
-  height: 100vh;
-  font-family: "Helvetica", sans-serif;
-  color: darkcyan;
   -webkit-perspective: 777px;
           perspective: 777px;
 }

@@ -8,11 +8,11 @@
 $border: 1px solid #4da19f;
 /* Default all same color */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
 // html,
 // body {
@@ -22,11 +22,11 @@ $border: 1px solid #4da19f;
 
 body {
   background: #000;
-  height: 100vh;
+  // height: 100vh;
   // background-image: url('bg.jpg');
   // background-size: cover;
-  font-family: "Helvetica", sans-serif;
-  color: darkcyan;
+  // font-family: "Helvetica", sans-serif;
+  // color: darkcyan;
   // position: relative;
   perspective: 777px;
   // perspective-origin: 50% 50%;
