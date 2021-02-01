@@ -59,6 +59,16 @@
       color: darkcyan;
     }
 
+    .sound-vis {
+      position: absolute;
+      /* height: 0; */
+      /* display: flex; */
+      /* justify-content: space-around; */
+      /* align-items: flex-end; */
+      top: 25px;
+      left: 340px;
+    }
+
     .sound-vis i {
       background-color: wheat;
     }
@@ -111,15 +121,16 @@
   <div id="blackLayer"></div>
   <main class="flex-shrink-0">
     <div class="container">
-      <h1>MyPlayList
-        <span class='sound-vis sound-vis--small'>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
-      </h1>
+      <h1>MyPlayList</h1>
+
+      <div class='sound-vis sound-vis--small'>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
       <div id="player"></div>
     </div>
   </main>
