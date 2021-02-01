@@ -94,7 +94,6 @@ function setDuration() {
   seekbar.max = audioElement.duration;
 }
 
-
 function onEnd() {
   playPauseButton.innerHTML = replayIcon;
   audioElement.currentTime = 0;
