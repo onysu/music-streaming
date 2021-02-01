@@ -102,7 +102,8 @@ html {
 }
 
 audio {
-  display: none;
+  position: absolute;
+  bottom: 157px;
 }
 
 .play-pause {
@@ -124,7 +125,7 @@ audio {
   /* flex-direction: row; */
   /* align-items: center; */
   /* justify-content: space-between; */
-  ;
+  display: none;
 }
 
 .audio-player {
