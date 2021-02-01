@@ -1,49 +1,49 @@
 $ltm-green: #afd33d;
 $bar-color: #fff;
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111;
-  color: #fff;
-  font-family: monospace;
-  text-transform: uppercase;
-}
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   overflow: hidden;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #111;
+//   color: #fff;
+//   font-family: monospace;
+//   text-transform: uppercase;
+// }
 
-.state {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 1.1em;
-  font-weight: 200;
-  line-height: 2;
-  animation: idle 1s linear infinite alternate;
+// .state {
+//   position: absolute;
+//   top: 20px;
+//   left: 20px;
+//   font-size: 1.1em;
+//   font-weight: 200;
+//   line-height: 2;
+//   animation: idle 1s linear infinite alternate;
 
-  &.playing {
-    &:before {
-      content: "► playing";
-    }
-  }
+//   &.playing {
+//     &:before {
+//       content: "► playing";
+//     }
+//   }
 
-  &.paused {
-    &:before {
-      content: "❚❚ paused";
-    }
-  }
-}
+//   &.paused {
+//     &:before {
+//       content: "❚❚ paused";
+//     }
+//   }
+// }
 
 .sound-vis {
-  position: relative;
-  height: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  // position: absolute;
+  // height: 0;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: flex-end;
 
   &--small {
     width: 30px;
