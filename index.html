@@ -12,6 +12,7 @@
     type="image/x-icon">
   <link rel="stylesheet" href="dist/css/APlayer.min.css">
   <link rel="stylesheet" href="dist/css/player.css">
+  <link rel="stylesheet" href="dist/css/tes.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
@@ -56,6 +57,10 @@
       font-size: 11px;
       font-weight: 100;
       color: darkcyan;
+    }
+
+    .sound-vis i {
+      background-color: wheat;
     }
 
     @media (min-width: 768px) {
@@ -106,7 +111,15 @@
   <div id="blackLayer"></div>
   <main class="flex-shrink-0">
     <div class="container">
-      <h1>MyPlayList</h1>
+      <h1>MyPlayList
+        <span class='sound-vis sound-vis--small'>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </h1>
       <div id="player"></div>
     </div>
   </main>
@@ -120,7 +133,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="dist/js/APlayer.min.js"></script>
   <script src="dist/js/bootstrap.bundle.min.js"></script>
-  <script src="visualizer/visualizer.js"></script>
+  <script src="tes/tes.js"></script>
   <script>
     const ap = new APlayer({
       container: document.getElementById('player'),

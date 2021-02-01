@@ -1,5 +1,5 @@
 .sound-vis {
-  position: relative;
+  // position: relative;
   height: 0;
   display: flex;
   justify-content: space-around;
@@ -29,13 +29,15 @@
 
   i {
     // display: inline-block;
-    background-color: black;
+    background-color: wheat !important;
     flex-shrink: 0;
     flex-grow: 0;
     flex-basis: 1px;
     transition: 600ms ease-in-out all;
   }
 }
+
+
 
 @for $e from 1 through 5 {
   @keyframes playing-#{$e} {
