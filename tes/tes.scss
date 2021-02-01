@@ -1,0 +1,56 @@
+.sound-vis {
+  position: relative;
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  &--small {
+    width: 30px;
+    height: 15px;
+
+    i {
+      width: 1px;
+    }
+  }
+
+  &--large {
+    width: 70px;
+    height: 35px;
+
+    i {
+      width: 5px;
+      background-color: transparent !important;
+      border: 1px solid $bar-color;
+      border-bottom: none;
+      border-radius: 2.5px 2.5px 0 0;
+    }
+  }
+
+  i {
+    // display: inline-block;
+    background-color: black;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 1px;
+    transition: 600ms ease-in-out all;
+  }
+}
+
+@for $e from 1 through 5 {
+  @keyframes playing-#{$e} {
+    @for $i from 1 through 20 {
+      $percent: ($i * 5) * 1%;
+
+      #{$percent} {
+        height: random(100) * 1%;
+      }
+    }
+  }
+}
+
+@keyframes idle {
+  to {
+    opacity: 0.3;
+  }
+}
