@@ -11,8 +11,8 @@ document.body.addEventListener("click", () => {
     vis.classList.remove("audio-playing");
     vis.classList.add("audio-paused");
 
-    state.classList.remove("playing");
-    state.classList.add("paused");
+    state.classList.add("playing");
+    state.classList.remove("paused");
   }
 });
 
