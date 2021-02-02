@@ -1,33 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Cover Template · Bootstrap v5.0</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/ony.png"
+    type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-    html {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      min-height: 100vh;
-      background: #c9ced3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Nunito, sans-serif;
-      font-size: 12px;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
     }
 
+    .text-center {
+      text-align: center !important;
+    }
+
+    /* .cover-container {
+      max-width: 42em;
+    } */
+
+    /* .text-white {
+      color: #666 !important;
+    } */
+
+    .nav-masthead .nav-link {
+      padding: .25rem 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .5);
+      background-color: transparent;
+      border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link+.nav-link {
+      margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    /* main {
+      margin-top: 40%;
+    } */
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    /* player */
     .bg-container {
       position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
+      /* top: -50%; */
+      /* left: -50%; */
+      /* width: 200%; */
+      /* height: 200%; */
       z-index: -1;
     }
 
@@ -47,7 +97,8 @@
 
     .player-container {
       height: 500px;
-      width: 95%;
+      /* width: 400px; */
+      /* width: 100%; */
       background: #e7e7e7;
       border-radius: 20px;
       box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
@@ -58,10 +109,11 @@
       height: 300px;
       position: relative;
       top: -50px;
-      left: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      left: 14px;
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-top: 50px;
     }
 
     .img-container img {
@@ -124,8 +176,8 @@
     .player-controls {
       position: relative;
       top: -15px;
-      left: 120px;
-      width: 200px;
+      left: 22px;
+      /* width: 200px; */
     }
 
     .fas {
@@ -147,7 +199,7 @@
     }
 
     /* Media Query: iPhone (Vertical) */
-    @media screen and (max-width: 376px) {
+    /* @media screen and (max-width: 376px) {
       .player-container {
         width: 95vw;
       }
@@ -168,37 +220,71 @@
         top: -10px;
         left: 100px;
       }
-    }
+    } */
   </style>
 </head>
 
-<body>
-  <div class="bg-container">
-    <img src="" alt="" id="background">
-  </div>
-  <div class="player-container">
-    <!-- Song -->
-    <div class="img-container">
-      <img src="" alt="" id="cover" class="active">
-    </div>
-    <h2 id="title"></h2>
-    <h3 id="artist"></h3>
-    <audio src=""></audio>
-    <!-- Progress -->
-    <div class="progress-container" id="progress-container">
-      <div class="progress" id="progress"></div>
-      <div class="duration-wrapper">
-        <span id="current-time"></span>
-        <span id="duration"></span>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <!-- <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Cover</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Contact</a>
+        </nav>
       </div>
-    </div>
-    <!-- Controls -->
-    <div class="player-controls">
-      <i class="fas fa-backward" id="prev" title="Previous"></i>
-      <i class="fas fa-play main-button" id="play" title="Play"></i>
-      <i class="fas fa-forward" id="next" title="Next"></i>
-    </div>
+    </header> -->
+
+    <main>
+
+      <div class="bg-container">
+        <img src="" alt="" id="background">
+      </div>
+      <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+          <img src="" alt="" id="cover" class="active">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="duration-wrapper">
+            <span id="current-time"></span>
+            <span id="duration"></span>
+          </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+          <i class="fas fa-backward" id="prev" title="Previous"></i>
+          <i class="fas fa-play main-button" id="play" title="Play"></i>
+          <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+      </div>
+
+      <!-- <h1>Cover your page.</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
+        text, and add your own fullscreen background photo to make it your own.</p>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+      </p> -->
+
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
+          href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
 
   <script>
     const image = document.querySelector('#cover');
@@ -216,11 +302,42 @@
 
     // Music
     const songs = [{
-      path: 'files/Jihan Audy - Suara Syairku.mp3',
-      displayName: 'Suara Syairku',
-      artist: 'Jihan Audy',
-      cover: "https://raw.githubusercontent.com/onysu/music-streaming/main/files/jumaa.jpg",
-    }, ];
+        path: 'files/Jihan Audy - Suara Syairku.mp3',
+        displayName: 'Suara Syairku',
+        artist: 'Jihan Audy',
+        cover: "https://i0.wp.com/www.medinafm.id/wp-content/uploads/2020/01/JihanAudy-SederhanaCarakuMencintaimuNewRelease.jpg?fit=1465%2C1465&ssl=1",
+      },
+      {
+        path: 'files/The Doors - A Feast Of Friends.mp3',
+        displayName: 'A Feast Of Friends',
+        artist: 'The Doors',
+        cover: "https://m.media-amazon.com/images/I/91u98X6VlhL._SS500_.jpg",
+      },
+      {
+        path: 'files/Napalm Death - Suffer The Children.mp3',
+        displayName: 'Suffer The Children',
+        artist: 'Napalm Death',
+        cover: "https://img.discogs.com/AH6qJA_sPvTl8nX9Mu171xdRvEo=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-986119-1404669937-8254.jpeg.jpg",
+      },
+      {
+        path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/3.mp3',
+        displayName: 'Powerless',
+        artist: 'Linkin Park',
+        cover: "https://images.genius.com/c5a58cdaab9f3199214f0e3c26abbd0e.1000x1000x1.jpg",
+      },
+      {
+        path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/4.mp3',
+        displayName: 'Seni Dert Etmeler',
+        artist: 'Madrigal',
+        cover: "https://www.radyomega.fm/wp-content/uploads/2020/04/MADRIGAL-600.jpg",
+      },
+      {
+        path: 'https://raw.githubusercontent.com/ustabasiibrahim/music-player/master/assets/music/5.mp3',
+        displayName: 'Ederlezi',
+        artist: 'Solomun',
+        cover: "https://m.media-amazon.com/images/I/616t0841uvL._SS500_.jpg",
+      },
+    ];
 
     // Periksa apakah memutar lagu
     let isPlaying = false;
