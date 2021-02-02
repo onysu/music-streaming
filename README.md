@@ -8,7 +8,13 @@ With Bootstrap 5
 ![106160766-c2805880-61b8-11eb-8b58-9923292bde8a](https://user-images.githubusercontent.com/14862922/106560712-09c06d80-655a-11eb-900a-35974ae0116d.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player1.html">Player 1</a></li>
+
+![onysu github io_music-streaming_player1 html(iPhone X)](https://user-images.githubusercontent.com/14862922/106606085-49a44680-6594-11eb-8f1e-4769b33f9966.png)
+
   <li><a href="https://onysu.github.io/music-streaming/player2.html">Player 2</a></li>
+
+![onysu github io_music-streaming_player2 html(iPhone X)](https://user-images.githubusercontent.com/14862922/106606124-54f77200-6594-11eb-883b-bdaa6333116a.png)
+
   <li><a href="https://onysu.github.io/music-streaming/player3.html">Player 3</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player5/index.html">Player 5</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player6/index.html">Player 6</a></li>
