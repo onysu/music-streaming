@@ -147,7 +147,30 @@
     }
 
     /* Media Query: iPhone (Vertical) */
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 360px) {
+      .player-container {
+        width: 95vw;
+      }
+
+      .img-container {
+        left: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .player-controls {
+        top: -10px;
+        left: 100px;
+      }
+    }
+
+    @media screen and (min-width: 375px) {
       .player-container {
         width: 95vw;
       }
