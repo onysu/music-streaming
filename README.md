@@ -9,6 +9,9 @@
   <li><a href="https://onysu.github.io/music-streaming/player8/index.html">Player 5</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Player 6</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player10/index.html">Player 7</a></li>
+  <img
+  src="![127 0 0 1_5501_player7_1 html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/106559585-2eb3e100-6558-11eb-9d01-3c6b5657eec9.png)"
+  alt="player7">
   <li><a href="https://onysu.github.io/music-streaming/player11/index.html">Player 8</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player12/index.html">Player 9</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player13/index.html">Player 10</a></li>
