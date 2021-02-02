@@ -1,4 +1,4 @@
-# music-streaming
+# Example App
 
 <ol>
   <li><a href="https://onysu.github.io/music-streaming/">Demo</a></li>
