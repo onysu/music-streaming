@@ -21,22 +21,16 @@
 
             <div class='wrapper'>
 
-
               <div class="overlay-play text-center" v-if="isPlaying && (currentSong.id === song.id )" @click='pause'>
                 <i class="icon ion-ios-pause"></i>
               </div>
 
               <div class="overlay-play text-center" @click='play(song)' v-else>
-
                 <i class="icon ion-ios-play"></i>
-
-
               </div>
 
               <img :src="song.cover_art_url" alt="" class='img-fluid rounded'>
             </div>
-
-
 
             <p class='song-title mt-2'>{{song.title}}</p>
             <p class='song-artiste'>{{song.artist}}</p>
@@ -44,9 +38,7 @@
           </div>
 
         </template>
-
       </div>
-
     </div>
 
     <div class="music-player">
@@ -152,8 +144,6 @@
 
                     <i class="icon ion-ios-shuffle" @click="shuffleToggle"></i>
                   </div>
-
-
 
                 </div>
 
