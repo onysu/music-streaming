@@ -4,12 +4,12 @@ With Bootstrap 5
 
 <ol>
   <li><a href="https://onysu.github.io/music-streaming/">Demo</a></li>
+
+![106160766-c2805880-61b8-11eb-8b58-9923292bde8a](https://user-images.githubusercontent.com/14862922/106560712-09c06d80-655a-11eb-900a-35974ae0116d.png)
+
   <li><a href="https://onysu.github.io/music-streaming/player1.html">Player 1</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player2.html">Player 2</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player3.html">Player 3</a></li>
-
-  ![106160766-c2805880-61b8-11eb-8b58-9923292bde8a](https://user-images.githubusercontent.com/14862922/106560712-09c06d80-655a-11eb-900a-35974ae0116d.png)
-  
   <li><a href="https://onysu.github.io/music-streaming/player5/index.html">Player 5</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player6/index.html">Player 6</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player7/index.html">Player 7</a></li>
