@@ -34,15 +34,14 @@ body {
 
 .player-controls {
   background-color: #fff;
-  border-radius: 15px;
-  width: 425px;
+  border-radius: 75px 15px 15px 75px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
           box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 }
@@ -67,7 +66,6 @@ body {
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  width: 395px;
   z-index: 0;
   -webkit-box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
           box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
@@ -137,28 +135,24 @@ body {
 }
 
 button {
-  height: 80px;
   width: 80px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: #dfdbe0;
   margin: 0 5px;
-  border-radius: 15px;
   position: relative;
 }
 
 button:hover,
 button.playing {
-  background-color: #e0dee1;
-  color: #fff;
+  color: black;
 }
 
 button.play span.pause {
-  background-color: white;
+  background-color: black;
   position: absolute;
-  top: 23px;
-  height: 34px;
+  top: 45px;
+  height: 35px;
   width: 10px;
   display: block;
   border-radius: 3px;
@@ -172,7 +166,7 @@ button.play span.pause.left {
 }
 
 button.play.playing span.pause.left {
-  left: 25px;
+  left: 30px;
   opacity: 1;
   -webkit-transition: left 0.5s ease, opacity 0.8s ease;
   transition: left 0.5s ease, opacity 0.8s ease;
@@ -183,7 +177,7 @@ button.play span.pause.right {
 }
 
 button.play.playing span.pause.right {
-  right: 25px;
+  right: 30px;
   opacity: 1;
   -webkit-transition: right 0.5s ease, opacity 0.8s ease;
   transition: right 0.5s ease, opacity 0.8s ease;
@@ -208,9 +202,8 @@ button.play.playing i {
 .player-controls .spinner {
   height: 130px;
   width: 130px;
-  position: absolute;
-  top: -40px;
-  left: 15px;
+  top: -123px;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

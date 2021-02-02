@@ -35,7 +35,7 @@ body {
 .player-controls {
   background-color: #fff;
   border-radius: 15px;
-  width: 425px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

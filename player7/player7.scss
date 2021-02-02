@@ -25,11 +25,13 @@ body {
 
 .player-controls {
   background-color: #fff;
-  border-radius: 15px;
-  width: 425px;
+  // border-radius: 15px;
+  border-radius: 75px 15px 15px 75px;
+  // width: 425px;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding: 10px;
+  justify-content: center;
+  // padding: 10px;
   box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 }
 
@@ -42,11 +44,13 @@ body {
   border-radius: 15px 15px 0 0;
   display: flex;
   height: 75px;
+  // height: 123px;
   justify-content: flex-end;
   padding: 0 12px 12px 12px;
   transform: translate3d(0, 100%, 0);
   transition: all 1s ease;
-  width: 395px;
+  // width: 395px;
+  // width: 100%;
   z-index: 0;
   box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 
@@ -97,28 +101,30 @@ body {
 }
 
 button {
-  height: 80px;
+  // height: 80px;
   width: 80px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: #dfdbe0;
+  // color: #dfdbe0;
   margin: 0 5px;
-  border-radius: 15px;
+  // border-radius: 15px;
   position: relative;
 }
 
 button:hover,
 button.playing {
-  background-color: #e0dee1;
-  color: #fff;
+  // background-color: #e0dee1;
+  // color: #fff;
+  color: black;
 }
 
 button.play span.pause {
-  background-color: white;
+  // background-color: white;
+  background-color: black;
   position: absolute;
-  top: 23px;
-  height: 34px;
+  top: 45px;
+  height: 35px;
   width: 10px;
   display: block;
   border-radius: 3px;
@@ -131,7 +137,7 @@ button.play span.pause.left {
 }
 
 button.play.playing span.pause.left {
-  left: 25px;
+  left: 30px;
   opacity: 1;
   transition: left 0.5s ease, opacity 0.8s ease;
 }
@@ -141,7 +147,7 @@ button.play span.pause.right {
 }
 
 button.play.playing span.pause.right {
-  right: 25px;
+  right: 30px;
   opacity: 1;
   transition: right 0.5s ease, opacity 0.8s ease;
 }
@@ -162,9 +168,9 @@ button.play.playing i {
   .spinner {
     height: 130px;
     width: 130px;
-    position: absolute;
-    top: -40px;
-    left: 15px;
+    // position: absolute;
+    top: -123px;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
