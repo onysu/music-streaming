@@ -281,4 +281,13 @@ button.play.playing i {
     left: 15px;
   }
 }
+
+@media (max-width: 411px) {
+  button.play.playing span.pause.right {
+    left: 35px;
+  }
+  button.play.playing span.pause.left {
+    left: 20px;
+  }
+}
 /*# sourceMappingURL=player7.css.map */
