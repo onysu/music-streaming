@@ -138,7 +138,7 @@ button.play span.pause.left {
 }
 
 button.play.playing span.pause.left {
-  left: 32px;
+  left: 20px;
   opacity: 1;
   transition: left 0.5s ease, opacity 0.8s ease;
 }
@@ -148,7 +148,7 @@ button.play span.pause.right {
 }
 
 button.play.playing span.pause.right {
-  right: 32px;
+  right: 20px;
   opacity: 1;
   transition: right 0.5s ease, opacity 0.8s ease;
 }
