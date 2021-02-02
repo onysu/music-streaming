@@ -33,7 +33,7 @@ With Bootstrap 5
 
   <li><a href="https://onysu.github.io/music-streaming/player8/index.html">Player 8</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Player 9</a></li>
-  <li><a href="https://onysu.github.io/music-streaming/player10/index.html">Player 10</a></li>
+  
   <li><a href="https://onysu.github.io/music-streaming/player11/index.html">Player 11</a></li>
   <li><a href="https://onysu.github.io/music-streaming/player12/index.html">Player 12</a></li>
 
