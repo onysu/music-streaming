@@ -212,7 +212,7 @@ new Vue({
       this.isTimerPlaying = true;
     };
 
-    // this is optional (for preload covers)
+    // ini opsional (untuk penutup pramuat)
     for (let index = 0; index < this.tracks.length; index++) {
       const element = this.tracks[index];
       let link = document.createElement("link");
