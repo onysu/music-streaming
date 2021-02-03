@@ -24,10 +24,10 @@ let songList = [{
     artistname: "Suffocation",
   },
   {
-    thumbnail: "Bright_Eyed_Blues.jpg",
-    audio: "Bright_Eyed_Blues.mp3",
-    songname: "Bright Eyed Blues",
-    artistname: "Unicorn Heads",
+    thumbnail: "Victory.jpg",
+    audio: "Bolt Thrower - ...for Victory.mp3",
+    songname: "... for Victory",
+    artistname: "Bolt Thrower",
   },
   {
     thumbnail: "How_it_Began.jpg",
