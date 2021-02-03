@@ -6,22 +6,22 @@ function _all(query) {
   return document.querySelectorAll(query);
 }
 let songList = [{
-    thumbnail: "Dream-Theater-In-the-Name-of-God.jpg",
+    thumbnail: "In-the-Name-of-God.jpg",
     audio: "Dream Theater - In The Name Of God.mp3",
     songname: "In The Name Of God",
     artistname: "Dream Theater"
   },
   {
-    thumbnail: "Suffocation---Infecting-The-Crypts.jpg",
+    thumbnail: "Suffocation-Infecting-The-Crypts.jpg",
     audio: "Suffocation - Infecting The Crypts.mp3",
     songname: "Infecting The Crypts",
     artistname: "Suffocation",
   },
   {
-    thumbnail: "Sunny_Looks_Good_on_You.jpg",
-    audio: "Sunny_Looks_Good_on_You.mp3",
-    songname: "Sunny Looks Good on You",
-    artistname: "Midnight North",
+    thumbnail: "Pierced-From-Within.jpg",
+    audio: "Suffocation - Pierced from Within.mp3",
+    songname: "Pierced from Within",
+    artistname: "Suffocation",
   },
   {
     thumbnail: "Bright_Eyed_Blues.jpg",
