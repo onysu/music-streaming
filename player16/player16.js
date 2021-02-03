@@ -66,10 +66,10 @@ let songList = [{
     artistname: "Vader",
   },
   {
-    thumbnail: "Everglow.jpg",
-    audio: "Everglow.mp3",
-    songname: "Everglow",
-    artistname: "Patrick Patrikios",
+    thumbnail: "Terrorizer-After-World-Obliteration.jpg",
+    audio: "Terrorizer - After World Obliteration.mp3",
+    songname: "After World Obliteration",
+    artistname: "Terrorizer",
   }
 ];
 
