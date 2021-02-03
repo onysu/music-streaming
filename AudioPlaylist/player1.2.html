@@ -67,10 +67,6 @@
         <li><a href="../files/Bolt Thrower - ...for Victory.mp3">for Victory</a></li>
       </ul>
 
-      <!-- <a href="#" onclick="playlist.prevTrack();">Prev</a>
-      <a href="#" onclick="playlist.nextTrack();">Next</a>
-      <a href="#" onclick="playlist.toggleShuffle();">Shuffle</a> -->
-
     </div>
   </main>
 
@@ -84,64 +80,34 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>
   <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-  <script src="audioPlayer.js"></script>
+  <!-- <script src="audioPlayer.js"></script> -->
   <script>
     // memuat pemutar audio
     audioPlayer();
 
-    // var config = {
-    //   autoplay: true,
-    //   loop: true,
-    //   shuffle: true
-    // };
+    function audioPlayer() {
+      var currentSong = 0;
+      $("#audioPlayer")[0].src = $("#playlist li a")[0];
+      $("#audioPlayer")[0].play();
+      $("#playlist li a").click(function (e) {
+        e.preventDefault();
+        $("#audioPlayer")[0].src = this;
+        $("#audioPlayer")[0].play();
+        $("#playlist li").removeClass("current-song");
+        currentSong = $(this).parent().index();
+        $(this).parent().addClass("current-song");
+      });
 
-    // var playlist = new AudioPlaylist();
-
-    // var classObj = this; // store scope for event listeners
-    // this.shuffle = (config.shuffle == true) ? true : false;
-    // this.playerId = (config.playerId) ? config.playerId : "audioPlayer";
-    // this.playlistId = (config.playlistId) ? config.playlistId : "playlist";
-    // this.currentClass = (config.currentClass) ? config.currentClass : "current-song";
-    // this.length = $("#" + this.playlistId + " li").length;
-    // this.player = $("#" + this.playerId)[0];
-    // this.autoplay = (config.autoplay == true || this.player.autoplay) ? true : false;
-    // this.loop = (config.loop == true) ? true : false;
-    // this.trackPos = 0;
-    // this.trackOrder = [];
-    // for (var i = 0; i < this.length; i++) {
-    //   this.trackOrder.push(i);
-    // }
-
-    // if (this.shuffle)
-    //   this.randomizeOrder();
-
-    // this.setTrack(this.trackPos);
-    // if (this.autoplay)
-    //   this.player.play();
-
-    // // handle link clicks
-    // $("#" + this.playlistId + " li a").click(function (e) {
-    //   e.preventDefault();
-    //   // set track based on index of
-    //   classObj.setTrack(classObj.trackOrder.indexOf($(this).parent().index()));
-    //   classObj.player.play();
-    // });
-
-    // //  handle end of track
-    // this.player.addEventListener("ended", function () {
-    //   // if last track ended
-    //   if (classObj.trackPos < classObj.length - 1) {
-    //     classObj.setTrack(classObj.trackPos + 1);
-    //     classObj.player.play();
-    //   } else {
-    //     if (classObj.loop) {
-    //       if (classObj.shuffle)
-    //         classObj.randomizeOrder();
-    //       classObj.setTrack(0);
-    //       classObj.player.play();
-    //     }
-    //   }
-    // });
+      $("#audioPlayer")[0].addEventListener("ended", function () {
+        currentSong++;
+        if (currentSong == $("#playlist li a").length)
+          currentSong = 0;
+        $("#playlist li").removeClass("current-song");
+        $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
+        $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+        $("#audioPlayer")[0].play();
+      });
+    }
   </script>
 
 </body>
