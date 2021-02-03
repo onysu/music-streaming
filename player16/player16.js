@@ -30,10 +30,10 @@ let songList = [{
     artistname: "Bolt Thrower",
   },
   {
-    thumbnail: "How_it_Began.jpg",
-    audio: "How_it_Began.mp3",
-    songname: "How it Began",
-    artistname: "Silent Partner",
+    thumbnail: "Bolt-Thrower---Through-the-Eye-of-Terror.jpg",
+    audio: "Bolt Thrower - Through The Eye Of Terror.mp3",
+    songname: "Through The Eye Of Terror",
+    artistname: "Bolt Thrower",
   },
   {
     thumbnail: "Simon_s_Song.jpg",
