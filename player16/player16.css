@@ -1,12 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
 }
 
 .player {
