@@ -36,10 +36,10 @@ let songList = [{
     artistname: "Bolt Thrower",
   },
   {
-    thumbnail: "Simon_s_Song.jpg",
-    audio: "Simon_s_Song.mp3",
-    songname: "Simon's Song",
-    artistname: "Dan Lebowitz",
+    thumbnail: "Cryptopsy---Phobophile.jpg",
+    audio: "Cryptopsy - Phobophile.mp3",
+    songname: "Phobophile",
+    artistname: "Cryptopsy",
   },
   {
     thumbnail: "Scanline.jpg",
