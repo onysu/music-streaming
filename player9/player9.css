@@ -17,7 +17,7 @@ body {
   font-size: 100%;
   font-weight: 300;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #222;
+  /* background-color: #222; */
 }
 
 h1 {
@@ -31,11 +31,13 @@ h2 {
 
 .player {
   position: relative;
-  width: 20em;
+  /* width: 20em; */
+  width: 100%;
   min-height: 20em;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #eee;
-  border-radius: 0.25em;
+  /* border-radius: 0.25em; */
+  border-radius: 15px;
   box-shadow:
     0 1.5em 2em -1em rgba(0, 0, 0, 0.8),
     inset 0 0.0625em 0 rgba(255, 255, 255, 1),
