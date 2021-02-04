@@ -52,18 +52,19 @@ body {
 
 .player .main .details {
   text-align: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 .player .main .details h2 {
-  font-size: 18px;
+  font-size: 25px;
   color: #eee;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .player .main .details p {
-  font-size: 15px;
+  font-size: 20px;
   color: #aaa;
+  margin-bottom: 0;
 }
 
 .player .main .controls {
