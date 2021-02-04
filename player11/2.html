@@ -6,21 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Ony">
+  <title>Hello, world!</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/ony.png"
     type="image/x-icon">
-  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css">
+  <link rel="stylesheet" href="player11.css">
   <style>
-    /* Custom default button */
-    .btn-secondary,
-    .btn-secondary:hover,
-    .btn-secondary:focus {
-      color: #333;
-      text-shadow: none;
-      /* Prevent inheritance from `body` */
-    }
-
     body {
       text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
       box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
@@ -72,10 +65,10 @@
   </style>
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex text-center text-white bg-dark">
 
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
+    <!-- <header class="mb-auto">
       <div>
         <h3 class="float-md-start mb-0">Cover</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -84,9 +77,33 @@
           <a class="nav-link" href="#">Contact</a>
         </nav>
       </div>
-    </header>
+    </header> -->
 
-    <main class="px-3">
+    <main>
+
+      <!-- <div> -->
+      <!-- <div> -->
+      <div id="mainwrap">
+        <div id="nowPlay">
+          <span id="npAction">Paused...</span><span id="npTitle"></span>
+        </div>
+        <div id="audiowrap">
+          <div id="audio0">
+            <audio id="audio1" preload controls>Browser Anda tidak mendukung Audio HTML5! 😢</audio>
+          </div>
+          <div id="tracks">
+            <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+          </div>
+        </div>
+        <div id="plwrap">
+          <ul id="plList"></ul>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- <div>
+        <p>Music by <a href="http://www.mythium.net/">Mythium</a></p>
+      </div> -->
+      <!-- </div> -->
 
       <!-- <h1>Cover your page.</h1>
       <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
@@ -102,6 +119,10 @@
     </footer>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.min.js"></script>
+  <script src="player11.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>

@@ -4,7 +4,7 @@ jQuery(function ($) {
   "use strict";
   var supportsAudio = !!document.createElement("audio").canPlayType;
   if (supportsAudio) {
-    // initialize plyr
+    // menginisialisasi player
     var player = new Plyr("#audio1", {
       controls: [
         "restart",
@@ -17,7 +17,7 @@ jQuery(function ($) {
         "download"
       ]
     });
-    // initialize playlist and controls
+    // menginisialisasi playlist dan kontrol
     var index = 0,
       playing = false,
       mediaPath = "https://archive.org/download/mythium/",
@@ -343,7 +343,7 @@ jQuery(function ($) {
       "";
     loadTrack(index);
   } else {
-    // no audio support
+    // tidak ada dukungan audio
     $(".column").addClass("hidden");
     var noSupport = $("#audio1").text();
     $(".container").append('<p class="no-support">' + noSupport + "</p>");
