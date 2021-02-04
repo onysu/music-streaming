@@ -14,8 +14,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
-  height: 480px;
+  width: 360px;
+  height: 525px;
   overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ body {
 .player .main .controls {
   display: flex;
   justify-content: center;
-  margin: 8px 0px;
+  /* margin: 8px 0px; */
 }
 
 .player .main .controls>div {
@@ -98,7 +98,7 @@ body {
   position: absolute;
   width: 100%;
   margin-top: -20px;
-  height: 350px;
+  height: 490px;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
@@ -181,7 +181,7 @@ body {
 }
 
 .player.activeSongList .player-list {
-  margin-top: -350px;
+  margin-top: -500px;
 }
 
 .player.activeSongList .main {
