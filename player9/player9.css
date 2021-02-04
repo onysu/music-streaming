@@ -31,8 +31,8 @@ h2 {
 
 .player {
   position: relative;
-  /* width: 20em; */
-  width: 100%;
+  width: 20em;
+  /* width: 100%; */
   min-height: 20em;
   /* overflow: hidden; */
   background-color: #eee;
