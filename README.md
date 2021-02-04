@@ -61,6 +61,6 @@ With Bootstrap 5
 
 <li><a href="https://onysu.github.io/music-streaming/player16/index.html">Demo</a></li>
 
-![127 0 0 1_5501_player16_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106857889-673bf200-66f3-11eb-9d7b-dc6fabf462b0.png)
+![127 0 0 1_5501_play5er16_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106858351-1c6eaa00-66f4-11eb-8c7c-195279c84223.png)
 
 </ol>
