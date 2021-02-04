@@ -97,8 +97,8 @@ body {
 .player .player-list {
   position: absolute;
   width: 100%;
-  margin-top: -20px;
-  height: 490px;
+  margin-top: -25px;
+  height: 500px;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
@@ -109,7 +109,7 @@ body {
   position: sticky;
   top: 0px;
   text-align: center;
-  height: 20px;
+  height: 25px;
   line-height: 20px;
   background: #555;
 }
