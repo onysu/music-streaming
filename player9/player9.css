@@ -1,6 +1,6 @@
-html {
+/* html {
   box-sizing: border-box;
-}
+} */
 
 *,
 *::before,
@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* height: 100vh; */
   color: #666;
   font-size: 100%;
@@ -30,9 +30,9 @@ h2 {
 }
 
 .player {
-  top: 100px;
+  /* top: 100px; */
   position: relative;
-  width: 20em;
+  /* width: 20em; */
   /* width: 100%; */
   min-height: 20em;
   /* overflow: hidden; */
