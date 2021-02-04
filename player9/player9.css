@@ -30,7 +30,7 @@ h2 {
 }
 
 .player {
-  top: 130px;
+  top: 120px;
   position: relative;
   /* width: 20em; */
   /* width: 100%; */
@@ -50,7 +50,7 @@ h2 {
   left: 50%;
   width: 15em;
   height: 15em;
-  margin-bottom: -13%;
+  margin-bottom: -5%;
   overflow: hidden;
   transform: translate(-50%, -25%);
   background-color: #111;
@@ -460,7 +460,8 @@ button {
   content: '';
   position: absolute;
   top: -0.125em;
-  left: -0.125em;
+  /* left: -0.125em; */
+  left: -0.3em;
   width: calc(100% + 0.25em);
   height: calc(100% + 0.25em);
   transform: rotate(-45deg);
