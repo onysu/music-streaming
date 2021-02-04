@@ -53,7 +53,7 @@ With Bootstrap 5
 
   <li><a href="https://onysu.github.io/music-streaming/player14/index.html">Demo</a></li>
 
-  ![onysu github io_music-streaming_player14_index html(iPhone X)](https://user-images.githubusercontent.com/14862922/106607629-1d89c500-6596-11eb-90c2-6dfd98c32e6d.png)
+  ![onysu github io_music-streaming_player14_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106858699-a3238700-66f4-11eb-9071-a459b3f4fc8a.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player15/index.html">Demo</a></li>
 
