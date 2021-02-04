@@ -5,7 +5,7 @@ With Bootstrap 5
 <ol>
   <li><a href="https://onysu.github.io/music-streaming/">Demo</a></li>
 
-![106160766-c2805880-61b8-11eb-8b58-9923292bde8a](https://user-images.githubusercontent.com/14862922/106560712-09c06d80-655a-11eb-900a-35974ae0116d.png)
+![onysu github io_music-streaming_(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/106861044-ce5ba580-66f7-11eb-8061-acd0910c0411.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player1.html">Demo</a></li>
 
