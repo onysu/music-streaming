@@ -116,7 +116,7 @@ body {
 
 .player .player-list .toggle-list i.fa {
   color: #ccc;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -164,11 +164,14 @@ body {
 .player .list .item .details h2 {
   color: #eee;
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 .player .list .item .details p {
   color: #aaa;
   font-size: 15px;
+  margin-bottom: 0;
+  text-align: start;
 }
 
 .player .player-list::-webkit-scrollbar {
