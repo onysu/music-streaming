@@ -112,11 +112,11 @@ audio {
   display: none;
 }
 
-#audiowrap,
+/* #audiowrap,
 #plwrap {
   margin: 0 auto;
   padding: 0 10px 0 10px;
-}
+} */
 
 #plList{
   padding-left: 0;
@@ -201,10 +201,10 @@ audio {
   cursor: pointer;
   display: inline-block;
   font-size: 2.3rem;
-  height: 40px;
+  /* height: 40px; */
   line-height: 0.2;
   margin: 0 5px 30px;
-  padding: 12px;
+  /* padding: 12px; */
   text-decoration: none;
   transition: background 0.3s ease;
 }
@@ -260,6 +260,10 @@ a.plyr__controls__item.plyr__control:hover,
 .plyr__controls .plyr__controls__item.plyr__time {
   font-size: 14px;
   margin-left: 7px;
+}
+
+.plyr__controls .plyr__controls__item.plyr__progress__container {
+  padding-left: 0;
 }
 
 /* Media Queries
