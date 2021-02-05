@@ -13,58 +13,59 @@
   <title>Positioning CSS</title>
 
   <style>
-    .container {
+    .container-fluid {
       padding: 0;
     }
 
     .contener {
-      /* width: 100vw; */
       height: 100vh;
       background-image:
         url('https://images.unsplash.com/photo-1428976343495-f2c66e701b2b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
       background-size: cover;
       background-position: center;
-      border: 1px solid wheat;
+      /* border: 1px solid wheat; */
       padding: 15px;
-    }
-
-    /* .wadah {
-      max-width: 375px;
-      position: relative;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-auto-rows: max-content;
-      border: 1px solid wheat;
-      padding: 15px;
-      height: 100vh;
     }
 
     .child-1 {
+      width: 150px;
+      height: 150px;
       background-color: #333;
       border: 1px solid wheat;
       padding: 15px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      line-height: 75px;
+      opacity: 0.5;
     }
 
     .child-2 {
       background-color: #666;
       border: 1px solid wheat;
       padding: 15px;
+      margin-bottom: 15px;
+      opacity: 0.5;
+      border-radius: 15px;
     }
 
     .child-3 {
       background-color: #999;
       border: 1px solid wheat;
       padding: 15px;
-    } */
+      height: 250px;
+      border-radius: 15px;
+      opacity: 0.5;
+    }
+
+    */
   </style>
 
 </head>
 
 <body>
-  <div class="container text-white bg-dark">
+  <div class="container-fluid text-white bg-dark">
 
-    <div class="contener">
+    <div class="contener text-center">
       <div class="wadah">
         <h1>Wadah</h1>
         <div class="child-1">Satu</div>
