@@ -22,6 +22,10 @@
       --main-padding: 5px;
     }
 
+    body {
+      background: #000;
+    }
+
     .container {
       display: grid;
       height: 100vh;
@@ -38,10 +42,11 @@
     }
 
     nav {
-      background: #ddd;
+      background: #333;
       grid-area: nav;
       border-radius: var(--main-radius);
       padding: var(--main-padding);
+      color: wheat;
     }
 
     .player {
@@ -221,7 +226,8 @@
     }
 
     footer {
-      background: #ddd;
+      background: #333;
+      color: wheat;
       grid-area: footer;
       border-radius: var(--main-radius);
       padding: var(--main-padding);
@@ -231,7 +237,7 @@
 
 <body>
   <div class="container">
-    <nav>Navbar</nav>
+    <nav>MyPlayList</nav>
     <!-- <div class="content"> -->
 
     <div class="player">
@@ -272,7 +278,7 @@
     </div>
 
     <!-- </div> -->
-    <footer>Footer</footer>
+    <footer>Dev by Ony &copy; 2021</footer>
   </div>
 
   <script src="player16.js"></script>
