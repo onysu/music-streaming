@@ -234,6 +234,14 @@
       padding: var(--main-padding);
     }
 
+    .insetshadow {
+      color: #202020;
+      font-size: small;
+      text-shadow:
+        -1px -1px 1px #111,
+        2px 2px 1px #363636;
+    }
+
     @media (min-width: 540px) {
       .player .main .thumbnail img {
         width: 85%;
@@ -296,7 +304,9 @@
         </div>
       </div>
 
-      <footer>Dev by Ony &copy; 2021</footer>
+      <footer>
+        <h1 class='insetshadow'>Dev by Ony &copy; 2021</h1>
+      </footer>
     </div>
   </div>
 
