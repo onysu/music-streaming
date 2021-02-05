@@ -30,7 +30,7 @@
       grid-template-rows: 0.01fr 1fr 0.01fr;
       grid-template-areas:
         "nav"
-        "content"
+        "player"
         "footer";
       gap: 0.2rem;
       color: #004d40;
@@ -44,12 +44,13 @@
       padding: var(--main-padding);
     }
 
-    #content {
+    .player {
       position: relative;
       background: #ddd;
-      grid-area: content;
+      grid-area: player;
       border-radius: var(--main-radius);
       /* padding: var(--main-padding); */
+      overflow: hidden;
     }
 
     footer {
@@ -79,46 +80,46 @@
 <body>
   <div class="container">
     <nav>Navbar</nav>
-    <div id="content">
+    <!-- <div class="content"> -->
 
-      <div class="player">
-        <div class="main">
-          <audio></audio>
-          <div class="thumbnail">
-            <img src="">
-          </div>
-          <div class="seekbar">
-            <input type="range">
-          </div>
-          <div class="details">
-            <h2></h2>
-            <p></p>
-          </div>
-          <div class="controls">
-            <div class="prev-control">
-              <i class="fa fa-backward"></i>
-            </div>
-            <div class="play-pause-control paused">
-              <i class="fa fa-play"></i>
-              <i class="fa fa-pause"></i>
-            </div>
-            <div class="next-control">
-              <i class="fa fa-forward"></i>
-            </div>
-          </div>
+    <div class="player">
+      <div class="main">
+        <audio></audio>
+        <div class="thumbnail">
+          <img src="">
         </div>
-
-        <div class="player-list">
-          <div class="toggle-list">
-            <i class="fa fa-angle-up"></i>
-            <i class="fa fa-angle-down"></i>
+        <div class="seekbar">
+          <input type="range">
+        </div>
+        <div class="details">
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="controls">
+          <div class="prev-control">
+            <i class="fa fa-backward"></i>
           </div>
-          <div class="list">
+          <div class="play-pause-control paused">
+            <i class="fa fa-play"></i>
+            <i class="fa fa-pause"></i>
+          </div>
+          <div class="next-control">
+            <i class="fa fa-forward"></i>
           </div>
         </div>
       </div>
 
+      <div class="player-list">
+        <div class="toggle-list">
+          <i class="fa fa-angle-up"></i>
+          <i class="fa fa-angle-down"></i>
+        </div>
+        <div class="list">
+        </div>
+      </div>
     </div>
+
+    <!-- </div> -->
     <footer>Footer</footer>
   </div>
 
