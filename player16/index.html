@@ -234,10 +234,17 @@
       padding: var(--main-padding);
     }
 
-    @media only screen and (min-width: 769spx) {
-      .container {
-        max-width: max-content;
+    @media (min-width: 769px) {
+      .player .main .thumbnail img {
+        width: 35%;
       }
+    }
+
+    @media (min-width: 1024px) {
+      .player .main .thumbnail img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
