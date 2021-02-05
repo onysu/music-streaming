@@ -16,7 +16,7 @@ body {
   /* transform: translate(-50%, -50%); */
   /* width: 360px; */
   width: 100%;
-  height: 500px;
+  height: 540px;
   overflow: hidden;
   border-radius: inherit;
 }
@@ -41,7 +41,8 @@ body {
   width: 100%;
   height: 4px;
   outline: none;
-  background: #aaa;
+  /* background: #aaa; */
+  background: black;
   overflow: hidden;
 }
 
@@ -49,7 +50,8 @@ body {
   -webkit-appearance: none;
   width: 0px;
   height: 0px;
-  box-shadow: -300px 0px 0px 300px #00acee;
+  /* box-shadow: -300px 0px 0px 300px #00acee; */
+  box-shadow: -300px 0px 0px 300px red;
 }
 
 .player .main .details {
@@ -191,6 +193,6 @@ body {
   margin-top: -500px;
 }
 
-.player.activeSongList .main {
+/* .player.activeSongList .main {
   filter: blur(5px);
-}
+} */
