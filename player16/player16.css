@@ -3,6 +3,10 @@
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
+  --landscape-phones: 576px;
+  --tablets:768px;
+  --desktops:992px;
+  --large-desktops:1200px;
 }
 
 body {
