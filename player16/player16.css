@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 :root {
-  --main-radius: 5px;
+  --main-radius: 8px;
   --main-padding: 5px;
   --landscape-phones: 576px;
   --tablets: 768px;
