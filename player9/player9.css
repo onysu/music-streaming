@@ -2,23 +2,23 @@
   box-sizing: border-box;
 } */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
-body {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 100vh; */
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   color: #666;
   font-size: 100%;
   font-weight: 300;
   font-family: 'Roboto Condensed', sans-serif;
-  /* background-color: #222; */
-}
+  background-color: #222;
+} */
 
 h1 {
   margin-bottom: 0.5em;
@@ -29,21 +29,21 @@ h2 {
   font-size: 87.5%;
 }
 
-.player {
+/* .player {
   top: 120px;
   position: relative;
-  /* width: 20em; */
-  /* width: 100%; */
+  width: 20em;
+  width: 100%;
   min-height: 20em;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: #eee;
-  /* border-radius: 0.25em; */
+  border-radius: 0.25em;
   border-radius: 15px;
   box-shadow:
     0 1.5em 2em -1em rgba(0, 0, 0, 0.8),
     inset 0 0.0625em 0 rgba(255, 255, 255, 1),
     inset 0 -0.125em 0.0625em rgba(0, 0, 0, 0.3);
-}
+} */
 
 .album {
   position: relative;
@@ -52,7 +52,8 @@ h2 {
   height: 15em;
   margin-bottom: -5%;
   overflow: hidden;
-  transform: translate(-50%, -25%);
+  /* transform: translate(-50%, -25%); */
+  transform: translate(-50%, 0%);
   background-color: #111;
   border: 1px solid #111;
   border-radius: 50%;
