@@ -223,6 +223,12 @@ footer {
   padding: var(--main-padding);
 }
 
+footer p{
+  /* font-weight: 200; */
+  font-size: medium;
+  color: #666;
+}
+
 .insetshadow {
   color: #202020;
   font-size: small;
