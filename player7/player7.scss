@@ -56,6 +56,7 @@
     // }
 
     .song-panel {
+      width: 75%;
       background-color: #fcf8fa;
       border-radius: 15px 15px 0 0;
       display: flex;
@@ -116,7 +117,6 @@
       &.playing {
         transform: translate3d(0, 25%, 0);
         transition: all 1s ease;
-        width: 75%;
       }
     }
 
@@ -198,7 +198,7 @@
     .player-controls {
       position: relative;
       background-color: #fff;
-      border-radius: 75px;
+      border-radius: 75px 15px 15px 75px;
       width: 90%;
       // height: 23%;
       display: flex;
