@@ -26,7 +26,6 @@
 }
 
 nav {
-  background: #ddd;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nav;
@@ -55,7 +54,6 @@ nav {
 }
 
 footer {
-  background: #ddd;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
