@@ -84,21 +84,9 @@ footer {
 }
 
 .song-panel .song-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 190px;
-  height: 50px;
+  width: 100%;
+  height: 70px;
+  padding: 10px 20px;
 }
 
 .song-panel .song-info .song-info__title {
@@ -144,10 +132,11 @@ footer {
 }
 
 .song-panel.playing {
-  -webkit-transform: translate3d(0, 15%, 0);
-          transform: translate3d(0, 15%, 0);
+  -webkit-transform: translate3d(0, 25%, 0);
+          transform: translate3d(0, 25%, 0);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  width: 75%;
 }
 
 button {
