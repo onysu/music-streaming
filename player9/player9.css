@@ -1,12 +1,12 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 :root {
   --main-radius: 8px;
-  --main-padding: 5px;
+  /* --main-padding: 5px; */
 }
 
 /* body {
@@ -33,7 +33,7 @@ nav {
   /* background: #ddd; */
   grid-area: nav;
   border-radius: var(--main-radius);
-  padding: var(--main-padding);
+  /* padding: var(--main-padding); */
 }
 
 main {
@@ -58,7 +58,7 @@ footer {
   /* background: #ddd; */
   grid-area: footer;
   border-radius: var(--main-radius);
-  padding: var(--main-padding);
+  /* padding: var(--main-padding); */
 }
 
 /* player css */
