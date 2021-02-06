@@ -91,7 +91,7 @@ let playing = false;
 let trackSwitch = false;
 
 const togglePlay = () => {
-  // Play / pause the audio
+  // Play / Pause audio
   const method = audio.paused ? "play" : "pause";
   playing = audio.paused ? true : false;
   audio[method]();
@@ -99,24 +99,24 @@ const togglePlay = () => {
 
 const toggleSongPanel = () => {
   if (!trackSwitch) {
-    // Scale the disc
+    // Skala disk
     spinnerDisc.classList.toggle("scale");
 
-    // Show / hide song panel
+    // Tampilkan / Sembunyikan panel lagu
     songPanel.classList.toggle("playing");
 
-    // Change button icon
+    // Ubah ikon tombol
     playButton.classList.toggle("playing");
   }
 };
 
 const startSpin = () => {
-  // Start spinning the disc
+  // Mulai memutar disk
   spinner.classList.add("spin");
 };
 
 const stopSpin = () => {
-  // Stop spinning the disc
+  // Berhenti memutar disk
   const spin = document.querySelector(".spin");
   spin.addEventListener(
     "animationiteration",
@@ -133,11 +133,11 @@ const stopSpin = () => {
 };
 
 const handleProgress = () => {
-  // Update the progress bar.
+  // Perbarui progress bar.
   const percent = (audio.currentTime / audio.duration) * 100;
   progressBar.style.flexBasis = `${percent}%`;
 
-  // Skip to next track if at the end of the song.
+  // Lompat ke trek berikutnya jika di akhir lagu.
   if (percent === 100) {
     trackSwitch = true;
     handleForwardButton();

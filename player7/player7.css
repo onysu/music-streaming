@@ -154,7 +154,6 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  margin: 0 5px;
   position: relative;
 }
 
@@ -181,7 +180,7 @@ button.play span.pause.left {
 }
 
 button.play.playing span.pause.left {
-  left: 20px;
+  left: 8px;
   opacity: 1;
   -webkit-transition: left 0.5s ease, opacity 0.8s ease;
   transition: left 0.5s ease, opacity 0.8s ease;
@@ -192,7 +191,7 @@ button.play span.pause.right {
 }
 
 button.play.playing span.pause.right {
-  right: 20px;
+  right: 8px;
   opacity: 1;
   -webkit-transition: right 0.5s ease, opacity 0.8s ease;
   transition: right 0.5s ease, opacity 0.8s ease;
@@ -205,6 +204,18 @@ button.play i {
 }
 
 button.play.playing i {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button.pause i {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+button.pause.playing i {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -286,15 +297,6 @@ button:focus {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@media (max-width: 375px) {
-  button.play.playing span.pause.right {
-    left: 30px;
-  }
-  button.play.playing span.pause.left {
-    left: 15px;
   }
 }
 /*# sourceMappingURL=player7.css.map */
