@@ -340,9 +340,7 @@ button {
 }
 
 button:focus {
-  /* outline: dotted 1px; */
   outline: none;
-  /* outline: -webkit-focus-ring-color auto 5px; */
 }
 
 .button .arrow::before,
