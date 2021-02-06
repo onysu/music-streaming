@@ -1,21 +1,46 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  outline: none;
-}
-
-body {
-  font-size: 62.5%;
-  background-color: #fcf1f5;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-radius: 8px;
+  /* --main-padding: 8px; */
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  padding: 5px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.01fr 1fr 0.01fr;
+      grid-template-rows: 0.01fr 1fr 0.01fr;
+      grid-template-areas: "nav" "player" "footer";
+  gap: 0.2rem;
+  color: #004d40;
+  text-align: center;
+}
+
+nav {
+  background: #ddd;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  /* padding: var(--main-padding); */
 }
 
 .player {
+  /* background: #ddd; */
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: player;
+  border-radius: var(--main-radius);
+  /* padding: var(--main-padding); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,27 +54,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
-.player-controls {
-  background-color: #fff;
-  border-radius: 75px 15px 15px 75px;
-  width: 100%;
-  height: 110px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
-          box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+footer {
+  background: #ddd;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  /* padding: var(--main-padding); */
 }
 
 .song-panel {
@@ -58,11 +71,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 12px 12px 12px;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 1s ease;
@@ -80,10 +91,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 230px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 190px;
+  height: 50px;
 }
 
 .song-panel .song-info .song-info__title {
@@ -129,14 +144,13 @@ body {
 }
 
 .song-panel.playing {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 15%, 0);
+          transform: translate3d(0, 15%, 0);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 button {
-  width: 80px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -196,22 +210,24 @@ button.play.playing i {
   transition: all 0.5s ease;
 }
 
-.player-controls {
-  position: relative;
+button:focus {
+  outline: none;
 }
 
-.player-controls .spinner {
-  top: -123px;
-  left: 0;
+.player-controls {
+  position: relative;
+  background-color: #fff;
+  border-radius: 75px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -webkit-box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
+          box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 }
 
 .player-controls .spinner.spin {
@@ -225,7 +241,7 @@ button.play.playing i {
   border-radius: 50%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  background-image: url(http://www.placecage.com/c/127/127);
+  background-image: url();
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -279,15 +295,6 @@ button.play.playing i {
   }
   button.play.playing span.pause.left {
     left: 15px;
-  }
-}
-
-@media (max-width: 411px) {
-  button.play.playing span.pause.right {
-    left: 35px;
-  }
-  button.play.playing span.pause.left {
-    left: 20px;
   }
 }
 /*# sourceMappingURL=player7.css.map */

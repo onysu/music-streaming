@@ -11,60 +11,47 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/ony.png"
     type="image/x-icon">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --main-radius: 8px;
-      /* --main-padding: 8px; */
-    }
-
-    .container {
-      display: grid;
-      height: 100vh;
-      padding: 5px;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.01fr 1fr 0.01fr;
-      grid-template-areas:
-        "nav"
-        "player"
-        "footer";
-      gap: 0.2rem;
-      color: #004d40;
-      text-align: center;
-    }
-
-    nav {
-      background: #ddd;
-      grid-area: nav;
-      border-radius: var(--main-radius);
-      padding: var(--main-padding);
-    }
-
-    .player {
-      background: #ddd;
-      grid-area: player;
-      border-radius: var(--main-radius);
-      padding: var(--main-padding);
-    }
-
-    footer {
-      background: #ddd;
-      grid-area: footer;
-      border-radius: var(--main-radius);
-      padding: var(--main-padding);
-    }
-  </style>
+  <link rel="stylesheet" href="player7.css">
 </head>
 
 <body>
   <div class="container">
     <nav>Navbar</nav>
-    <div class="player">player</div>
+    <div class="player">
+
+      <audio class="player__audio viewer">
+        <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg" data-trackid="1">
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+
+      <div class="song-panel">
+        <div class="song-info">
+          <!-- <div class="song-info__title">Ukulele</div> -->
+          <p class="song-info__title">Ukulele - <span class="song-info__artist">Bensound</span></p>
+          <!-- <div class="song-info__artist">Bensound</div> -->
+          <div class="progress">
+            <div class="progress__filled"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <div class="spinner">
+          <div class="spinner__disc"
+            style="background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/ony.png)">
+            <div class="center__disc"></div>
+          </div>
+        </div>
+        <button class="backward"><i class="fas fa-backward fa-2x"></i></button>
+        <button class="play">
+          <i class="fas fa-play fa-3x"></i>
+          <span class="pause left"></span>
+          <span class="pause right"></span>
+        </button>
+        <button class="forward"><i class="fas fa-forward fa-2x"></i></button>
+      </div>
+
+    </div>
     <footer>Footer</footer>
   </div>
 
@@ -72,6 +59,7 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="player7.js"></script>
 </body>
 
 </html>
