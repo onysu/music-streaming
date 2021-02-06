@@ -57,9 +57,9 @@ nav {
   transition: all 500ms ease-in-out;
 }
 
-/* .player .main .thumbnail img {
+.player .main .thumbnail img {
   width: 100%;
-} */
+}
 
 .player .main .seekbar {
   margin-top: -15px;
@@ -233,7 +233,7 @@ footer p {
   color: #666;
 }
 
-@media screen and (max-width: 539.98px) {
+/* @media screen and (max-width: 539.98px) {
   .player .main .thumbnail img {
     width: 100%;
   }
@@ -243,4 +243,4 @@ footer p {
   .player .main .thumbnail img {
     width: 80%;
   }
-}
+} */
