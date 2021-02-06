@@ -5,7 +5,7 @@
     }
 
     :root {
-      --main-radius: 8px;
+      --main-radius: 5px;
       /* --main-padding: 8px; */
     }
 
@@ -28,14 +28,12 @@
       background: #ddd;
       grid-area: nav;
       border-radius: var(--main-radius);
-      /* padding: var(--main-padding); */
     }
 
     .player {
       /* background: #ddd; */
       grid-area: player;
       border-radius: var(--main-radius);
-      /* padding: var(--main-padding); */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -46,36 +44,20 @@
       background: #ddd;
       grid-area: footer;
       border-radius: var(--main-radius);
-      /* padding: var(--main-padding); */
     }
-
-    .player-controls {}
-
-    // * {
-    //   box-sizing: border-box;
-    // }
 
     .song-panel {
       width: 75%;
       background-color: #fcf8fa;
       border-radius: 15px 15px 0 0;
       display: flex;
-      // height: 75px;
       justify-content: flex-end;
-      // padding: 0 12px 12px 12px;
       transform: translate3d(0, 100%, 0);
       transition: all 1s ease;
-      // width: 395px;
-      // width: 100%;
       z-index: 0;
       box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 
       .song-info {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: 100%;
         width: 100%;
         height: 70px;
         padding: 10px 20px;
@@ -121,26 +103,18 @@
     }
 
     button {
-      // height: 80px;
-      // width: 80px;
       cursor: pointer;
       border: none;
       background-color: transparent;
-      // color: #dfdbe0;
-      // margin: 0 5px;
-      // border-radius: 15px;
       position: relative;
     }
 
     button:hover,
     button.playing {
-      // background-color: #e0dee1;
-      // color: #fff;
       color: black;
     }
 
     button.play span.pause {
-      // background-color: white;
       background-color: black;
       position: absolute;
       top: 35px;
@@ -181,6 +155,7 @@
       opacity: 0;
       transition: all 0.5s ease;
     }
+
     button.pause i {
       opacity: 1;
       transition: opacity 0.5s ease;
@@ -207,16 +182,6 @@
       box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
 
       .spinner {
-        // height: 130px;
-        // width: 130px;
-        // position: absolute;
-        // top: -123px;
-        // left: 5%;
-        // top: 50%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: flex-start;
-
         &.spin {
           animation: spin 5s linear infinite;
         }
@@ -258,23 +223,3 @@
         transform: rotate(360deg);
       }
     }
-
-    // @media (max-width: 375px) {
-    //   button.play.playing span.pause.right {
-    //     left: 30px;
-    //   }
-
-    //   button.play.playing span.pause.left {
-    //     left: 15px;
-    //   }
-    // }
-
-    // @media (max-width: 411px) {
-    //   button.play.playing span.pause.right {
-    //     left: 35px;
-    //   }
-
-    //   button.play.playing span.pause.left {
-    //     left: 20px;
-    //   }
-    // }

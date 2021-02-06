@@ -6,7 +6,7 @@
 }
 
 :root {
-  --main-radius: 8px;
+  --main-radius: 5px;
   /* --main-padding: 8px; */
 }
 
@@ -31,7 +31,6 @@ nav {
   -ms-grid-column: 1;
   grid-area: nav;
   border-radius: var(--main-radius);
-  /* padding: var(--main-padding); */
 }
 
 .player {
@@ -40,7 +39,6 @@ nav {
   -ms-grid-column: 1;
   grid-area: player;
   border-radius: var(--main-radius);
-  /* padding: var(--main-padding); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +60,6 @@ footer {
   -ms-grid-column: 1;
   grid-area: footer;
   border-radius: var(--main-radius);
-  /* padding: var(--main-padding); */
 }
 
 .song-panel {
