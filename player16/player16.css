@@ -223,18 +223,10 @@ footer {
   padding: var(--main-padding);
 }
 
-footer p{
+footer p {
   /* font-weight: 200; */
   font-size: medium;
   color: #666;
-}
-
-.insetshadow {
-  color: #202020;
-  font-size: small;
-  text-shadow:
-    -1px -1px 1px darkslategray,
-    2px 2px 1px #363636;
 }
 
 @media screen and (max-width: 539.98px) {
@@ -242,6 +234,7 @@ footer p{
     width: 100%;
   }
 }
+
 @media screen and (min-width: 1023.98px) {
   .player .main .thumbnail img {
     width: 80%;
