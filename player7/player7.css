@@ -64,7 +64,7 @@ footer {
 
 .song-panel {
   width: 75%;
-  background-color: #fcf8fa;
+  background-color: gold;
   border-radius: 15px 15px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,8 +72,8 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 110%, 0);
+          transform: translate3d(0, 110%, 0);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   z-index: 0;
@@ -151,7 +151,7 @@ button.playing {
 button.play span.pause {
   background-color: black;
   position: absolute;
-  top: 35px;
+  top: 10%;
   height: 35px;
   width: 10px;
   display: block;
@@ -214,7 +214,7 @@ button:focus {
 .player-controls {
   position: relative;
   background-color: #fff;
-  border-radius: 75px 15px 15px 75px;
+  border-radius: 75px;
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,9 +222,21 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
-  -webkit-box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
-          box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(147, 84, 103, 0.6);
+          box-shadow: 0px 0px 50px 0px rgba(147, 84, 103, 0.6);
+}
+
+.player-controls .tombol {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .player-controls .spinner.spin {

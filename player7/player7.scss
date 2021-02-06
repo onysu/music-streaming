@@ -48,11 +48,11 @@
 
     .song-panel {
       width: 75%;
-      background-color: #fcf8fa;
+      background-color: gold;
       border-radius: 15px 15px 0 0;
       display: flex;
       justify-content: flex-end;
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 110%, 0);
       transition: all 1s ease;
       z-index: 0;
       box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
@@ -117,7 +117,7 @@
     button.play span.pause {
       background-color: black;
       position: absolute;
-      top: 35px;
+      top: 10%;
       height: 35px;
       width: 10px;
       display: block;
@@ -173,13 +173,20 @@
     .player-controls {
       position: relative;
       background-color: #fff;
-      border-radius: 75px 15px 15px 75px;
+      border-radius: 75px;
       width: 90%;
       // height: 23%;
       display: flex;
       justify-content: space-between;
-      padding: 10px;
-      box-shadow: 0px 33px 90px 11px rgba(147, 84, 103, 0.6);
+      padding: 0;
+      box-shadow: 0px 0px 50px 0px rgba(147, 84, 103, 0.6);
+
+      .tombol{
+        width: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
       .spinner {
         &.spin {
