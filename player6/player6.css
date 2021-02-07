@@ -129,14 +129,17 @@ div#list-screen div#list div.song span.song-artist-album {
 }
 
 div#list-screen div#list-screen-footer {
-  height: 80px;
-  padding: 15px;
+  /* height: 80px; */
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-div#list-screen div#list-screen-footer div#list-screen-meta-container {
+/* div#list-screen div#list-screen-footer div#list-screen-meta-container {
   width: calc(100% - 123px);
   float: left;
-}
+} */
 
 div#list-screen div#list-screen-footer div#list-screen-meta-container span.song-name {
   /* font-family: "Lato", sans-serif; */
