@@ -58,6 +58,7 @@ footer {
   -ms-grid-column: 1;
   grid-area: footer;
   border-radius: var(--main-radius);
+  font-size: small;
 }
 
 .song-panel {
