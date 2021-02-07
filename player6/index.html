@@ -21,7 +21,7 @@
 
     :root {
       --main-radius: 8px;
-      /* --main-padding: 5px; */
+      --main-padding: 5px;
     }
 
     .container {
@@ -44,6 +44,11 @@
       grid-area: player;
       border-radius: var(--main-radius);
       padding: var(--main-padding);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
     }
 
     footer {
@@ -58,7 +63,9 @@
 
 <body>
   <div class="container">
+
     <!-- <nav>Navbar</nav> -->
+
     <div class="player">
       <div id="flat-black-player-container">
         <div id="list-screen" class="slide-in-top">
@@ -285,19 +292,22 @@
         </div>
 
         <div id="player-screen">
+
           <div class="player-header down-header">
             <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg" />
             <span>Daftar Lagu</span>
           </div>
+
           <div id="player-top">
             <img data-amplitude-song-info="cover_art_url" />
           </div>
+
           <div id="player-progress-bar-container">
             <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
             <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
           </div>
-          <div id="player-middle">
 
+          <div id="player-middle">
             <div id="meta-container">
               <span data-amplitude-song-info="name" class="song-name"></span>
 
@@ -305,11 +315,14 @@
                 <span data-amplitude-song-info="artist"></span>
               </div>
             </div>
+
             <!-- <div id="time-container">
           <span class="amplitude-current-time time-container"></span>
           <span class="amplitude-duration-time time-container"></span>
         </div> -->
-          </div>
+
+          </div><!-- player-middle -->
+
           <div id="player-bottom">
             <div id="control-container">
 
@@ -333,18 +346,21 @@
                 <div class="amplitude-repeat" id="repeat"></div>
               </div>
 
-            </div>
+            </div><!-- control-container -->
 
             <!-- <div id="volume-container">
           <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/volume.svg" /><input
             type="range" class="amplitude-volume-slider" step="1" />
         </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
+
+          </div><!-- player-bottom -->
+        </div><!-- player-screen -->
+      </div><!-- flat-black-player-container -->
+    </div><!-- player -->
+
     <footer>Dev by Ony &copy; 2021</footer>
-  </div>
+
+  </div><!-- container -->
 
   <script src="https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
