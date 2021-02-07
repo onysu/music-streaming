@@ -20,8 +20,8 @@
     }
 
     :root {
-      --main-radius: 5px;
-      --main-padding: 5px;
+      --main-radius: 8px;
+      /* --main-padding: 5px; */
     }
 
     .container {
@@ -31,16 +31,17 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.01fr;
       grid-template-areas:
-        "content"
+        "player"
         "footer";
       gap: 0.2rem;
       color: #004d40;
       text-align: center;
     }
 
-    #content {
-      background: #ddd;
-      grid-area: content;
+    .player {
+      position: relative;
+      /* background: #ddd; */
+      grid-area: player;
       border-radius: var(--main-radius);
       padding: var(--main-padding);
     }
@@ -58,7 +59,7 @@
 <body>
   <div class="container">
     <!-- <nav>Navbar</nav> -->
-    <div id="content">
+    <div class="player">
       <div id="flat-black-player-container">
         <div id="list-screen" class="slide-in-top">
           <div id="list-screen-header" class="hide-playlist">
