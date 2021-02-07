@@ -3,7 +3,7 @@ window.onkeydown = function (e) {
 };
 
 /*
-  Handles a click on the down button to slide down the playlist.
+  Menangani klik pada tombol bawah untuk menggeser daftar putar ke bawah.
 */
 document
   .getElementsByClassName("down-header")[0]
@@ -23,7 +23,7 @@ document
   });
 
 /*
-  Handles a click on the up arrow to hide the list screen.
+  Menangani klik pada panah atas untuk menyembunyikan layar daftar.
 */
 document
   .getElementsByClassName("hide-playlist")[0]
@@ -34,7 +34,7 @@ document
   });
 
 /*
-  Handles a click on the song played progress bar.
+  Menangani klik pada bilah kemajuan lagu yang diputar.
 */
 document
   .getElementById("song-played-progress")
