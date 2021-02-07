@@ -237,7 +237,7 @@ div#player-top {
 
 div#player-top img[data-amplitude-song-info="cover_art_url"] {
   width: 100% !important;
-  /* height: 0 !important; */
+  height: 100% !important;
 }
 
 div#player-progress-bar-container {
@@ -310,7 +310,7 @@ div#player-progress-bar-container progress#song-buffered-progress[value]::-moz-p
 
 div#player-middle {
   background-color: #000;
-  padding: 5%;
+  padding: 6%;
   /* padding-left: 15px; */
   /* padding-right: 15px; */
   /* padding-top: 20px; */
