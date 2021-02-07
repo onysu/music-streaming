@@ -29,13 +29,22 @@
       height: 100vh;
       padding: var(--main-padding);
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.01fr;
+      grid-template-rows: 0.01fr 1fr 0.01fr;
       grid-template-areas:
+        "nav"
         "player"
         "footer";
       gap: 0.2rem;
       color: #004d40;
       text-align: center;
+    }
+
+    nav {
+      /* background: #ddd; */
+      font-size: small;
+      grid-area: nav;
+      border-radius: var(--main-radius);
+      padding: var(--main-padding);
     }
 
     .player {
@@ -44,9 +53,9 @@
       grid-area: player;
       border-radius: var(--main-radius);
       padding: var(--main-padding);
-      display: flex;
+      /* display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
       height: 100%;
       width: 100%;
     }
@@ -64,7 +73,7 @@
 <body>
   <div class="container">
 
-    <!-- <nav>Navbar</nav> -->
+    <nav>Navbar</nav>
 
     <div class="player">
       <div id="flat-black-player-container">
