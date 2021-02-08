@@ -32,8 +32,7 @@
     nav {
       // background: #ddd;
       grid-area: nav;
-      border-radius: var(--main-radius);
-      margin-top: 79px;
+      border-radius: var(--main-radius);      
     }
 
     .player {
@@ -44,7 +43,6 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-top: -100px;
     }
 
     footer {
@@ -52,6 +50,7 @@
       grid-area: footer;
       border-radius: var(--main-radius);
       font-size: small;
+      margin-bottom: 79px;
     }
 
     .song-panel {

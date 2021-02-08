@@ -30,7 +30,6 @@ nav {
   -ms-grid-column: 1;
   grid-area: nav;
   border-radius: var(--main-radius);
-  margin-top: 79px;
 }
 
 .player {
@@ -52,7 +51,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -100px;
 }
 
 footer {
@@ -61,6 +59,7 @@ footer {
   grid-area: footer;
   border-radius: var(--main-radius);
   font-size: small;
+  margin-bottom: 79px;
 }
 
 .song-panel {
