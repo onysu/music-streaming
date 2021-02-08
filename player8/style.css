@@ -31,7 +31,7 @@ body{
   padding: 12px 20px 10px 150px;
   background-color: darkslategray;
   border-radius: 15px 15px 0 0;
-  transition: 0.3s ease top;
+  transition: 0.5s ease top;
   z-index: 1;
 }
 
