@@ -6,6 +6,7 @@
 body{
   font-family: 'Roboto',
   sans-serif;
+  background-color: blanchedalmond;
 }
 
 #app-cover {
@@ -36,7 +37,7 @@ body{
 }
 
 #player-track.active {
-  top: -95px;
+  top: -70px;
 }
 
 #album-name {
