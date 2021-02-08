@@ -29,7 +29,7 @@ body{
   top: 0;
   right: 15px;
   left: 15px;
-  padding: 12px 10px 10px 150px;
+  padding: 12px 10px 25px 150px;
   background-color: #333;
   border-radius: 15px 15px 0 0;
   transition: 0.5s ease top;
@@ -49,6 +49,9 @@ body{
   color: wheat;
   font-size: 11px;
   margin: 0 0 7px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #track-time {
@@ -245,7 +248,7 @@ body{
 #player-controls {
   /* width: 250px; */
   height: 100%;
-  margin: 0 10px 0 140px;
+  margin: 0 10px 0 130px;
   float: right;
   overflow: hidden;
 }
