@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 *:focus {
   outline: none;
+}
+body{
+  font-family: 'Roboto',
+  sans-serif;
 }
 
 #app-cover {
@@ -22,25 +28,24 @@
   top: 0;
   right: 15px;
   left: 15px;
-  padding: 30px 10px 15px 150px;
-  background-color: #fff7f7;
+  padding: 12px 20px 18px 150px;
+  background-color: darkslategray;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1;
 }
 
 #player-track.active {
-  top: -110px;
+  top: -95px;
 }
 
 #album-name {
-  color: #54576f;
+  color: white;
   font-size: 17px;
-  font-weight: bold;
 }
 
 #track-name {
-  color: #acaebd;
+  color: wheat;
   font-size: 13px;
   margin: 2px 0 13px 0;
 }
@@ -70,7 +75,7 @@
 
 #track-time.active #current-time,
 #track-time.active #track-length {
-  color: #f86d92;
+  color: darkgray;
   background-color: transparent;
 }
 
@@ -82,7 +87,7 @@
 }
 
 #s-area {
-  background-color: #ffe8ee;
+  background-color: #333;
   cursor: pointer;
 }
 
@@ -118,7 +123,7 @@
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #fd6d94;
+  background-color: #999;
   transition: 0.2s ease width;
   z-index: 1;
 }
