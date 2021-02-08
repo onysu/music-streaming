@@ -43,6 +43,9 @@ body{
 #album-name {
   color: white;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #track-name {
