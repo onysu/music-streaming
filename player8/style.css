@@ -2,24 +2,23 @@
   outline: none;
 }
 
-/* body {
+body {
   font-family: Helvetica, Arial;
   margin: 0;
   background-color: #ffeff5;
-} */
+}
 
 #app-cover {
   position: absolute;
   top: 50%;
   right: 0;
   left: 0;
-  /* width: 430px; */
+  width: 95%;
   height: 100px;
-  /* margin: -4px auto; */
-  zoom: 0.8;
+  margin: -4px auto;
 }
 
-#bg-artwork {
+/* #bg-artwork {
   position: fixed;
   top: -30px;
   right: -30px;
@@ -34,7 +33,7 @@
   z-index: 1;
 }
 
-/* #bg-layer {
+#bg-layer {
   position: fixed;
   top: 0;
   right: 0;
@@ -56,7 +55,7 @@
   top: 0;
   right: 15px;
   left: 15px;
-  padding: 13px 22px 10px 184px;
+  padding: 30px 10px 15px 150px;
   background-color: #fff7f7;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
@@ -64,7 +63,7 @@
 }
 
 #player-track.active {
-  top: -92px;
+  top: -110px;
 }
 
 #album-name {
@@ -269,9 +268,9 @@
 }
 
 #player-controls {
-  width: 250px;
+  /* width: 250px; */
   height: 100%;
-  margin: 0 5px 0 141px;
+  margin: 0 10px 0 140px;
   float: right;
   overflow: hidden;
 }
@@ -279,7 +278,7 @@
 .control {
   width: 33.333%;
   float: left;
-  padding: 12px 0;
+  padding: 13px 0;
 }
 
 .button {
@@ -304,13 +303,13 @@
   transition: 0.2s ease all;
 }
 
-.button:hover {
+/* .button:hover {
   background-color: #d6d6de;
-}
+} */
 
-.button:hover i {
+/* .button:hover i {
   color: #fff;
-}
+} */
 
 #ytd-url {
   display: block;
