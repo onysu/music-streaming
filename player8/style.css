@@ -28,7 +28,7 @@ body{
   top: 0;
   right: 15px;
   left: 15px;
-  padding: 12px 20px 18px 150px;
+  padding: 12px 20px 10px 150px;
   background-color: darkslategray;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
