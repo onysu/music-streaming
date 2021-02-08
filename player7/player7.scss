@@ -9,6 +9,11 @@
       /* --main-padding: 8px; */
     }
 
+    body{
+      background-image: url('../files/j5.jpg');
+      background-size: cover;
+    }
+
     .container {
       display: grid;
       height: 100vh;
@@ -28,6 +33,7 @@
       // background: #ddd;
       grid-area: nav;
       border-radius: var(--main-radius);
+      margin-top: 79px;
     }
 
     .player {
