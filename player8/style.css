@@ -47,7 +47,7 @@ body{
 #track-name {
   color: wheat;
   font-size: 13px;
-  margin: 2px 0 13px 0;
+  margin: 0 0 7px 0;
 }
 
 #track-time {
@@ -132,7 +132,7 @@ body{
   position: relative;
   height: 100%;
   background-color: #fff;
-  box-shadow: 0 15px 20px -5px #656565;
+  box-shadow: 0 15px 20px -8px #656565;
   border-radius: 15px;
   z-index: 2;
 }
