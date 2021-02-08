@@ -127,7 +127,7 @@
   position: relative;
   height: 100%;
   background-color: #fff;
-  box-shadow: 0 30px 80px #656565;
+  box-shadow: 0 15px 20px -5px #656565;
   border-radius: 15px;
   z-index: 2;
 }
