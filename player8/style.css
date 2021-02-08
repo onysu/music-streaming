@@ -54,6 +54,7 @@ body{
   height: 12px;
   margin-bottom: 3px;
   overflow: hidden;
+  font-weight: 300;
 }
 
 #current-time {
@@ -75,8 +76,9 @@ body{
 
 #track-time.active #current-time,
 #track-time.active #track-length {
-  color: darkgray;
+  color: #888;
   background-color: transparent;
+  font-size: x-small;
 }
 
 #s-area,
