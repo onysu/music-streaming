@@ -2,20 +2,21 @@
   outline: none;
 }
 
-body {
+/* body {
   font-family: Helvetica, Arial;
   margin: 0;
   background-color: #ffeff5;
-}
+} */
 
 #app-cover {
   position: absolute;
   top: 50%;
   right: 0;
   left: 0;
-  width: 430px;
+  /* width: 430px; */
   height: 100px;
-  margin: -4px auto;
+  /* margin: -4px auto; */
+  zoom: 0.8;
 }
 
 #bg-artwork {
@@ -33,7 +34,7 @@ body {
   z-index: 1;
 }
 
-#bg-layer {
+/* #bg-layer {
   position: fixed;
   top: 0;
   right: 0;
@@ -42,7 +43,7 @@ body {
   background-color: #fff;
   opacity: 0.51;
   z-index: 2;
-}
+} */
 
 #player {
   position: relative;
