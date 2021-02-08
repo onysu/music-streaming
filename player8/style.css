@@ -41,12 +41,12 @@ body{
 
 #album-name {
   color: white;
-  font-size: 17px;
+  font-size: 12px;
 }
 
 #track-name {
   color: wheat;
-  font-size: 13px;
+  font-size: 11px;
   margin: 0 0 7px 0;
 }
 
