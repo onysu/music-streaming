@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
-/* body {
-  background-image: url('files/img/bg.png');
-  background-size: cover;
-  background-position: center;
-} */
-
 /* Player CSS */
 .aplayer {
   background: transparent;
@@ -41,22 +34,6 @@
   height: 20px;
 }
 
-/* .aplayer.aplayer-withlrc .aplayer-pic {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-} */
-
-/* .aplayer .aplayer-info .aplayer-music .aplayer-title {
-  font-size: 16px;
-  color: white;
-} */
-
-/* .aplayer .aplayer-info .aplayer-music .aplayer-author {
-  font-size: 12px;
-  color: #666;
-} */
-
 .aplayer .aplayer-lrc p {
   font-size: 12px;
   color: #666;
@@ -70,55 +47,8 @@
   text-align: left;
 }
 
-.aplayer.aplayer-withlist .aplayer-info {
-  border-bottom: none;
-}
-
-.aplayer .aplayer-lrc::before {
-  top: 0;
-  height: 10%;
-  background: none;
-}
-
-.aplayer .aplayer-lrc::after {
-  bottom: 0;
-  height: 33%;
-  background: none;
-}
-
-/* .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
-  fill: whitesmoke;
-} */
-
-/* .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path:hover {
-  background: whitesmoke !important;
-} */
-
 .aplayer .aplayer-list {
   text-align: start;
-}
-
-/* .aplayer .aplayer-list ol {
-  max-height: 450px !important;
-} */
-
-.aplayer .aplayer-list ol li .aplayer-list-index {
-  color: white;
-  margin-right: 12px;
-  cursor: pointer;
-}
-
-/* .aplayer .aplayer-list ol li .aplayer-list-title {
-  color: white;
-  margin-right: 12px;
-  cursor: pointer;
-
-} */
-
-.aplayer .aplayer-list ol li .aplayer-list-author {
-  /* color: wheat; */
-  float: right;
-  cursor: pointer;
 }
 
 .aplayer .aplayer-list ol li {
@@ -137,11 +67,6 @@
   text-overflow: ellipsis;
 }
 
-.aplayer .aplayer-list ol li:hover {
-  background: #333333;
-  opacity: 0.5;
-}
-
 .aplayer .aplayer-list ol li .aplayer-list-cur {
   display: none;
   width: 7px;
@@ -151,14 +76,4 @@
   top: 5px;
   cursor: pointer;
   background-color: red !important;
-}
-
-.aplayer .aplayer-list ol li .aplayer-list-index {
-  color: #666666;
-  margin-right: 12px;
-  cursor: pointer;
-}
-
-.aplayer .aplayer-list ol li.aplayer-list-light {
-  background: black;
 }
