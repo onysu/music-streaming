@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
 /* Player CSS */
 .aplayer {
   background: transparent;
@@ -76,4 +77,30 @@
   top: 5px;
   cursor: pointer;
   background-color: red !important;
+}
+
+/* + */
+.aplayer .aplayer-lrc:before {
+  background: none;
+}
+
+.aplayer .aplayer-lrc:after {
+  background: none;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: black;
+  color: aliceblue;
+}
+
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  color: aliceblue;
+}
+
+.aplayer .aplayer-list ol li {
+  color: aliceblue;
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-author {
+  color: wheat;
 }
