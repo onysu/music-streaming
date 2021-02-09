@@ -3,13 +3,7 @@
 *:focus {
   outline: none;
 }
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: blanchedalmond;
-  /* background-image: url(../files/j5.jpg); */
-  /* background-size: cover; */
-  /* background-position: top; */
-}
+
 
 #app-cover {
   position: absolute;
@@ -100,7 +94,7 @@ body{
 }
 
 #s-area {
-  background-color: #111;  
+  background-color: #111;
   cursor: pointer;
 }
 
@@ -136,7 +130,7 @@ body{
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: goldenrod;  
+  background-color: goldenrod;
   transition: 0.2s ease width;
   z-index: 1;
 }
@@ -146,8 +140,8 @@ body{
   height: 132%;
   background-color: #fff;
   box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   border-radius: 15px;
   z-index: 2;
 }
@@ -168,8 +162,8 @@ body{
 #album-art.active {
   top: -60px;
   box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
 }
 
 #album-art:before {
