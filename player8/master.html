@@ -46,6 +46,10 @@
       padding: var(--main-padding);
     }
 
+    nav span {
+      font-weight: bold;
+    }
+
     .player {
       position: relative;
       /* background: #ddd; */
@@ -60,13 +64,18 @@
       border-radius: var(--main-radius);
       padding: var(--main-padding);
       margin-bottom: 97px;
+      font-size: x-small;
+    }
+
+    footer span {
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <nav>AudioPlayer</nav>
+    <nav>Audio<span>Player</span></nav>
     <div class="player">
       <div id="app-cover">
         <!-- <div id="bg-artwork"></div> -->
@@ -116,7 +125,7 @@
         </div>
       </div>
     </div>
-    <footer>Footer</footer>
+    <footer>Dev by <span>Ony</span></footer>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
