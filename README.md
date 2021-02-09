@@ -9,7 +9,7 @@
 <ol>
   <li><a href="https://onysu.github.io/music-streaming/">Demo</a></li>
 
-![onysu github io_music-streaming_(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/107397773-87bfde00-6b31-11eb-8566-1260231b98d4.png)
+![127 0 0 1_5501_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/107440793-c8861a00-6b66-11eb-9995-369114f9b231.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player1.html">Demo</a></li>
 
