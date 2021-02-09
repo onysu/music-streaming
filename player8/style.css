@@ -22,7 +22,7 @@
 
 #player-track {
   position: absolute;
-  top: 2px;
+  top: 1px;
   right: 15px;
   left: 15px;
   padding: 4px 9px 10px 115px;
@@ -35,7 +35,7 @@
 }
 
 #player-track.active {
-  top: -58px;
+  top: -59px;
 }
 
 #album-name {
