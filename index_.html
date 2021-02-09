@@ -28,12 +28,13 @@
     .container {
       display: grid;
       height: 100vh;
-      padding: 0;
+      padding: 0 !important;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 1fr 0.01fr;
       grid-template-areas:
-        "player";
-      gap: 0.2rem;
+        "player"
+        "footer";
+      /* gap: 0.2rem; */
       color: #004d40;
       text-align: center;
     }
@@ -50,12 +51,11 @@
       grid-area: player;
     }
 
-    /* footer {
+    footer {
       background: #ddd;
       grid-area: footer;
-      border-radius: var(--main-radius);
-      padding: var(--main-padding);
-    } */
+      font-size: small;
+    }
   </style>
 </head>
 
@@ -65,7 +65,7 @@
     <div class="player">
       <div id="player"></div>
     </div>
-    <!-- <footer>Footer</footer> -->
+    <footer>Footer</footer>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

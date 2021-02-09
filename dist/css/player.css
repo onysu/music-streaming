@@ -41,11 +41,11 @@ body {
   height: 20px;
 }
 
-.aplayer.aplayer-withlrc .aplayer-pic {
+/* .aplayer.aplayer-withlrc .aplayer-pic {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-}
+} */
 
 /* .aplayer .aplayer-info .aplayer-music .aplayer-title {
   font-size: 16px;
@@ -102,6 +102,9 @@ body {
   overflow: hidden;
   text-align: start;
 }
+.aplayer .aplayer-list ol{
+  max-height: 450px;
+}
 
 .aplayer .aplayer-list ol li .aplayer-list-index {
   color: white;
@@ -117,7 +120,7 @@ body {
 } */
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
-  color: wheat;
+  /* color: wheat; */
   float: right;
   cursor: pointer;
 }
