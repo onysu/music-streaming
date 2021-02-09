@@ -215,9 +215,7 @@ $(function () {
       trackName.text(currTrackName);
       albumArt.find("img.active").removeClass("active");
       $("#" + currArtwork).addClass("active");
-
       // bgArtworkUrl = $("#" + currArtwork).attr("src");
-
       // bgArtwork.css({
       //   "background-image": "url(" + bgArtworkUrl + ")"
       // });
