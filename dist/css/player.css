@@ -70,16 +70,6 @@
   background: whitesmoke !important;
 }
 
-.aplayer .aplayer-list ol li {
-  line-height: 32px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.aplayer .aplayer-list ol li:hover {
-  background: #333333;
-  opacity: 0.5;
-}
 
 .aplayer .aplayer-list ol li .aplayer-list-index {
   color: white;
@@ -89,8 +79,9 @@
 
 .aplayer .aplayer-list ol li .aplayer-list-title {
   color: white;
-  margin-right: 12px;
+  /* margin-right: 12px; */
   cursor: pointer;
+
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
@@ -110,6 +101,14 @@
   transition: all .2s ease;
   overflow: hidden;
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.aplayer .aplayer-list ol li:hover {
+  background: #333333;
+  opacity: 0.5;
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-cur {
