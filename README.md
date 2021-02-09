@@ -33,7 +33,7 @@ With Bootstrap 5
 
   <li><a href="https://onysu.github.io/music-streaming/player8/index.html">Demo</a></li>
 
-![127 0 0 1_5501_player8_master html(Samsung Galaxy J5 pro)](https://user-images.githubusercontent.com/14862922/107322725-94afe380-6ad7-11eb-8a2f-c765fa9a559a.png)
+![127 0 0 1_5501_player8_master html(Samsung Galaxy J5 pro)](https://user-images.githubusercontent.com/14862922/107322945-fec88880-6ad7-11eb-87ee-b4eca466dd3f.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Demo</a></li>
 
