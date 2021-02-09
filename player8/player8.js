@@ -1,7 +1,7 @@
 $(function () {
   var playerTrack = $("#player-track"),
-    bgArtwork = $("#bg-artwork"),
-    bgArtworkUrl,
+    // bgArtwork = $("#bg-artwork"),
+    // bgArtworkUrl,
     albumName = $("#album-name"),
     trackName = $("#track-name"),
     albumArt = $("#album-art"),
@@ -37,11 +37,11 @@ $(function () {
       "Proxy (Original Mix)"
     ],
     trackNames = [
-      "Skylike - Dawn",
-      "Alex Skrindo - Me & You",
-      "Kaaze - Electro Boy",
-      "Jordan Schor - Home",
-      "Martin Garrix - Proxy"
+      "Skylike",
+      "Alex Skrindo",
+      "Kaaze",
+      "Jordan Schor",
+      "Martin Garrix"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
@@ -216,11 +216,11 @@ $(function () {
       albumArt.find("img.active").removeClass("active");
       $("#" + currArtwork).addClass("active");
 
-      bgArtworkUrl = $("#" + currArtwork).attr("src");
+      // bgArtworkUrl = $("#" + currArtwork).attr("src");
 
-      bgArtwork.css({
-        "background-image": "url(" + bgArtworkUrl + ")"
-      });
+      // bgArtwork.css({
+      //   "background-image": "url(" + bgArtworkUrl + ")"
+      // });
     } else {
       if (flag == 0 || flag == 1) --currIndex;
       else ++currIndex;
