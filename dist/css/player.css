@@ -60,3 +60,7 @@
 .aplayer.aplayer-withlist .aplayer-info {
   border-bottom: none;
 }
+
+.aplayer .aplayer-list ol li {
+  border-top: 1px solid black;
+}
