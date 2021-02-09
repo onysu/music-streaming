@@ -142,7 +142,9 @@ body{
   position: relative;
   height: 132%;
   background-color: #fff;
-  box-shadow: 0 15px 15px -10px #656565;
+  box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%),
+  inset 0 0.0625em 0 rgb(255 255 255),
+  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   border-radius: 15px;
   z-index: 2;
 }
@@ -152,7 +154,7 @@ body{
   top: -40px;
   width: 115px;
   height: 115px;
-  margin-left: 3px;
+  margin-left: 0;
   transform: rotateZ(0);
   transition: 0.3s ease all;
   box-shadow: 0 0 0 10px #fff;
@@ -162,8 +164,9 @@ body{
 
 #album-art.active {
   top: -60px;
-  box-shadow: 0 0 0 6px #fff7f7,
-  5px 15px 20px -10px #000;
+  box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%),
+  inset 0 0.0625em 0 rgb(255 255 255),
+  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
 }
 
 #album-art:before {
