@@ -86,25 +86,21 @@ body {
   background: none;
 }
 
-.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+/* .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
   fill: whitesmoke;
-}
+} */
 
-.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path:hover {
+/* .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path:hover {
   background: whitesmoke !important;
-}
+} */
 
 .aplayer .aplayer-list {
-  overflow: auto;
-  transition: all .5s ease;
-  will-change: height;
-  display: none;
-  overflow: hidden;
   text-align: start;
 }
 
 .aplayer .aplayer-list ol {
-  max-height: 450px;
+  max-height: 450px !important;
+  /* height: 100vh !important; */
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-index {
