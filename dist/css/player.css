@@ -1,82 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
+#blackLayer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
 /* Player CSS */
 .aplayer {
   background: transparent;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* margin: 5px; */
-  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1); */
-  border-radius: 2px;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: normal;
-  position: relative;
 }
 
 .aplayer .aplayer-body {
-  /* margin-bottom: 15px; */
   text-align: start;
-}
-
-.aplayer .aplayer-info .aplayer-music {
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis;
-  margin: 0 0 13px 5px;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-  cursor: default;
-  padding-bottom: 2px;
-  height: 20px;
-}
-
-.aplayer .aplayer-lrc p {
-  font-size: 12px;
-  color: #666;
-  line-height: 16px !important;
-  height: 16px !important;
-  padding: 0 !important;
-  margin: 0 0 0 5px !important;
-  transition: all .5s ease-out;
-  opacity: .4;
-  overflow: hidden;
-  text-align: left;
 }
 
 .aplayer .aplayer-list {
   text-align: start;
-}
-
-.aplayer .aplayer-list ol li {
-  position: relative;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 15px;
-  font-size: 12px;
-  border-top: 1px solid black;
-  cursor: pointer;
-  transition: all .2s ease;
-  overflow: hidden;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.aplayer .aplayer-list ol li .aplayer-list-cur {
-  display: none;
-  width: 7px;
-  height: 22px;
-  position: absolute;
-  left: 0;
-  top: 5px;
-  cursor: pointer;
-  background-color: red !important;
 }
 
 /* + */
@@ -103,4 +47,16 @@
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
   color: wheat;
+}
+
+.aplayer .aplayer-lrc .aplayer-lrc-contents {
+  text-align: start;
+}
+
+.aplayer.aplayer-withlrc .aplayer-lrc {
+  margin-left: 5px;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+  border-bottom: none;
 }
