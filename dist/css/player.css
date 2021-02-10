@@ -79,10 +79,14 @@ footer img {
 }
 
 .aplayer .aplayer-list {
-  text-align: start;
-  margin-top: 91px;
+  text-align: start;  
 }
-
+.aplayer .aplayer-list ol {
+  list-style-type: none;
+  margin-top: 92px;
+  padding: 0;
+  overflow-y: auto;
+}
 .aplayer .aplayer-lrc:before {
   background: none;
 }
