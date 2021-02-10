@@ -14,10 +14,10 @@ body {
 
 .container {
   display: grid;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 0 !important;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.01fr;
+  grid-template-rows: 0.01fr 1fr 0.01fr;
   grid-template-areas:
     "player"
     "footer";
@@ -27,9 +27,12 @@ body {
 }
 
 /* nav {
-      background: #ddd;
-      grid-area: nav;
-    } */
+  background: #ddd;
+  grid-area: nav;
+  font-family: 'UnifrakturMaguntia', cursive;
+  color: red;
+  margin: 0 auto;
+} */
 
 .player {
   /* background: #ddd; */
@@ -40,7 +43,7 @@ footer {
   /* background: #ddd; */
   grid-area: footer;
   font-size: small;
-  padding-bottom: 10px;
+  padding: 5px;
   color: #999;
 }
 
@@ -70,10 +73,14 @@ footer img {
 
 .aplayer .aplayer-body {
   text-align: start;
+  position: fixed;
+  background: black;
+  z-index: 1;
 }
 
 .aplayer .aplayer-list {
   text-align: start;
+  margin-top: 91px;
 }
 
 .aplayer .aplayer-lrc:before {
