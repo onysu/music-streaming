@@ -34,7 +34,7 @@
 
 .aplayer .aplayer-list ol li.aplayer-list-light {
   background: black;
-  color: aliceblue;
+  color: wheat;
 }
 
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
@@ -43,10 +43,16 @@
 
 .aplayer .aplayer-list ol li {
   color: aliceblue;
+  border-top: 1px solid darkred;
+}
+
+.aplayer .aplayer-list ol li:hover {
+  color: wheat;
+  background: #000;
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
-  color: wheat;
+  color: #999;
 }
 
 .aplayer .aplayer-lrc .aplayer-lrc-contents {
@@ -58,9 +64,8 @@
 }
 
 .aplayer.aplayer-withlist .aplayer-info {
-  border-bottom: none;
+  border-bottom: none !important;
 }
-
-.aplayer .aplayer-list ol li {
-  border-top: 1px solid darkslategray;
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+  fill: #999;
 }
