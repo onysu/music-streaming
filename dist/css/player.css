@@ -33,7 +33,7 @@
 }
 
 .aplayer .aplayer-list ol li.aplayer-list-light {
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   color: wheat;
 }
 
@@ -48,7 +48,7 @@
 
 .aplayer .aplayer-list ol li:hover {
   color: wheat;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
