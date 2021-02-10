@@ -23,7 +23,6 @@
   text-align: start;
 }
 
-/* + */
 .aplayer .aplayer-lrc:before {
   background: none;
 }
@@ -66,6 +65,7 @@
 .aplayer.aplayer-withlist .aplayer-info {
   border-bottom: none !important;
 }
+
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
   fill: #999;
 }
