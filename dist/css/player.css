@@ -73,7 +73,6 @@ footer img {
 
 .aplayer .aplayer-body {
   text-align: start;
-  position: fixed;
   background: black;
   z-index: 1;
 }
@@ -83,7 +82,7 @@ footer img {
 }
 .aplayer .aplayer-list ol {
   list-style-type: none;
-  margin-top: 92px;
+  margin: 0px;
   padding: 0;
   overflow-y: auto;
 }
