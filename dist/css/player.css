@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../../files/img/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: grid;
+  /* height: 100vh; */
+  padding: 0 !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.01fr;
+  grid-template-areas:
+    "player"
+    "footer";
+  /* gap: 0.2rem; */
+  /* color: #004d40; */
+  text-align: center;
+}
+
+/* nav {
+      background: #ddd;
+      grid-area: nav;
+    } */
+
+.player {
+  /* background: #ddd; */
+  grid-area: player;
+}
+
+footer {
+  /* background: #ddd; */
+  grid-area: footer;
+  font-size: small;
+  padding-bottom: 10px;
+  color: #999;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer img {
+  width: 13px;
+  margin-top: -3px;
+}
+
 #blackLayer {
   position: fixed;
   top: 0;
