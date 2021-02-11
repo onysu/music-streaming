@@ -125,7 +125,7 @@ nav {
   position: absolute;
   width: 100%;
   margin-top: -26px;
-  height: 476px;
+  height: 505px;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
@@ -212,9 +212,8 @@ nav {
   background: #666;
 }
 
-/* height harus sama dng .player-list */
 .player.activeSongList .player-list {
-  margin-top: -476px;
+  margin-top: -505px;
 }
 
 footer {
