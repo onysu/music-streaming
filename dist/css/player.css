@@ -73,7 +73,7 @@ footer img {
 
 .aplayer .aplayer-body {
   text-align: start;
-  background: black;
+  /* background: black; */
   z-index: 1;
 }
 
