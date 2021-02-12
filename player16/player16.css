@@ -79,19 +79,20 @@ nav {
 
 .player .main .details {
   text-align: center;
-  padding: 25px 0px;
+  padding: 15px;
 }
 
 .player .main .details h2 {
   font-size: 25px;
   color: #eee;
-  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .player .main .details p {
   font-size: 20px;
   color: #aaa;
-  margin-bottom: 0;
 }
 
 .player .main .controls {
