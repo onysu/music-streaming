@@ -98,8 +98,7 @@ _(".player .player-list .list").innerHTML = (songList.map(function (song, songIn
   return `
 		<div class="item" songIndex="${songIndex}">
 			<div class="details">
-				<h2>${song.songname}</h2>
-				<p>${song.artistname}</p>
+				<h2>${song.songname} <span>${song.artistname}</span></h2>
 			</div>
 		</div>
 	`;
