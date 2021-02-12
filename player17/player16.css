@@ -26,7 +26,7 @@ body {
     "footer";
   gap: 0.2rem;
   color: #004d40;
-  text-align: center;
+  /* text-align: center; */
 }
 
 nav {
@@ -54,11 +54,15 @@ nav {
 }
 
 .player .main .thumbnail img {
-  width: 100%;
+  width: 30%;
+  text-align: start;
 }
 
 .player .main .seekbar {
-  margin-top: -15px;
+  width: 65%;
+  margin-left: 32%;
+  position: absolute;
+  top: 42px;
 }
 
 .player .main .seekbar input[type="range"] {
@@ -78,25 +82,37 @@ nav {
 }
 
 .player .main .details {
-  text-align: center;
-  padding: 25px 0px;
+  /* text-align: center; */
+  /* padding: 15px; */
+  position: absolute;
+  top: 10px;
+  left: 32%;
+
+  width: 60%;
+  text-align: start;
+  line-height: 0.5;
 }
 
 .player .main .details h2 {
-  font-size: 25px;
+  font-size: 16px;
   color: #eee;
-  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .player .main .details p {
-  font-size: 20px;
+  font-size: 14px;
   color: #aaa;
-  margin-bottom: 0;
 }
 
 .player .main .controls {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 63px;
+  left: 29%;
 }
 
 .player .main .controls>div {
@@ -105,7 +121,7 @@ nav {
 }
 
 .player .main .controls i.fa {
-  font-size: 25px;
+  /* font-size: 25px; */
   color: #ddd;
 }
 
@@ -124,12 +140,12 @@ nav {
 .player .player-list {
   position: absolute;
   width: 100%;
-  margin-top: -26px;
-  height: 505px;
+  height: 600px;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
   transition: all 500ms ease-in-out;
+  top: 90px;
 }
 
 .player .player-list .toggle-list {
@@ -161,7 +177,7 @@ nav {
 }
 
 .player .list {
-  padding: 10px;
+  padding: 5px;
 }
 
 .player .list .item {
@@ -212,9 +228,9 @@ nav {
   background: #666;
 }
 
-.player.activeSongList .player-list {
+/* .player.activeSongList .player-list {
   margin-top: -505px;
-}
+} */
 
 footer {
   background: #333;
