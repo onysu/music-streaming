@@ -76,7 +76,7 @@ let songList = [{
 let currentSongIndex = 0;
 
 let player = _(".player"),
-  toggleSongList = _(".player .list");
+  list = _(".player .list");
 
 let main = {
   audio: _(".player .main audio"),
@@ -89,17 +89,14 @@ let main = {
   nextControl: _(".player .main .controls .next-control")
 }
 
-toggleSongList.addEventListener("click", function () {
-  toggleSongList.classList.toggle("active");
-  player.classList.toggle("activeSongList");
+list.addEventListener("click", function () {
+  list.classList.toggle("active");
+  // player.classList.toggle("activeSongList");
 });
 
 _(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
   return `
 		<div class="item" songIndex="${songIndex}">
-			<div class="thumbnail">
-				<img src="../files/img/${song.thumbnail}">
-			</div>
 			<div class="details">
 				<h2>${song.songname}</h2>
 				<p>${song.artistname}</p>
@@ -113,7 +110,7 @@ for (let i = 0; i < songListItems.length; i++) {
   songListItems[i].addEventListener("click", function () {
     currentSongIndex = parseInt(songListItems[i].getAttribute("songIndex"));
     loadSong(currentSongIndex);
-    player.classList.remove("activeSongList");
+    // player.classList.remove("activeSongList");
   });
 }
 
