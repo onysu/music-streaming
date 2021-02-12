@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
+    type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>AudioPlayer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+      /* width: auto; */
+      /* max-width: 680px; */
+      /* padding: 0 15px; */
+      padding: 5px;
+    }
+
+    /* Player CSS */
+    .player {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      /* grid-template-rows: 0.01fr 115px 1fr; */
+    }
+
+    .player .controls {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .player .info .seekbar input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      outline: none;
+      background: #333;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .player .info .seekbar input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0px;
+      height: 0px;
+      box-shadow: -300px 0px 0px 300px red;
+    }
+
+    .player .info .details h2 {
+      font-size: 16px;
+      overflow: hidden;
+      white-space: normal;
+      text-overflow: ellipsis;
+    }
+
+    .player .info .details p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .player .info .controls>div.play-pause-control i.fa-play {
+      display: none;
+    }
+
+    .player .info .controls>div.play-pause-control.paused i.fa-play {
+      display: block;
+    }
+
+    .player .info .controls>div.play-pause-control.paused i.fa-pause {
+      display: none;
+    }
+
+    .player .list .item .details h2 {
+      font-size: medium;
+      margin-bottom: 0;
+    }
+
+    .player .list .item .details p {
+      font-size: small;
+      margin-bottom: 0;
+    }
+
+    /* end!Player CSS */
+
+    .top {
+      background: #eee;
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    .album {
+      background: #eee;
+    }
+
+    .album img {
+      width: 100%;
+    }
+
+    .info {
+      /* background: #eee; */
+      line-height: 0.5;
+      margin: 5px;
+
+    }
+
+    .playlist {
+      grid-column: span 2;
+    }
+
+    .player {
+      grid-column: span 2;
+    }
+
+    .main {
+      grid-column: span 2;
+    }
+
+    /* sticky-footer.css */
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <div class="container">
+    <main class="flex-shrink-0">
+
+      <div class="player">
+
+        <div class="top">top</div>
+
+        <div class="album">
+          <div class="thumbnail">
+            <img src="">
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="details">
+            <h2 class="mb-1"></h2>
+            <p class="mb-2"></p>
+          </div>
+          <div class="seekbar">
+            <input type="range">
+          </div>
+
+          <div class="controls">
+            <div class="prev-control">
+              <i class="fa fa-backward"></i>
+            </div>
+            <div class="play-pause-control paused">
+              <i class="fa fa-play"></i>
+              <i class="fa fa-pause"></i>
+            </div>
+            <div class="next-control">
+              <i class="fa fa-forward"></i>
+            </div>
+          </div>
+        </div><!-- !info -->
+      </div><!-- !player -->
+
+      <div class="playlist">
+
+        <div class="player">
+          <div class="main">
+
+            <audio></audio>
+
+            <div class="player-list">
+              <!-- <div class="toggle-list">
+            <i class="fa fa-angle-up"></i>
+            <i class="fa fa-angle-down"></i>
+          </div> -->
+
+              <div class="list"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="player17.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

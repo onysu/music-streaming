@@ -80,13 +80,13 @@ let player = _(".player"),
 
 let main = {
   audio: _(".player .main audio"),
-  thumbnail: _(".player .main img"),
-  seekbar: _(".player .main input"),
-  songname: _(".player .main .details h2"),
-  artistname: _(".player .main .details p"),
-  prevControl: _(".player .main .controls .prev-control"),
-  playPauseControl: _(".player .main .controls .play-pause-control"),
-  nextControl: _(".player .main .controls .next-control")
+  thumbnail: _(".player .album img"),
+  seekbar: _(".player .info input"),
+  songname: _(".player .info .details h2"),
+  artistname: _(".player .info .details p"),
+  prevControl: _(".player .info .controls .prev-control"),
+  playPauseControl: _(".player .info .controls .play-pause-control"),
+  nextControl: _(".player .info .controls .next-control")
 }
 
 list.addEventListener("click", function () {
