@@ -53,6 +53,9 @@
   transition: all 500ms ease-in-out;
   position: relative;
 } */
+.player .main {
+  margin-bottom: 10px;
+}
 
 .player .main .thumbnail {
   display: flex;
@@ -95,7 +98,7 @@
   /* left: 32%; */
   /* width: 60%; */
   text-align: start;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 .player .main .details h2 {
