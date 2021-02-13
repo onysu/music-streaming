@@ -17,10 +17,6 @@
   /* -webkit-border-bottom-right-radius: 7px; */
   /* border-bottom-left-radius: 7px; */
   /* border-bottom-right-radius: 7px */
-  position: -webkit-sticky;  
-  position: -moz-sticky;  
-  position: -ms-sticky;  
-  position: -o-sticky;  
   position: sticky;
   top: 0;
   z-index: 1;
@@ -219,12 +215,16 @@
 }
 
 .fa-compress {
-  font-size: 20px !important;
+  font-size: 16px !important;
+  cursor: pointer
+}
+.fa-list-ul {
+  font-size: 16px !important;
   cursor: pointer
 }
 
 .fa-expand {
-  font-size: 20px !important;
+  font-size: 16px !important;
   cursor: pointer;
   display: none
 }
