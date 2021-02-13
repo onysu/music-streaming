@@ -279,9 +279,9 @@ img.play {
 }
 
 .slider {
-  top: 220px;
-  left: -92px;
-  width: 100%;
+  top: 140px;
+  left: 200px;
+  width: 70%;
   height: 5px;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -301,7 +301,7 @@ img.play {
     height: 15px;
     background: radial-gradient(farthest-side ellipse at top left, #fff, $color);
     top: -5px;
-    left: 20px;
+    // left: 0px;
     border-radius: 100%;
     transition: 0s;
   }

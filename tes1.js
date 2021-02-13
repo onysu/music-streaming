@@ -111,13 +111,14 @@ $('#box').on('click', function () {
   }
 });
 
-var scale = .5,
-  gl_scale = .8,
+var 
+// scale = .5,
+  // gl_scale = .8,
   input_vol = document.getElementById('input_vol'),
   volume = 1;
 
 var timer = setInterval(function () {
-  var i = audio.currentTime * (600 / duration) - 25,
+  var i = audio.currentTime * (600 / duration) - 0,
     input = document.getElementById('input'),
     time = document.getElementById('time'),
     min = Math.floor(duration / 60),
@@ -139,7 +140,7 @@ var timer = setInterval(function () {
   if (second < 10) {
     second = '0' + String(second);
   }
-  time.style.fontSize = "20px";
+  time.style.fontSize = "15px";
   time.innerHTML = minute + ':' + second + ' / ' + min + ':' + sec;
   input.style.left = i + 'px';
   input_vol.style.height = audio.volume * 120 + 'px';
@@ -186,13 +187,13 @@ var timer = setInterval(function () {
 
 $('.slider').click(function (e) {
   var offset = $(this).offset();
-  var relativeX = (e.pageX - offset.left) * (600 / (600 * scale * gl_scale));
+  var relativeX = (e.pageX - offset.left) * (600 / (600));
   audio.currentTime = relativeX / (600 / duration);
 });
 
 $('.volume').click(function (e) {
   var offset = $(this).offset();
-  var relativeY = (e.pageY - offset.top) * (600 / (600 * scale * gl_scale));
+  var relativeY = (e.pageY - offset.top) * (600 / (600));
   volume = 1 - relativeY / 120;
   if (volume == 0) {
     $('.mute_checkbox').next('.fa').removeClass('fa-volume-off').addClass('fa-volume-up');
@@ -259,13 +260,14 @@ $('#box').on('click', function () {
   }
 });
 
-var scale = .5,
-  gl_scale = .8,
+var 
+// scale = .5,
+  // gl_scale = .8,
   input_vol = document.getElementById('input_vol'),
   volume = 1;
 
 var timer = setInterval(function () {
-  var i = audio.currentTime * (600 / duration) - 25,
+  var i = audio.currentTime * (600 / duration) - 0,
     input = document.getElementById('input'),
     input_slider = document.getElementById('input_slider'),
     time = document.getElementById('time'),
@@ -289,7 +291,7 @@ var timer = setInterval(function () {
     second = '0' + String(second);
   }
   // input_slider.style.height = '20px';
-  time.style.fontSize = "20px";
+  time.style.fontSize = "15px";
   time.innerHTML = minute + ':' + second + ' / ' + min + ':' + sec;
   input.style.left = i + 'px';
   // input_vol.style.height = audio.volume * 120 + 'px';
@@ -347,13 +349,13 @@ var timer = setInterval(function () {
 }, 0);
 $('.slider').click(function (e) {
   var offset = $(this).offset();
-  var relativeX = (e.pageX - offset.left) * (600 / (600 * scale * gl_scale));
+  var relativeX = (e.pageX - offset.left) * (600 / (600));
   audio.currentTime = relativeX / (600 / duration);
 });
 
 $('.volume').click(function (e) {
   var offset = $(this).offset();
-  var relativeY = (e.pageY - offset.top) * (600 / (600 * scale * gl_scale));
+  var relativeY = (e.pageY - offset.top) * (600 / (600));
   volume = 1 - relativeY / 120;
   if (volume == 0) {
     $('.mute_checkbox').next('.fa').removeClass('fa-volume-off').addClass('fa-volume-up');
