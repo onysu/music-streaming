@@ -17,6 +17,10 @@
   /* -webkit-border-bottom-right-radius: 7px; */
   /* border-bottom-left-radius: 7px; */
   /* border-bottom-right-radius: 7px */
+  position: -webkit-sticky;  
+  position: -moz-sticky;  
+  position: -ms-sticky;  
+  position: -o-sticky;  
   position: sticky;
   top: 0;
   z-index: 1;
