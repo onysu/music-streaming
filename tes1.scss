@@ -280,11 +280,11 @@ img.play {
 
 .slider {
   top: 140px;
-  left: 200px;
-  width: 70%;
+  left: 190px;
+  width: 74%;
   height: 5px;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
-  position: absolute;
+  // position: absolute;
   background: #222;
   border-radius: 20px;
 
@@ -296,14 +296,15 @@ img.play {
   }
 
   #input {
-    position: absolute;
+    // position: absolute;
     width: 15px;
     height: 15px;
     background: radial-gradient(farthest-side ellipse at top left, #fff, $color);
     top: -5px;
-    // left: 0px;
+    left: 0px;
     border-radius: 100%;
     transition: 0s;
+    max-width: 100%;
   }
 }
 

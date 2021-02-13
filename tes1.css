@@ -247,12 +247,11 @@ img.play {
 
 .slider {
   top: 140px;
-  left: 200px;
-  width: 70%;
+  left: 190px;
+  width: 74%;
   height: 5px;
   -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
           box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
-  position: absolute;
   background: #222;
   border-radius: 20px;
 }
@@ -265,14 +264,15 @@ img.play {
 }
 
 .slider #input {
-  position: absolute;
   width: 15px;
   height: 15px;
   background: radial-gradient(farthest-side ellipse at top left, #fff, #A6A6A6);
   top: -5px;
+  left: 0px;
   border-radius: 100%;
   -webkit-transition: 0s;
   transition: 0s;
+  max-width: 100%;
 }
 
 .volume {
