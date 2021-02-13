@@ -37,14 +37,18 @@ body {
 .player {
   /* background: #ddd; */
   grid-area: player;
+  position: sticky;
+  top: 0;
 }
 
 footer {
-  /* background: #ddd; */
+  /* position: sticky; */
+  /* bottom: 0; */
+  /* background: black; */
   grid-area: footer;
-  font-size: small;
+  font-size: 12px;
   padding: 5px;
-  color: #999;
+  color: #666;
 }
 
 footer span {
@@ -131,4 +135,8 @@ footer img {
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
   fill: #999;
+}
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur {
+  background-color: red !important;
+  width: 5px;
 }
