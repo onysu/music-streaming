@@ -1,7 +1,7 @@
 body {
   color: #444;
   /* background: url() #ff4e70; */
-  background: black;
+  background: #111;
   font: 300 18px/18px Roboto, sans-serif;
 }
 
@@ -237,8 +237,8 @@ body {
 }
 
 .mhn-player .controls .progress {
-  height: 1px;
-  margin: 15px 0;
+  height: 2px;
+  margin: 0 0 15px 0;
   position: relative;
   background: #262626;
 }
@@ -246,7 +246,7 @@ body {
 .mhn-player .controls .duration {
   color: #444;
   font-size: 13px;
-  padding: 10px;
+  padding: 0 10px 0 0;
   font-weight: 300;
 }
 
