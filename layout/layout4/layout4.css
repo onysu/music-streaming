@@ -239,8 +239,8 @@ body {
 .mhn-player .controls .progress {
   height: 2px;
   margin: 0 0 15px 0;
-  position: relative;
-  background: #262626;
+  /* position: relative; */
+  background: black;
 }
 
 .mhn-player .controls .duration {
@@ -254,7 +254,7 @@ body {
   width: 0;
   display: block;
   height: inherit;
-  background: #bc3958;
+  background: red;
   box-shadow: 0 0 5px 0 #bc3958;
 }
 
