@@ -282,7 +282,7 @@ body {
 .volume {
   height: 10px;
   width: 100px;
-  /* margin: 0 10px; */
+  margin: 0 10px;
   font-size: x-small;
   cursor: pointer;
   display: inline-block;
