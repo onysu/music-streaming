@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Audio Playlist</title>
+  <style>
+    #playlist {
+      list-style: none;
+    }
+
+    #playlist li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #playlist .current-song a {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio src="" controls id="audioPlayer">
+    Maaf, browser Anda tidak mendukung html5!
+  </audio>
+
+  <ul id="playlist">
+    <li>
+      <img src="https://www.free-stock-music.com/thumbnails/bensound-ukulele.jpg" width="30">
+      <a href="https://www.bensound.com/bensound-music/bensound-ukulele.mp3">ukulele</a>
+    </li>
+
+    <li>
+      <img src="https://www.free-stock-music.com/thumbnails/bensound-summer.jpg" width="30">
+      <a href="https://www.bensound.com/bensound-music/bensound-summer.mp3">summer</a>
+    </li>
+  </ul>
+
+  <a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+  <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+  <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script src="audioPlayer.js"></script>
+  <script>
+    /*
+    Konfigurasi konstruktor default:
+        autoplay: false,
+        shuffle: false,
+        loop: false,
+        playerId: "audioPlayer",
+        playlistId: "playlist",
+        currentClass: "current-song"
+    */
+
+    // loads the audio player
+    var config = {
+      autoplay: false,
+      loop: false,
+      shuffle: true
+    };
+    var playlist = new AudioPlaylist(config);
+  </script>
+</body>
+
+</html>
