@@ -87,8 +87,7 @@ body {
 }
 
 .mhn-player .album-art img {
-  width: 100%;
-  
+  width: 100%;  
   display: block;
 }
 
@@ -203,12 +202,12 @@ body {
   /* margin-left: -15px; */
   /* margin-right: -15px; */
   /* position: absolute; */
-  text-shadow: 0 3px 2px #999;
+  text-shadow: 0 2px 2px #999;
 }
 
-.mhn-player .current-info>div {
+/* .mhn-player .current-info>div {
   margin-top: 5px;
-}
+} */
 
 .mhn-player .current-info .song-title {
   font-size: 16px;
