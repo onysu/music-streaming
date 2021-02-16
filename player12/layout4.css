@@ -296,6 +296,12 @@ body {
   box-shadow: 0 0 5px 0 #bc3958;
 }
 
+.mhn-player .controls .action-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .mhn-player .controls .action-button a {
   width: 40px;
   height: 40px;
