@@ -209,7 +209,7 @@ body {
   /* margin-right: -15px; */
   /* position: absolute; */
   text-shadow: 0 2px 2px #999;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 /* .mhn-player .current-info>div {
@@ -220,12 +220,21 @@ body {
   font-size: 5vw;
   margin-top: 10px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .mhn-player .current-info .song-artist {
   font-size: 4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .mhn-player .current-info .song-album {
   font-size: 4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .mhn-player .current-info .fa {
@@ -494,3 +503,25 @@ body {
 .volume[data-css="1"]::-moz-range-track {
   background-size: 100% 100%;
 }
+
+@media (min-width: 768px) {
+  .mhn-player .current-info .song-title {
+    font-size: 5vw;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .mhn-player .current-info .song-artist {
+    font-size: 4vw;
+  }
+
+  .mhn-player .current-info .song-album {
+    font-size: 3vw;
+  }
+
+  .mhn-player .current-info .fa {
+    min-width: 30px;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: normal;
+  }
