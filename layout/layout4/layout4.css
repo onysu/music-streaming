@@ -73,7 +73,8 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
-  border: 1px solid #000;
+  border-radius: 10px;
+  /* border: 1px solid #000; */
 }
 
 .mhn-player .album-art img {
