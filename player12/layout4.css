@@ -199,6 +199,8 @@ body {
 }
 
 .mhn-player .current-info {
+  
+  margin-top: 20px;
   /* left: 30px; */
   /* right: 30px; */
   color: #212529;
@@ -207,6 +209,7 @@ body {
   /* margin-right: -15px; */
   /* position: absolute; */
   text-shadow: 0 2px 2px #999;
+  line-height: 1.2;
 }
 
 /* .mhn-player .current-info>div {
@@ -214,14 +217,20 @@ body {
 } */
 
 .mhn-player .current-info .song-title {
-  font-size: 16px;
+  font-size: 5vw;
   margin-top: 10px;
   font-weight: bold;
+}
+.mhn-player .current-info .song-artist {
+  font-size: 4vw;
+}
+.mhn-player .current-info .song-album {
+  font-size: 4vw;
 }
 
 .mhn-player .current-info .fa {
   min-width: 30px;
-  font-size: 18px;
+  font-size: 4vw;
   text-align: center;
   font-weight: normal;
 }
