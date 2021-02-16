@@ -182,6 +182,7 @@ body {
 .mhn-player .play-list .songs-info {
   max-width: 225px;
   text-shadow: 0 2px 2px #000;
+  color: white;
 }
 
 .mhn-player .play-list .songs-info .song-title {
