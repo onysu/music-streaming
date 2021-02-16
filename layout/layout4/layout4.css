@@ -92,7 +92,7 @@ body {
   display: block;
 }
 
-.mhn-player .album-art:before {
+/* .mhn-player .album-art:before {
   top: 30px;
   left: 50%;
   width: 200px;
@@ -102,9 +102,9 @@ body {
   position: absolute;
   margin-left: -100px;
   color: rgba(255, 255, 255, 0.4);
-}
+} */
 
-.mhn-player .album-art:after {
+/* .mhn-player .album-art:after {
   top: 0;
   left: 0;
   content: "";
@@ -112,7 +112,7 @@ body {
   height: inherit;
   position: absolute;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
-}
+} */
 
 .mhn-player .album-art img {
   width: 100%;
