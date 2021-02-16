@@ -49,7 +49,7 @@
 
   <li><a href="https://onysu.github.io/music-streaming/player12/index.html">Demo</a></li>
 
-![127 0 0 1_5501_player12_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/107832665-99b8af80-6dc3-11eb-9cba-39634b9e73c7.png)
+![127 0 0 1_5501_player12_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/108008005-e275a000-7031-11eb-8663-86e04cc78ee0.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player13/index.html">Demo</a></li>
 
