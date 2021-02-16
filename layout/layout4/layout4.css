@@ -133,6 +133,7 @@ body {
 }
 
 .mhn-player .play-list {
+  border-radius: 10px;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -141,7 +142,7 @@ body {
   overflow-y: auto;
   position: absolute;
   /* width: auto !important; */
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   /* padding-right: 1px !important; */
   height: 90%;
 }
@@ -169,7 +170,8 @@ body {
   height: 35px;
   overflow: hidden;
   margin-right: 10px;
-  border: 1px solid #666;
+  border: 2px solid blanchedalmond;
+  border-radius: 50%;
 }
 
 .mhn-player .play-list .album-thumb img {
