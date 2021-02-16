@@ -527,7 +527,7 @@ body {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1399.98px) {
+@media (min-width: 992px) and (max-width: 4000px) {
   .mhn-player .current-info .song-title {
     font-size: 3vw;
     margin-top: 10px;
