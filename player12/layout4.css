@@ -87,7 +87,7 @@ body {
   box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
   inset 0 0.0625em 0 rgb(255 255 255),
   inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
-  top: -10px;
+  top: -14px;
 }
 
 /* #sidebar .album-art img {
@@ -266,7 +266,7 @@ footer .controls .toggle-play-list {
   width: 40px;
   color: #ccc;
   height: 40px;
-  bottom: 100px;
+  bottom: 80px;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
@@ -284,7 +284,7 @@ footer .controls .active .fa-pp:before {
 
 footer .controls .progress {
   height: 0.125em;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   /* position: relative; */
   background-color: #999;
   box-shadow: 0 0.0625em rgb(255 255 255);
