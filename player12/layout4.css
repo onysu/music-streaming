@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
 /* *{
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 } */
 body {
   font-family: 'Roboto',
-  sans-serif;
+    sans-serif;
   /* color: #212529; */
   /* background: url() #ff4e70; */
   /* background: #eee; */
@@ -15,26 +15,11 @@ body {
 }
 
 /* *,
-=======
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-}
-body {
-  color: #212529;
-  /* background: url() #ff4e70; */
-  background: #eee;
-  font: 300 18px/18px Roboto, sans-serif;
-}
-/* 
-*,
->>>>>>> parent of 189bbca (U)
 :after,
 :before {
   box-sizing: border-box;
-} */
-/* 
+}
+
 .pull-left {
   float: left;
 }
@@ -47,9 +32,9 @@ body {
 .clearfix:before {
   content: "";
   display: table;
-} */
+}
 
-/* .clearfix:after {
+.clearfix:after {
   clear: both;
   display: block;
 } */
@@ -75,7 +60,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
 } */
 
-<<<<<<< HEAD
 /* .mhn-player { */
 /* width: 100%; */
 /* height: 330px; */
@@ -87,62 +71,32 @@ body {
 /* box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
     0 25px 55px 0 rgba(0, 0, 0, 0.21); */
 /* } */
-=======
-.mhn-player {
-  width: 100%;
-  /* height: 330px; */
-  height: 60vh;
-  padding: 10px;
-  position: relative;
-  /* margin: 55px auto 0; */
-  /* background: rgba(0, 0, 0, 0.9); */
-  /* box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
-    0 25px 55px 0 rgba(0, 0, 0, 0.21); */
-    
-}
->>>>>>> parent of 189bbca (U)
 
 /* #sidebar .album-art,
 #sidebar .album-thumb {
   background: url() no-repeat center / 50%;
 } */
 
-<<<<<<< HEAD
 #sidebar .album-art {
-=======
-.mhn-player .album-art {
->>>>>>> parent of 189bbca (U)
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
   border: 6px solid white;
-<<<<<<< HEAD
   /* max-width: 150px; */
   box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   top: -12px;
-=======
-  box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
->>>>>>> parent of 189bbca (U)
 }
 
 /* #sidebar .album-art img {
   width: 100%;
-<<<<<<< HEAD
   max-width: 150px;
   height: 100%;
   display: block;
 } */
-=======
-  height: 100%;
-  display: block;
-}
->>>>>>> parent of 189bbca (U)
 
 #sidebar .album-art:before {
   top: 30px;
@@ -156,11 +110,7 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
-<<<<<<< HEAD
 #sidebar .album-art:after {
-=======
-/* .mhn-player .album-art:after {
->>>>>>> parent of 189bbca (U)
   top: 0;
   left: 0;
   content: "";
@@ -168,21 +118,15 @@ body {
   /* height: inherit; */
   position: absolute;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
-} */
+}
 
 #sidebar .album-art img {
   width: 100%;
   height: 100%;
   position: relative;
-<<<<<<< HEAD
   /* background-size: cover; */
   /* background-position: center; */
 }
-=======
-  background-size: cover !important;
-  background-position: center !important;
-} */
->>>>>>> parent of 189bbca (U)
 
 #sidebar .album-art.blur img {
   -webkit-filter: blur(3px);
@@ -195,19 +139,11 @@ body {
   text-decoration: none;
 } */
 
-<<<<<<< HEAD
 nav .play-list {
   /* border-radius: 5px; */
   /* top: 0; */
   /* left: 15px; */
   /* right: 15px; */
-=======
-.mhn-player .play-list {
-  border-radius: 5px;
-  top: 17px;
-  left: 15px;
-  right: 15px;
->>>>>>> parent of 189bbca (U)
   display: none;
   /* bottom: 245px; */
   overflow-y: auto;
@@ -215,12 +151,8 @@ nav .play-list {
   /* width: auto !important; */
   background: rgba(0, 0, 0, 0.7);
   /* padding-right: 1px !important; */
-<<<<<<< HEAD
   height: 100%;
   z-index: 1;
-=======
-  height: 90%;
->>>>>>> parent of 189bbca (U)
 }
 
 nav .play-list a {
@@ -273,21 +205,8 @@ nav .play-list .songs-info .songs-detail {
   text-overflow: ellipsis;
 }
 
-<<<<<<< HEAD
 main .current-info {
   color: #212529;
-=======
-.mhn-player .current-info {
-  
-  margin-top: 20px;
-  /* left: 30px; */
-  /* right: 30px; */
-  color: #212529;
-  /* bottom: 160px; */
-  /* margin-left: -15px; */
-  /* margin-right: -15px; */
-  /* position: absolute; */
->>>>>>> parent of 189bbca (U)
   text-shadow: 0 2px 2px #999;
   /* padding: 15px; */
   /* line-height: 1.4; */
@@ -335,20 +254,12 @@ main .current-info .fa {
   font-weight: normal;
 }
 
-<<<<<<< HEAD
 footer .controls {
   /* margin-top: 15px; */
   /* bottom: 13px; */
   position: relative;
   /* width: 95%; */
   padding: 5px;
-=======
-.mhn-player .controls {
-  /* margin-top: 30px; */
-  bottom: 13px;
-  position: fixed;
-  width: 95%;
->>>>>>> parent of 189bbca (U)
 }
 
 footer .controls .toggle-play-list {
@@ -360,7 +271,7 @@ footer .controls .toggle-play-list {
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   background-color: crimson;
 }
 
@@ -374,11 +285,7 @@ footer .controls .active .fa-pp:before {
 
 footer .controls .progress {
   height: 0.125em;
-<<<<<<< HEAD
   margin: 0 0 5px 0;
-=======
-  margin: 0 0 15px 0;
->>>>>>> parent of 189bbca (U)
   /* position: relative; */
   background-color: #999;
   box-shadow: 0 0.0625em rgb(255 255 255);
@@ -388,13 +295,8 @@ footer .controls .progress {
 footer .controls .duration {
   color: #444;
   font-size: 13px;
-<<<<<<< HEAD
   padding: 0 0 15px 0;
   /* font-weight: 300; */
-=======
-  /* padding: 0 10px 0 0; */
-  font-weight: 300;
->>>>>>> parent of 189bbca (U)
 }
 
 footer .controls .progress .bar {
@@ -405,27 +307,20 @@ footer .controls .progress .bar {
   box-shadow: 0 0 5px 0 #bc3958;
 }
 
-<<<<<<< HEAD
-footer .controls .action-button{
-=======
-.mhn-player .controls .action-button{
->>>>>>> parent of 189bbca (U)
+footer .controls .action-button {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   width: 100%;
   gap: 2px;
-=======
->>>>>>> parent of 189bbca (U)
 }
 
 footer .controls .action-button a {
   width: 40px;
   height: 40px;
-  font-size: 16px;
+  /* font-size: 16px; */
   border: 2px solid;
-  line-height: 38px;
+  line-height: 36px;
   border-radius: 50%;
   text-align: center;
   display: inline-block;
@@ -442,13 +337,8 @@ footer .controls .action-button a .fa {
 
 .volume {
   height: 10px;
-<<<<<<< HEAD
   width: 90px;
   /* margin: 0 10px; */
-=======
-  width: 100px;
-  margin: 0 10px;
->>>>>>> parent of 189bbca (U)
   font-size: x-small;
   cursor: pointer;
   display: inline-block;
@@ -632,7 +522,7 @@ footer .controls .action-button a .fa {
   background-size: 100% 100%;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
   .mhn-player .current-info .song-title {
     font-size: 4vw;
     margin-top: 10px;
@@ -676,4 +566,4 @@ footer .controls .action-button a .fa {
     text-align: center;
     font-weight: normal;
   }
-}
+} */
