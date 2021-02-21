@@ -78,8 +78,8 @@ body {
 } */
 
 #sidebar .album-art {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -88,7 +88,8 @@ body {
   box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
     inset 0 0.0625em 0 rgb(255 255 255),
     inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
-  top: -12px;
+  /* top: -12px; */
+  float: right;
 }
 
 /* #sidebar .album-art img {
@@ -530,6 +531,77 @@ footer .controls .action-button a .fa {
 
 .volume[data-css="1"]::-moz-range-track {
   background-size: 100% 100%;
+}
+
+@media screen and (min-width:320px) {
+  #sidebar .album-art {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  main .current-info .song-title {
+    font-size: 3vw;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 500px;
+  }
+
+  main .current-info .song-artist {
+    font-size: 2vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  main .current-info .song-album {
+    font-size: 2vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  main .current-info .fa {
+    min-width: 30px;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  #sidebar .album-art {
+    width: 50%;
+    height: 50%;
+  }
+
+  footer .controls .action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+    padding: 10px;
+  }
+
+  footer .controls {
+    position: relative;
+    padding: 15px 50px 15px 50px;
+  }
+
+  footer .controls .toggle-play-list {
+    right: 45px;
+    width: 40px;
+    color: #ccc;
+    height: 40px;
+    bottom: 120px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    background-color: crimson;
+  }
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) {
