@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 /* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
 } */
-/* body {
-  color: #212529;
-  background: url() #ff4e70;
-  background: #eee;
-  font: 300 18px/18px Roboto, sans-serif;
-} */
+body {
+  font-family: 'Roboto',
+  sans-serif;
+  /* color: #212529; */
+  /* background: url() #ff4e70; */
+  /* background: #eee; */
+  /* font: 300 18px/18px Roboto, sans-serif; */
+}
 
 /* *,
 :after,
@@ -35,7 +38,7 @@
   display: block;
 } */
 
-.track {
+/* .track {
   width: 2px;
   margin-right: 5px;
   background: rgba(0, 0, 0, 0);
@@ -54,45 +57,47 @@
   background: #999;
   transition: width 250ms;
   background: rgba(255, 255, 255, 0.2);
-}
+} */
 
 /* .mhn-player { */
-  /* width: 100%; */
-  /* height: 330px; */
-  /* height: 75vh; */
-  /* padding: 10px; */
-  /* position: relative; */
-  /* margin: 25px auto 0; */
-  /* background: rgba(0, 0, 0, 0.9); */
-  /* box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
-    0 25px 55px 0 rgba(0, 0, 0, 0.21); */    
+/* width: 100%; */
+/* height: 330px; */
+/* height: 75vh; */
+/* padding: 10px; */
+/* position: relative; */
+/* margin: 25px auto 0; */
+/* background: rgba(0, 0, 0, 0.9); */
+/* box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22),
+    0 25px 55px 0 rgba(0, 0, 0, 0.21); */
 /* } */
 
-/* .mhn-player .album-art,
-.mhn-player .album-thumb {
+/* #sidebar .album-art,
+#sidebar .album-thumb {
   background: url() no-repeat center / 50%;
 } */
 
-/* .mhn-player .album-art { */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* overflow: hidden; */
-  /* position: relative; */
-  /* border-radius: 10px; */
-  /* border: 6px solid white; */
-  /* box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%); */
-/* } */
-
-.mhn-player .album-art img {
+#sidebar .album-art {
   width: 100%;
-  max-width: 375px;
-  /* height: 100%; */
-  /* display: block; */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 6px solid white;
+  /* max-width: 150px; */
+  box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
+  inset 0 0.0625em 0 rgb(255 255 255),
+  inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+  top: -10px;
 }
 
-/* .mhn-player .album-art:before {
+/* #sidebar .album-art img {
+  width: 100%;
+  max-width: 150px;
+  height: 100%;
+  display: block;
+} */
+
+#sidebar .album-art:before {
   top: 30px;
   left: 50%;
   width: 200px;
@@ -102,53 +107,54 @@
   position: absolute;
   margin-left: -100px;
   color: rgba(255, 255, 255, 0.4);
-} */
+}
 
-.mhn-player .album-art:after {
+#sidebar .album-art:after {
   top: 0;
   left: 0;
   content: "";
-  width: inherit;
-  height: inherit;
+  /* width: inherit; */
+  /* height: inherit; */
   position: absolute;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
 }
 
-/* .mhn-player .album-art img {
+#sidebar .album-art img {
   width: 100%;
   height: 100%;
   position: relative;
-  background-size: cover;
-  background-position: center;
-} */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
 
-.mhn-player .album-art.blur img {
+#sidebar .album-art.blur img {
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   filter: blur(3px);
 }
 
-.mhn-player a {
+/* .mhn-player a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-.mhn-player .play-list {
+nav .play-list {
   /* border-radius: 5px; */
-  top: 0;
-  left: 15px;
-  right: 15px;
+  /* top: 0; */
+  /* left: 15px; */
+  /* right: 15px; */
   display: none;
   /* bottom: 245px; */
   overflow-y: auto;
   position: absolute;
   /* width: auto !important; */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   /* padding-right: 1px !important; */
-  height: 40%;
+  height: 100%;
+  z-index: 1;
 }
 
-.mhn-player .play-list a {
+nav .play-list a {
   color: #ccc;
   display: inline-flex;
   overflow: hidden;
@@ -158,15 +164,15 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
-.mhn-player .play-list a:hover {
+nav .play-list a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.mhn-player .play-list a.active {
+nav .play-list a.active {
   color: #2ecc71;
 }
 
-.mhn-player .play-list .album-thumb {
+nav .play-list .album-thumb {
   width: 35px;
   height: 35px;
   overflow: hidden;
@@ -175,88 +181,91 @@
   border-radius: 50%;
 }
 
-.mhn-player .play-list .album-thumb img {
+nav .play-list .album-thumb img {
   width: 100%;
   display: block;
 }
 
-.mhn-player .play-list .songs-info {
+nav .play-list .songs-info {
   max-width: 225px;
   text-shadow: 0 2px 2px #000;
   color: white;
 }
 
-.mhn-player .play-list .songs-info .song-title {
+nav .play-list .songs-info .song-title {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.mhn-player .play-list .songs-info .songs-detail {
+nav .play-list .songs-info .songs-detail {
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.mhn-player .current-info {
-  
-  margin-top: 20px;
-  left: 30px;
-  right: 30px;
+main .current-info {
   color: #212529;
-  bottom: 160px;
-  margin-left: -15px;
-  margin-right: -15px;
-  position: absolute;
   text-shadow: 0 2px 2px #999;
-  line-height: 1.4;
+  /* padding: 15px; */
+  /* line-height: 1.4; */
+  /* margin-top: 20px; */
+  /* left: 30px; */
+  /* right: 30px; */
+  /* bottom: 160px; */
+  /* margin-left: -15px; */
+  /* margin-right: -15px; */
+  /* position: absolute; */
 }
 
-/* .mhn-player .current-info>div {
+/* main .current-info>div {
   margin-top: 5px;
 } */
 
-.mhn-player .current-info .song-title {
+main .current-info .song-title {
   font-size: 5vw;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.mhn-player .current-info .song-artist {
-  font-size: 4vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.mhn-player .current-info .song-album {
+
+main .current-info .song-artist {
   font-size: 4vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.mhn-player .current-info .fa {
+main .current-info .song-album {
+  font-size: 4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+main .current-info .fa {
   min-width: 30px;
   font-size: 4vw;
   text-align: center;
   font-weight: normal;
 }
 
-.mhn-player .controls {
-  margin-top: 15px;
+footer .controls {
+  /* margin-top: 15px; */
   /* bottom: 13px; */
   position: relative;
   /* width: 95%; */
+  padding: 5px;
 }
 
-.mhn-player .controls .toggle-play-list {
+footer .controls .toggle-play-list {
   right: 13px;
   width: 40px;
   color: #ccc;
   height: 40px;
-  bottom:100px;
+  bottom: 100px;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
@@ -264,15 +273,15 @@
   background-color: crimson;
 }
 
-.mhn-player .controls .fa-pp:before {
+footer .controls .fa-pp:before {
   content: "\f04b";
 }
 
-.mhn-player .controls .active .fa-pp:before {
+footer .controls .active .fa-pp:before {
   content: "\f04c";
 }
 
-.mhn-player .controls .progress {
+footer .controls .progress {
   height: 0.125em;
   margin: 0 0 10px 0;
   /* position: relative; */
@@ -281,14 +290,14 @@
   cursor: pointer;
 }
 
-.mhn-player .controls .duration {
+footer .controls .duration {
   color: #444;
   font-size: 13px;
-  padding: 10px 0 5px 0;
-  font-weight: 300;
+  padding: 0 0 15px 0;
+  /* font-weight: 300; */
 }
 
-.mhn-player .controls .progress .bar {
+footer .controls .progress .bar {
   width: 0;
   display: block;
   height: inherit;
@@ -296,13 +305,14 @@
   box-shadow: 0 0 5px 0 #bc3958;
 }
 
-/* .mhn-player .controls .action-button{
+footer .controls .action-button{
   display: flex;
   justify-content: space-around;
   align-items: center;
-} */
+  width: 100%;
+}
 
-.mhn-player .controls .action-button a {
+footer .controls .action-button a {
   width: 40px;
   height: 40px;
   /* font-size: 16px; */
@@ -313,19 +323,19 @@
   display: inline-block;
 }
 
-.mhn-player .controls .action-button a:hover,
-.mhn-player .controls .action-button a.active {
+footer .controls .action-button a:hover,
+footer .controls .action-button a.active {
   color: #ccc;
 }
 
-.mhn-player .controls .action-button a .fa {
+footer .controls .action-button a .fa {
   font-size: inherit;
 }
 
 .volume {
   height: 10px;
   width: 90px;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   font-size: x-small;
   cursor: pointer;
   display: inline-block;
