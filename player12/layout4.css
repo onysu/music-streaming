@@ -149,7 +149,7 @@ nav .play-list {
   overflow-y: auto;
   position: absolute;
   /* width: auto !important; */
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   /* padding-right: 1px !important; */
   height: 100%;
   z-index: 1;
@@ -203,6 +203,8 @@ nav .play-list .songs-info .songs-detail {
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 250px;
+  color: yellowgreen;
 }
 
 main .current-info {
