@@ -209,6 +209,7 @@ nav .play-list .songs-info .songs-detail {
   text-overflow: ellipsis;
   width: 250px;
   color: yellowgreen;
+  font-weight: 300;
 }
 
 main .current-info {
