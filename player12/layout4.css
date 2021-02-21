@@ -192,9 +192,12 @@ nav .play-list .album-thumb img {
 }
 
 nav .play-list .songs-info {
-  max-width: 225px;
+  max-width: 250px;
   text-shadow: 0 2px 2px #000;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 nav .play-list .songs-info .song-title {
