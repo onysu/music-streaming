@@ -326,7 +326,7 @@ footer .controls .action-button a {
 
 footer .controls .action-button a:hover,
 footer .controls .action-button a.active {
-  color: #ccc;
+  color: #999;
 }
 
 footer .controls .action-button a .fa {
