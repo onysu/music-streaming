@@ -307,9 +307,10 @@ footer .controls .progress .bar {
 
 footer .controls .action-button{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 2px;
 }
 
 footer .controls .action-button a {
