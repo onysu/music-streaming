@@ -303,8 +303,8 @@ footer .controls .progress .bar {
   width: 0;
   display: block;
   height: inherit;
-  background: red;
-  box-shadow: 0 0 5px 0 #bc3958;
+  background: #333;
+  /* box-shadow: 0 0 5px 0 #bc3958; */
 }
 
 footer .controls .action-button {
