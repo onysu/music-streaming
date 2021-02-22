@@ -563,11 +563,12 @@ footer .controls .action-button a .fa {
     display: grid;
     height: 100vh;
     padding: 15px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: .1fr 1fr .2fr;
     grid-template-areas:
-      "nav nav"
-      "sidebar main"
+      "nav"
+      "sidebar"
+      "main"
       "footer footer";
   }
   
