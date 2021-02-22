@@ -88,7 +88,7 @@ body {
   box-shadow: 0 1.5em 1em -1em rgb(0 0 0 / 80%),
     inset 0 0.0625em 0 rgb(255 255 255),
     inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
-  top: -12px;
+  top: -16px;
   float: right;
 }
 
@@ -142,11 +142,11 @@ body {
 
 nav .play-list {
   /* border-radius: 5px; */
-  /* top: 0; */
-  /* left: 15px; */
-  /* right: 15px; */
+  top: 0;
+  left: 0;
+  right: 0;
   display: none;
-  /* bottom: 245px; */
+  bottom: 0;
   overflow-y: auto;
   position: absolute;
   /* width: auto !important; */
@@ -306,7 +306,7 @@ footer .controls .progress {
 footer .controls .duration {
   color: #444;
   font-size: 11px;
-  padding: 0 0 15px 0;
+  /* padding: 0 0 15px 0; */
   /* font-weight: 300; */
 }
 
@@ -320,7 +320,7 @@ footer .controls .progress .bar {
 
 footer .controls .action-button {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100%;
   gap: 2px;
