@@ -5,7 +5,7 @@ body {
     sans-serif;
 }
 
-/* *,
+*,
 :after,
 :before {
   box-sizing: border-box;
@@ -28,9 +28,9 @@ body {
 .clearfix:after {
   clear: both;
   display: block;
-} */
+}
 
-/* .track {
+.track {
   width: 2px;
   margin-right: 5px;
   background: rgba(0, 0, 0, 0);
@@ -49,7 +49,7 @@ body {
   background: #999;
   transition: width 250ms;
   background: rgba(255, 255, 255, 0.2);
-} */
+}
 
 #sidebar .album-art {
   width: 250px;
@@ -498,7 +498,7 @@ footer .controls .action-button a .fa {
 @media screen and (min-width:320px) {
   #sidebar .album-art {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
 }
 
