@@ -39,7 +39,7 @@ button {
   transform: translate(-50%, -50%);
   background-color: #f4f4f4;
   /* border: 0.125em solid #d5d5d5; */
-  border: 0.125em solid #999;
+  border: 1px solid #999;
   border-radius: 50%;
   box-shadow: inset 0 0.25em 1em -0.25em rgba(255, 255, 255, 0.75);
 }
