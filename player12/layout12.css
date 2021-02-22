@@ -100,7 +100,7 @@ body {
 } */
 
 #sidebar .album-art:before {
-  top: 30px;
+  top: -12px;
   left: 50%;
   width: 200px;
   content: "music";
