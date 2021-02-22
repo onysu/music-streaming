@@ -94,7 +94,8 @@ var Audio = {
         Audio.playlist.hide();
       });
     });
-    $(".play-pause").on("click", function (e) {
+
+    $("button").on("click", function (e) {
       e.preventDefault();
       if ($(".audio").is(":empty")) {
         $(".play-list a:first-child").click();

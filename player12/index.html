@@ -12,6 +12,7 @@
     type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="layout12.css">
+  <link rel="stylesheet" href="tombol.css">
   <style>
     * {
       margin: 0;
@@ -242,13 +243,29 @@
           <div class="progress">
             <div class="bar"></div>
           </div>
+
           <div class="action-button">
+            <button class="button prev">
+              <div class="arrow"></div>
+              <div class="arrow"></div>
+            </button>
+            <button class="button play-pause">
+              <div class="arrow"></div>
+            </button>
+            <button class="button next">
+              <div class="arrow"></div>
+              <div class="arrow"></div>
+            </button>
+            <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+          </div>
+
+          <!-- <div class="action-button">
             <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
             <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
             <a href="#" class="stop"><i class="fa fa-stop"></i></a>
             <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
             <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
-          </div>
+          </div> -->
         </div>
       </footer>
     </div>
