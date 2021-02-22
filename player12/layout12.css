@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-} */
 body {
   font-family: 'Roboto',
     sans-serif;
-  /* color: #212529; */
-  /* background: url() #ff4e70; */
-  /* background: #eee; */
-  /* font: 300 18px/18px Roboto, sans-serif; */
 }
 
 /* *,
@@ -567,9 +558,21 @@ footer .controls .action-button a .fa {
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:4000px) {
+  .wadah {
+    display: grid;
+    height: 100vh;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr .2fr;
+    grid-template-areas:
+      "nav nav"
+      "sidebar main"
+      "footer footer";
+  }
+  
   main .current-info .song-title {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -578,14 +581,14 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-artist {
-    font-size: 2vw;
+    font-size: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
   main .current-info .song-album {
-    font-size: 2vw;
+    font-size: 1.5vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -599,8 +602,19 @@ footer .controls .action-button a .fa {
   }
 
   #sidebar .album-art {
-    width: 50%;
-    height: 50%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  #sidebar{
+    height: 270px;
+  }
+
+  #sidebar .album-art img {
+    width: 250px;
+    height: 250px;
+    float: left;
   }
 
   footer .controls .action-button {
@@ -610,11 +624,6 @@ footer .controls .action-button a .fa {
     width: 100%;
     gap: 2px;
     padding: 10px;
-  }
-
-  footer .controls {
-    position: relative;
-    padding: 15px 50px 15px 50px;
   }
 
   footer .controls .toggle-play-list {
