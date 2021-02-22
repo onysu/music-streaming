@@ -327,10 +327,10 @@ footer .controls .action-button {
 }
 
 footer .controls .action-button a {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid;
-  line-height: 36px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
   display: inline-block;
@@ -342,7 +342,8 @@ footer .controls .action-button a.active {
 }
 
 footer .controls .action-button a .fa {
-  font-size: inherit;
+  /* font-size: inherit; */
+  font-size: 20px;
 }
 
 .volume {
