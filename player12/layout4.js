@@ -95,6 +95,24 @@ var Audio = {
       });
     });
 
+    // $("button")
+    //     .on("click", function () {
+    //       var self = $(this);
+
+    //       if (self.hasClass("play-pause") && player.hasClass("paused")) {
+    //         player.removeClass("paused").addClass("playing");
+    //         audio[0].play();
+    //         getCurrentTime();
+    //       } else if (self.hasClass("play-pause") && player.hasClass("playing")) {
+    //         player.removeClass("playing").addClass("paused");
+    //         audio[0].pause();
+    //       }
+
+    //       if (self.hasClass("shuffle") || self.hasClass("repeat")) {
+    //         self.toggleClass("active");
+    //       }
+    //     })
+
     $("button").on("click", function (e) {
       e.preventDefault();
       if ($(".audio").is(":empty")) {

@@ -278,7 +278,7 @@ footer .controls .toggle-play-list {
   width: 40px;
   color: #ccc;
   height: 40px;
-  bottom: 80px;
+  bottom: 100px !important;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
@@ -322,8 +322,8 @@ footer .controls .action-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  gap: 2px;
+  /* width: 100%; */
+  /* gap: 2px; */
 }
 
 footer .controls .action-button a {
@@ -580,8 +580,8 @@ footer .controls .action-button a .fa {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 2px;
+    /* width: 100%; */
+    /* gap: 2px; */
     padding: 10px;
   }
 
@@ -595,7 +595,7 @@ footer .controls .action-button a .fa {
     width: 40px;
     color: #ccc;
     height: 40px;
-    bottom: 120px;
+    bottom: 140px !important;
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
