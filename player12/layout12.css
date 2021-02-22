@@ -218,7 +218,7 @@ nav .play-list .songs-info .songs-detail {
 
 main .current-info {
   color: #212529;
-  text-shadow: 0 2px 2px #999;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   /* padding: 15px; */
   /* line-height: 1.4; */
   /* margin-top: 20px; */
