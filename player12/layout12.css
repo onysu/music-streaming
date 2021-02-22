@@ -77,11 +77,6 @@ body {
   background: url() no-repeat center / 50%;
 } */
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 #sidebar .album-art {
   width: 250px;
   height: 250px;
@@ -340,6 +335,7 @@ footer .controls .action-button a {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
+  color: #333;
 }
 
 footer .controls .action-button a:hover,
