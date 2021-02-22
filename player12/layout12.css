@@ -274,16 +274,42 @@ footer .controls {
 }
 
 footer .controls .toggle-play-list {
+  width: 4em;
+  height: 4em;
   right: 13px;
-  width: 40px;
-  color: #ccc;
-  height: 40px;
+  /* color: #ccc; */
   /* bottom: 80px; */
+  border: none;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: 4em;
   text-align: center;
   position: absolute;
-  background-color: crimson;
+  /* background-color: crimson; */
+  background-image: linear-gradient(#999, #fff);
+}
+
+.toggle-play-list::before {
+  content: "";
+  position: absolute;
+  /* z-index: 1; */
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #f4f4f4;
+  /* border: 0.125em solid #d5d5d5; */
+  border: 0.125em solid #999;
+  border-radius: 50%;
+  box-shadow: inset 0 0.25em 1em -0.25em rgb(255 255 255 / 75%);
+}
+
+a {
+  color: #ccc;
+}
+
+.fa {
+  color: #333;
 }
 
 footer .controls .fa-pp:before {
@@ -326,11 +352,12 @@ footer .controls .action-button {
   gap: 2px;
 }
 
+
 footer .controls .action-button a {
-  width: 50px;
-  height: 50px;
-  border: 2px solid;
-  line-height: 50px;
+  /* width: 50px; */
+  /* height: 50px; */
+  /* border: 2px solid; */
+  /* line-height: 50px; */
   border-radius: 50%;
   text-align: center;
   display: inline-block;
