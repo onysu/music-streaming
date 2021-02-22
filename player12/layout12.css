@@ -534,17 +534,7 @@ footer .controls .action-button a .fa {
   background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 320px) {
-  .wadah {
-    grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .1fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "footer";
-  }
-
+@media screen and (min-width:320px) {
   #sidebar .album-art {
     width: 100%;
     height: 100%;
