@@ -98,8 +98,7 @@ body {
   filter: blur(3px);
 }
 
-nav .play-list {
-  /* border-radius: 5px; */
+main .play-list {
   top: 0;
   left: 0;
   right: 0;
@@ -114,9 +113,9 @@ nav .play-list {
   border-top: 1px solid aqua;
 }
 
-nav .play-list a {
+main .play-list a {
   color: #ccc;
-  display: inline-flex;
+  display: block;
   overflow: hidden;
   padding: 6px 10px;
   white-space: nowrap;
@@ -126,15 +125,15 @@ nav .play-list a {
   border-bottom: 1px solid black;
 }
 
-nav .play-list a:hover {
+main .play-list a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-nav .play-list a.active {
+main .play-list a.active {
   color: #2ecc71;
 }
 
-nav .play-list .album-thumb {
+main .play-list .album-thumb {
   width: 35px;
   height: 35px;
   overflow: hidden;
@@ -143,12 +142,12 @@ nav .play-list .album-thumb {
   border-radius: 50%;
 }
 
-nav .play-list .album-thumb img {
+main .play-list .album-thumb img {
   width: 100%;
   display: block;
 }
 
-nav .play-list .songs-info {
+main .play-list .songs-info {
   max-width: 250px;
   text-shadow: 0 2px 2px #000;
   color: white;
@@ -157,13 +156,13 @@ nav .play-list .songs-info {
   text-overflow: ellipsis;
 }
 
-nav .play-list .songs-info .song-title {
+main .play-list .songs-info .song-title {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-nav .play-list .songs-info .songs-detail {
+main .play-list .songs-info .songs-detail {
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;

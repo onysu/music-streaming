@@ -35,9 +35,8 @@
       height: 100vh;
       /* padding: 5px; */
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: .1fr 1fr .2fr;
+      grid-template-rows: 1fr .2fr;
       grid-template-areas:
-        "nav nav"
         "sidebar main"
         "footer footer";
       /* gap: 0.2rem;
@@ -49,13 +48,10 @@
       text-align: center; */
     }
 
-    nav {
+    /* nav {
       background: #ddd;
       grid-area: nav;
-      /* border-radius: var(--main-radius); */
-      /* padding: var(--main-padding); */
-      /* border: 1px solid #222; */
-    }
+    } */
 
     main {
       background: #ddd;
@@ -109,9 +105,8 @@
     @media only screen and (min-width: 320px) {
       .wadah {
         grid-template-columns: 1fr;
-        grid-template-rows: .1fr 1fr .1fr 1fr;
+        grid-template-rows: 1fr .1fr 1fr;
         grid-template-areas:
-          "nav"
           "sidebar"
           "main"
           "footer";
@@ -126,7 +121,9 @@
 
       <div class="audio"></div>
 
-      <nav>
+      <!-- <nav></nav> -->
+
+      <main>
         <div class="play-list">
           <a href="#" class="play" data-id="1" data-album="A New Day Has Come (2002)" data-artist="Céline Dion"
             data-title="A New Day Has Come"
@@ -219,9 +216,6 @@
             data-albumart="https://images-na.ssl-images-amazon.com/images/I/81arfauSkpL._SL1500_.jpg"
             data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Where Does My Heart Beat Now.mp3"></a>
         </div>
-      </nav>
-
-      <main>
         <div class="current-info">
           <div class="song-title"></div>
           <div class="song-artist"></div>
