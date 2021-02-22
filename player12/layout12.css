@@ -278,7 +278,7 @@ footer .controls .toggle-play-list {
   width: 40px;
   color: #ccc;
   height: 40px;
-  bottom: 80px;
+  /* bottom: 80px; */
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
@@ -335,7 +335,7 @@ footer .controls .action-button a {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
-  color: #333;
+  /* color: #333; */
 }
 
 footer .controls .action-button a:hover,
@@ -596,7 +596,7 @@ footer .controls .action-button a .fa {
     width: 60px;
     color: #ccc;
     height: 60px;
-    bottom: 80px;
+    /* bottom: 80px; */
     border-radius: 50%;
     line-height: 60px;
     text-align: center;
