@@ -77,6 +77,11 @@ body {
   background: url() no-repeat center / 50%;
 } */
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
 #sidebar .album-art {
   width: 250px;
   height: 250px;
