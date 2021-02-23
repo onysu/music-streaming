@@ -113,7 +113,7 @@ var Audio = {
     //       }
     //     })
 
-    $("button").on("click", function (e) {
+    $(".play-pause").on("click", function (e) {
       e.preventDefault();
       if ($(".audio").is(":empty")) {
         $(".play-list a:first-child").click();
@@ -131,13 +131,14 @@ var Audio = {
       }
     });
 
-    $(".stop").on("click", function (e) {
-      e.preventDefault();
-      clearInterval(intval);
-      Audio.stop($(".music"));
-      $(".music")[0].currentTime = 0;
-      $(".progress .bar").css("width", 0);
-    });
+    // $(".stop").on("click", function (e) {
+    //   e.preventDefault();
+    //   clearInterval(intval);
+    //   Audio.stop($(".music"));
+    //   $(".music")[0].currentTime = 0;
+    //   $(".progress .bar").css("width", 0);
+    // });
+    
     $(".volume").on("change", function () {
       var vol, css;
       vol = $(this).val();
