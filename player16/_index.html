@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: "Raleway";
+    }
+
+    .player {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 480px;
+      overflow: hidden;
+    }
+
+    .player .main {
+      width: 100%;
+      height: 100%;
+      background: #222;
+      transition: all 500ms ease-in-out;
+    }
+
+    .player .main .thumbnail img {
+      width: 100%;
+    }
+
+    .player .main .seekbar {
+      margin-top: -15px;
+    }
+
+    .player .main .seekbar input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      outline: none;
+      background: #aaa;
+      overflow: hidden;
+    }
+
+    .player .main .seekbar input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0px;
+      height: 0px;
+      box-shadow: -300px 0px 0px 300px #00acee;
+    }
+
+    .player .main .details {
+      text-align: center;
+      padding: 15px 0px;
+    }
+
+    .player .main .details h2 {
+      font-size: 18px;
+      color: #eee;
+      margin-bottom: 5px;
+    }
+
+    .player .main .details p {
+      font-size: 15px;
+      color: #aaa;
+    }
+
+    .player .main .controls {
+      display: flex;
+      justify-content: center;
+      margin: 8px 0px;
+    }
+
+    .player .main .controls>div {
+      margin: 0px 30px;
+      cursor: pointer;
+    }
+
+    .player .main .controls i.fa {
+      font-size: 25px;
+      color: #ddd;
+    }
+
+    .player .main .controls>div.play-pause-control i.fa-play {
+      display: none;
+    }
+
+    .player .main .controls>div.play-pause-control.paused i.fa-play {
+      display: block;
+    }
+
+    .player .main .controls>div.play-pause-control.paused i.fa-pause {
+      display: none;
+    }
+
+    .player .player-list {
+      position: absolute;
+      width: 100%;
+      margin-top: -20px;
+      height: 350px;
+      overflow-y: scroll;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 2;
+      transition: all 500ms ease-in-out;
+    }
+
+    .player .player-list .toggle-list {
+      position: sticky;
+      top: 0px;
+      text-align: center;
+      height: 20px;
+      line-height: 20px;
+      background: #555;
+    }
+
+    .player .player-list .toggle-list i.fa {
+      color: #ccc;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .player .player-list .toggle-list i.fa-angle-down {
+      display: none;
+    }
+
+    .player .player-list .toggle-list.active i.fa-angle-up {
+      display: block;
+    }
+
+    .player .player-list .toggle-list.active i.fa-angle-down {
+      display: none;
+    }
+
+    .player .list {
+      padding: 10px;
+    }
+
+    .player .list .item {
+      display: flex;
+      padding: 5px 0px;
+      border-bottom: 1px solid #222;
+      cursor: pointer;
+    }
+
+    .player .list .item .thumbnail {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+    }
+
+    .player .list .thumbnail img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .player .list .item .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 10px;
+    }
+
+    .player .list .item .details h2 {
+      color: #eee;
+      font-size: 16px;
+    }
+
+    .player .list .item .details p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .player .player-list::-webkit-scrollbar {
+      width: 5px;
+      background: #222;
+    }
+
+    .player .player-list::-webkit-scrollbar-thumb {
+      background: #00acee;
+    }
+
+    .player.activeSongList .player-list {
+      margin-top: -350px;
+    }
+
+    .player.activeSongList .main {
+      filter: blur(5px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="player">
+    <div class="main">
+      <audio></audio>
+      <div class="thumbnail">
+        <img src="">
+      </div>
+      <div class="seekbar">
+        <input type="range">
+      </div>
+      <div class="details">
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="controls">
+        <div class="prev-control">
+          <i class="fa fa-backward"></i>
+        </div>
+        <div class="play-pause-control paused">
+          <i class="fa fa-play"></i>
+          <i class="fa fa-pause"></i>
+        </div>
+        <div class="next-control">
+          <i class="fa fa-forward"></i>
+        </div>
+        <div class="repeat-control">
+          <i class="fa fa-repeat"></i>
+        </div>
+      </div>
+    </div>
+    <div class="player-list">
+      <div class="toggle-list">
+        <i class="fa fa-angle-up"></i>
+        <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="list"></div>
+    </div>
+  </div>
+
+  <script>
+    function _(query) {
+      return document.querySelector(query);
+    }
+
+    function _all(query) {
+      return document.querySelectorAll(query);
+    }
+    let songList = [{
+        thumbnail: "In-the-Name-of-God.jpg",
+        audio: "Dream Theater - In The Name Of God.mp3",
+        songname: "In The Name Of God",
+        artistname: "Dream Theater",
+      },
+      {
+        thumbnail: "Napalm-Death---suffer-the-children.jpg",
+        audio: "Napalm Death - Suffer The Children.mp3",
+        songname: "Suffer The Children",
+        artistname: "Napalm Death",
+      },
+      {
+        thumbnail: "Napalm Death - Unfit Earth.jpg",
+        audio: "Napalm Death - Unfit Earth.mp3",
+        songname: "Unfit Earth",
+        artistname: "Napalm Death",
+      },
+      {
+        thumbnail: "Napalm Death - Unfit Earth.jpg",
+        audio: "Napalm Death - The Chains That Bind Us.mp3",
+        songname: "The Chains That Bind Us",
+        artistname: "Napalm Death",
+      },
+      {
+        thumbnail: "Victory.jpg",
+        audio: "Bolt Thrower - ...for Victory.mp3",
+        songname: "... for Victory",
+        artistname: "Bolt Thrower",
+      },
+      {
+        thumbnail: "Bolt-Thrower---Through-the-Eye-of-Terror.jpg",
+        audio: "Bolt Thrower - Through The Eye Of Terror.mp3",
+        songname: "Through The Eye Of Terror",
+        artistname: "Bolt Thrower",
+      },
+      {
+        thumbnail: "Cryptopsy---Phobophile.jpg",
+        audio: "Cryptopsy - Phobophile.mp3",
+        songname: "Phobophile",
+        artistname: "Cryptopsy",
+      },
+      {
+        thumbnail: "Nile---The-Burning-Pits-of-the-Duat.jpg",
+        audio: "Nile - The Burning Pits Of The Duat.mp3",
+        songname: "The Burning Pits Of The Duat",
+        artistname: "Nile",
+      },
+      {
+        thumbnail: "Nile-Kafir.jpg",
+        audio: "Nile - Kafir!.mp3",
+        songname: "Kafir!",
+        artistname: "Nile",
+      },
+      {
+        thumbnail: "Vader---Wings.jpg",
+        audio: "Vader - Wings.mp3",
+        songname: "Wings",
+        artistname: "Vader",
+      },
+      {
+        thumbnail: "Terrorizer-After-World-Obliteration.jpg",
+        audio: "Terrorizer - After World Obliteration.mp3",
+        songname: "After World Obliteration",
+        artistname: "Terrorizer",
+      }
+    ];
+
+    let currentSongIndex = 0;
+    let repeatToggle = false;
+
+    let player = _(".player"),
+      toggleSongList = _(".player .toggle-list");
+
+    let main = {
+      audio: _(".player .main audio"),
+      thumbnail: _(".player .main img"),
+      seekbar: _(".player .main input"),
+      songname: _(".player .main .details h2"),
+      artistname: _(".player .main .details p"),
+      prevControl: _(".player .main .controls .prev-control"),
+      playPauseControl: _(".player .main .controls .play-pause-control"),
+      nextControl: _(".player .main .controls .next-control")
+    }
+
+    _(".player .main .controls .repeat-control").addEventListener("click", function () {
+      repeatToggle = !repeatToggle;
+    });
+
+    toggleSongList.addEventListener("click", function () {
+      toggleSongList.classList.toggle("active");
+      player.classList.toggle("activeSongList");
+    });
+
+    _(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
+      return `
+    <div class="item" songIndex="${songIndex}">
+      <div class="thumbnail">
+        <img src="../files/img/${song.thumbnail}">
+      </div>
+      <div class="details">
+        <h2>${song.songname}</h2>
+        <p>${song.artistname}</p>
+      </div>
+    </div>
+    `;
+    }).join(""));
+
+    let songListItems = _all(".player .player-list .list .item");
+    for (let i = 0; i < songListItems.length; i++) {
+      songListItems[i].addEventListener("click", function () {
+        currentSongIndex = parseInt(songListItems[i].getAttribute("songIndex"));
+        loadSong(currentSongIndex);
+        player.classList.remove("activeSongList");
+      });
+    }
+
+    function loadSong(songIndex) {
+      let song = songList[songIndex];
+      main.thumbnail.setAttribute("src", "../files/img/" + song.thumbnail);
+      document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
+      url("../files/img/${song.thumbnail}") center no-repeat`;
+      document.body.style.backgroundSize = "cover";
+      main.songname.innerText = song.songname;
+      main.artistname.innerText = song.artistname;
+      main.audio.setAttribute("src", "../files/audio/" + song.audio);
+      main.seekbar.setAttribute("value", 0);
+      main.seekbar.setAttribute("min", 0);
+      main.seekbar.setAttribute("max", 0);
+      main.audio.addEventListener("canplay", function () {
+        main.audio.play();
+        if (!main.audio.paused) {
+          main.playPauseControl.classList.remove("paused");
+        }
+        main.seekbar.setAttribute("max", parseInt(main.audio.duration));
+        main.audio.onended = function () {
+          if (repeatToggle == true) {
+            loadSong(currentSongIndex);
+          } else {
+            main.nextControl.click();
+          }
+        }
+      })
+    }
+    setInterval(function () {
+      main.seekbar.value = parseInt(main.audio.currentTime);
+    }, 1000);
+    main.prevControl.addEventListener("click", function () {
+      currentSongIndex--;
+      if (currentSongIndex < 0) {
+        currentSongIndex = songList.length + currentSongIndex;
+      }
+      loadSong(currentSongIndex);
+    });
+    main.nextControl.addEventListener("click", function () {
+      currentSongIndex = (currentSongIndex + 1) % songList.length;
+      loadSong(currentSongIndex);
+    });
+    main.playPauseControl.addEventListener("click", function () {
+      if (main.audio.paused) {
+        main.playPauseControl.classList.remove("paused");
+        main.audio.play();
+      } else {
+        main.playPauseControl.classList.add("paused");
+        main.audio.pause();
+      }
+    });
+    main.seekbar.addEventListener("change", function () {
+      main.audio.currentTime = main.seekbar.value;
+    });
+    loadSong(currentSongIndex);
+  </script>
+</body>
+
+</html>

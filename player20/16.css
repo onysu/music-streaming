@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: "Raleway"; */
+}
+
+.player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.player .main {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  transition: all 500ms ease-in-out;
+}
+
+.player .main .thumbnail {
+  padding: 0 35px 15px 35px;
+}
+
+.player .main .thumbnail img {
+  width: 100%;
+  border-radius: 0 0 50% 50%;
+  height: 250px;
+  box-shadow: 0 2em 1.5em -1em rgb(0 0 0 / 80%),
+  inset 0 0.0625em 0 rgb(255 255 255),
+  inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
+}
+
+.player .main .seekbar {
+  padding: 0 15px;
+}
+
+.player .main .seekbar input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  outline: none;
+  background: #999;
+  overflow: hidden;
+}
+
+.player .main .seekbar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0px;
+  height: 0px;
+  box-shadow: -300px 0px 0px 300px red;
+  /* box-shadow: -300px 0px 0px 300px #00acee; */
+}
+
+.player .main .details {
+  text-align: center;
+  padding: 15px 0px;
+  color: #004D40;
+}
+
+.player .main .details h2 {
+  /* font-size: 18px; */
+  font-size: calc(1.375rem + 1vw);
+  margin: 0 15px 5px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player .main .details p {
+  font-size: 100%;
+  font-weight: 300;
+  /* font-size: 15px; */
+}
+
+.player .main .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* margin: 8px 0px; */
+}
+
+.player .main .controls>div {
+  margin: 0px 30px;
+  cursor: pointer;
+}
+
+.player .main .controls i.fa {
+  font-size: 25px;
+  /* color: #ddd; */
+}
+
+.player .main .controls>div.play-pause-control i.fa-play {
+  display: none;
+}
+
+.player .main .controls>div.play-pause-control.paused i.fa-play {
+  display: block;
+}
+
+.player .main .controls>div.play-pause-control.paused i.fa-pause {
+  display: none;
+}
+
+.player .player-list {
+  position: absolute;
+  width: 100%;
+  margin-top: -20px;
+  height: 480px;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  transition: all 500ms ease-in-out;
+}
+
+.player .player-list .toggle-list {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  background: #111;
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+}
+
+.player .player-list .toggle-list i.fa {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.player .player-list .toggle-list i.fa-angle-down {
+  display: none;
+}
+
+.player .player-list .toggle-list.active i.fa-angle-up {
+  display: block;
+}
+
+.player .player-list .toggle-list.active i.fa-angle-down {
+  display: none;
+}
+
+.player .list {
+  padding: 10px;
+}
+
+.player .list .item {
+  display: flex;
+  padding: 5px 0px;
+  border-bottom: 1px solid maroon;
+  cursor: pointer;
+}
+
+.player .list .item .thumbnail {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.player .list .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.player .list .item .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.player .list .item .details h2 {
+  color: #eee;
+  font-size: 14px;
+  font-weight: 400;
+  color: blanchedalmond;
+}
+
+.player .list .item .details p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.player .player-list::-webkit-scrollbar {
+  width: 5px;
+  background: #222;
+}
+
+.player .player-list::-webkit-scrollbar-thumb {
+  background: #00acee;
+}
+
+.player.activeSongList .player-list {
+  margin-top: -480px;
+}
+
+/* .player.activeSongList .main {
+      filter: blur(5px);
+    } */
+
+.player .player-list::-webkit-scrollbar-thumb {
+  background: #111;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: #000 !important;
+  }
+}

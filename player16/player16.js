@@ -7,9 +7,9 @@ function _all(query) {
 }
 let songList = [{
     thumbnail: "In-the-Name-of-God.jpg",
-    audio: "Dream Theater - In The Name Of God.mp3",
-    songname: "In The Name Of God",
-    artistname: "Dream Theater",
+    audio: "Lady Gaga Ft Bradley Cooper - Shallow.mp3",
+    songname: "Shallow",
+    artistname: "Lady Gaga Ft Bradley Cooper",
   },
   {
     thumbnail: "Napalm-Death---suffer-the-children.jpg",
