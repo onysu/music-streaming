@@ -46,8 +46,8 @@ body {
   border-bottom: 5px solid #fff;
   height: 250px;
   box-shadow: 0 2em 1.5em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
 }
 
 .player .main .seekbar {
@@ -128,7 +128,7 @@ body {
   height: 480px;
   overflow-y: scroll;
   /* background: rgba(0, 0, 0, 0.9); */
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.7);
   z-index: 2;
   transition: all 500ms ease-in-out;
 }
@@ -221,9 +221,9 @@ body {
   margin-top: -480px;
 }
 
-/* .player.activeSongList .main {
-      filter: blur(5px);
-    } */
+.player.activeSongList .main {
+  filter: blur(5px);
+}
 
 /* .player .player-list::-webkit-scrollbar-thumb {
   background: #111;
@@ -233,6 +233,7 @@ body {
   body {
     background: #000 !important;
   }
+
   .player .main .details h2 {
     font-size: calc(1.375rem + 2vw);
     margin: 0 15px 5px;
