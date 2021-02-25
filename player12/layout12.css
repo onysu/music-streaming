@@ -30,7 +30,7 @@
 main {
   grid-area: main;
   padding: 15px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 #sidebar {
