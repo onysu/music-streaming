@@ -138,7 +138,7 @@ var Audio = {
     //   $(".music")[0].currentTime = 0;
     //   $(".progress .bar").css("width", 0);
     // });
-    
+
     $(".volume").on("change", function () {
       var vol, css;
       vol = $(this).val();
@@ -158,6 +158,7 @@ var Audio = {
         Audio.prev();
       }
     });
+
     $(".next").on("click", function (e) {
       var index, lastIndex;
       e.preventDefault();
@@ -169,6 +170,7 @@ var Audio = {
         Audio.next();
       }
     });
+
     $(".toggle-play-list").on("click", function (e) {
       e.preventDefault();
       var toggle = $(this);
@@ -179,6 +181,7 @@ var Audio = {
       }
     });
   },
+
   playlist: {
     show: function () {
       $(".play-list").fadeIn(500);
@@ -188,9 +191,10 @@ var Audio = {
     hide: function () {
       $(".play-list").fadeOut(500);
       $(".toggle-play-list").removeClass("active");
-      $(".album-art").removeClass("blur");
+      // $(".album-art").removeClass("blur");
     }
   },
+
   play: function (e) {
     var bar, current, total;
     e.trigger("play").bind("ended", function () {
