@@ -183,7 +183,7 @@ var Audio = {
     show: function () {
       $(".play-list").fadeIn(500);
       $(".toggle-play-list").addClass("active");
-      $(".album-art").addClass("blur");
+      // $(".album-art").addClass("blur");
     },
     hide: function () {
       $(".play-list").fadeOut(500);
