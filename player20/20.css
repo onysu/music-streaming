@@ -210,12 +210,11 @@ body {
 }
 
 .player .player-list::-webkit-scrollbar {
-  width: 5px;
-  background: #222;
+  width: 3px;
 }
 
 .player .player-list::-webkit-scrollbar-thumb {
-  background: #00acee;
+  background: tomato;
 }
 
 .player.activeSongList .player-list {
@@ -226,9 +225,9 @@ body {
       filter: blur(5px);
     } */
 
-.player .player-list::-webkit-scrollbar-thumb {
+/* .player .player-list::-webkit-scrollbar-thumb {
   background: #111;
-}
+} */
 
 @media screen and (max-width: 360px) {
   body {
