@@ -75,6 +75,6 @@
 <li><a href="https://onysu.github.io/music-streaming/player19/index.html">Demo</a></li>
 <li><a href="https://onysu.github.io/music-streaming/player20/index.html">Demo</a></li>
 
-![127 0 0 1_5501_player20_index html(iPhone 4)](https://user-images.githubusercontent.com/14862922/109107610-a09cd600-7764-11eb-85db-0470778798ea.png)
+![127 0 0 1_5501_player20_index html(iPhone 4)](https://user-images.githubusercontent.com/14862922/109108029-523c0700-7765-11eb-8039-61534ccbda1f.png)
 
 </ol>
