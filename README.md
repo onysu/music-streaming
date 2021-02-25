@@ -71,8 +71,11 @@
 
 ![onysu github io_music-streaming_player17_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/109107796-fa050500-7764-11eb-9ec2-5cb3532c7fd5.png)
 
-<li><a href="https://onysu.github.io/music-streaming/player18/index.html">Demo</a></li>
+<!-- <li><a href="https://onysu.github.io/music-streaming/player18/index.html">Demo</a></li> -->
 <li><a href="https://onysu.github.io/music-streaming/player19/index.html">Demo</a></li>
+
+![onysu github io_music-streaming_player19_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/109108291-ce364f00-7765-11eb-8950-35b56bc3ef98.png)
+
 <li><a href="https://onysu.github.io/music-streaming/player20/index.html">Demo</a></li>
 
 ![127 0 0 1_5501_player20_index html(iPhone 4)](https://user-images.githubusercontent.com/14862922/109108029-523c0700-7765-11eb-8039-61534ccbda1f.png)
