@@ -124,7 +124,7 @@ body {
 .player .player-list {
   position: absolute;
   width: 100%;
-  margin-top: -20px;
+  margin-top: -35px;
   height: 480px;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.9);
@@ -136,8 +136,8 @@ body {
   position: sticky;
   top: 0px;
   text-align: center;
-  height: 20px;
-  line-height: 20px;
+  height: 35px;
+  line-height: 35px;
   background: #111;
 }
 
