@@ -148,20 +148,20 @@ body {
 }
 
 .player .player-list .toggle-list i.fa {
-  color: #ccc;
-  font-size: 20px;
-  font-weight: 300;
+  color: red;
+  font-size: 36px;
+  font-weight: 900;
 }
 
-.player .player-list .toggle-list i.fa-angle-double-down {
+.player .player-list .toggle-list i.fa-caret-down {
   display: none;
 }
 
-.player .player-list .toggle-list.active i.fa-angle-double-down {
+.player .player-list .toggle-list.active i.fa-caret-down {
   display: block;
 }
 
-.player .player-list .toggle-list.active i.fa-angle-double-up {
+.player .player-list .toggle-list.active i.fa-caret-up {
   display: none;
 }
 
