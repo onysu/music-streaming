@@ -315,7 +315,7 @@ footer .controls .action-button a {
   background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
 }
 
-footer .controls .action-button a:hover {
+footer .controls .action-button .play-pause a:hover {
   background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
 }
 
@@ -328,6 +328,7 @@ footer .controls .action-button a .fa {
   color: #333;
   font-weight: 300;
 }
+
 
 .volume {
   height: 10px;
@@ -620,13 +621,27 @@ footer .controls .action-button a .fa {
   }
 
   footer .controls .action-button a {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     /* border: 2px solid; */
-    line-height: 53px;
-    border-radius: 50%;
-    text-align: center;
-    display: inline-block;
+    line-height: 63px;
+    /* border-radius: 50%; */
+    /* text-align: center; */
+    /* display: inline-block; */
+  }
+
+  footer .controls .action-button a .fa {
+    font-size: 24px;
+    color: #333;
+    font-weight: 200;
+    line-height: inherit;
+  }
+
+  footer .controls .action-button .toggle-play-list .fa {
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+    line-height: inherit;
   }
 
   footer .controls .duration {
