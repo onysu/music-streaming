@@ -26,6 +26,12 @@
   /* background-color: #eee; */
 }
 
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+}
+
 main {
   grid-area: main;
   padding: 0 15px 5px 15px;
@@ -166,7 +172,7 @@ main .play-list {
 
 main .play-list a {
   /* color: #ccc; */
-  display: block;
+  display: flex;
   overflow: hidden;
   padding: 6px 10px;
   white-space: nowrap;
@@ -175,6 +181,7 @@ main .play-list a {
   width: 100%;
   border-bottom: 1px solid black;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
+  text-decoration: none;
 }
 
 main .play-list a:hover {
@@ -329,7 +336,7 @@ footer .controls .action-button a.active {
 footer .controls .action-button a .fa {
   font-size: inherit;
   color: #333;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 
