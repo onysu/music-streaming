@@ -127,7 +127,8 @@ body {
   margin-top: -35px;
   height: 480px;
   overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
+  background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   transition: all 500ms ease-in-out;
 }
@@ -138,7 +139,8 @@ body {
   text-align: center;
   height: 35px;
   line-height: 35px;
-  background: #111;
+  /* background: #111; */
+  /* background: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%); */
 }
 
 .fa,
@@ -172,7 +174,7 @@ body {
 .player .list .item {
   display: flex;
   padding: 5px 0px;
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid gray;
   cursor: pointer;
 }
 
@@ -196,14 +198,15 @@ body {
 
 .player .list .item .details h2 {
   color: #eee;
-  font-size: 14px;
-  font-weight: 400;
-  color: blanchedalmond;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
 }
 
 .player .list .item .details p {
-  color: #aaa;
+  color: #666;
   font-size: 12px;
+  font-weight: 300;
 }
 
 .player .player-list::-webkit-scrollbar {
@@ -232,7 +235,7 @@ body {
     background: #000 !important;
   }
   .player .main .details h2 {
-    font-size: calc(1.375rem + 1vw);
+    font-size: calc(1.375rem + 2vw);
     margin: 0 15px 5px;
     font-weight: 400;
     overflow: hidden;
