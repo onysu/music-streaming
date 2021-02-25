@@ -280,7 +280,7 @@ footer .controls .active .fa-pp:before {
 }
 
 footer .controls .progress {
-  height: 0.125em;
+  height: 2px;
   margin: 0 0 5px 0;
   /* position: relative; */
   background-color: #999;
