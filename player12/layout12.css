@@ -11,7 +11,11 @@
 }
 
 .wadah {
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-image: url(../files/img/bg-wa.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   height: 100vh;
   /* padding: 5px; */
@@ -276,7 +280,7 @@ footer .controls .active .fa-pp:before {
 
 footer .controls .progress {
   height: 2px;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
   /* position: relative; */
   background-color: #999;
   box-shadow: 0 0.0625em rgb(255 255 255);
