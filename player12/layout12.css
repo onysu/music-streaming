@@ -35,7 +35,7 @@ main {
 
 }
 
-#sidebar .artis {
+#sidebar .toggle-track-artis {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -47,8 +47,6 @@ main {
   background-image: linear-gradient(#fff, #999);
   border: none;
 }
-
-/* #sidebar .artis a{} */
 
 footer {
   grid-area: footer;
@@ -144,11 +142,11 @@ body {
   height: 100%;
 }
 
-#sidebar .album-art.blur img {
+/* #sidebar .album-art.blur img {
   -webkit-filter: blur(3px);
   -moz-filter: blur(3px);
   filter: blur(3px);
-}
+} */
 
 main .play-list {
   top: 0;
@@ -224,17 +222,18 @@ main .play-list .songs-info .songs-detail {
 }
 
 main .current-info {
-  color: #212529;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  color: #004D40;
+  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
 }
 
 main .current-info .song-title {
-  font-size: 5vw;
-  font-weight: bold;
+  font-size: calc(1.375rem + 1vw);
+  font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 250px;
+  line-height: 1.2;
 }
 
 main .current-info .song-artist {
@@ -262,12 +261,8 @@ footer .controls {
   padding: 15px;
 }
 
-a {
+#sidebar .toggle-track-artis a {
   color: #ccc;
-}
-
-.fa {
-  color: #333;
 }
 
 /* perubahan Play & Pause */
@@ -327,7 +322,8 @@ footer .controls .action-button a.active {
 
 footer .controls .action-button a .fa {
   font-size: inherit;
-  font-size: 20px;
+  color: #333;
+  font-weight: 300;
 }
 
 .volume {

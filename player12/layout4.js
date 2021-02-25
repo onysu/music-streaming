@@ -145,6 +145,7 @@ var Audio = {
       $(this).attr("data-css", vol);
       $(".music").prop("volume", vol);
     });
+
     $(".prev").on("click", function (e) {
       var index, firstIndex;
       e.preventDefault();
@@ -178,6 +179,15 @@ var Audio = {
         Audio.playlist.hide();
       } else {
         Audio.playlist.show();
+      }
+    });
+    $(".toggle-track-artis").on("click", function (e) {
+      e.preventDefault();
+      var toggle = $(this);
+      if (toggle.hasClass("active")) {
+        Audio.trackartis.hide();
+      } else {
+        Audio.trackartis.show();
       }
     });
   },
