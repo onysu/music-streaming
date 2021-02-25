@@ -11,19 +11,19 @@
 }
 
 .wadah {
-  /* background-color: #eee; */
+  position: relative;
   background-image: url(../files/img/bg-wa.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr .2fr;
   grid-template-areas:
-    "sidebar main"
-    "footer footer";
-  position: relative;
+  "sidebar main"
+  "footer footer"; */
+  /* background-color: #eee; */
 }
 
 main {
@@ -543,13 +543,13 @@ footer .controls .action-button a .fa {
     display: grid;
     height: 100vh;
     padding: 15px;
-    grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
+      "sidebar main"
       "footer footer";
+    padding: 25px;
+    position: relative;
   }
 
   main .current-info .song-title {
@@ -583,19 +583,11 @@ footer .controls .action-button a .fa {
   }
 
   #sidebar .album-art {
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
+    background-image: none;
   }
 
-  #sidebar {
-    height: 270px;
-  }
-
-  #sidebar .album-art img {
-    width: 250px;
-    height: 250px;
-    float: left;
+  #sidebar{
+    border-radius: 0 0 50% 50%;
   }
 
   footer .controls .action-button {
@@ -608,12 +600,8 @@ footer .controls .action-button a .fa {
   }
 
   footer .controls .toggle-play-list {
-    /* width: 50px; */
-    /* height: 50px; */
-    /* line-height: 50px; */
     right: 45px;
     color: #ccc;
-    /* bottom: 80px; */
     border-radius: 50%;
     text-align: center;
     position: absolute;
@@ -623,11 +611,7 @@ footer .controls .action-button a .fa {
   footer .controls .action-button a {
     width: 60px;
     height: 60px;
-    /* border: 2px solid; */
     line-height: 63px;
-    /* border-radius: 50%; */
-    /* text-align: center; */
-    /* display: inline-block; */
   }
 
   footer .controls .action-button a .fa {
@@ -647,6 +631,9 @@ footer .controls .action-button a .fa {
   footer .controls .duration {
     color: #444;
     font-size: 16px;
+  }
+  footer .controls .progress{
+    height: 7px;
   }
 }
 
