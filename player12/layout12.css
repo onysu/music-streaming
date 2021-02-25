@@ -299,15 +299,15 @@ footer .controls .progress .bar {
 
 footer .controls .action-button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
 }
 
 footer .controls .action-button a {
   width: 45px;
   height: 45px;
-  right: 13px;
-  border: none;
+  /* right: 13px; */
+  /* border: none; */
   border-radius: 50%;
   line-height: 47px;
   text-align: center;
@@ -600,7 +600,7 @@ footer .controls .action-button a .fa {
 
   footer .controls .action-button {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     gap: 2px;
