@@ -127,7 +127,6 @@ body {
   margin-top: -35px;
   height: 480px;
   overflow-y: scroll;
-  /* background: rgba(0, 0, 0, 0.9); */
   background: rgba(255, 255, 255, 0.7);
   z-index: 2;
   transition: all 500ms ease-in-out;
@@ -140,7 +139,6 @@ body {
   height: 35px;
   line-height: 35px;
   /* background: #111; */
-  /* background: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%); */
 }
 
 .fa,
