@@ -112,8 +112,8 @@ body {
   border-bottom: 6px solid white;
   border-left: 6px solid white;
   box-shadow: 0 2em 1.5em -1em rgb(0 0 0 / 80%),
-  inset 0 0.0625em 0 rgb(255 255 255),
-  inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
 }
 
 /* #sidebar .album-art:before {
@@ -315,9 +315,10 @@ footer .controls .action-button a {
   background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
 }
 
-footer .controls .action-button a:hover{
+footer .controls .action-button a:hover {
   background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
 }
+
 footer .controls .action-button a.active {
   background-image: linear-gradient(rgba(9, 9, 9, .3) 20%, rgba(255, 255, 255, 0.3) 38px);
 }
