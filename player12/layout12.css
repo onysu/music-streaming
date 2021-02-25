@@ -320,7 +320,7 @@ footer .controls .action-button .play-pause a:hover {
 }
 
 footer .controls .action-button a.active {
-  background-image: linear-gradient(rgba(9, 9, 9, .3) 20%, rgba(255, 255, 255, 0.3) 38px);
+  background-image: linear-gradient(rgba(9, 9, 9, .3) 20%, rgba(255, 255, 255, 0.7) 38px);
 }
 
 footer .controls .action-button a .fa {
