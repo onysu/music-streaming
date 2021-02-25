@@ -259,11 +259,8 @@ main .current-info .fa {
 }
 
 footer .controls {
-  /* position: relative; */
-  padding: 5px;
+  padding: 15px;
 }
-
-
 
 a {
   color: #ccc;
