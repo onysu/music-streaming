@@ -28,7 +28,7 @@
 
 main {
   grid-area: main;
-  padding: 15px;
+  padding: 0 15px 5px 15px;
 }
 
 #sidebar {
@@ -228,7 +228,7 @@ main .current-info {
 }
 
 main .current-info .song-title {
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
@@ -237,19 +237,19 @@ main .current-info .song-title {
   line-height: 1.2;
 }
 
-main .current-info .song-artist {
-  font-size: 4vw;
+main .current-info .song-artist, .song-album {
+  font-size: 5vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-main .current-info .song-album {
+/* main .current-info .song-album {
   font-size: 4vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
+} */
 
 main .current-info .fa {
   min-width: 30px;
@@ -557,7 +557,7 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-title {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -566,33 +566,33 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-artist {
-    font-size: 2vw;
+    font-size: 3vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
   main .current-info .song-album {
-    font-size: 1.5vw;
+    font-size: 2vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-
+  
   main .current-info .fa {
     min-width: 30px;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
-    font-weight: normal;
+    font-weight: 200;
   }
 
   #sidebar .album-art {
     background-image: none;
   }
 
-  #sidebar{
+  /* #sidebar{
     border-radius: 0 0 50% 50%;
-  }
+  } */
 
   footer .controls .action-button {
     display: flex;
