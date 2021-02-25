@@ -109,15 +109,15 @@ body {
   /* color: #ddd; */
 }
 
-.player .main .controls>div.play-pause-control i.fa-play {
+.player .main .controls .play-pause-control i.fa-play {
   display: none;
 }
 
-.player .main .controls>div.play-pause-control.paused i.fa-play {
+.player .main .controls .play-pause-control.paused i.fa-play {
   display: block;
 }
 
-.player .main .controls>div.play-pause-control.paused i.fa-pause {
+.player .main .controls .play-pause-control.paused i.fa-pause {
   display: none;
 }
 
@@ -153,15 +153,15 @@ body {
   font-weight: 300;
 }
 
-.player .player-list .toggle-list i.fa-angle-down {
+.player .player-list .toggle-list i.fa-angle-double-down {
   display: none;
 }
 
-.player .player-list .toggle-list.active i.fa-angle-up {
+.player .player-list .toggle-list.active i.fa-angle-double-down {
   display: block;
 }
 
-.player .player-list .toggle-list.active i.fa-angle-down {
+.player .player-list .toggle-list.active i.fa-angle-double-up {
   display: none;
 }
 
