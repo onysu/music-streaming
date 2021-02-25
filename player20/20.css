@@ -219,9 +219,9 @@ body {
   margin-top: -480px;
 }
 
-.player.activeSongList .main {
+/* .player.activeSongList .main {
   filter: blur(5px);
-}
+} */
 
 /* .player .player-list::-webkit-scrollbar-thumb {
   background: #111;
