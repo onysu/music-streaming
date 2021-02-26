@@ -247,7 +247,8 @@ main .current-info .song-title {
   line-height: 1.2;
 }
 
-main .current-info .song-artist, .song-album {
+main .current-info .song-artist,
+.song-album {
   font-size: 5vw;
   /* overflow: hidden;
   white-space: nowrap;
@@ -595,14 +596,14 @@ footer .controls .action-button a .fa {
     background-repeat: no-repeat;
   }
 
-  main .current-info .song-title{
+  main .current-info .song-title {
     font-size: 6vw;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  
+
 }
 
 @media screen and (min-width:768px) and (max-width:4000px) {
@@ -619,7 +620,7 @@ footer .controls .action-button a .fa {
     position: relative;
   }
 
-  main .current-info{
+  main .current-info {
     line-height: 2;
   }
 
@@ -645,7 +646,7 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  
+
   main .current-info .fa {
     min-width: 30px;
     font-size: 3vw;
@@ -669,7 +670,7 @@ footer .controls .action-button a .fa {
     font-weight: 500;
   }
 
-  main .play-list .songs-info .songs-detail{
+  main .play-list .songs-info .songs-detail {
     font-size: 1.5vw;
     color: #666;
     white-space: unset;
@@ -727,7 +728,8 @@ footer .controls .action-button a .fa {
     color: #444;
     font-size: 16px;
   }
-  footer .controls .progress{
+
+  footer .controls .progress {
     height: 7px;
   }
 }
