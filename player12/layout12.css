@@ -235,6 +235,7 @@ main .play-list .songs-info .songs-detail {
 main .current-info {
   color: #004D40;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 40%);
+  width: 250px;
 }
 
 main .current-info .song-title {
@@ -250,9 +251,9 @@ main .current-info .song-title {
 main .current-info .song-artist,
 .song-album {
   font-size: 5vw;
-  /* overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
 }
 
 /* main .current-info .song-album {
