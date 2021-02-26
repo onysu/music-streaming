@@ -241,27 +241,13 @@ main .current-info {
 main .current-info .song-title {
   font-size: 8vw;
   font-weight: 500;
-  /* overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; */
-  width: 250px;
   line-height: 1.2;
 }
 
 main .current-info .song-artist,
 .song-album {
   font-size: 5vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
-
-/* main .current-info .song-album {
-  font-size: 4vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-} */
 
 main .current-info .fa {
   min-width: 30px;
@@ -594,6 +580,13 @@ footer .controls .action-button a .fa {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+  main .current-info .song-artist,
+  .song-album {
+    font-size: 5vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
