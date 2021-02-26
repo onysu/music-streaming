@@ -286,6 +286,7 @@ footer .controls .active .fa-pp:before {
 }
 
 footer .controls .progress {
+  flex-grow: 2;
   height: 2px;
   margin: 0 0 15px 0;
   /* position: relative; */
@@ -299,59 +300,66 @@ footer .controls .duration {
   font-size: 12px;
 }
 
-footer .controls .progress .bar {
-  width: 0;
-  display: block;
-  height: inherit;
-  background: #666;
-  /* box-shadow: 0 0 5px 0 #bc3958; */
-}
-
-footer .controls .action-button {
+/* bar */
+.time {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 0.5em;
 }
 
-footer .controls .action-button a {
-  width: 45px;
-  height: 45px;
-  /* right: 13px; */
-  /* border: none; */
-  border-radius: 50%;
-  line-height: 47px;
-  text-align: center;
-  /* background-image: linear-gradient(#999, #fff); */
-  background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
+.time>* {
+  margin: 0 0.5em;
+  font-size: small;
 }
 
-footer .controls .action-button .play-pause a:hover {
-  background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
+.bar {
+  flex-grow: 2;
+  height: 0.125em;
+  background-color: #999;
+  border-radius: 0.0625em;
+  box-shadow: 0 0.0625em rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
-footer .controls .action-button a.active {
-  background-image: linear-gradient(rgba(9, 9, 9, .3) 20%, rgba(255, 255, 255, 0.7) 38px);
+.bar span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #666;
 }
 
-footer .controls .action-button a .fa {
-  font-size: inherit;
-  color: #333;
-  font-weight: 600;
+/* vol */
+.vol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em;
 }
 
+.vol>* {
+  margin: 0 0.5em;
+  font-size: small;
+}
 
 .volume {
-  height: 10px;
-  width: 90px;
-  /* margin: 0 10px; */
-  font-size: x-small;
+  display: flex;
+  flex-grow: 2;
+  height: 0.125em;
+  background-color: #999;
+  border-radius: 0.0625em;
+  box-shadow: 0 0.0625em rgba(255, 255, 255, 1);
   cursor: pointer;
-  display: inline-block;
-  -webkit-appearance: none;
-  background: transparent;
 }
 
-.volume::-webkit-slider-runnable-track {
+.volume span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #666;
+}
+
+/* .volume::-webkit-slider-runnable-track {
   height: 0.5em;
   background: #d8d8d8;
   border-radius: 0.25em;
@@ -378,7 +386,6 @@ footer .controls .action-button a .fa {
   position: relative;
   margin: -0.25em;
   border: none;
-  /* Firefox, IE */
   width: 1em;
   height: 1em;
   border-radius: 0.5em;
@@ -386,7 +393,6 @@ footer .controls .action-button a .fa {
 
 .volume::-moz-range-thumb {
   border: none;
-  /* Firefox, IE */
   width: 1em;
   height: 1em;
   cursor: ew-resize;
@@ -395,7 +401,6 @@ footer .controls .action-button a .fa {
 
 .volume::-ms-thumb {
   border: none;
-  /* Firefox, IE */
   width: 1em;
   height: 1em;
   border-radius: 0.5em;
@@ -525,7 +530,50 @@ footer .controls .action-button a .fa {
 
 .volume[data-css="1"]::-moz-range-track {
   background-size: 100% 100%;
+} */
+
+
+/* footer .controls .progress .bar {
+  width: 0;
+  display: block;
+  height: inherit;
+  background: #666;
+  box-shadow: 0 0 5px 0 #bc3958;
+} */
+
+footer .controls .action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+footer .controls .action-button a {
+  width: 45px;
+  height: 45px;
+  /* right: 13px; */
+  /* border: none; */
+  border-radius: 50%;
+  line-height: 47px;
+  text-align: center;
+  /* background-image: linear-gradient(#999, #fff); */
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
+}
+
+footer .controls .action-button .play-pause a:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, .3) 20%, rgba(9, 9, 9, 0.3) 38px);
+}
+
+footer .controls .action-button a.active {
+  background-image: linear-gradient(rgba(9, 9, 9, .3) 20%, rgba(255, 255, 255, 0.7) 38px);
+}
+
+footer .controls .action-button a .fa {
+  font-size: inherit;
+  color: #333;
+  font-weight: 600;
+}
+
+
 
 @media screen and (min-width: 320px) {
   .wadah {
@@ -553,6 +601,8 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     overflow: hidden;
   }
+
+  
 }
 
 @media screen and (min-width:768px) and (max-width:4000px) {

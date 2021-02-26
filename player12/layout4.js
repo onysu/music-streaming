@@ -95,24 +95,6 @@ var Audio = {
       });
     });
 
-    // $("button")
-    //     .on("click", function () {
-    //       var self = $(this);
-
-    //       if (self.hasClass("play-pause") && player.hasClass("paused")) {
-    //         player.removeClass("paused").addClass("playing");
-    //         audio[0].play();
-    //         getCurrentTime();
-    //       } else if (self.hasClass("play-pause") && player.hasClass("playing")) {
-    //         player.removeClass("playing").addClass("paused");
-    //         audio[0].pause();
-    //       }
-
-    //       if (self.hasClass("shuffle") || self.hasClass("repeat")) {
-    //         self.toggleClass("active");
-    //       }
-    //     })
-
     $(".play-pause").on("click", function (e) {
       e.preventDefault();
       if ($(".audio").is(":empty")) {
@@ -131,13 +113,13 @@ var Audio = {
       }
     });
 
-    // $(".stop").on("click", function (e) {
-    //   e.preventDefault();
-    //   clearInterval(intval);
-    //   Audio.stop($(".music"));
-    //   $(".music")[0].currentTime = 0;
-    //   $(".progress .bar").css("width", 0);
-    // });
+    $(".stop").on("click", function (e) {
+      e.preventDefault();
+      clearInterval(intval);
+      Audio.stop($(".music"));
+      $(".music")[0].currentTime = 0;
+      $(".progress .bar").css("width", 0);
+    });
 
     $(".volume").on("change", function () {
       var vol, css;
