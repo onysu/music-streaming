@@ -65,7 +65,7 @@ body {
     sans-serif;
 }
 
-/* *,
+*,
 :after,
 :before {
   box-sizing: border-box;
@@ -109,7 +109,7 @@ body {
   background: #999;
   transition: width 250ms;
   background: rgba(255, 255, 255, 0.2);
-} */
+}
 
 #sidebar .album-art {
   overflow: hidden;
@@ -274,15 +274,15 @@ footer .controls .active .fa-pp:before {
   content: "\f04c";
 }
 
-footer .controls .progress {
+/* footer .controls .progress {
   flex-grow: 2;
   height: 2px;
   margin: 0 0 15px 0;
-  /* position: relative; */
+  position: relative;
   background-color: #999;
   box-shadow: 0 0.0625em rgb(255 255 255);
   cursor: pointer;
-}
+} */
 
 footer .controls .duration {
   color: #444;
@@ -316,7 +316,7 @@ footer .controls .duration {
   display: block;
   width: 0;
   height: 100%;
-  background-color: #666;
+  background-color: red;
 }
 
 /* vol */
@@ -716,9 +716,9 @@ footer .controls .action-button a .fa {
     font-size: 16px;
   }
 
-  footer .controls .progress {
+  /* footer .controls .progress {
     height: 7px;
-  }
+  } */
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) {

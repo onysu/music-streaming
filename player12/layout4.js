@@ -131,7 +131,7 @@ var Audio = {
       clearInterval(intval);
       Audio.stop($(".music"));
       $(".music")[0].currentTime = 0;
-      $(".progress .bar").css("width", 0);
+      $(".time .bar").css("width", 0);
     });
 
     $(".volume").on("change", function () {
@@ -210,7 +210,7 @@ var Audio = {
       $(".play-current-time").text(Audio.formatTime(current));
 
       bar = (current / e[0].duration) * 100;
-      $(".progress .bar").css("width", bar + "%");
+      $(".time .bar").css("width", bar + "%");
     }, 1000);
 
     var totalDur = setInterval(function (t) {
