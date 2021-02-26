@@ -700,7 +700,7 @@ footer .controls .action-button a .fa {
   footer .controls .action-button a .fa {
     font-size: 24px;
     color: #333;
-    font-weight: 200;
+    /* font-weight: 200; */
     line-height: inherit;
   }
 
@@ -714,6 +714,16 @@ footer .controls .action-button a .fa {
   footer .controls .duration {
     color: #444;
     font-size: 16px;
+  }
+
+  .time>*{
+    font-size: medium;
+  }
+  .play-position{
+    font-size: medium;
+  }
+  .vol>*{
+    font-size: medium;
   }
 
   /* footer .controls .progress {
