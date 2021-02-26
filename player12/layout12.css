@@ -298,7 +298,7 @@ footer .controls .progress {
 
 footer .controls .duration {
   color: #444;
-  font-size: 12px;
+  font-size: xx-small;
 }
 
 /* bar */
@@ -335,11 +335,11 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 .vol>* {
-  margin: 0 0.5em;
+  margin: 0.5em;
   font-size: small;
 }
 
@@ -358,6 +358,10 @@ footer .controls .duration {
   width: 0;
   height: 100%;
   background-color: #666;
+}
+
+.play-position{
+  font-size: xx-small;
 }
 
 /* .volume::-webkit-slider-runnable-track {

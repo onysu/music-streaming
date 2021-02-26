@@ -41,14 +41,9 @@ var Audio = {
           "Unknown Title";
 
         $(this).html(
-          '<div class="album-thumb pull-left">' +
-          albumart +
-          '</div><div class="songs-info pull-left">' +
-          title +
-          '<div class="songs-detail">' +
-          artist +
-          " - " +
-          album +
+          '<div class="album-thumb pull-left">' + albumart +
+          '</div><div class="songs-info pull-left">' + title +
+          '<div class="songs-detail">' + artist + " - " + album +
           "</div></div></div>"
         );
       });
@@ -57,7 +52,7 @@ var Audio = {
       var currentTrack, totalTrack;
       totalTrack = $(".play-list>a").length;
       currentTrack = $(".play-list a").index($(".play-list .active")) + 1;
-      $(".play-position").text(currentTrack + " / " + totalTrack);
+      $(".play-position").text("Lagu " + currentTrack + " dari " + totalTrack + " lagu");
       albumart = albumart ? '<img src="' + albumart + '">' : "";
       album = album ? album : "Unknown Album";
       title = title ? title : "Unknown Title";
