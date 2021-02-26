@@ -30,6 +30,7 @@
 .fas {
   font-family: "Font Awesome 5 Pro";
   font-weight: 300;
+  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 main {
@@ -294,6 +295,7 @@ footer .controls .duration {
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5em;
+  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 .time>* {
@@ -349,6 +351,7 @@ footer .controls .duration {
 
 .play-position {
   font-size: xx-small;
+  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 /* .volume::-webkit-slider-runnable-track {
