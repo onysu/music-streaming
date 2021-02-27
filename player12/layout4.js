@@ -3,7 +3,7 @@ $(function () {
 });
 
 var intval;
-var autoplay;
+// var autoplay;
 var Audio = {
   init: function () {
     this.info.init();
@@ -54,9 +54,9 @@ var Audio = {
       currentTrack = $(".play-list a").index($(".play-list .active")) + 1;
       $(".play-position").text("Lagu " + currentTrack + " dari " + totalTrack + " lagu");
       albumart = albumart ? '<img src="' + albumart + '">' : "";
-      album = album ? album : "Unknown Album";
-      title = title ? title : "Unknown Title";
-      artist = artist ? artist : "Unknown Artist";
+      album = album ? album : "Album Tidak Diketahui";
+      title = title ? title : "Judul Tidak Diketahui";
+      artist = artist ? artist : "Artis Tidak Dikenal";
       $(".album-art").html(albumart);
       $(".current-info .song-album").html('<i class="fa fa-music"></i> ' + album);
       $(".current-info .song-title").html(
@@ -89,24 +89,6 @@ var Audio = {
         Audio.playlist.hide();
       });
     });
-
-    // $("button")
-    //     .on("click", function () {
-    //       var self = $(this);
-
-    //       if (self.hasClass("play-pause") && player.hasClass("paused")) {
-    //         player.removeClass("paused").addClass("playing");
-    //         audio[0].play();
-    //         getCurrentTime();
-    //       } else if (self.hasClass("play-pause") && player.hasClass("playing")) {
-    //         player.removeClass("playing").addClass("paused");
-    //         audio[0].pause();
-    //       }
-
-    //       if (self.hasClass("shuffle") || self.hasClass("repeat")) {
-    //         self.toggleClass("active");
-    //       }
-    //     })
 
     $(".play-pause").on("click", function (e) {
       e.preventDefault();
@@ -174,15 +156,6 @@ var Audio = {
         Audio.playlist.hide();
       } else {
         Audio.playlist.show();
-      }
-    });
-    $(".toggle-track-artis").on("click", function (e) {
-      e.preventDefault();
-      var toggle = $(this);
-      if (toggle.hasClass("active")) {
-        Audio.trackartis.hide();
-      } else {
-        Audio.trackartis.show();
       }
     });
   },
