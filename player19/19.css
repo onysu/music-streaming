@@ -27,7 +27,7 @@
 #container *:after {
   -webkit-box-sizing: content-box !important;
   -moz-box-sizing: content-box !important;
-  box-sizing: content-box !important
+  box-sizing: content-box !important;
 }
 
 /* #title {
@@ -36,7 +36,7 @@
 
 #cover {
   height: 100%;
-  width: 100%;
+  width: 50%;
   z-index: 1;
   background-size: cover;
   background-position: top;
@@ -44,21 +44,25 @@
 
 #audio-img {
   position: relative;
-  overflow: hidden
+  overflow: hidden;
 }
 
 #audio-info {
-  text-align: center
+  text-align: center;
 }
 
 #audio-buttons {
-  float: left;
-  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  /* float: left; */
+  width: 100%;
   cursor: pointer;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%)
+  -webkit-transform: translate(-50%, -50%);
 }
 
 #progressBar {
@@ -80,7 +84,7 @@
 }
 
 #progressH {
-  background-color: #fff;
+  /* background-color: #fff; */
   height: 10px;
   position: absolute;
   cursor: pointer;
@@ -91,7 +95,7 @@
 }
 
 #volContainer {
-  width: 18%;
+  width: 50%;
   position: absolute;
   left: 40px;
   top: 20px
@@ -265,15 +269,17 @@
 }
 
 #controlBar {
-  height: 44px;
-  width: 100%;
+  height: 100% !important;
+  width: 50%;
   position: absolute;
-  bottom: 0;
-  opacity: .8;
-  padding: 3px 0;
+  /* bottom: 0; */
+  top: 0;
+  /* opacity: .8; */
+  /* padding: 3px 0; */
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
-  padding: 5px 0
+  /* padding: 5px 0; */
+  left: 50%;
 }
 
 #filter {
