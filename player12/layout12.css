@@ -690,6 +690,14 @@ footer .controls .action-button a .fa {
     position: absolute;
     background-color: crimson;
   }
+  footer .controls .toggle-play-list-artis {
+    right: 45px;
+    color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    background-color: crimson;
+  }
 
   footer .controls .action-button a {
     width: 60px;
@@ -705,6 +713,12 @@ footer .controls .action-button a .fa {
   }
 
   footer .controls .action-button .toggle-play-list .fa {
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+    line-height: inherit;
+  }
+  footer .controls .action-button .toggle-play-list-artis .fa {
     font-size: 24px;
     color: white;
     font-weight: 200;
