@@ -333,7 +333,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
@@ -363,7 +363,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px 5px 5px;
+  margin: 0 5px 12px 5px;
 }
 
 .vol>* {
