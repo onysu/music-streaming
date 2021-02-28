@@ -40,6 +40,11 @@
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
+.bg-light {
+  background-color: #f8f9fa !important;
+  border-radius: 15px 15px 0 0;
+}
+
 .wadah {
   position: relative;
   background-image: url(../files/img/bg-wa.png);
@@ -90,7 +95,7 @@ footer {
   grid-area: footer;
 }
 
-#artis{
+#artis {
   grid-area: artis;
 }
 
@@ -619,6 +624,7 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     overflow: hidden;
   }
+
   main .current-info .song-artist,
   .song-album {
     font-size: 4vw;
@@ -725,6 +731,7 @@ footer .controls .action-button a .fa {
     position: absolute;
     background-color: crimson;
   }
+
   footer .controls .toggle-play-list-artis {
     right: 45px;
     color: #ccc;
@@ -753,6 +760,7 @@ footer .controls .action-button a .fa {
     font-weight: 200;
     line-height: inherit;
   }
+
   footer .controls .action-button .toggle-play-list-artis .fa {
     font-size: 24px;
     color: white;
@@ -765,13 +773,15 @@ footer .controls .action-button a .fa {
     font-size: 16px;
   }
 
-  .time>*{
+  .time>* {
     font-size: medium;
   }
-  .play-position{
+
+  .play-position {
     font-size: medium;
   }
-  .vol>*{
+
+  .vol>* {
     font-size: medium;
   }
 
