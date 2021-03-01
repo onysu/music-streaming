@@ -84,7 +84,7 @@ main {
   height: 40px;
   top: 10px;
   right: 5px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   line-height: 40px;
   text-align: center;
   background-image: linear-gradient(#fff, #999);
@@ -600,7 +600,7 @@ footer .controls .action-button a .fa {
 @media screen and (min-width: 320px) {
   .wadah {
     grid-template-columns: 1fr;
-    grid-template-rows: .9fr .1fr .1fr .1fr;
+    grid-template-rows: .7fr .1fr .1fr .1fr;
     grid-template-areas:
       "sidebar"
       "main"
@@ -789,49 +789,3 @@ footer .controls .action-button a .fa {
     height: 7px;
   } */
 }
-
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-  .mhn-player .current-info .song-title {
-    font-size: 4vw;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .mhn-player .current-info .song-artist {
-    font-size: 3vw;
-  }
-
-  .mhn-player .current-info .song-album {
-    font-size: 2vw;
-  }
-
-  .mhn-player .current-info .fa {
-    min-width: 30px;
-    font-size: 2vw;
-    text-align: center;
-    font-weight: normal;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 4000px) {
-  .mhn-player .current-info .song-title {
-    font-size: 3vw;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  .mhn-player .current-info .song-artist {
-    font-size: 2vw;
-  }
-
-  .mhn-player .current-info .song-album {
-    font-size: 1vw;
-  }
-
-  .mhn-player .current-info .fa {
-    min-width: 30px;
-    font-size: 2vw;
-    text-align: center;
-    font-weight: normal;
-  }
-} */

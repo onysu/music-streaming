@@ -40,7 +40,8 @@ main {
 
 #sidebar {
   grid-area: sidebar;
-  padding: 0 30px 15px 30px;
+  padding: 0 30px 0 30px;
+  position: absolute;
 }
 
 #sidebar .toggle-track-artis {
@@ -63,6 +64,70 @@ footer {
 body {
   font-family: 'Roboto',
     sans-serif;
+}
+
+#artis {
+  grid-area: artis;
+  line-height: 1;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  border-radius: 20px 20px 0 0;
+}
+
+.navbar-toggler {
+  padding: 2px;
+  /* font-size: 1.25rem; */
+  line-height: 1;
+  background-color: transparent;
+  /* border: 1px solid transparent; */
+  /* border-radius: .25rem; */
+  transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .55);
+  border: none;
+}
+
+.navbar-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  font-size: 14px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 0;
+  list-style: square;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 *,
@@ -294,7 +359,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
@@ -324,7 +389,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5em 0;
+  margin: 0 0 15px 0;
 }
 
 .vol>* {
@@ -561,11 +626,12 @@ footer .controls .action-button a .fa {
 @media screen and (min-width: 320px) {
   .wadah {
     grid-template-columns: 1fr;
-    grid-template-rows: .7fr .1fr .1fr;
+    grid-template-rows: 1fr .1fr .1fr .1fr;
     grid-template-areas:
       "sidebar"
       "main"
-      "footer";
+      "footer"
+      "asrtis";
   }
 
   #sidebar .album-art {
@@ -584,6 +650,7 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     overflow: hidden;
   }
+
   main .current-info .song-artist,
   .song-album {
     font-size: 4vw;
@@ -690,6 +757,7 @@ footer .controls .action-button a .fa {
     position: absolute;
     background-color: crimson;
   }
+
   footer .controls .toggle-play-list-artis {
     right: 45px;
     color: #ccc;
@@ -718,6 +786,7 @@ footer .controls .action-button a .fa {
     font-weight: 200;
     line-height: inherit;
   }
+
   footer .controls .action-button .toggle-play-list-artis .fa {
     font-size: 24px;
     color: white;
@@ -730,13 +799,15 @@ footer .controls .action-button a .fa {
     font-size: 16px;
   }
 
-  .time>*{
+  .time>* {
     font-size: medium;
   }
-  .play-position{
+
+  .play-position {
     font-size: medium;
   }
-  .vol>*{
+
+  .vol>* {
     font-size: medium;
   }
 
