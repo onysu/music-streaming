@@ -7,701 +7,202 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
-      background-color: rgb(237, 237, 237);
-    }
-
-    h1 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 13pt;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      cursor: default;
-    }
-
-    h4 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 8pt;
-      font-weight: 400;
-      cursor: default;
-    }
-
-    h2 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 13pt;
-      font-weight: 300;
-      color: rgb(255, 255, 255);
-      cursor: default;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .player {
-      height: 190px;
-      width: 430px;
-      background-color: rgb(30, 33, 37);
-      position: absolute;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      border-radius: 5px;
-      border-top-left-radius: 100px;
-      border-bottom-left-radius: 100px;
-    }
-
-    .player ul {
-      list-style: none;
-    }
-
-    .player ul li {
-      display: inline-block;
-    }
-
-    #arm {
-      width: 90px;
-      height: 90px;
-      position: absolute;
-      z-index: 1;
-      top: 15px;
-      left: 110px;
-      transform-origin: 77.5% 18.5%;
-      transform: rotate(-45deg);
-      background-image: url(https://i.imgur.com/Bzzqadh.png);
+      /* background-color: #ddd; */
+      min-width: 330px;
+      /* height: 190px; */
+      height: 256px;
+      border-radius: 8px;
+      position: relative;
+      display: none;
+      background-image: url(bg2.png);
       background-size: cover;
+      background-position: center;
+      box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%), inset 0 0.0625em 0 rgb(255 255 255), inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
     }
 
-    .artwork {
+    .record {
+      height: 260px;
+      width: 260px;
+      background-image: url(_disc.png);
       position: absolute;
-      top: 0;
+      /* top: 10px; */
+      top: -3px;
+      /* left: 20px; */
       left: 0;
-      height: 190px;
-      width: 190px;
-      background: url(https://i.imgur.com/3idGgyU.png),
-        url(https://i.imgur.com/Fu2Oezw.png) center no-repeat;
-      background-size: 190px, 75px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .artwork img {
+    .label {
+      background-image:
+        url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png);
+      background-size: cover;
+      background-position: center;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .stick {
+      height: 166px;
+      width: 50px;
       position: absolute;
-      height: 72px;
-      width: 72px;
-      border-radius: 50px;
-      top: 59px;
-      left: 59px;
+      /* top: 40px; */
+      /* left: 180px; */
+      top: 63px;
+      left: 251px;
+      transition: 1s;
+      transform-origin: top;
     }
 
-    .info h1 {
-      margin: 0 0 -10px;
-      margin-left: 180px;
-      width: 182px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    .stick img {
+      position: relative;
+      top: -44px;
+      left: -12px;
     }
 
-    .info h4 {
-      line-height: 20px;
-      color: rgb(99, 99, 103);
-      margin-left: 180px;
-      width: 182px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    .play {
+      transform: rotate(35deg);
+      transform-origin: top;
+      transition: 1s;
     }
 
-    .info h2 {
-      margin-left: 180px;
-      width: 182px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
-    .button-items {
-      margin-left: 180px;
-    }
-
-    #slider {
-      width: 182px;
-      height: 4px;
-      background: rgb(21, 21, 24);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    #slider #elapsed {
-      width: 0px;
-      height: 4px;
-      background: rgb(239, 109, 188);
-      border-radius: 2px;
-    }
-
-    #slider #buffered {
-      width: 0px;
-      height: 4px;
-      background: rgba(239, 109, 188, 0.3);
-      border-radius: 2px;
-      margin-top: -4px;
-    }
-
-    #timer {
-      color: rgb(99, 99, 103);
-      line-height: 0;
-      font-size: 9pt;
-      float: right;
-      font-family: Arial, Sans-Serif;
-    }
-
-    .controls {
-      margin-top: 25px;
-    }
-
-    .controls svg:nth-child(2) {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    #play {
-      padding: 0 3px;
-      width: 30px;
-      height: 30px;
-      /* x: 0px; */
-      /* y: 0px; */
-      enable-background: new 0 0 25 25;
-    }
-
-    #play g {
-      stroke: rgb(254, 254, 254);
-      stroke-width: 1;
-      stroke-miterlimit: 10;
-    }
-
-    #play g path {
-      fill: rgb(254, 254, 254);
-    }
-
-    #play:hover {
-      cursor: pointer;
-    }
-
-    #play:hover g {
-      stroke: rgb(239, 109, 188);
-      cursor: pointer;
-    }
-
-    #play:hover g path {
-      fill: rgb(239, 109, 188);
-      cursor: pointer;
-    }
-
-    .step-backward {
-      width: 18px;
-      height: 18px;
-      /* x: 0px; */
-      /* y: 0px; */
-      enable-background: new 0 0 25 25;
-      margin-bottom: 5px;
-    }
-
-    .step-backward g polygon,
-    .step-foreward g polygon {
-      fill: rgb(254, 254, 254);
-    }
-
-    .step-foreward {
-      width: 18px;
-      height: 18px;
-      /* x: 0px; */
-      /* y: 0px; */
-      enable-background: new 0 0 25 25;
-      margin-bottom: 5px;
-    }
-
-    #pause {
-      /* x: 0px; */
-      /* y: 0px; */
-      enable-background: new 0 0 25 25;
-      width: 30px;
-      height: 30px;
+    .power {
+      height: 28px;
+      width: 28px;
       position: absolute;
-      margin-left: -41px;
-      cursor: pointer;
+      top: 11px;
+      left: 13px;
+      animation-play-state: paused;
+      outline: none;
+      border: none;
+      background: transparent;
     }
 
-    #pause rect {
-      fill: rgb(255, 255, 255);
+    .on {
+      animation: rotate 3s 1s linear infinite;
     }
 
-    #pause:hover rect {
-      fill: rgb(239, 109, 188);
-    }
-
-    .expend {
-      padding: 0.5px;
-      cursor: pointer;
-    }
-
-    .expend svg:hover g polygon {
-      fill: rgb(239, 109, 188);
-      cursor: pointer;
-    }
-
-    .slider {
-      width: 80px;
-      position: absolute;
-      display: inline-block;
-      margin: 4px 0 0 10px;
-    }
-
-    .slider .volume {
-      width: 69px;
-      height: 4px;
-      background: rgba(239, 109, 188, 0.3);
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
-      margin-top: 10px;
-      position: inherit;
-      pointer-events: none;
-    }
-
-    @-moz-document url-prefix() {
-
-      /* //fix firefox being 1px off */
-      .slider .volume {
-        margin-top: 11px;
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
       }
     }
 
-    input[type="range"] {
+    .slider {
+      transform: rotate(-90deg);
+      width: 90px;
+      height: 7px;
       -webkit-appearance: none;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      width: 100%;
-      height: 4px;
-      margin: 0;
-      border: none;
-      border-radius: 14px;
-      padding: 0px 1px;
-      background: rgb(21, 21, 24);
+      /* background-color: rgb(190, 39, 42); */
+      background-color: transparent;
+      /* border: 6px solid #ed5650; */
+      /* border-radius: 3px; */
       outline: none;
+      position: absolute;
+      /* left: 233px;
+      top: 60px; */
+      left: 260px;
+      top: 175px;
     }
 
-    input[type="range"]::-moz-range-track {
-      border: inherit;
-      background: rgba(0, 0, 0, 0);
-    }
-
-    input[type="range"]::-ms-track {
-      border: inherit;
-      color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0);
-    }
-
-    input[type="range"]::-ms-fill-lower,
-    input[type="range"]::-ms-fill-upper {
-      background: rgba(0, 0, 0, 0);
-    }
-
-    input[type="range"]::-ms-tooltip {
-      display: none;
-    }
-
-    input[type="range"]::-webkit-slider-thumb {
+    .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 12px;
+      /* background-color: white; */
+      background-image: url(tombol.png);
+      width: 10px;
       height: 12px;
-      border: none;
-      border-radius: 6px;
-      background-color: rgb(255, 255, 255);
+      cursor: pointer;
     }
 
-    input[type="range"]::-moz-range-thumb {
-      width: 12px;
-      height: 12px;
-      border: none;
-      border-radius: 6px;
-      background-color: rgb(255, 255, 255);
+    .loader {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #181312;
+      font-family: "Rubik", sans-serif;
+      font-size: 22px;
     }
 
-    input[type="range"]::-ms-thumb {
-      width: 12px;
-      height: 12px;
-      border-radius: 6px;
-      border: 0;
-      background-color: rgb(255, 255, 255);
-    }
-
-    input[type="range"]::-webkit-slider-thumb:hover,
-    input[type="range"]::-webkit-slider-thumb:focus,
-    input[type="range"]::-webkit-slider-thumb:active {
-      background-color: rgb(239, 109, 188);
-    }
-
-    input[type="range"]::-moz-range-thumb:hover,
-    input[type="range"]::-moz-range-thumb:focus,
-    input[type="range"]::-moz-range-thumb:active {
-      background-color: rgb(239, 109, 188);
-    }
-
-    input[type="range"]::-ms-thumb:hover,
-    input[type="range"]::-ms-thumb:focus,
-    input[type="range"]::-ms-thumb:active {
-      background-color: rgb(239, 109, 188);
+    a {
+      color: #181312;
+      font-size: 25px;
+      font-family: "Rubik", sans-serif;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      padding: 8px 12px 8px 12px;
+      border: 2px solid #181312;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
+  <div class="loader">LOADING</div>
   <div class="player">
-    <span id="arm"></span>
-    <ul>
-      <li class="artwork">
-      </li>
-      <li class="info">
-        <h1 id="artist">loading</h1>
-        <h4 id="album">loading</h4>
-        <h2 id="song">loading</h2>
-        <div class="button-items">
-          <audio id="music" preload="auto">
-          </audio>
-          <div id="slider">
-            <div id="elapsed"></div>
-            <div id="buffered"></div>
-          </div>
-          <p id="timer">0:00</p>
-          <div class="controls">
-            <span class="expend">
-              <svg id="previous" class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
-                <g>
-                  <polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7" />
-                </g>
-              </svg>
-            </span>
-            <svg id="play" viewBox="0 0 25 25" xml:space="preserve">
-              <defs>
-                <rect x="-49.5" y="-132.9" width="446.4" height="366.4" />
-              </defs>
-              <g>
-                <circle fill="none" cx="12.5" cy="12.5" r="10.8" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z" />
-              </g>
-            </svg>
-            <svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
-              <g>
-                <rect x="6" y="4.6" width="3.8" height="15.7" />
-                <rect x="14" y="4.6" width="3.9" height="15.7" />
-              </g>
-            </svg>
-            <span class="expend">
-              <svg id="next" class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
-                <g>
-                  <polygon points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7" />
-                </g>
-              </svg>
-            </span>
-            <div class="slider">
-              <div class="volume"></div>
-              <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <div class="record">
+      <div class="label"></div>
+    </div>
+
+    <div class="stick">
+      <img src="stick_disk2.png" alt="">
+    </div>
+
+    <button class="power"></button>
+    <div class="slidecontainer">
+      <input type="range" class="slider" min="0" max="1" step="0.1" value="0.5">
+    </div>
   </div>
+  <audio loop class="mysong"
+    src="https://static.muzlo.cc/download/9293/Riverdale-Cast-feat-KJ-Apa-Camila-Mendes-Lili-Reinhart_-_Mad-World.mp3"
+    preload="auto"></audio>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <script>
-    /* Music
-    ======================================*/
-    var playlist = [{
-        song: "House of the Rising Sun",
-        album: "The Animals",
-        artist: "The Animals",
-        artwork: "http://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Rising_sun_animals_US.jpg/220px-Rising_sun_animals_US.jpg",
-        mp3: "https://www.bensound.com/bensound-music/bensound-badass.mp3"
-      },
-      {
-        song: "Superstition",
-        album: "Talking Book",
-        artist: "Stevie Wonder",
-        artwork: "https://i.imgur.com/Py4XcBT.png",
-        mp3: "http://vocaroo.com/media_command.php?media=s1WYNvqulYH9&command=download_mp3"
-      },
-      {
-        song: "I Need You Back",
-        album: "Premiere",
-        artist: "The Noisy Freaks",
-        artwork: "http://i1285.photobucket.com/albums/a583/TheGreatOzz1/Hosted-Images/Noisy-Freeks-Image_zps4kilrxml.png",
-        mp3: "http://kirkbyo.net/Assets/The-Noisy-Freaks.mp3"
-      }
-    ];
-
-    /* General Load / Variables
-    ======================================*/
-    var rot = 0;
-    var duration;
-    var playPercent;
-    var rotate_timer;
-    var armrot = -45;
-    var bufferPercent;
-    var currentSong = 0;
-    var arm_rotate_timer;
-    var arm = document.getElementById("arm");
-    var next = document.getElementById("next");
-    var song = document.getElementById("song");
-    var timer = document.getElementById("timer");
-    var music = document.getElementById("music");
-    var album = document.getElementById("album");
-    var artist = document.getElementById("artist");
-    var volume = document.getElementById("volume");
-    var playButton = document.getElementById("play");
-    var timeline = document.getElementById("slider");
-    var playhead = document.getElementById("elapsed");
-    var previous = document.getElementById("previous");
-    var pauseButton = document.getElementById("pause");
-    var bufferhead = document.getElementById("buffered");
-    var artwork = document.getElementsByClassName("artwork")[0];
-    var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
-    var visablevolume = document.getElementsByClassName("volume")[0];
-
-    music.addEventListener("ended", _next, false);
-    music.addEventListener("timeupdate", timeUpdate, false);
-    music.addEventListener("progress", bufferUpdate, false);
-    load();
-
-    /* Functions
-    ======================================*/
-    function load() {
-      pauseButton.style.visibility = "hidden";
-      song.innerHTML = playlist[currentSong]["song"];
-      song.title = playlist[currentSong]["song"];
-      album.innerHTML = playlist[currentSong]["album"];
-      album.title = playlist[currentSong]["album"];
-      artist.innerHTML = playlist[currentSong]["artist"];
-      artist.title = playlist[currentSong]["artist"];
-      artwork.setAttribute(
-        "style",
-        "background:url(https://i.imgur.com/3idGgyU.png), url('" + playlist[currentSong]["artwork"] +
-        "') center no-repeat;"
-      );
-      music.innerHTML =
-        '<source src = "' + playlist[currentSong]["mp3 "] + '" type = "audio/mp3" >';
-      music.load();
-    }
-
-    function reset() {
-      rotate_reset = setInterval(function () {
-        Rotate();
-        if (rot == 0) {
-          clearTimeout(rotate_reset);
+    var state = 0;
+    $(window).load(function () {
+      $(".loader").hide();
+      $(".player").show();
+    });
+    $(document).ready(function () {
+      $(".power").click(function () {
+        $(".record").toggleClass("on");
+        $(".stick").toggleClass("play");
+        if (state == 0) {
+          setTimeout(function () {
+            $(".mysong")[0].play();
+          }, 1000);
+          state = 1;
+        } else {
+          $(".mysong")[0].pause();
+          state = 0;
         }
-      }, 1);
-      fireEvent(pauseButton, "click");
-      armrot = -45;
-      playhead.style.width = "0px";
-      bufferhead.style.width = "0px";
-      timer.innerHTML = "0:00";
-      music.innerHTML = "";
-      currentSong = 0; // set to first song, to stay on last song:
-      currentSong = playlist.length - 1;
-      song.innerHTML = playlist[currentSong]["song"];
-      song.title = playlist[currentSong]["song"];
-      album.innerHTML = playlist[currentSong]["album"];
-      album.title = playlist[currentSong]["album"];
-      artist.innerHTML = playlist[currentSong]["artist"];
-      artist.title = playlist[currentSong]["artist"];
-      artwork.setAttribute("style", "background:url(https://i.imgur.com/3idGgyU.png), url('" + playlist[currentSong][
-        "artwork"
-      ] + "') center no-repeat;");
-      music.innerHTML = '<source src="' + playlist[currentSong]["mp3"] + '" type="audio/mp3">';
-      music.load();
-    }
-
-    function formatSecondsAsTime(secs, format) {
-      var hr = Math.floor(secs / 3600);
-      var
-        min = Math.floor((secs - hr * 3600) / 60);
-      var sec = Math.floor(secs - hr * 3600 - min * 60);
-      if (sec < 10) {
-        sec = "0" +
-          sec;
-      }
-      return min + ":" + sec;
-    }
-
-    function timeUpdate() {
-      bufferUpdate();
-      playPercent = timelineWidth *
-        (music.currentTime / duration);
-      playhead.style.width = playPercent + "px";
-      timer.innerHTML = formatSecondsAsTime(music.currentTime.toString());
-    }
-
-    function bufferUpdate() {
-      bufferPercent = timelineWidth * (music.buffered.end(0) / duration);
-      bufferhead.style.width = bufferPercent + "px";
-    }
-
-    function Rotate() {
-      if (rot == 361) {
-        artwork.style.transform = "rotate(0deg)";
-        rot = 0;
-      } else {
-        artwork.style.transform = "rotate(" + rot + "deg)";
-        rot++;
-      }
-    }
-
-    function RotateArm() {
-      if (armrot > -12) {
-        arm.style.transform = "rotate(-38deg)";
-        armrot = -45;
-      } else {
-        arm.style.transform = "rotate(" + armrot + "deg)";
-        armrot = armrot + 26 / duration;
-      }
-    }
-
-    function fireEvent(el, etype) {
-      if (el.fireEvent) {
-        el.fireEvent("on" + etype);
-      } else {
-        var evObj = document.createEvent("Events");
-        evObj.initEvent(etype, true, false);
-        el.dispatchEvent(evObj);
-      }
-    }
-
-    function _next() {
-      if (currentSong == playlist.length - 1) {
-        reset();
-      } else {
-        fireEvent(next, "click");
-      }
-    }
-    playButton.onclick = function () {
-      music.play();
-    };
-    pauseButton.onclick = function () {
-      music.pause();
-    };
-    music.addEventListener(
-      "play",
-      function () {
-        playButton.style.visibility = "hidden";
-        pause.style.visibility = "visible";
-        rotate_timer = setInterval(function () {
-          if (!music.paused && !music.ended && 0 < music.currentTime) {
-            Rotate();
-          }
-        }, 10);
-        if (armrot != -45) {
-          arm.setAttribute("style", "transition: transform 800ms;");
-          arm.style.transform = "rotate(" + armrot + "deg)";
-        }
-        arm_rotate_timer = setInterval(function () {
-          if (!music.paused && !music.ended && 0 < music.currentTime) {
-            if (armrot == -45) {
-              arm.setAttribute("style", "transition: transform 800ms;");
-              arm.style.transform = "rotate(-38deg)";
-              armrot = -38;
-            }
-            if (arm.style.transition != "") {
-              setTimeout(function () {
-                arm.style.transition = "";
-              }, 1000);
-            }
-            RotateArm();
-          }
-        }, 1000);
-      }, false);
-    music.addEventListener("pause", function () {
-      arm.setAttribute("style", "transition: transform 800ms;");
-      arm.style.transform = "rotate(-45deg)";
-      playButton.style.visibility = "visible";
-      pause.style.visibility = "hidden";
-      clearTimeout(rotate_timer);
-      clearTimeout(arm_rotate_timer);
-    }, false);
-    next.onclick = function () {
-      arm.setAttribute("style", "transition: transform 800ms;");
-      arm.style.transform = "rotate(-45deg)";
-      clearTimeout(rotate_timer);
-      clearTimeout(arm_rotate_timer);
-      playhead.style.width = "0px";
-      bufferhead.style.width = "0px";
-      timer.innerHTML = "0:00";
-      music.innerHTML = "";
-      arm.style.transform = "rotate(-45deg)";
-      armrot = -45;
-      if (currentSong + 1 == playlist.length) {
-        currentSong = 0;
-        music.innerHTML = '<source src="' +
-          playlist[currentSong]["mp3"] + '" type="audio/mp3">';
-      } else {
-        currentSong++;
-        music.innerHTML = '<source src="' +
-          playlist[currentSong]["mp3"] + '" type="audio/mp3">';
-      }
-      song.innerHTML = playlist[currentSong]["song"];
-      song.title = playlist[currentSong]["song"];
-      album.innerHTML = playlist[currentSong]["album"];
-      album.title = playlist[currentSong]["album"];
-      artist.innerHTML = playlist[currentSong]["artist"];
-      artist.title = playlist[currentSong]["artist"];
-      artwork.setAttribute("style", "transform: rotate(" + rot +
-        "deg); background:url(https://i.imgur.com/3idGgyU.png), url('" + playlist[currentSong]["artwork"] +
-        "') center no-repeat;");
-      music.load();
-      duration = music.duration;
-      music.play();
-    };
-    previous.onclick = function () {
-      arm.setAttribute("style", "transition: transform 800ms;");
-      arm.style.transform = "rotate(-45deg)";
-      clearTimeout(rotate_timer);
-      clearTimeout(arm_rotate_timer);
-      playhead.style.width = "0px";
-      bufferhead.style.width = "0px";
-      timer.innerHTML = "0:00";
-      music.innerHTML = "";
-      arm.style.transform = "rotate(-45deg)";
-      armrot = -45;
-      if (currentSong - 1 == -1) {
-        currentSong = playlist.length - 1;
-        music.innerHTML = '<source src="' +
-          playlist[currentSong]["mp3"] + '" type="audio/mp3">';
-      } else {
-        currentSong--;
-        music.innerHTML = '<source src="' +
-          playlist[currentSong]["mp3"] + '" type="audio/mp3">';
-      }
-      song.innerHTML = playlist[currentSong]["song"];
-      song.title = playlist[currentSong]["song"];
-      album.innerHTML = playlist[currentSong]["album"];
-      album.title = playlist[currentSong]["album"];
-      artist.innerHTML = playlist[currentSong]["artist"];
-      artist.title = playlist[currentSong]["artist"];
-      artwork.setAttribute("style", "transform: rotate(" + rot +
-        "deg); background:url(https://i.imgur.com/3idGgyU.png), url('" + playlist[currentSong]["artwork"] +
-        "') center no-repeat;");
-      music.load();
-      duration = music.duration;
-      music.play();
-    };
-    volume.oninput = function () {
-      music.volume = volume.value;
-      visablevolume.style.width = (80 - 11) * volume.value + "px";
-    };
-    music.addEventListener("canplay", function () {
-      duration = music.duration;
-    }, false);
+        $(".slider").change(function () {
+          $(".mysong")[0].volume = this.value;
+        });
+      });
+    });
   </script>
 </body>
 
