@@ -561,7 +561,7 @@ footer .controls .action-button a .fa {
 @media screen and (min-width: 320px) {
   .wadah {
     grid-template-columns: 1fr;
-    grid-template-rows: .9fr .1fr .1fr;
+    grid-template-rows: .7fr .1fr .1fr;
     grid-template-areas:
       "sidebar"
       "main"
