@@ -18,14 +18,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  width: 320px;
+  max-width: 360px;
   /* height: 480px; */
   height: 100%;
   overflow: hidden;
 }
 
 .player .main {
-  width: 100%;
   height: 100%;
   background-image: url(../files/img/bg-wa.png);
   background-size: cover;
@@ -35,16 +34,16 @@ body {
 }
 
 .player .main .thumbnail {
-  padding: 0 35px 15px 35px;
+  display: grid;
+  place-items: center;
 }
 
 .player .main .thumbnail img {
-  width: 100%;
   border-radius: 0 0 50% 50%;
   border-right: 5px solid #fff;
   border-left: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  height: 250px;
+  height: 269px;
   box-shadow: 0 2em 1.5em -1em rgb(0 0 0 / 80%),
     inset 0 0.0625em 0 rgb(255 255 255),
     inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
@@ -73,7 +72,7 @@ body {
 
 .player .main .details {
   text-align: center;
-  padding: 15px 0px;
+  margin: 25px 0px;
   color: #004D40;
 }
 
@@ -126,10 +125,11 @@ body {
   width: 100%;
   margin-top: -35px;
   height: 480px;
-  overflow-y: scroll;
+  overflow-y: auto;
   background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   transition: all 500ms ease-in-out;
+  border-radius: 20px;
 }
 
 .player .player-list .toggle-list {
@@ -228,7 +228,7 @@ body {
   background: #111;
 } */
 
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
   body {
     background: #000 !important;
   }
@@ -240,5 +240,9 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .player .main .thumbnail img{
+    height: 250px;
   }
 }
