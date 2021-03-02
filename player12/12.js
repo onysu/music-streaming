@@ -31,14 +31,14 @@ var Audio = {
 
         album = album ?
           '<span class="album">' + album + "</span>" :
-          "Unknown Album";
+          "";
         albumart = albumart ? '<img src="' + albumart + '">' : "";
         artist = artist ?
           '<span class="song-artist">' + artist + "</span>" :
-          "Unknown Artist";
+          "";
         title = title ?
           '<div class="song-title">' + title + "</div>" :
-          "Unknown Title";
+          "";
 
         $(this).html(
           '<div class="album-thumb pull-left">' + albumart +
@@ -54,9 +54,9 @@ var Audio = {
       currentTrack = $(".play-list a").index($(".play-list .active")) + 1;
       $(".play-position").text("Lagu " + currentTrack + " dari " + totalTrack + " lagu");
       albumart = albumart ? '<img src="' + albumart + '">' : "";
-      album = album ? album : "Album Tidak Diketahui";
-      title = title ? title : "Judul Tidak Diketahui";
-      artist = artist ? artist : "Artis Tidak Dikenal";
+      album = album ? album : "-";
+      title = title ? title : "-";
+      artist = artist ? artist : "-";
       $(".album-art").html(albumart);
       $(".current-info .song-album").html('<i class="fa fa-music"></i> ' + album);
       $(".current-info .song-title").html(
