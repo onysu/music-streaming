@@ -11,10 +11,14 @@
 
 ![127 0 0 1_5501_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/107440793-c8861a00-6b66-11eb-9995-369114f9b231.png)
 
-  <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Demo</a></li>
+  <li><a href="https://onysu.github.io/music-streaming/player1/index.html">Demo</a></li>
 
-  ![127 0 0 1_5501_player9_2 html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/106896784-9c146d00-6724-11eb-997b-f2102ea77626.png)
+  ![1](https://user-images.githubusercontent.com/14862922/109863836-b0507900-7c94-11eb-8bf3-dea0463c7f0b.png)
+
+  <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Demo</a></li>
   
+  ![127 0 0 1_5501_player9_2 html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/106896784-9c146d00-6724-11eb-997b-f2102ea77626.png)
+
   <li><a href="https://onysu.github.io/music-streaming/player12/index.html">Demo</a></li>
 
 ![127 0 0 1_5501_player12_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/108008005-e275a000-7031-11eb-8663-86e04cc78ee0.png)
