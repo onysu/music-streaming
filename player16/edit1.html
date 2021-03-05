@@ -138,10 +138,10 @@
     .player .player-list {
       position: absolute;
       width: 100%;
-      margin-top: -20px;
+      margin-top: -25px;
       height: 480px;
       overflow-y: scroll;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.9);
       z-index: 2;
       transition: all 500ms ease-in-out;
     }
@@ -150,10 +150,10 @@
       position: sticky;
       top: 0px;
       text-align: center;
-      height: 20px;
-      line-height: 20px;
+      /* height: 25px; */
+      line-height: 30px;
       /* background: #555; */
-      background: #000;
+      cursor: pointer;
     }
 
     .player .player-list .toggle-list i.fa {
@@ -204,13 +204,14 @@
     }
 
     .player .list .item .details h2 {
-      color: #eee;
-      font-size: 16px;
+      color: wheat;
+      font-size: small;
+      font-weight: 500;
     }
 
     .player .list .item .details p {
       color: #aaa;
-      font-size: 15px;
+      font-size: small;
     }
 
     .player .player-list::-webkit-scrollbar {
@@ -377,9 +378,6 @@
     _(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
       return `
     <div class="item" songIndex="${songIndex}">
-      <div class="thumbnail">
-        <img src="../files/img/${song.thumbnail}">
-      </div>
       <div class="details">
         <h2>${song.songname}</h2>
         <p>${song.artistname}</p>
