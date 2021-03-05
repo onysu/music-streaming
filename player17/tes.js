@@ -94,7 +94,7 @@ toggleSongList.addEventListener("click", function () {
   player.classList.toggle("activeSongList");
 });
 
-_(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
+_(".player .tengah .list").innerHTML = (songList.map(function (song, songIndex) {
   return `
 		<div class="item" songIndex="${songIndex}">
 			<div class="thumbnail">

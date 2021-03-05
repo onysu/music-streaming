@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #333;
+  /* background: #333; */
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
@@ -15,35 +15,36 @@ body {
 }
 
 .wadah {
+  max-width: 550px;
+  margin: 0 auto;
   display: grid;
   height: 100vh;
-  padding: 8px;
+  /* padding: 8px; */
   grid-template-columns: 1fr;
-  grid-template-rows: 0.01fr 1fr 0.01fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "nav"
     "player"
-    "footer";
+    "kolom-bawah";
   gap: 0.2rem;
   color: #004d40;
-  text-align: center;
+  /* text-align: center; */
 }
 
-nav {
+/* nav {
   background: #333;
   grid-area: nav;
   border-radius: var(--main-radius);
-  /* padding: var(--main-padding); */
+  padding: var(--main-padding);
   color: red;
   font-family: 'UnifrakturMaguntia', cursive;
-  /* font-size: 20px; */
-}
+  font-size: 20px;
+} */
 
 .player {
   position: relative;
   background: #ddd;
   grid-area: player;
-  border-radius: var(--main-radius);
+  /* border-radius: var(--main-radius); */
   overflow: hidden;
 }
 
@@ -54,12 +55,24 @@ nav {
 }
 
 .player .main .thumbnail img {
-  width: 100%;
+  width: 50%;
+  float: left;
 }
 
-.player .main .seekbar {
-  margin-top: -15px;
+.kolom-kanan{
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  overflow: auto;
 }
+
+.kolom-bawah {
+  grid-area: kolom-bawah;
+}
+
+/* .player .main .seekbar {
+  margin-top: -15px;
+} */
 
 .player .main .seekbar input[type="range"] {
   -webkit-appearance: none;
@@ -78,29 +91,29 @@ nav {
 }
 
 .player .main .details {
-  text-align: center;
-  padding: 25px 0px;
+  text-align: start;
+  padding: 10px;
 }
 
 .player .main .details h2 {
-  font-size: 25px;
+  font-size: small;
   color: #eee;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .player .main .details p {
-  font-size: 20px;
+  font-size: small;
   color: #aaa;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .player .main .controls {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .player .main .controls>div {
-  margin: 0px 30px;
+  margin: 0px 10px;
   cursor: pointer;
 }
 
@@ -216,13 +229,13 @@ nav {
   margin-top: -505px;
 }
 
-footer {
+/* footer {
   background: #333;
   color: wheat;
   grid-area: footer;
   border-radius: var(--main-radius);
-  /* padding: var(--main-padding); */
+  padding: var(--main-padding);
   font-weight: 300;
   font-size: 12px;
   color: #666;
-}
+} */

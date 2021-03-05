@@ -94,7 +94,7 @@ toggleSongList.addEventListener("click", function () {
   player.classList.toggle("activeSongList");
 });
 
-_(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
+_(".kolom-bawah .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
   return `
 		<div class="item" songIndex="${songIndex}">
 			<div class="thumbnail">
@@ -108,7 +108,7 @@ _(".player .player-list .list").innerHTML = (songList.map(function (song, songIn
 	`;
 }).join(""));
 
-let songListItems = _all(".player .player-list .list .item");
+let songListItems = _all(".kolom-bawah .player-list .list .item");
 for (let i = 0; i < songListItems.length; i++) {
   songListItems[i].addEventListener("click", function () {
     currentSongIndex = parseInt(songListItems[i].getAttribute("songIndex"));
