@@ -7,9 +7,9 @@ function _all(query) {
 }
 let songList = [{
     thumbnail: "In-the-Name-of-God.jpg",
-    audio: "Lady Gaga Ft Bradley Cooper - Shallow.mp3",
-    songname: "Shallow",
-    artistname: "Lady Gaga Ft Bradley Cooper",
+    audio: "Dream Theater - In The Name Of God.mp3",
+    songname: "In The Name Of God",
+    artistname: "Dream Theater",
   },
   {
     thumbnail: "Napalm-Death---suffer-the-children.jpg",
@@ -74,6 +74,7 @@ let songList = [{
 ];
 
 let currentSongIndex = 0;
+let repeatToggle = false;
 
 let player = _(".player"),
   toggleSongList = _(".player .toggle-list");
@@ -89,26 +90,30 @@ let main = {
   nextControl: _(".player .main .controls .next-control")
 }
 
+_(".player .main .controls .repeat-control").addEventListener("click", function () {
+  repeatToggle = !repeatToggle;
+});
+
 toggleSongList.addEventListener("click", function () {
   toggleSongList.classList.toggle("active");
   player.classList.toggle("activeSongList");
 });
 
-_(".kolom-bawah .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
+_(".player .player-list .list").innerHTML = (songList.map(function (song, songIndex) {
   return `
-		<div class="item" songIndex="${songIndex}">
-			<div class="thumbnail">
-				<img src="../files/img/${song.thumbnail}">
-			</div>
-			<div class="details">
-				<h2>${song.songname}</h2>
-				<p>${song.artistname}</p>
-			</div>
-		</div>
-	`;
+    <div class="item" songIndex="${songIndex}">
+      <div class="thumbnail">
+        <img src="../../files/img/${song.thumbnail}">
+      </div>
+      <div class="details">
+        <h2>${song.songname}</h2>
+        <p>${song.artistname}</p>
+      </div>
+    </div>
+    `;
 }).join(""));
 
-let songListItems = _all(".kolom-bawah .player-list .list .item");
+let songListItems = _all(".player .player-list .list .item");
 for (let i = 0; i < songListItems.length; i++) {
   songListItems[i].addEventListener("click", function () {
     currentSongIndex = parseInt(songListItems[i].getAttribute("songIndex"));
@@ -119,12 +124,13 @@ for (let i = 0; i < songListItems.length; i++) {
 
 function loadSong(songIndex) {
   let song = songList[songIndex];
-  main.thumbnail.setAttribute("src", "../files/img/" + song.thumbnail);
-  // document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("../files/img/${song.thumbnail}") center no-repeat`;
-  // document.body.style.backgroundSize = "cover";
+  main.thumbnail.setAttribute("src", "../../files/img/" + song.thumbnail);
+  document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
+      url("../../files/img/${song.thumbnail}") center no-repeat`;
+  document.body.style.backgroundSize = "cover";
   main.songname.innerText = song.songname;
   main.artistname.innerText = song.artistname;
-  main.audio.setAttribute("src", "../files/audio/" + song.audio);
+  main.audio.setAttribute("src", "../../files/audio/" + song.audio);
   main.seekbar.setAttribute("value", 0);
   main.seekbar.setAttribute("min", 0);
   main.seekbar.setAttribute("max", 0);
@@ -135,14 +141,17 @@ function loadSong(songIndex) {
     }
     main.seekbar.setAttribute("max", parseInt(main.audio.duration));
     main.audio.onended = function () {
-      main.nextControl.click();
+      if (repeatToggle == true) {
+        loadSong(currentSongIndex);
+      } else {
+        main.nextControl.click();
+      }
     }
   })
 }
 setInterval(function () {
   main.seekbar.value = parseInt(main.audio.currentTime);
 }, 1000);
-
 main.prevControl.addEventListener("click", function () {
   currentSongIndex--;
   if (currentSongIndex < 0) {
