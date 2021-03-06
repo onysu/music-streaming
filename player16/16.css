@@ -206,12 +206,14 @@ body {
   color: wheat;
   font-size: 14px;
   font-weight: 400;
+  margin: 0;
 }
 
 .player .player-list .item .details p {
   color: #aaa;
   font-size: 13px;
   font-weight: 300;
+  margin: 0;
 }
 
 .player-list::-webkit-scrollbar {
