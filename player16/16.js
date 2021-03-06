@@ -103,7 +103,7 @@ _(".player .player-list .list").innerHTML = (songList.map(function (song, songIn
   return `
     <div class="item" songIndex="${songIndex}">
       <div class="thumbnail">
-        <img src="../../files/img/${song.thumbnail}">
+        <img src="../files/img/${song.thumbnail}">
       </div>
       <div class="details">
         <h2>${song.songname}</h2>
@@ -124,13 +124,13 @@ for (let i = 0; i < songListItems.length; i++) {
 
 function loadSong(songIndex) {
   let song = songList[songIndex];
-  main.thumbnail.setAttribute("src", "../../files/img/" + song.thumbnail);
+  main.thumbnail.setAttribute("src", "../files/img/" + song.thumbnail);
   document.body.style.background = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
-      url("../../files/img/${song.thumbnail}") center no-repeat`;
+      url("../files/img/${song.thumbnail}") center no-repeat`;
   document.body.style.backgroundSize = "cover";
   main.songname.innerText = song.songname;
   main.artistname.innerText = song.artistname;
-  main.audio.setAttribute("src", "../../files/audio/" + song.audio);
+  main.audio.setAttribute("src", "../files/audio/" + song.audio);
   main.seekbar.setAttribute("value", 0);
   main.seekbar.setAttribute("min", 0);
   main.seekbar.setAttribute("max", 0);
