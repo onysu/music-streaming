@@ -31,9 +31,9 @@
 
 ![127 0 0 1_5501_play5er16_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106858351-1c6eaa00-66f4-11eb-8c7c-195279c84223.png)
 
-<!-- <li><a href="https://onysu.github.io/music-streaming/player17/index.html">Demo</a></li>
+<li><a href="https://onysu.github.io/music-streaming/player17/index.html">Demo</a></li>
 
-![onysu github io_music-streaming_player17_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/109107796-fa050500-7764-11eb-9ec2-5cb3532c7fd5.png) -->
+![onysu github io_music-streaming_player17_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/109107796-fa050500-7764-11eb-9ec2-5cb3532c7fd5.png)
 
 <li><a href="https://onysu.github.io/music-streaming/player20/index.html">Demo</a></li>
 
