@@ -128,17 +128,17 @@ body {
 
     .toggle-list {
       position: sticky;
-      top: 0px;
+      top: -1px;
       text-align: center;
-      height: 20px;
-      line-height: 20px;
+      height: 25px;
+      // line-height: 20px;
       background: #111;
       cursor: pointer;
 
       i.fa {
         color: #ccc;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: large;
+        font-weight: bold;
       }
 
       i.fa-angle-down {

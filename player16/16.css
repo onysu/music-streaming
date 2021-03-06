@@ -139,18 +139,17 @@ body {
 .player .player-list .toggle-list {
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: -1px;
   text-align: center;
-  height: 20px;
-  line-height: 20px;
+  height: 25px;
   background: #111;
   cursor: pointer;
 }
 
 .player .player-list .toggle-list i.fa {
   color: #ccc;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: large;
+  font-weight: bold;
 }
 
 .player .player-list .toggle-list i.fa-angle-down {
