@@ -229,7 +229,7 @@ body {
   margin-top: -480px;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 400px) and (max-width: 4000px) {
   .player .main .details {
     padding: 20px 0;
   }

@@ -216,7 +216,7 @@ body {
 //   filter: blur(5px);
 // }
 
-@media screen and(min-width:414px) {
+@media screen and(min-width:400px) and (max-width:4000px) {
   .player {
     .main {
       .details {
