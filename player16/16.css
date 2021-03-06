@@ -19,6 +19,7 @@ body {
           transform: translate(-50%, -50%);
   width: 100%;
   max-width: 375px;
+  min-width: 320px;
   height: 100%;
   max-height: 667px;
   overflow: hidden;
@@ -227,5 +228,21 @@ body {
 
 .player.activeSongList .player-list {
   margin-top: -480px;
+}
+
+@media screen and (min-width: 375px) {
+  .player .main .details {
+    padding: 20px 0;
+  }
+  .player .main .details h2 {
+    font-size: x-large;
+  }
+  .player .main .details p {
+    font-size: large;
+  }
+  .player .main .controls i.fa {
+    font-size: xx-large;
+    padding: 10px 0;
+  }
 }
 /*# sourceMappingURL=16.css.map */
