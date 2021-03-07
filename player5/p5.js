@@ -57,95 +57,88 @@ $(document).ready(function () {
         'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline%20Dion%20-%20I%20am%20Alive.mp3',
+        'thumb': 'https://upload.wikimedia.org/wikipedia/en/d/dd/Celine_dion-im_alive_s.jpg',
+        'trackName': 'I am Alive',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Immortality.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/61O4jjrOaxL._SL1200_.jpg',
+        'trackName': 'Immortality',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'Lets Talk About Love (1997)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Its All Coming Back To Me Now.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/7115ubghVQL._SL1500_.jpg',
+        'trackName': 'Its All Coming Back To Me Now',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'Falling into You (1996)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Prayer.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/71wlm4z8eGL._SL1500_.jpg',
+        'trackName': 'The Prayer',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'These Are Special Times (1998)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Sorry For Love.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
+        'trackName': 'Sorry For Love',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Super Love.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
+        'trackName': 'Super Love',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Thats The Way It Is.mp3',
+        'thumb': 'https://upload.wikimedia.org/wikipedia/en/5/5d/Celine_Dion_-_All_the_Way-_A_Decade_of_Song_cover.jpg',
+        'trackName': 'Thats The Way It Is',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'All the Way... A Decade of Song (1999)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - The Power Of Love.mp3',
+        'thumb': 'https://lastfm.freetls.fastly.net/i/u/ar0/f857e77d32064be7b9069eb32a7b92a2.jpg',
+        'trackName': 'The Power Of Love',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'The Colour of My Love (1993)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - To Love You More.mp3',
+        'thumb': 'https://lastfm.freetls.fastly.net/i/u/ar0/f857e77d32064be7b9069eb32a7b92a2.jpg',
+        'trackName': 'To Love You More',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'The Colour of My Love (1993)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Water From The Moon.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/71koWnmPRIL._SL1500_.jpg',
+        'trackName': 'Water From The Moon',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'Celine Dion (1992)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - When The Wrong One Loves You Right.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
+        'trackName': 'When The Wrong One Loves You Right',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Where Does My Heart Beat Now.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81arfauSkpL._SL1500_.jpg',
+        'trackName': 'Where Does My Heart Beat Now',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
-        'time': ''
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 5',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'Unison (1990)',
         'time': ''
       }]
     };
