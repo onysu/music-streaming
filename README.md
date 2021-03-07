@@ -14,6 +14,10 @@
   <li><a href="https://onysu.github.io/music-streaming/player1/index.html">Demo</a></li>
 
   ![1](https://user-images.githubusercontent.com/14862922/109863836-b0507900-7c94-11eb-8bf3-dea0463c7f0b.png)
+  
+  <li><a href="https://onysu.github.io/music-streaming/player5/index.html">Demo</a></li>
+
+  ![Screenshot 2021-03-07 233732](https://user-images.githubusercontent.com/14862922/110247313-3a9f2280-7f9e-11eb-88c6-c8bce0817b87.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player9/index.html">Demo</a></li>
   
