@@ -36,25 +36,25 @@ $(document).ready(function () {
         'trackAlbum': 'Falling into You (1996)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline%20Dion%20-%20Goodbyes%20(The%20Saddest%20Word).mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
+        'trackName': 'Goodbyes (The Saddest Word)',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - I Drove All Night.mp3',
+        'thumb': 'https://images.genius.com/93e98623a4a1122c07d2e44fd0d821fa.1000x1000x1.jpg',
+        'trackName': 'I Drove All Night',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'One Heart (2003)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
-        'thumb': '',
-        'trackName': 'track 4',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - I Surrender.mp3',
+        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
+        'trackName': 'I Surrender',
         'trackArtist': 'Céline Dion',
-        'trackAlbum': 'album',
+        'trackAlbum': 'A New Day Has Come (2002)',
         'time': ''
       }, {
         'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
