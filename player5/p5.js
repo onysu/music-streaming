@@ -36,113 +36,113 @@ $(document).ready(function () {
         'trackAlbum': 'Falling into You (1996)',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3',
-        'thumb': 'https://cdn.acidcow.com/pics/20160907/these_college_babes_01.jpg',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 4',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
         'time': ''
       }, {
-        'file': 'https://www.bensound.com/bensound-music/bensound-highoctane.mp3',
-        'thumb': 'https://th.bing.com/th/id/OIP.Eqg5RvK2bm0ZNsMzAWpCCQHaHa?pid=ImgDet&rs=1',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/',
+        'thumb': '',
         'trackName': 'track 5',
         'trackArtist': 'Céline Dion',
         'trackAlbum': 'album',
