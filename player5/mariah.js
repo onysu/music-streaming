@@ -15,131 +15,47 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - A New Day Has Come.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg',
-        'trackName': 'A New Day Has Come',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - Endless Love.mp3',
+        'thumb': 'https://th.bing.com/th/id/OIP.P8MpWUqbDwWQk04J7e2aEgHaHa?pid=ImgDet&rs=1',
+        'trackName': 'Endless Love',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
         'time': '4:18'
       },{
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - All By Myself.mp3',
-        'thumb': 'https://madegrandbycam.com/wp-content/uploads/2017/02/dionceline_.jpg',
-        'trackName': 'All By Myself',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Falling into You (1996)',
-        'time': '3:58'
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - Hero.mp3',
+        'thumb': 'https://i.pinimg.com/originals/09/2f/e5/092fe50dd6a8d444426f86c6ed64394f.jpg',
+        'trackName': 'Hero',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '4:17'
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Because You Loved Me.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/7115ubghVQL._SL1500_.jpg',
-        'trackName': 'Because You Loved Me',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Falling into You (1996)',
-        'time': '4:37'
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - I Still Believe.mp3',
+        'thumb': 'https://images.8tracks.com/cover/i/000/172/776/mariah_carey_wallpaper_by_catsya_1_-6237.jpg?rect=240,0,800,800&q=98&fm=jpg&fit=max',
+        'trackName': 'I Still Believe',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '3:56'
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline%20Dion%20-%20Goodbyes%20(The%20Saddest%20Word).mp3',
-        'thumb': 'https://fm100.com/wp-content/uploads/sites/12/2019/02/celine-2015-instagram-updated.jpg',
-        'trackName': 'Goodbyes (The Saddest Word)',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '5:19'
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - My All.mp3',
+        'thumb': 'https://pm1.narvii.com/6315/7241c60cf846f18b5a9e246d726a75728a974d81_hq.jpg',
+        'trackName': 'My All',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '3:51'
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - I Drove All Night.mp3',
-        'thumb': 'https://images.genius.com/93e98623a4a1122c07d2e44fd0d821fa.1000x1000x1.jpg',
-        'trackName': 'I Drove All Night',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'One Heart (2003)',
-        'time': '3:58'
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - We Belong Together.mp3',
+        'thumb': 'https://th.bing.com/th/id/OIP._gbR5r2kQOhuKqDHDlRJMgHaHa?pid=ImgDet&rs=1',
+        'trackName': 'We Belong Together',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '3:22'
       }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - I Surrender.mp3',
-        'thumb': 'https://3.bp.blogspot.com/-zM9bo9kDBr4/UcnHqldRaAI/AAAAAAABE-M/9LTPP4yeaC8/s1600/Celine-Dion-wallpapers-20.jpg',
-        'trackName': 'I Surrender',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '4:49'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline%20Dion%20-%20I%20am%20Alive.mp3',
-        'thumb': 'https://upload.wikimedia.org/wikipedia/en/d/dd/Celine_dion-im_alive_s.jpg',
-        'trackName': 'I am Alive',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '3:28'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Immortality.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/61O4jjrOaxL._SL1200_.jpg',
-        'trackName': 'Immortality',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Lets Talk About Love (1997)',
-        'time': '4:10'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Its All Coming Back To Me Now.mp3',
-        'thumb': 'https://th.bing.com/th/id/Rf0ddff7d9afd68c09d41af845603e03d?rik=uaGB8VRHFGmg8A&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1331516%2fimages%2fo-CELINE-DION-facebook.jpg&ehk=vh1dOMPOf6ymMmNnAjpRFQnZLnIbwVeq1FBQYIr8asc%3d&risl=&pid=ImgRaw',
-        'trackName': 'Its All Coming Back To Me Now',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Falling into You (1996)',
-        'time': '7:36'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Prayer.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/71wlm4z8eGL._SL1500_.jpg',
-        'trackName': 'The Prayer',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'These Are Special Times (1998)',
-        'time': '5:35'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Sorry For Love.mp3',
-        'thumb': 'https://cdn2.stylecraze.com/wp-content/uploads/2020/03/Conclusion.jpg',
-        'trackName': 'Sorry For Love',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '4:11'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Super Love.mp3',
-        'thumb': 'https://i.pinimg.com/736x/16/25/fc/1625fc3691e398099fa2ed41721c9fe4--c%C3%A8line-dion-passion-music.jpg',
-        'trackName': 'Super Love',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '4:18'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Thats The Way It Is.mp3',
-        'thumb': 'https://upload.wikimedia.org/wikipedia/en/5/5d/Celine_Dion_-_All_the_Way-_A_Decade_of_Song_cover.jpg',
-        'trackName': 'Thats The Way It Is',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'All the Way... A Decade of Song (1999)',
-        'time': '4:02'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - The Power Of Love.mp3',
-        'thumb': 'https://lastfm.freetls.fastly.net/i/u/ar0/f857e77d32064be7b9069eb32a7b92a2.jpg',
-        'trackName': 'The Power Of Love',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'The Colour of My Love (1993)',
-        'time': '4:46'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - To Love You More.mp3',
-        'thumb': 'https://i1.sndcdn.com/artworks-000016613073-ppw731-t500x500.jpg',
-        'trackName': 'To Love You More',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'The Colour of My Love (1993)',
-        'time': '5:28'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Water From The Moon.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/71koWnmPRIL._SL1500_.jpg',
-        'trackName': 'Water From The Moon',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Celine Dion (1992)',
-        'time': '4:16'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - When The Wrong One Loves You Right.mp3',
-        'thumb': 'https://mp3jp-download.com/wp-content/uploads/2018/12/YPQHeOK.jpg',
-        'trackName': 'When The Wrong One Loves You Right',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'A New Day Has Come (2002)',
-        'time': '3:49'
-      }, {
-        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Where Does My Heart Beat Now.mp3',
-        'thumb': 'https://images-na.ssl-images-amazon.com/images/I/81arfauSkpL._SL1500_.jpg',
-        'trackName': 'Where Does My Heart Beat Now',
-        'trackArtist': 'Céline Dion',
-        'trackAlbum': 'Unison (1990)',
-        'time': '4:34'
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Mariah Carey - Without You.mp3',
+        'thumb': 'https://th.bing.com/th/id/OIP.Dcg1sr_oKhxzLx4sv8YPKwHaHk?pid=ImgDet&rs=1',
+        'trackName': 'Without You',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '3:33'      
       }]
     };
     var arr = t.playList;
