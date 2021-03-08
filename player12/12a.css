@@ -344,7 +344,7 @@ footer .controls .duration {
 
 .time>* {
   margin: 0 0.5em;
-  font-size: small;
+  font-size: x-small;
 }
 
 .bar {
@@ -357,7 +357,7 @@ footer .controls .duration {
 }
 
 .bar span {
-  display: block;
+  display: r;
   width: 0;
   height: 100%;
   background-color: red;
