@@ -15,26 +15,26 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
-        'file': '',
-        'thumb': '',
-        'trackName': '',
-        'trackArtist': '',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Lady%20Gaga%20Ft%20Bradley%20Cooper%20-%20Shallow.mp3',
+        'thumb': 'https://th.bing.com/th/id/OIP.mENqjxe1F7A_gUwIopMBYgHaHa?pid=ImgDet&rs=1',
+        'trackName': 'Shallow',
+        'trackArtist': 'Lady Gaga Ft Bradley Cooper',
         'trackAlbum': '',
-        'time': ''
+        'time': '3:35'
       },{
-        'file': '',
-        'thumb': '',
-        'trackName': '',
-        'trackArtist': '',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Toni%20Braxton%20-%20Un-Break%20My%20Heart.mp3',
+        'thumb': 'https://i1.sndcdn.com/artworks-000147242945-rz4bcu-t500x500.jpg',
+        'trackName': 'Un-Break My Heart',
+        'trackArtist': 'Toni Braxton',
         'trackAlbum': '',
-        'time': ''
+        'time': '4:30'     
       }, {
-        'file': '',
+        'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Jihan%20Audy%20-%20Suara%20Syairku.mp3',
         'thumb': '',
-        'trackName': '',
-        'trackArtist': '',
+        'trackName': 'Suara Syairku',
+        'trackArtist': 'Jihan Audy',
         'trackAlbum': '',
-        'time': ''      
+        'time': '5:56'      
       }]
     };
     var arr = t.playList;
