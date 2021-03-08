@@ -30,7 +30,7 @@ $(document).ready(function () {
         'time': '4:30'     
       }, {
         'file': 'https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Jihan%20Audy%20-%20Suara%20Syairku.mp3',
-        'thumb': '',
+        'thumb': 'https://i0.wp.com/www.medinafm.id/wp-content/uploads/2020/01/JihanAudy-SederhanaCarakuMencintaimuNewRelease.jpg?fit=1465%2C1465&ssl=1',
         'trackName': 'Suara Syairku',
         'trackArtist': 'Jihan Audy',
         'trackAlbum': '',
