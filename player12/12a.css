@@ -31,6 +31,7 @@ body:before {
 .navbar-dark .navbar-toggler {
   color: transparent;
   border: none;
+  float: right;
 }
 
 .navbar-toggler {
