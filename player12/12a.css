@@ -752,6 +752,6 @@ footer .controls .action-button a .fa {
     left: unset;
     z-index: 1030;
     width: 375px;
-    padding: 0 10px;
+    padding: 5px 10px;
   }
 }
