@@ -643,7 +643,7 @@ footer .controls .action-button a .fa {
     max-width: 320px;
     max-height: 569px;
     margin: 0 auto;
-    background-image: url(../files/img/bg-wa.png);
+    background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/bg-wa.png);
   }
 
   #sidebar .album-art {
