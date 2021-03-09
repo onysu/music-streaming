@@ -686,6 +686,9 @@ footer .controls .action-button a .fa {
     border-radius: 15px;
     max-width: 375px;
     max-height: 569px;
+    box-shadow: 0 1.8em 1em -1em rgb(0 0 0 / 80%),
+    inset 0 0.0625em 0 rgb(255 255 255),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   }
 
   main {
