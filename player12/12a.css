@@ -52,7 +52,7 @@ body:before {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+  padding: 0 20px;
   margin-bottom: 0;
   list-style: square;
   font-size: small;
@@ -677,7 +677,7 @@ footer .controls .action-button a .fa {
     bottom: 0;
     left: 0;
     z-index: 1030;
-    padding: 3px 10px;
+    padding: 5px 10px;
   }
 }
 
@@ -731,10 +731,6 @@ footer .controls .action-button a .fa {
     text-overflow: unset;
     overflow: unset;
     font-weight: 500;
-  }
-
-  .navbar-nav {
-    list-style: none;
   }
 
   #sidebar {
