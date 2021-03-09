@@ -658,7 +658,8 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-title {
-    font-size: 5vw;
+    font-size: 16px;
+    font-weight: 500;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -666,7 +667,8 @@ footer .controls .action-button a .fa {
 
   main .current-info .song-artist,
   .song-album {
-    font-size: 4vw;
+    font-size: 14px;
+    font-weight: 300;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
