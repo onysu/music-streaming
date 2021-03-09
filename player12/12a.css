@@ -686,6 +686,10 @@ footer .controls .action-button a .fa {
     max-width: 375px;
   }
 
+  .wadah{
+    border-radius: 15px;
+  }
+
   main {
     padding: 5px;
   }
