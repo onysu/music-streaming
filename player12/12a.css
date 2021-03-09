@@ -307,7 +307,7 @@ main .play-list .songs-info .songs-detail {
 main .current-info {
   color: #004D40;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 40%);
-  width: 250px;
+  /* width: 250px; */
 }
 
 /* main .current-info .song-title {
@@ -692,9 +692,9 @@ footer .controls .action-button a .fa {
     inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   }
 
-  main {
+  /* main {
     padding: 5px;
-  }
+  } */
 
   main .current-info {
     width: 100%;
@@ -709,16 +709,16 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-artist {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 
   main .current-info .song-album {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 
   main .current-info .fa {
     min-width: 30px;
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: center;
     font-weight: 200;
   }
