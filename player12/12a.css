@@ -10,7 +10,7 @@
   padding: 0 !important;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
   color: transparent;
   border: none;
 }
@@ -27,6 +27,7 @@
   font-size: small;
   text-decoration: none;
   white-space: nowrap;
+  font-weight: 300;
 }
 
 .navbar-nav {
@@ -38,10 +39,17 @@
   font-size: small;
   line-height: 1;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
+  color: aqua;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
+.navbar-dark .navbar-nav .nav-link {
+  color: aqua;
+  font-weight: 300;
+}
+
+.bg-dark {
+  /* background-color: #f8f9fa !important; */
+  background-color: #222 !important;
   border-radius: 15px 15px 0 0;
 }
 
