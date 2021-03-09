@@ -125,7 +125,7 @@ footer {
 
 #artis {
   grid-area: artis;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);  
+  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
 }
 
 body {
@@ -672,20 +672,9 @@ footer .controls .action-button a .fa {
 }
 
 @media screen and (min-width:768px) and (max-width:4000px) {
-  /* .wadah {
-    display: grid;
-    width: 100%;
-    max-width: 320px;
-    height: 100vh;
-    padding: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "sidebar main"
-      "footer footer";
-    padding: 25px;
-    position: relative;
-  } */
+  main {
+    padding: 10px;
+  }
 
   main .current-info {
     width: 55%;
@@ -700,16 +689,16 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-artist {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 
   main .current-info .song-album {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 
   main .current-info .fa {
     min-width: 30px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
     font-weight: 200;
   }
@@ -730,8 +719,15 @@ footer .controls .action-button a .fa {
     font-weight: 500;
   }
 
-  .navbar-nav{
+  .navbar-nav {
     list-style: none;
   }
-  
+
+  #sidebar {
+    height: 320px;
+  }
+
+  footer .controls .action-button {
+    padding: 10px;
+  }
 }
