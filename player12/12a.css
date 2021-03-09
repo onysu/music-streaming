@@ -629,7 +629,7 @@ footer .controls .action-button a .fa {
   font-weight: 600;
 }
 
-@media screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
   .wadah {
     grid-template-columns: 1fr;
     grid-template-rows: .7fr .1fr .1fr .1fr;
@@ -640,8 +640,8 @@ footer .controls .action-button a .fa {
       "artis";
     width: 100%;
     height: 100vh;
-    max-width: 375px;
-    max-height: 569px;
+    max-width: 320px;
+    max-height: 480px;
     margin: 0 auto;
     background-image: url(../files/img/bg-wa.png);
   }
@@ -681,13 +681,11 @@ footer .controls .action-button a .fa {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:4000px) {
-  .container {
-    max-width: 375px;
-  }
-
+@media only screen and (min-width:768px) and (max-width:4000px) {
   .wadah{
     border-radius: 15px;
+    max-width: 375px;
+    max-height: 569px;
   }
 
   main {
