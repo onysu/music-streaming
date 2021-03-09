@@ -643,7 +643,7 @@ footer .controls .action-button a .fa {
     max-width: 320px;
     max-height: 569px;
     margin: 0 auto;
-    background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/bg-wa.png);
+    background-image: url(https://github.com/onysu/music-streaming/blob/main/files/img/bg-wa.png?raw=true);
   }
 
   #sidebar .album-art {
@@ -683,13 +683,13 @@ footer .controls .action-button a .fa {
 }
 
 @media only screen and (min-width:768px) and (max-width:4000px) {
-  .wadah{
+  .wadah {
     border-radius: 15px;
     max-width: 375px;
     max-height: 569px;
     box-shadow: 0 1.8em 1em -1em rgb(0 0 0 / 80%),
-    inset 0 0.0625em 0 rgb(255 255 255),
-    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+      inset 0 0.0625em 0 rgb(255 255 255),
+      inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
   }
 
   /* main {
@@ -704,23 +704,25 @@ footer .controls .action-button a .fa {
   }
 
   main .current-info .song-title {
-    font-size: 2vw;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   main .current-info .song-artist {
-    font-size: 1.5vw;
+    font-size: 16px;
+    font-weight: 300;
   }
 
   main .current-info .song-album {
-    font-size: 1.5vw;
+    font-size: 16px;
+    font-weight: 300;
   }
 
   main .current-info .fa {
     min-width: 30px;
-    font-size: 1.5vw;
+    font-size: 14px;
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   /* main .play-list .songs-info {
