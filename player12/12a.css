@@ -669,9 +669,22 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+  .fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 3px 10px;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:4000px) {
+  .container {
+    max-width: 375px;
+  }
+
   main {
     padding: 5px;
   }
@@ -729,5 +742,15 @@ footer .controls .action-button a .fa {
 
   footer .controls .action-button {
     padding: 10px;
+  }
+
+  .fixed-bottom {
+    position: fixed;
+    right: unset;
+    bottom: 0;
+    left: unset;
+    z-index: 1030;
+    width: 375px;
+    padding: 0 10px;
   }
 }
