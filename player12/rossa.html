@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>AudioPlayer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="12a.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wadah">
+      <div class="audio"></div>
+      <div id="sidebar">
+        <div class="album-art"></div>
+      </div>
+      <main>
+        <div class="play-list">
+          <a href="#" class="play" data-id="1" data-album="" data-artist="Lady Gaga
+            Ft Bradley Cooper" data-title="Shallow"
+            data-albumart="https://th.bing.com/th/id/OIP.mENqjxe1F7A_gUwIopMBYgHaHa?pid=ImgDet&rs=1"
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Lady%20Gaga%20Ft%20Bradley%20Cooper%20-%20Shallow.mp3"></a>
+
+          <a href="#" class="play" data-id="2" data-album="" data-artist="Toni Braxton" data-title="Un-Break My Heart"
+            data-albumart="https://i1.sndcdn.com/artworks-000147242945-rz4bcu-t500x500.jpg"
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Toni%20Braxton%20-%20Un-Break%20My%20Heart.mp3"></a>
+
+          <a href="#" class="play" data-id="3" data-album="" data-artist="Jihan Audy" data-title="Suara Syairku"
+            data-albumart="https://i0.wp.com/www.medinafm.id/wp-content/uploads/2020/01/JihanAudy-SederhanaCarakuMencintaimuNewRelease.jpg?fit=1465%2C1465&ssl=1"
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Jihan%20Audy%20-%20Suara%20Syairku.mp3"></a>
+
+          <a href="#" class="play" data-id="4" data-album="Hati Yang Kau Sakiti Korean Version" data-artist="Rossa"
+            data-title="The Heart You Hurt"
+            data-albumart="https://rossaofficial.com/wp-content/uploads/2020/08/Rossa-The-Heart-You-Hurt-Hati-Yang-Kau-Sakiti-Korean-Version.jpg"
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Rossa%20-%20The%20Heart%20You%20Hurt%20(Hati%20Yang%20Kau%20Sakiti%20Korean%20Version).mp3"></a>
+
+          <!-- <a href="#" class="play" data-id="4" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="6" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="7" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="8" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="9" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="10" data-album="" data-artist="" data-title="" data-albumart=""
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+
+          <!-- <a href="#" class="play" data-id="1" data-album="" data-artist="" data-title="" data-albumart="kosong"
+            data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/"></a> -->
+        </div>
+        <div class="current-info">
+          <div class="song-title"></div>
+          <div class="song-artist"></div>
+          <div class="song-album"></div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="controls">
+          <div class="time">
+            <span class="play-current-time">00:00</span>
+            <span class="bar"></span>
+            <span class="play-total-time">00:00</span>
+          </div>
+          <div class="action-button">
+            <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
+            <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
+            <a href="#" class="stop"><i class="fa fa-stop"></i></a>
+            <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+            <!-- <a href="#" class="mute"><i class="fa fa-volume-mute"></i></a> -->
+            <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
+          </div>
+          <div class="vol">
+            <div class="duration clearfix">
+              <span class="pull-left play-position"></span>
+              <span class="pull-right"></span>
+            </div>
+            <span><i class='fas fa-volume-down'></i></span>
+            <span><input type="range" class="volume" min="0" max="1" step="0.1" value="1" data-css="0.5"></span>
+            <span><i class='fas fa-volume-up'></i></span>
+          </div>
+        </div>
+      </footer>
+      <div id="artis">
+        <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Artis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Celion Dion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mariah.html">Mariah Carey</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="whitney.html">Whitney Houston</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lain.html">Lainnya ...</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://enscrollplugin.com/releases/enscroll-0.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="12.js"></script>
+</body>
+
+</html>
