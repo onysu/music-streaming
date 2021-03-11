@@ -183,7 +183,7 @@ body {
   background-position: top;
 }
 
-main .play-list {
+.play-list {
   top: 0;
   left: 0;
   right: 0;
@@ -198,7 +198,7 @@ main .play-list {
   border-top: 1px solid aqua;
 }
 
-main .play-list a {
+.play-list a {
   display: flex;
   padding: 6px 10px;
   border-bottom: 1px solid black;
@@ -206,15 +206,15 @@ main .play-list a {
   text-decoration: none;
 }
 
-main .play-list a:hover {
+.play-list a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-main .play-list a.active {
+.play-list a.active {
   color: #004D40;
 }
 
-main .play-list .album-thumb {
+.play-list .album-thumb {
   width: 35px;
   height: 35px;
   overflow: hidden;
@@ -223,12 +223,12 @@ main .play-list .album-thumb {
   border-radius: 50%;
 }
 
-main .play-list .album-thumb img {
+.play-list .album-thumb img {
   width: 100%;
   display: block;
 }
 
-main .play-list .songs-info {
+.play-list .songs-info {
   color: #222;
   font-weight: 500;
   overflow: hidden;
@@ -236,13 +236,13 @@ main .play-list .songs-info {
   text-overflow: ellipsis;
 }
 
-main .play-list .songs-info .song-title {
+.play-list .songs-info .song-title {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-main .play-list .songs-info .songs-detail {
+.play-list .songs-info .songs-detail {
   font-size: 12px;
   overflow: hidden;
   white-space: nowrap;
@@ -252,17 +252,18 @@ main .play-list .songs-info .songs-detail {
   font-weight: 300;
 }
 
-main .current-info {
+.current-info {
   color: #004D40;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 40%);
+  padding: 10px 0;
 }
 
-main .current-info .song-artist,
+.current-info .song-artist,
 .song-album {
   font-size: 5vw;
 }
 
-main .current-info .fa {
+.current-info .fa {
   min-width: 30px;
   font-size: 5vw;
   text-align: center;
@@ -271,6 +272,9 @@ main .current-info .fa {
 
 footer .controls {
   padding: 0 15px;
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
 }
 
 #sidebar .toggle-track-artis a {
@@ -336,7 +340,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px 12px 5px;
+  margin: 0 5px 10px 5px;
 }
 
 .vol>* {
@@ -440,8 +444,8 @@ footer .controls .action-button a .fa {
       "artis";
     width: 100%;
     height: 100vh;
-    max-width: 320px;
-    max-height: 569px;
+    /* max-width: 320px; */
+    /* max-height: 569px; */
     margin: 0 auto;
     background-image: url(https://github.com/onysu/music-streaming/blob/main/files/img/bg-wa.png?raw=true);
   }
@@ -483,7 +487,7 @@ footer .controls .action-button a .fa {
     padding: 5px 10px;
   }
 
-  main .play-list {
+  footer .play-list {
     padding: 5px;
     overflow: auto;
     white-space: nowrap;
@@ -505,44 +509,49 @@ footer .controls .action-button a .fa {
       left: 50%;
       transform: translate(-50%, -50%);
   }
+  /* footer .controls {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+  } */
 
-  main .current-info {
+  .current-info {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  main .current-info .song-title {
+  .current-info .song-title {
     font-size: 20px;
     font-weight: 500;
   }
 
-  main .current-info .song-artist {
+  .current-info .song-artist {
     font-size: 16px;
     font-weight: 300;
   }
 
-  main .current-info .song-album {
+  .current-info .song-album {
     font-size: 16px;
     font-weight: 300;
   }
 
-  main .current-info .fa {
+  .current-info .fa {
     min-width: 30px;
     font-size: 14px;
     text-align: center;
     font-weight: 300;
   }
 
-  main .play-list {
+  .play-list {
     top: 26px;
     bottom: 61px;
     display: none;
     overflow-y: auto;
     position: fixed;
-    background: rgba(255, 255, 255, 0.8);
-    height: 525px;
+    background: rgba(255, 255, 255, 0.7);
+    height: 528px;
     width: 366px;
     border-bottom: 1px solid aqua;
     border-top: 1px solid aqua;
@@ -551,7 +560,7 @@ footer .controls .action-button a .fa {
     padding: 5px;
   }
 
-  main .play-list .songs-info .song-title {
+  .play-list .songs-info .song-title {
     font-size: 1vw;
     color: #333;
     white-space: unset;
