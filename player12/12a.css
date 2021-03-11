@@ -337,7 +337,7 @@ footer .controls .active .fa-pp:before {
   content: "\f04c";
 }
 
-/* footer .controls .progress {
+footer .controls .progress {
   flex-grow: 2;
   height: 2px;
   margin: 0 0 15px 0;
@@ -345,7 +345,7 @@ footer .controls .active .fa-pp:before {
   background-color: #999;
   box-shadow: 0 0.0625em rgb(255 255 255);
   cursor: pointer;
-} */
+}
 
 footer .controls .duration {
   color: #444;
