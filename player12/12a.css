@@ -72,22 +72,6 @@ body:before {
   border-radius: 15px 15px 0 0;
 }
 
-/* .wadah {
-  position: relative;
-  background-image: url(../files/img/bg-wa.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .2fr;
-  grid-template-areas:
-  "sidebar main"
-  "footer footer";
-  background-color: #eee;
-} */
-
 .fa,
 .fas {
   font-family: "Font Awesome 5 Pro";
@@ -114,7 +98,6 @@ main {
   height: 40px;
   top: 10px;
   right: 5px;
-  /* border-radius: 50%; */
   line-height: 40px;
   text-align: center;
   background-image: linear-gradient(#fff, #999);
@@ -193,40 +176,12 @@ body {
     inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
 }
 
-/* #sidebar .album-art:before {
-  top: 25%;
-  left: 5%;
-  width: 100%;
-  content: "";
-  font-size: 60px;
-  font-weight: 600;
-  position: absolute;
-  margin-left: -100px;
-  color: rgba(255, 255, 255, 0.4);
-} */
-
-/* #sidebar .album-art:after {
-  top: 0;
-  left: 0;
-  content: "";
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
-} */
-
 #sidebar .album-art img {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: top;
 }
-
-/* #sidebar .album-art.blur img {
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  filter: blur(3px);
-} */
 
 main .play-list {
   top: 0;
@@ -244,14 +199,8 @@ main .play-list {
 }
 
 main .play-list a {
-  /* color: #ccc; */
   display: flex;
-  /* overflow: hidden; */
   padding: 6px 10px;
-  /* white-space: nowrap; */
-  /* text-overflow: ellipsis; */
-  /* transition: all 0.4s ease-in-out 0s; */
-  /* width: 100%; */
   border-bottom: 1px solid black;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
   text-decoration: none;
@@ -441,6 +390,7 @@ footer .controls .duration {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
 /* END!custom-scrollbar */
 
 .play-position {
@@ -531,6 +481,7 @@ footer .controls .action-button a .fa {
     z-index: 1030;
     padding: 5px 10px;
   }
+
   main .play-list {
     padding: 5px;
     overflow: auto;
