@@ -342,6 +342,7 @@ footer .controls .duration {
 .vol>* {
   margin: 0.3em;
   font-size: medium;
+  line-height: 0;
 }
 
 .volume {
