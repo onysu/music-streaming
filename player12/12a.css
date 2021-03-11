@@ -500,6 +500,10 @@ footer .controls .action-button a .fa {
     box-shadow: 0 1.8em 1em -1em rgb(0 0 0 / 80%),
       inset 0 0.0625em 0 rgb(255 255 255),
       inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
   main .current-info {
@@ -532,14 +536,14 @@ footer .controls .action-button a .fa {
   }
 
   main .play-list {
-    top: 5px;
+    top: 26px;
     bottom: 61px;
     display: none;
     overflow-y: auto;
     position: fixed;
     background: rgba(255, 255, 255, 0.8);
-    height: 561px;
-    width: 368px;
+    height: 525px;
+    width: 366px;
     border-bottom: 1px solid aqua;
     border-top: 1px solid aqua;
     margin: auto;
@@ -548,7 +552,7 @@ footer .controls .action-button a .fa {
   }
 
   main .play-list .songs-info .song-title {
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: #333;
     white-space: unset;
     text-overflow: unset;
