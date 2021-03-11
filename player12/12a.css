@@ -246,12 +246,12 @@ main .play-list {
 main .play-list a {
   /* color: #ccc; */
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 6px 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition: all 0.4s ease-in-out 0s;
-  width: 100%;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  /* transition: all 0.4s ease-in-out 0s; */
+  /* width: 100%; */
   border-bottom: 1px solid black;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
   text-decoration: none;
@@ -280,8 +280,6 @@ main .play-list .album-thumb img {
 }
 
 main .play-list .songs-info {
-  /* max-width: 250px; */
-  /* text-shadow: 0 2px 2px #000; */
   color: #222;
   font-weight: 500;
   overflow: hidden;
@@ -289,18 +287,18 @@ main .play-list .songs-info {
   text-overflow: ellipsis;
 }
 
-/* main .play-list .songs-info .song-title {
+main .play-list .songs-info .song-title {
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
-} */
+}
 
 main .play-list .songs-info .songs-detail {
   font-size: 12px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 250px;
+  width: 240px;
   color: #666;
   font-weight: 300;
 }
@@ -308,14 +306,7 @@ main .play-list .songs-info .songs-detail {
 main .current-info {
   color: #004D40;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 40%);
-  /* width: 250px; */
 }
-
-/* main .current-info .song-title {
-  font-size: 8vw;
-  font-weight: 500;
-  line-height: 1.2;
-} */
 
 main .current-info .song-artist,
 .song-album {
@@ -539,6 +530,13 @@ footer .controls .action-button a .fa {
     left: 0;
     z-index: 1030;
     padding: 5px 10px;
+  }
+  main .play-list {
+    padding: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 320px;
   }
 }
 
