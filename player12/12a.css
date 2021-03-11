@@ -8,6 +8,7 @@
 
 body {
   background: #666;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
 body:before {
@@ -57,7 +58,7 @@ body:before {
   list-style: square;
   font-size: small;
   line-height: 1;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
+  
   color: aqua;
 }
 
@@ -76,7 +77,6 @@ body:before {
 .fas {
   font-family: "Font Awesome 5 Pro";
   font-weight: 300;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 main {
@@ -118,7 +118,6 @@ footer {
 
 #artis {
   grid-area: artis;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
 }
 
 body {
@@ -210,7 +209,6 @@ body {
   display: flex;
   padding: 6px 10px;
   border-bottom: 1px solid black;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
   text-decoration: none;
 }
 
@@ -313,7 +311,6 @@ footer .controls .duration {
   justify-content: center;
   align-items: center;
   margin: 2% 0;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 .time>* {
@@ -402,7 +399,6 @@ footer .controls .duration {
 
 .play-position {
   font-size: xx-small;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
 footer .controls .action-button {
@@ -496,6 +492,12 @@ footer .controls .action-button a .fa {
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 320px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width:767.98px) {
+  #sidebar .album-art{
+    height: 140%;
   }
 }
 
