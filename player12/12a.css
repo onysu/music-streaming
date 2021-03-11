@@ -108,6 +108,14 @@ footer {
   grid-area: footer;
 }
 
+.current-info {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 2% 0;
+}
+
 #artis {
   grid-area: artis;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
@@ -252,12 +260,6 @@ body {
   font-weight: 300;
 }
 
-.current-info {
-  color: #004D40;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 40%);
-  padding: 10px 0;
-}
-
 .current-info .song-artist,
 .song-album {
   font-size: 5vw;
@@ -273,7 +275,7 @@ body {
 footer .controls {
   padding: 0 15px;
   position: fixed;
-  bottom: 35px;
+  bottom: 40px;
   width: 100%;
 }
 
@@ -310,7 +312,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 0.5em; */
+  margin: 2% 0;
   text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 30%);
 }
 
@@ -340,7 +342,7 @@ footer .controls .duration {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px 10px 5px;
+  margin: 2% 0;
 }
 
 .vol>* {
@@ -407,6 +409,7 @@ footer .controls .action-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2% 0;
 }
 
 footer .controls .action-button a {
@@ -461,7 +464,7 @@ footer .controls .action-button a .fa {
     top: -1px;
   }
 
-  main .current-info .song-title {
+  footer .current-info .song-title {
     font-size: 16px;
     font-weight: 500;
     text-overflow: ellipsis;
@@ -469,7 +472,7 @@ footer .controls .action-button a .fa {
     overflow: hidden;
   }
 
-  main .current-info .song-artist,
+  footer .current-info .song-artist,
   .song-album {
     font-size: 14px;
     font-weight: 300;
@@ -515,12 +518,7 @@ footer .controls .action-button a .fa {
     width: 100%;
   } */
 
-  .current-info {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+  
 
   .current-info .song-title {
     font-size: 20px;
