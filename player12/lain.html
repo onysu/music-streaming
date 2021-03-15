@@ -117,15 +117,15 @@
             data-albumart="https://images-na.ssl-images-amazon.com/images/I/81arfauSkpL._SL1500_.jpg"
             data-url="https://raw.githubusercontent.com/onysu/music-streaming/main/files/audio/Céline Dion - Where Does My Heart Beat Now.mp3"></a>
         </div>
-        <div class="current-info">
-          <div class="song-title"></div>
-          <div class="song-artist"></div>
-          <div class="song-album"></div>
-        </div>
       </main>
 
       <footer>
         <div class="controls">
+          <div class="current-info">
+            <div class="song-title"></div>
+            <div class="song-artist"></div>
+            <div class="song-album"></div>
+          </div>
           <div class="time">
             <span class="play-current-time">00:00</span>
             <span class="bar"></span>
@@ -145,11 +145,12 @@
               <span class="pull-right"></span>
             </div>
             <span><i class='fas fa-volume-down'></i></span>
-            <span><input type="range" class="volume" min="0" max="1" step="0.1" value="1" data-css="1"></span>
+            <span><input type="range" class="volume" min="0" max="1" step="0.1" value="1" data-css="0.5"></span>
             <span><i class='fas fa-volume-up'></i></span>
           </div>
         </div>
       </footer>
+
       <div id="artis">
         <nav class="navbar fixed-bottom navbar-sm navbar-dark bg-dark">
           <div class="container">
