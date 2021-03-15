@@ -522,22 +522,22 @@ footer .controls .action-button a .fa {
 
   
 
-  .current-info .song-title {
+  footer .current-info .song-title {
     font-size: 20px;
     font-weight: 500;
   }
 
-  .current-info .song-artist {
+  footer .current-info .song-artist {
     font-size: 16px;
     font-weight: 300;
   }
 
-  .current-info .song-album {
+  footer .current-info .song-album {
     font-size: 16px;
     font-weight: 300;
   }
 
-  .current-info .fa {
+  footer .current-info .fa {
     min-width: 30px;
     font-size: 14px;
     text-align: center;
