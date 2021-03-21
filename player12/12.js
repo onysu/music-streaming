@@ -186,7 +186,7 @@ var Audio = {
       $(".time .bar").css("width", bar + "%");
     }, 1000);
 
-    var totalDur = setInterval(function (t) {
+    var totalDur = setInterval(function () {
       if ($(".audio .music")[0].readyState > 0) {
         total = e[0].duration;
         $(".play-total-time").text(Audio.formatTime(total));
