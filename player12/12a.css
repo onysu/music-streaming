@@ -9,6 +9,8 @@
 body {
   background: #666;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
+  font-family: 'Roboto',
+  sans-serif;
 }
 
 body:before {
@@ -120,10 +122,10 @@ footer {
   grid-area: artis;
 }
 
-body {
+/* body {
   font-family: 'Roboto',
     sans-serif;
-}
+} */
 
 *,
 :after,
@@ -290,7 +292,7 @@ footer .controls .active .fa-pp:before {
   content: "\f04c";
 }
 
-footer .controls .progress {
+footer .controls .time {
   flex-grow: 2;
   height: 2px;
   margin: 0 0 15px 0;
@@ -304,6 +306,14 @@ footer .controls .duration {
   color: #444;
   font-size: xx-small;
 }
+
+/* footer .controls .time .bar span {
+  width: 0;
+  display: block;
+  height: inherit;
+  background: #bc3958;
+  box-shadow: 0 0 5px 0 #bc3958;
+} */
 
 /* bar */
 .time {
@@ -328,7 +338,7 @@ footer .controls .duration {
 }
 
 .bar span {
-  display: r;
+  display: block;
   width: 0;
   height: 100%;
   background-color: red;

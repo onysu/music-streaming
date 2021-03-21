@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      color: #444;
+      /* background: url(); */
+      /* font: 300 18px/18px Roboto, sans-serif; */
+      font-family: Roboto, sans-serif;
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+
+    .pull-left {
+      float: left
+    }
+
+    .pull-right {
+      float: right
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+      content: '';
+      display: table
+    }
+
+    .clearfix:after {
+      clear: both;
+      display: block
+    }
+
+    .track {
+      width: 2px;
+      margin-right: 5px;
+      background: rgba(0, 0, 0, 0);
+      transition: background 250ms linear;
+    }
+
+    .track:hover,
+    .track.dragging {
+      background: #d9d9d9;
+      background: rgba(0, 0, 0, .15);
+    }
+
+    .handle {
+      right: 0;
+      width: 2px;
+      background: #999;
+      transition: width 250ms;
+      background: rgba(255, 255, 255, .2);
+    }
+
+    .mhn-player {
+      width: 360px;
+      height: 540px;
+      padding: 15px;
+      position: relative;
+      margin: auto;
+      /* background: rgba(0, 0, 0, .9); */
+      background: blanchedalmond;
+      box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21);
+    }
+
+    /* .mhn-player .album-art,
+    .mhn-player .album-thumb {
+      background: url() no-repeat center / 50%;
+    } */
+
+    .mhn-player .album-art {
+      width: 100%;
+      height: 330px;
+      overflow: hidden;
+      position: absolute;
+      /* border: 1px solid #000; */
+      top: 0;
+      left: 0;
+    }
+
+    .mhn-player .album-art img {
+      width: 100%;
+      display: block;
+    }
+
+    .mhn-player .album-art:before {
+      top: 30px;
+      left: 50%;
+      width: 200px;
+      content: 'music';
+      font-size: 72px;
+      font-weight: 600;
+      position: absolute;
+      margin-left: -100px;
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .mhn-player .album-art:after {
+      top: 0;
+      left: 0;
+      content: '';
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 1));
+    }
+
+    .mhn-player .album-art img {
+      width: 100%;
+      position: relative;
+    }
+
+    .mhn-player .album-art.blur img {
+      -webkit-filter: blur(3px);
+      -moz-filter: blur(3px);
+      filter: blur(3px);
+    }
+
+    .mhn-player a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .mhn-player .play-list {
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      display: none;
+      bottom: 245px;
+      overflow-y: auto;
+      position: absolute;
+      width: auto !important;
+      background: rgba(0, 0, 0, .4);
+      padding-right: 1px !important;
+    }
+
+    .mhn-player .play-list a {
+      color: #ccc;
+      display: block;
+      overflow: hidden;
+      padding: 6px 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: all .4s ease-in-out 0s;
+    }
+
+    .mhn-player .play-list a:hover {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    .mhn-player .play-list a.active {
+      color: #2ecc71;
+    }
+
+    .mhn-player .play-list .album-thumb {
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      margin-right: 10px;
+      border: 1px solid #666;
+    }
+
+    .mhn-player .play-list .album-thumb img {
+      width: 100%;
+      display: block;
+    }
+
+    .mhn-player .play-list .songs-info {
+      max-width: 240px;
+      text-shadow: 0 2px 2px #000;
+    }
+
+    .mhn-player .play-list .songs-info .song-title {
+      font-size: 16px;
+    }
+
+    .mhn-player .play-list .songs-info .songs-detail {
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mhn-player .current-info {
+      /* left: 30px; */
+      /* right: 30px; */
+      color: #222;
+      bottom: 135px;
+      /* margin-left: -15px; */
+      /* margin-right: -15px; */
+      position: absolute;
+      line-height: 1.2;
+    }
+
+    /* .mhn-player .current-info>div { */
+    /* margin-top: 10px; */
+    /* font-size: 16px; */
+    /* } */
+
+    .mhn-player .current-info .song-artist {
+      font-size: 20px;
+      /* margin-top: 10px; */
+      font-weight: 400;
+    }
+
+    .mhn-player .current-info .song-title {
+      font-size: 16px;
+      /* margin-top: 10px; */
+      font-weight: 300;
+    }
+
+    .mhn-player .current-info .song-album {
+      font-size: 16px;
+      /* margin-top: 10px; */
+      font-weight: 300;
+    }
+
+    .mhn-player .current-info .fa {
+      min-width: 30px;
+      font-size: 18px;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .mhn-player .controls {
+      /* margin-top: 30px; */
+      /* position: relative; */
+      position: absolute;
+      bottom: 15px;
+      width: 92%;
+    }
+
+    .mhn-player .controls .toggle-play-list {
+      right: 5px;
+      width: 40px;
+      color: #ccc;
+      height: 40px;
+      bottom: 100px;
+      border-radius: 50%;
+      line-height: 40px;
+      text-align: center;
+      position: absolute;
+      background-color: crimson;
+    }
+
+    .mhn-player .controls .fa-pp:before {
+      content: '\f04b';
+    }
+
+    .mhn-player .controls .active .fa-pp:before {
+      content: '\f04c';
+    }
+
+    .mhn-player .controls .progress {
+      height: 2px;
+      margin: 10px 0;
+      position: relative;
+      /* background: #262626; */
+      background: darkgray;
+    }
+
+    .mhn-player .controls .duration {
+      /* color: #ccc; */
+      font-size: 14px;
+    }
+
+    .mhn-player .controls .progress .bar {
+      width: 0;
+      display: block;
+      height: inherit;
+      /* background: #bc3958; */
+      background: red;
+      /* box-shadow: 0 0 5px 0 #bc3958; */
+    }
+
+    .mhn-player .controls .action-button a {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      margin-right: 5px;
+      border: 2px solid;
+      line-height: 35px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .mhn-player .controls .action-button a:hover,
+    .mhn-player .controls .action-button a.active {
+      color: #ccc;
+    }
+
+    .mhn-player .controls .action-button a .fa {
+      font-size: inherit;
+    }
+
+
+    .volume {
+      height: 10px;
+      width: 100px;
+      margin: 0 10px;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-block;
+      -webkit-appearance: none;
+      background: transparent;
+    }
+
+    .volume::-webkit-slider-runnable-track {
+      height: .5em;
+      background: #d8d8d8;
+      border-radius: .25em;
+      -webkit-appearance: none;
+    }
+
+    .volume::-moz-range-track {
+      border: none;
+      height: .5em;
+      background: #d8d8d8;
+      border-radius: .25em;
+    }
+
+    .volume::-ms-track {
+      border: none;
+      height: .5em;
+      color: transparent;
+      background: #d8d8d8;
+      border-radius: .25em;
+    }
+
+    .volume::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      position: relative;
+      margin: -.25em;
+      border: none;
+      /* Firefox, IE */
+      width: 1em;
+      height: 1em;
+      border-radius: .5em;
+    }
+
+    .volume::-moz-range-thumb {
+      border: none;
+      /* Firefox, IE */
+      width: 1em;
+      height: 1em;
+      cursor: ew-resize;
+      border-radius: .5em;
+    }
+
+    .volume::-ms-thumb {
+      border: none;
+      /* Firefox, IE */
+      width: 1em;
+      height: 1em;
+      border-radius: .5em;
+    }
+
+    .volume::-ms-fill-lower,
+    .volume::-ms-fill-upper {
+      border-radius: 5em;
+      background: transparent;
+    }
+
+    .volume::-ms-tooltip {
+      display: none;
+    }
+
+    .volume::-ms-fill-lower {
+      background: #f05e7b;
+    }
+
+    .volume::-webkit-slider-thumb {
+      background: #dc143c;
+    }
+
+    .volume::-moz-range-thumb {
+      background: #dc143c;
+    }
+
+    .volume::-ms-thumb {
+      background: #dc143c;
+    }
+
+    .volume::-webkit-slider-runnable-track {
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(#f05e7b, #f05e7b);
+    }
+
+    .volume::-moz-range-track {
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(#f05e7b, #f05e7b);
+    }
+
+    .volume[data-css="0"]::-webkit-slider-runnable-track {
+      background-size: 0% 100%
+    }
+
+    .volume[data-css="0"]::-moz-range-track {
+      background-size: 0% 100%
+    }
+
+    .volume[data-css="0.1"]::-webkit-slider-runnable-track {
+      background-size: 10% 100%
+    }
+
+    .volume[data-css="0.1"]::-moz-range-track {
+      background-size: 10% 100%
+    }
+
+    .volume[data-css="0.2"]::-webkit-slider-runnable-track {
+      background-size: 20% 100%
+    }
+
+    .volume[data-css="0.2"]::-moz-range-track {
+      background-size: 20% 100%
+    }
+
+    .volume[data-css="0.3"]::-webkit-slider-runnable-track {
+      background-size: 30% 100%
+    }
+
+    .volume[data-css="0.3"]::-moz-range-track {
+      background-size: 30% 100%
+    }
+
+    .volume[data-css="0.4"]::-webkit-slider-runnable-track {
+      background-size: 40% 100%
+    }
+
+    .volume[data-css="0.4"]::-moz-range-track {
+      background-size: 40% 100%
+    }
+
+    .volume[data-css="0.5"]::-webkit-slider-runnable-track {
+      background-size: 50% 100%
+    }
+
+    .volume[data-css="0.5"]::-moz-range-track {
+      background-size: 50% 100%
+    }
+
+    .volume[data-css="0.6"]::-webkit-slider-runnable-track {
+      background-size: 60% 100%
+    }
+
+    .volume[data-css="0.6"]::-moz-range-track {
+      background-size: 60% 100%
+    }
+
+    .volume[data-css="0.7"]::-webkit-slider-runnable-track {
+      background-size: 70% 100%
+    }
+
+    .volume[data-css="0.7"]::-moz-range-track {
+      background-size: 70% 100%
+    }
+
+    .volume[data-css="0.8"]::-webkit-slider-runnable-track {
+      background-size: 80% 100%
+    }
+
+    .volume[data-css="0.8"]::-moz-range-track {
+      background-size: 80% 100%
+    }
+
+    .volume[data-css="0.9"]::-webkit-slider-runnable-track {
+      background-size: 90% 100%
+    }
+
+    .volume[data-css="0.9"]::-moz-range-track {
+      background-size: 90% 100%
+    }
+
+    .volume[data-css="1"]::-webkit-slider-runnable-track {
+      background-size: 100% 100%
+    }
+
+    .volume[data-css="1"]::-moz-range-track {
+      background-size: 100% 100%
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mhn-player">
+    <div class="album-art"></div>
+    <div class="play-list">
+      <a href="#" class="play" data-id="1" data-album="" data-artist="Wiz Khalifa feat. Charlie Puth"
+        data-title="See You Again" data-albumart="http://static.djbooth.net/pics-tracks/wiz-khalifa-see-you-again.jpg"
+        data-url="http://trendingmp3.com/music/user_folder/Wiz%20Khalifa%20See%20You%20Again%20Feat%20Charlie%20Puth%20-%201426839506.mp3"></a>
+
+      <a href="#" class="play" data-id="2" data-album="Fifty Shades of Grey" data-artist="Ellie Goulding"
+        data-title="Love Me Like You Do"
+        data-albumart="http://cdnrf.securenetsystems.net/file_radio/album_art/B/1/5/51B2BHP42pDL.jpg"
+        data-url="http://freemp3.se/music/user_folder/Love%20Me%20Like%20You%20Do%20By%20Ellie%20Goulding%20-%201424762922.mp3"></a>
+
+      <a href="#" class="play" data-id="3" data-album="All I Ever Wanted" data-artist="Kelly Clarkson"
+        data-title="Already Gone"
+        data-albumart="https://3.bp.blogspot.com/_mupIVJbjvuU/TKgPuOEekII/AAAAAAAAHd4/HGTyRWuhw2c/s1600/Made+by+In+For+The+Kill.png"
+        data-url="http://onlinekaraoke.tv/assets/songs/42000-42999/42594-already-gone-kelly-clarkson--1411577508.mp3"></a>
+
+      <a href="#" class="play" data-id="4" data-album="Bringing Back the Sunshine" data-artist="Blake Shelton"
+        data-title="Sangria" data-albumart="http://img02.cdn2-rdio.com/album/d/3/d/000000000039fd3d/2/square-600.jpg"
+        data-url="http://uhmp3.com/a/cache/Blake%20Shelton%20-%20Sangria.mp3"></a>
+
+      <a href="#" class="play" data-id="5" data-album="The Unforgiving" data-artist="Within Tempation"
+        data-title="Faster" data-albumart="http://www.aceshowbiz.com/images/news/00038227.jpg"
+        data-url="https://a.tumblr.com/tumblr_lli3gani2F1qetbfso1_r1.mp3"></a>
+
+      <a href="#" class="play" data-id="6" data-album="Californication" data-artist="Red Hot Chili Peppers"
+        data-title="Californication" data-albumart="https://eyespytz.files.wordpress.com/2011/11/6837-gif.jpeg"
+        data-url="http://mp3light.net/assets/songs/21000-21999/21582-californication-red-hot-chili-peppers--1411570819.mp3"></a>
+
+      <a href="#" class="play" data-id="7" data-album="V" data-artist="Maroon 5" data-title="Sugar"
+        data-albumart="http://media.fanfire.com/images/product/large/MAR/MAR61934.jpg"
+        data-url="http://mp3light.net/assets/songs/393000-393999/393398-sugar-maroon-5-sugar-sugar-maroon.mp3"></a>
+
+      <a href="#" class="play" data-id="8" data-album="Meteora" data-artist="Linkin Park" data-title="Numb"
+        data-albumart="https://upload.wikimedia.org/wikipedia/en/6/64/MeteoraLP.jpg"
+        data-url="http://serveurftpnascar.free.fr/%20-%20Linkin%20Park%20-%20Numb.mp3"></a>
+    </div>
+    <div class="audio"></div>
+    <div class="current-info">
+      <div class="song-artist"></div>
+      <div class="song-title"></div>
+      <div class="song-album"></div>
+    </div>
+    <div class="controls">
+      <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
+      <div class="duration clearfix">
+        <span class="pull-left play-position"></span>
+        <span class="pull-right"><span class="play-current-time">00:00</span> / <span
+            class="play-total-time">00:00</span></span>
+      </div>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+      <div class="action-button">
+        <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
+        <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
+        <a href="#" class="stop"><i class="fa fa-stop"></i></a>
+        <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+        <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://enscrollplugin.com/releases/enscroll-0.6.1.min.js"></script>
+  <script>
+    $(function () {
+      Audio.init();
+    });
+
+    var intval;
+    var autoplay;
+    var Audio = {
+      init: function () {
+        this.info.init();
+        this.player();
+        this.scrollbar();
+      },
+      formatTime: function (secs) {
+        var hr, min, sec;
+        hr = Math.floor(secs / 3600);
+        min = Math.floor((secs - (hr * 3600)) / 60);
+        sec = Math.floor(secs - (hr * 3600) - (min * 60));
+
+        min = min > 9 ? min : '0' + min;
+        sec = sec > 9 ? sec : '0' + sec;
+        return min + ':' + sec;
+      },
+      info: {
+        init: function () {
+          $('.play-list .play').each(function () {
+            var album, albumart, artist, title;
+            album = $(this).data('album');
+            albumart = $(this).data('albumart');
+            artist = $(this).data('artist');
+            title = $(this).data('title');
+
+            album = album ? '<span class="album">' + album + '</span>' : 'Unknown Album';
+            albumart = albumart ? '<img src="' + albumart + '">' : '';
+            artist = artist ? '<span class="song-artist">' + artist + '</span>' : 'Unknown Artist';
+            title = title ? '<div class="song-title">' + title + '</div>' : 'Unknown Title';
+
+            $(this).html('<div class="album-thumb pull-left">' + albumart +
+              '</div> <div class = "songs-info pull-left"> ' + title + ' <div class = "songs-detail" > ' +
+              artist + ' -' + album + ' <div /div> </div></div>');
+          });
+        },
+        load: function (id, album, artist, title, albumart, mp3) {
+          var currentTrack, totalTrack;
+          totalTrack = $('.play-list>a').length;
+          currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
+          $('.play-position').text(currentTrack + ' / ' + totalTrack);
+          albumart = albumart ? '<img src="' + albumart + '">' : '';
+          album = album ? album : 'Unknown Album';
+          title = title ? title : 'Unknown Title';
+          artist = artist ? artist : 'Unknown Artist';
+          $('.album-art').html(albumart);
+          $('.current-info .song-album').html('<i class="fa fa-music"></i> ' + album);
+          $('.current-info .song-title').html('<i class="fa fa-headphones"></i> ' + title);
+          $('.current-info .song-artist').html('<i class="fa fa-user"></i> ' + artist);
+          if (mp3)
+            $('.audio').html('<audio class="music" data-id="' + id + '" src="' + mp3 + '"></audio>');
+        }
+      },
+      player: function () {
+        var id, album, artist, albumart, title, mp3;
+        $('.play-list .play').each(function () {
+          $(this).on('click', function (e) {
+            e.preventDefault();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            clearInterval(intval);
+            id = $(this).data('id');
+            album = $(this).data('album');
+            artist = $(this).data('artist');
+            albumart = $(this).data('albumart');
+            title = $(this).data('title');
+            mp3 = $(this).data('url');
+            Audio.info.load(id, album, artist, title, albumart, mp3);
+            Audio.play($('.music'));
+            $('.music').prop('volume', $('.volume').val());
+            Audio.playlist.hide();
+          });
+        });
+        $('.play-pause').on('click', function (e) {
+          e.preventDefault();
+          if ($('.audio').is(':empty')) {
+            $('.play-list a:first-child').click();
+          } else {
+            var music = $('.music')[0];
+            if (music.paused) {
+              setInterval(intval);
+              Audio.play($('.music'));
+              $(this).addClass('active');
+            } else {
+              clearInterval(intval);
+              Audio.pause($('.music'));
+              $(this).removeClass('active');
+            }
+          }
+        });
+
+        $('.stop').on('click', function (e) {
+          e.preventDefault();
+          clearInterval(intval);
+          Audio.stop($('.music'));
+          $('.music')[0].currentTime = 0;
+          $('.progress .bar').css('width', 0);
+        });
+        $('.volume').on('change', function () {
+          var vol, css;
+          vol = $(this).val();
+          $(this).attr('data-css', vol);
+          $('.music').prop('volume', vol);
+        });
+        $('.prev').on('click', function (e) {
+          var index, firstIndex;
+          e.preventDefault();
+          index = $('.play-list a').length - $('.play-list a').index();
+          firstIndex = $('.play-list a').length - $('.play-list a').index($('.play-list a.active'));
+          if (index == firstIndex) {
+            $('.play-list a:last-child').click();
+          } else {
+            Audio.prev();
+          }
+        });
+        $('.next').on('click', function (e) {
+          var index, lastIndex;
+          e.preventDefault();
+          index = $('.play-list a').length;
+          lastIndex = $('.play-list a').index($('.play-list a.active')) + 1;
+          if (index == lastIndex) {
+            $('.play-list a:first-child').click();
+          } else {
+            Audio.next();
+          }
+        });
+        $('.toggle-play-list').on('click', function (e) {
+          e.preventDefault();
+          var toggle = $(this);
+          if (toggle.hasClass('active')) {
+            Audio.playlist.hide();
+          } else {
+            Audio.playlist.show();
+          }
+        });
+      },
+      playlist: {
+        show: function () {
+          $('.play-list').fadeIn(500);
+          $('.toggle-play-list').addClass('active');
+          $('.album-art').addClass('blur');
+        },
+        hide: function () {
+          $('.play-list').fadeOut(500);
+          $('.toggle-play-list').removeClass('active');
+          $('.album-art').removeClass('blur');
+        }
+      },
+      play: function (e) {
+        var bar, current, total;
+        e.trigger('play').bind('ended', function () {
+          $('.next').click();
+        });
+        intval = setInterval(function () {
+          current = e[0].currentTime;
+          $('.play-current-time').text(Audio.formatTime(current));
+
+          bar = (current / e[0].duration) * 100;
+          $('.progress .bar').css('width', bar + '%');
+
+        }, 1000);
+
+        var totalDur = setInterval(function (t) {
+          if ($('.audio .music')[0].readyState > 0) {
+            total = e[0].duration;
+            $('.play-total-time').text(Audio.formatTime(total));
+            clearInterval(totalDur);
+          }
+        }, 1000);
+        $('.play-pause').addClass('active');
+      },
+      pause: function (e) {
+        e.trigger('pause');
+        $('.play-pause').removeClass('active');
+      },
+      stop: function (e) {
+        e.trigger('pause').prop('currentTime', 0);
+        $('.play-pause').removeClass('active');
+      },
+      mute: function (e) {
+        prop('muted', !e.prop('muted'));
+      },
+      volumeUp: function (e) {
+        var volume = e.prop('volume') + 0.2;
+        if (volume > 1) {
+          volume = 1;
+        }
+        e.prop('volume', volume);
+      },
+      volumeDown: function (e) {
+        var volume = e.prop('volume') - 0.2;
+        if (volume < 0) {
+          volume = 0;
+        }
+        e.prop('volume', volume);
+      },
+      prev: function () {
+        var curr = $('.music').data('id');
+        var
+          prev = $('a[data-id="' + curr + '" ]').prev();
+        if (curr && prev) {
+          prev.click();
+        }
+      },
+      next: function () {
+        var
+          curr = $('.music').data('id');
+        var next = $('a[data-id="' + curr + '" ]').next();
+        if (curr && next) {
+          next.click();
+        }
+      },
+      scrollbar: function () {
+        if (typeof $.fn.enscroll !== 'undefined') {
+          $('.play-list').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track',
+            verticalHandleClass: 'handle'
+          });
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
