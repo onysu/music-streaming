@@ -11,7 +11,7 @@
   <style>
     body {
       margin: 0;
-      color: #444;
+      color: #222;
       /* background: url(); */
       /* font: 300 18px/18px Roboto, sans-serif; */
       font-family: Roboto, sans-serif;
@@ -65,8 +65,10 @@
     }
 
     .mhn-player {
-      width: 360px;
-      height: 540px;
+      width: 100%;
+      max-width: 375px;
+      height: 100vh;
+      max-height: 667px;
       padding: 15px;
       position: relative;
       margin: auto;
@@ -256,18 +258,34 @@
 
     .mhn-player .controls .fa-pp:before {
       content: '\f04b';
+      color: red;
     }
 
     .mhn-player .controls .active .fa-pp:before {
       content: '\f04c';
     }
 
+    span.play-current-time {
+      bottom: 74px;
+      position: absolute;
+      left: 13px;
+      font-size: small;
+    }
+
+    span.play-total-time {
+      bottom: 74px;
+      position: absolute;
+      right: 13px;
+      font-size: small;
+    }
+
     .mhn-player .controls .progress {
       height: 2px;
-      margin: 10px 0;
+      margin: 10px auto;
       position: relative;
       /* background: #262626; */
-      background: darkgray;
+      background: #ccc;
+      width: 65%;
     }
 
     .mhn-player .controls .duration {
@@ -284,41 +302,62 @@
       /* box-shadow: 0 0 5px 0 #bc3958; */
     }
 
+    div.action-button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
     .mhn-player .controls .action-button a {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin-right: 5px;
-      border: 2px solid;
+      /* width: 40px; */
+      /* height: 40px; */
+      font-size: 20px;
+      /* margin-right: 5px; */
+      /* border: 2px solid; */
       line-height: 35px;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       text-align: center;
       display: inline-block;
     }
 
     .mhn-player .controls .action-button a:hover,
     .mhn-player .controls .action-button a.active {
-      color: #ccc;
+      color: darkgray;
     }
 
     .mhn-player .controls .action-button a .fa {
       font-size: inherit;
     }
 
+    .bawah {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      margin: auto;
+      margin: 10px auto;
+    }
+
+    div.play-position {
+      font-size: small;
+    }
 
     .volume {
-      height: 10px;
-      width: 100px;
-      margin: 0 10px;
-      font-size: 14px;
+      /* height: 10px; */
+      /* width: 100px; */
+      margin: 0 auto;
+      /* font-size: 14px; */
       cursor: pointer;
-      display: inline-block;
+      /* display: inline-block; */
+      /* display: flex; */
       -webkit-appearance: none;
       background: transparent;
+      outline: none;
     }
 
     .volume::-webkit-slider-runnable-track {
-      height: .5em;
+      /* height: .5em; */
+      height: 2px;
       background: #d8d8d8;
       border-radius: .25em;
       -webkit-appearance: none;
@@ -345,8 +384,8 @@
       margin: -.25em;
       border: none;
       /* Firefox, IE */
-      width: 1em;
-      height: 1em;
+      width: 10px;
+      height: 10px;
       border-radius: .5em;
     }
 
@@ -518,7 +557,7 @@
         data-url="http://uhmp3.com/a/cache/Blake%20Shelton%20-%20Sangria.mp3"></a>
 
       <a href="#" class="play" data-id="5" data-album="The Unforgiving" data-artist="Within Tempation"
-        data-title="Faster" data-albumart="http://www.aceshowbiz.com/images/news/00038227.jpg"
+        data-title="Faster" data-albumart="https://i.pinimg.com/originals/b0/02/45/b0024539f1954a1535a0c8fb870c395b.jpg"
         data-url="https://a.tumblr.com/tumblr_lli3gani2F1qetbfso1_r1.mp3"></a>
 
       <a href="#" class="play" data-id="6" data-album="Californication" data-artist="Red Hot Chili Peppers"
@@ -542,9 +581,11 @@
     <div class="controls">
       <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
       <div class="duration clearfix">
-        <span class="pull-left play-position"></span>
-        <span class="pull-right"><span class="play-current-time">00:00</span> / <span
-            class="play-total-time">00:00</span></span>
+
+        <span class="pull-right">
+          <span class="play-current-time">00:00</span>
+          <span class="play-total-time">00:00</span>
+        </span>
       </div>
       <div class="progress">
         <div class="bar"></div>
@@ -554,7 +595,11 @@
         <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
         <a href="#" class="stop"><i class="fa fa-stop"></i></a>
         <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+      </div>
+      <div class="bawah">
+        <div class="play-position"></div>
         <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+        <!--  -->
       </div>
 
     </div>
@@ -608,7 +653,7 @@
           var currentTrack, totalTrack;
           totalTrack = $('.play-list>a').length;
           currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
-          $('.play-position').text(currentTrack + ' / ' + totalTrack);
+          $('.play-position').text('Song ' + currentTrack + ' of ' + totalTrack);
           albumart = albumart ? '<img src="' + albumart + '">' : '';
           album = album ? album : 'Unknown Album';
           title = title ? title : 'Unknown Title';
