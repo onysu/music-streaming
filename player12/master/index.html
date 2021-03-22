@@ -135,10 +135,12 @@
     } */
 
     .mhn-player .album-art img {
-      width: 80%;
+      width: 75%;
+      height: 255px;
       position: relative;
       margin: auto;
       border-radius: 0 0 120px 120px;
+      box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%), inset 0 0.0625em 0 rgb(255 255 255), inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
     }
 
     .mhn-player .album-art.blur img {
@@ -153,16 +155,17 @@
     }
 
     .mhn-player .play-list {
-      top: 15px;
-      left: 15px;
-      right: 15px;
       display: none;
-      bottom: 245px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       overflow-y: auto;
       position: absolute;
-      width: auto !important;
-      background: rgba(0, 0, 0, .4);
-      padding-right: 1px !important;
+      /* width: auto !important; */
+      background: rgba(0, 0, 0, .9);
+      /* padding-right: 1px !important; */
+      z-index: 1;
     }
 
     .mhn-player .play-list a {
@@ -261,9 +264,9 @@
     }
 
     .mhn-player .toggle-play-list {
-      right: 15px;
+      right: 12px;
       top: 15px;
-      color: #ccc;
+      /* color: #ccc; */
       text-align: center;
       position: absolute;
       z-index: 1;
@@ -281,6 +284,8 @@
       line-height: 35px;
       border-radius: 50%;
       background-color: crimson;
+      color: white;
+      z-index: 2;
     }
 
     .mhn-player .controls .fa-pp:before {
