@@ -162,7 +162,7 @@
       bottom: 0;
       overflow-y: auto;
       position: absolute;
-      background: rgba(255, 255, 255, .7);
+      background: rgba(255, 255, 255, .9);
       z-index: 1;
       padding: 5px 0;
       /* width: auto !important; */
@@ -175,15 +175,17 @@
       padding: 6px 10px;
       white-space: nowrap;
       text-overflow: ellipsis;
+      border-bottom: 1px solid coral;
       /* transition: all .4s ease-in-out 0s; */
     }
 
     .mhn-player .play-list a:hover {
-      background: rgba(255, 255, 255, .2);
+      /* background: rgba(255, 255, 255, .2); */
+      background: #999;
     }
 
     .mhn-player .play-list a.active {
-      color: #2ecc71;
+      color: red;
     }
 
     .mhn-player .play-list .album-thumb {
@@ -191,7 +193,7 @@
       height: 35px;
       overflow: hidden;
       margin-right: 10px;
-      border: 1px solid #666;
+      /* border: 1px solid #666; */
     }
 
     .mhn-player .play-list .album-thumb img {
@@ -212,6 +214,8 @@
       font-size: 12px;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: darkgreen;
+      font-weight: 300;
     }
 
     .mhn-player .current-info {
@@ -237,13 +241,13 @@
     }
 
     .mhn-player .current-info .song-title {
-      font-size: 16px;
+      font-size: 14px;
       /* margin-top: 10px; */
       font-weight: 300;
     }
 
     .mhn-player .current-info .song-album {
-      font-size: 16px;
+      font-size: 14px;
       /* margin-top: 10px; */
       font-weight: 300;
     }
