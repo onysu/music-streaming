@@ -237,6 +237,10 @@ body {
   font-size: 20px;
   /* margin-top: 10px; */
   font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 290px;
 }
 
 .fa-user:before {
@@ -259,12 +263,20 @@ body {
   font-size: 14px;
   /* margin-top: 10px; */
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 290px;
 }
 
 .mhn-player .current-info .song-album {
   font-size: 14px;
   /* margin-top: 10px; */
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 290px;
 }
 
 .mhn-player .current-info .fa {
