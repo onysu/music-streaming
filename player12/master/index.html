@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <style>
     body {
       margin: 0;
@@ -210,11 +213,11 @@
       /* left: 30px; */
       /* right: 30px; */
       color: #222;
-      bottom: 135px;
+      bottom: 125px;
       /* margin-left: -15px; */
       /* margin-right: -15px; */
       position: absolute;
-      line-height: 1.2;
+      line-height: 1.5;
     }
 
     /* .mhn-player .current-info>div { */
@@ -252,7 +255,7 @@
       /* position: relative; */
       position: absolute;
       bottom: 15px;
-      width: 92%;
+      width: 91%;
     }
 
     .mhn-player .toggle-play-list {
@@ -263,6 +266,10 @@
       position: absolute;
       z-index: 1;
     }
+
+    /* .fa-list-ul:before {
+      content: "\f8c9";
+    } */
 
     a.toggle-play-list.active {
       right: 10px;
@@ -281,17 +288,18 @@
 
     .mhn-player .controls .active .fa-pp:before {
       content: '\f04c';
+      color: white;
     }
 
     span.play-current-time {
-      bottom: 74px;
+      bottom: 80px;
       position: absolute;
       left: 13px;
       font-size: small;
     }
 
     span.play-total-time {
-      bottom: 74px;
+      bottom: 80px;
       position: absolute;
       right: 13px;
       font-size: small;
@@ -299,7 +307,7 @@
 
     .mhn-player .controls .progress {
       height: 2px;
-      margin: 10px auto;
+      margin: 15px auto;
       position: relative;
       /* background: #262626; */
       background: #ccc;
@@ -351,13 +359,31 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 70%;
+      width: 85%;
       margin: auto;
       margin: 10px auto;
     }
 
     div.play-position {
       font-size: small;
+    }
+
+    .vol {
+      display: flex;
+    }
+
+    i.fas.fa-volume-down {
+      margin-right: 5px;
+    }
+
+    i.fas.fa-volume-up {
+      margin-left: 5px;
+    }
+
+    .fa,
+    .fas {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 300;
     }
 
     .volume {
@@ -617,8 +643,11 @@
       </div>
       <div class="bawah">
         <div class="play-position"></div>
-        <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
-        <!--  -->
+        <div class="vol">
+          <i class="fas fa-volume-down"></i>
+          <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+          <i class="fas fa-volume-up"></i>
+        </div>
       </div>
 
     </div>
