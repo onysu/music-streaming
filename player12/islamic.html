@@ -2,251 +2,245 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.80.0">
-  <title>AudioPlayer</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
-    type="image/x-icon">
+
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="12a.css">
+  <link rel="stylesheet" href="12.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="wadah">
-      <div class="audio"></div>
-      <div id="sidebar">
-        <div class="album-art"></div>
-      </div>
-      <main>
-        <div class="play-list">
-          <a href="#" class="play" data-id="1" data-album="Islamic Songs" data-artist="Santri Njoso"
-            data-title="Shollallahu 'ala Muhammad"
-            data-albumart="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/santri.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Shollallahu%20'ala%20Muhammad.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="2" data-album="Islamic Songs" data-artist="Ai Khodijah" data-title="Adfaita"
-            data-albumart="https://3.bp.blogspot.com/-YZYMmqIlcXA/XThnd1Oiq6I/AAAAAAAAHaI/9I0v8cFHxkglDh1-6ptPZKK4TJC3b3cnACLcBGAs/s1600/Sholawat%2BBirosulillah%2BAi%2BKhodijah%2BEl%2BMighwar%2BH.Taufiq%2BMD%2BArab%2BLatin%2B%2BIndonesia.webp"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Ai%20Khodijah%20Adfayta.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="3" data-album="Islamic Songs" data-artist="Nazwa Maulidia"
-            data-title="Allah Allah Aghisna الله الله أغثنا"
-            data-albumart="https://cdn.idntimes.com/content-images/community/2020/02/82427283-268600730782729-5186642682317614077-n-af6d0727a813e157048278778965886b.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Allah%20Allah%20Aghisna%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D8%BA%D8%AB%D9%86%D8%A7.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="4" data-album="Islamic Songs" data-artist="Bebiraira"
-            data-title="Allahul Kafi"
-            data-albumart="https://yt3.ggpht.com/ytc/AAUvwnhPQPohmTW-OCJNl24EqUh_6X5o0pilhkC2NOqV7g=s900-c-k-c0x00ffffff-no-rj"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Allahul%20Kafi.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="5" data-album="Islamic Songs" data-artist="Inema"
-            data-title="Assalamualaika (3 Bahasa)"
-            data-albumart="https://i1.sndcdn.com/artworks-000598237616-2is2qf-t500x500.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Assalamualaika.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="6" data-album="Islamic Songs" data-artist="Ai Khodijah"
-            data-title="Assholatu Alan Nabi"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Assholatu%20Alan%20Nabi.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="7" data-album="Islamic Songs" data-artist="Ai Khodijah"
-            data-title="Busyro Lana"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Busyro%20Lana.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="8" data-album="Islamic Songs" data-artist=""
-            data-title="Hasbi Robbi Jalallah حسبی ربي جل الله"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Hasbi%20Robbi%20Jalallah%20%D8%AD%D8%B3%D8%A8%DB%8C%20%D8%B1%D8%A8%D9%8A%20%D8%AC%D9%84%20%D8%A7%D9%84%D9%84%D9%87.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="9" data-album="Islamic Songs" data-artist="" data-title="Hayyul Hadi"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Hayyul%20Hadi.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="10" data-album="Islamic Songs" data-artist=""
-            data-title="Innal Habibal Musthofa"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Innal%20Habibal%20Musthofa.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="11" data-album="Islamic Songs" data-artist="" data-title="Khotmil Quran"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Khotmil%20Quran.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="12" data-album="Islamic Songs" data-artist="" data-title="Mughrom"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Mughrom.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="13" data-album="Islamic Songs" data-artist=""
-            data-title="Muhammad Ibni Abdillah"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Muhammad%20Ibni%20Abdillah.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="14" data-album="Islamic Songs" data-artist=""
-            data-title="Rohmaka Ya Robbal Ibadi"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Rohmaka%20Ya%20Robbal%20Ibadi.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="15" data-album="Islamic Songs" data-artist=""
-            data-title="Salaman Ya Umarol Faruq"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Salaman%20Ya%20Umarol%20Faruq.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="16" data-album="Islamic Songs" data-artist="Veve"
-            data-title="Sholawat Nahdliyah"
-            data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Sholawat%20Nahdliyahveve.mp3?raw=true">
-          </a>
-          <!-- maher -->
-          <a href="#" class="play" data-id="17" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Allahi Allah Kiya Karo"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Allahi%20Allah%20Kiya%20Karo.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="18" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Antassalam"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Antassalam.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="19" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Assalamu Alayka"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Assalamu%20Alayka.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="20" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Baraka Allahu Lakuma"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Baraka%20Allahu%20Lakuma.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="21" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="For The Rest Of My Life"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20For%20The%20Rest%20Of%20My%20Life.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="22" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="I Love You So"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20I%20Love%20You%20So.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="23" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Insha Allah Insya Allah"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Insha%20Allah%20Insya%20Allah.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="24" data-album="Islamic Songs" data-artist="Maher Zain" data-title="Mawlaya"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Mawlaya.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="25" data-album="Islamic Songs" data-artist="Maher Zain" data-title="Medina"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Medina.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="26" data-album="Forgive Me" data-artist="Maher Zain"
-            data-title="Muhammad (Pbuh) [Waheshna]"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Muhammad.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="27" data-album="Forgive Me" data-artist="Maher Zain"
-            data-title="Number One For Me"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Number%20One%20For%20Me.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="28" data-album="Islamic Songs" data-artist="Maher Zain"
-            data-title="Sepanjang Hidup"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Sepanjang%20Hidup.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="29" data-album="Thank You Allah" data-artist="Maher Zain"
-            data-title="Thank You Allah"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Thank%20You%20Allah.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="30" data-album="Thank You Allah" data-artist="Maher Zain"
-            data-title="Ya Nabi Salam Alayka"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ya%20Nabi%20Salam%20Alayka.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="31" data-album="Thank You Allah" data-artist="Maher Zain" data-title="Ummi"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ummi.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="32" data-album="Ramdan" data-artist="Maher Zain" data-title="Ramdhan"
-            data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ramadan.mp3?raw=true">
-          </a>
-        </div>
-      </main>
+  <div class="mhn-player">
+    <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
 
-      <footer>
-        <div class="controls">
-          <div class="current-info">
-            <div class="song-title"></div>
-            <div class="song-artist"></div>
-            <div class="song-album"></div>
-          </div>
-          <div class="time">
-            <span class="play-current-time">00:00</span>
-            <span class="bar"></span>
-            <span class="play-total-time">00:00</span>
-          </div>
-          <div class="action-button">
-            <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
-            <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
-            <a href="#" class="stop"><i class="fa fa-stop"></i></a>
-            <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
-            <!-- <a href="#" class="mute"><i class="fa fa-volume-mute"></i></a> -->
-            <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
-          </div>
-          <div class="vol">
-            <div class="duration clearfix">
-              <span class="pull-left play-position"></span>
-              <span class="pull-right"></span>
-            </div>
-            <span><i class='fas fa-volume-down'></i></span>
-            <span><input type="range" class="volume" min="0" max="1" step="0.1" value="1" data-css="0.5"></span>
-            <span><i class='fas fa-volume-up'></i></span>
-          </div>
-        </div>
-      </footer>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+      <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-list-ul"></i></span>
+      </button>
 
-      <div id="artis">
-        <nav class="navbar fixed-bottom navbar-sm navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="#">Artis</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="lain.html">Celion Dion</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mariah.html">Mariah Carey</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="whitney.html">Whitney Houston</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="rossa.html">Rossa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="islamic.html">Islamic Songs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Koleksi</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="celion.html">Celion Dion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mariah.html">Mariah Carey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="whitney.html">Whitney Houston</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rossa.html">Rossa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="islamic.html">Islamic Songs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Koleksi</a>
+          </li>
+        </ul>
+        </ul>
       </div>
+    </nav>
+
+
+    <!-- <a href="#" class="toggle-artis-list"><i class="fa fa-list-ul"></i></a> -->
+    <div class="album-art"></div>
+    <div class="play-list">
+      <a href="#" class="play" data-id="1" data-album="Islamic Songs" data-artist="Santri Njoso"
+        data-title="Shollallahu 'ala Muhammad"
+        data-albumart="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/santri.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Shollallahu%20'ala%20Muhammad.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="2" data-album="Islamic Songs" data-artist="Ai Khodijah" data-title="Adfaita"
+        data-albumart="https://3.bp.blogspot.com/-YZYMmqIlcXA/XThnd1Oiq6I/AAAAAAAAHaI/9I0v8cFHxkglDh1-6ptPZKK4TJC3b3cnACLcBGAs/s1600/Sholawat%2BBirosulillah%2BAi%2BKhodijah%2BEl%2BMighwar%2BH.Taufiq%2BMD%2BArab%2BLatin%2B%2BIndonesia.webp"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Ai%20Khodijah%20Adfayta.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="3" data-album="Islamic Songs" data-artist="Nazwa Maulidia"
+        data-title="Allah Allah Aghisna الله الله أغثنا"
+        data-albumart="https://cdn.idntimes.com/content-images/community/2020/02/82427283-268600730782729-5186642682317614077-n-af6d0727a813e157048278778965886b.jpg"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Allah%20Allah%20Aghisna%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D8%BA%D8%AB%D9%86%D8%A7.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="4" data-album="Islamic Songs" data-artist="Bebiraira" data-title="Allahul Kafi"
+        data-albumart="https://yt3.ggpht.com/ytc/AAUvwnhPQPohmTW-OCJNl24EqUh_6X5o0pilhkC2NOqV7g=s900-c-k-c0x00ffffff-no-rj"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Allahul%20Kafi.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="5" data-album="Islamic Songs" data-artist="Inema"
+        data-title="Assalamualaika (3 Bahasa)"
+        data-albumart="https://i1.sndcdn.com/artworks-000598237616-2is2qf-t500x500.jpg"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Assalamualaika.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="6" data-album="Islamic Songs" data-artist="Ai Khodijah"
+        data-title="Assholatu Alan Nabi"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Assholatu%20Alan%20Nabi.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="7" data-album="Islamic Songs" data-artist="Ai Khodijah" data-title="Busyro Lana"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Busyro%20Lana.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="8" data-album="Islamic Songs" data-artist=""
+        data-title="Hasbi Robbi Jalallah حسبی ربي جل الله"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Hasbi%20Robbi%20Jalallah%20%D8%AD%D8%B3%D8%A8%DB%8C%20%D8%B1%D8%A8%D9%8A%20%D8%AC%D9%84%20%D8%A7%D9%84%D9%84%D9%87.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="9" data-album="Islamic Songs" data-artist="" data-title="Hayyul Hadi"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Hayyul%20Hadi.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="10" data-album="Islamic Songs" data-artist=""
+        data-title="Innal Habibal Musthofa"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Innal%20Habibal%20Musthofa.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="11" data-album="Islamic Songs" data-artist="" data-title="Khotmil Quran"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Khotmil%20Quran.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="12" data-album="Islamic Songs" data-artist="" data-title="Mughrom"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Mughrom.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="13" data-album="Islamic Songs" data-artist=""
+        data-title="Muhammad Ibni Abdillah"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Muhammad%20Ibni%20Abdillah.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="14" data-album="Islamic Songs" data-artist=""
+        data-title="Rohmaka Ya Robbal Ibadi"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Rohmaka%20Ya%20Robbal%20Ibadi.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="15" data-album="Islamic Songs" data-artist=""
+        data-title="Salaman Ya Umarol Faruq"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Salaman%20Ya%20Umarol%20Faruq.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="16" data-album="Islamic Songs" data-artist="Veve"
+        data-title="Sholawat Nahdliyah"
+        data-albumart="https://simg.nicepng.com/png/small/126-1261761_allah-and-muhammad-pbuhahp-image-design-allah-muhammad.png"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Sholawat%20Nahdliyahveve.mp3?raw=true">
+      </a>
+      <!-- maher -->
+      <a href="#" class="play" data-id="17" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="Allahi Allah Kiya Karo"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Allahi%20Allah%20Kiya%20Karo.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="18" data-album="Islamic Songs" data-artist="Maher Zain" data-title="Antassalam"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Antassalam.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="19" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="Assalamu Alayka"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Assalamu%20Alayka.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="20" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="Baraka Allahu Lakuma"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Baraka%20Allahu%20Lakuma.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="21" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="For The Rest Of My Life"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20For%20The%20Rest%20Of%20My%20Life.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="22" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="I Love You So"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20I%20Love%20You%20So.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="23" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="Insha Allah Insya Allah"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Insha%20Allah%20Insya%20Allah.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="24" data-album="Islamic Songs" data-artist="Maher Zain" data-title="Mawlaya"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Mawlaya.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="25" data-album="Islamic Songs" data-artist="Maher Zain" data-title="Medina"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Medina.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="26" data-album="Forgive Me" data-artist="Maher Zain"
+        data-title="Muhammad (Pbuh) [Waheshna]"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Muhammad.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="27" data-album="Forgive Me" data-artist="Maher Zain"
+        data-title="Number One For Me"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Number%20One%20For%20Me.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="28" data-album="Islamic Songs" data-artist="Maher Zain"
+        data-title="Sepanjang Hidup"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Sepanjang%20Hidup.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="29" data-album="Thank You Allah" data-artist="Maher Zain"
+        data-title="Thank You Allah"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Thank%20You%20Allah.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="30" data-album="Thank You Allah" data-artist="Maher Zain"
+        data-title="Ya Nabi Salam Alayka"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ya%20Nabi%20Salam%20Alayka.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="31" data-album="Thank You Allah" data-artist="Maher Zain" data-title="Ummi"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ummi.mp3?raw=true">
+      </a>
+      <a href="#" class="play" data-id="32" data-album="Ramdan" data-artist="Maher Zain" data-title="Ramdhan"
+        data-albumart="https://th.bing.com/th/id/OIP.hMK42Ql_oj_wNVd_bp52pAAAAA?pid=ImgDet&rs=1"
+        data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Maher%20Zain%20-%20Ramadan.mp3?raw=true">
+      </a>
+    </div>
+    <div class="audio"></div>
+    <div class="current-info">
+      <div class="song-artist"></div>
+      <div class="song-title"></div>
+      <div class="song-album"></div>
+    </div>
+    <div class="controls">
+
+      <div class="duration clearfix">
+
+        <span class="pull-right">
+          <span class="play-current-time">00:00</span>
+          <span class="play-total-time">00:00</span>
+        </span>
+      </div>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+      <div class="action-button">
+        <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
+        <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
+        <a href="#" class="stop"><i class="fa fa-stop"></i></a>
+        <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+      </div>
+      <div class="bawah">
+        <div class="play-position"></div>
+        <div class="vol">
+          <i class="fas fa-volume-down"></i>
+          <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+          <i class="fas fa-volume-up"></i>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -255,7 +249,244 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
   </script>
-  <script src="12.js"></script>
+  <script>
+    $(function () {
+      Audio.init();
+    });
+
+    var intval;
+    var autoplay;
+    var Audio = {
+      init: function () {
+        this.info.init();
+        this.player();
+        this.scrollbar();
+      },
+      formatTime: function (secs) {
+        var hr, min, sec;
+        hr = Math.floor(secs / 3600);
+        min = Math.floor((secs - (hr * 3600)) / 60);
+        sec = Math.floor(secs - (hr * 3600) - (min * 60));
+
+        min = min > 9 ? min : '0' + min;
+        sec = sec > 9 ? sec : '0' + sec;
+        return min + ':' + sec;
+      },
+      info: {
+        init: function () {
+          $('.play-list .play').each(function () {
+            var album, albumart, artist, title;
+            album = $(this).data('album');
+            albumart = $(this).data('albumart');
+            artist = $(this).data('artist');
+            title = $(this).data('title');
+
+            album = album ? '<span class="album">' + album + '</span>' : 'Unknown Album';
+            albumart = albumart ? '<img src="' + albumart + '">' : '';
+            artist = artist ? '<span class="song-artist">' + artist + '</span>' : 'Unknown Artist';
+            title = title ? '<div class="song-title">' + title + '</div>' : 'Unknown Title';
+
+            $(this).html('<div class="album-thumb pull-left">' + albumart +
+              '</div> <div class = "songs-info pull-left"> ' + title + ' <div class = "songs-detail" > ' +
+              artist + ' -' + album + ' <div /div> </div></div>');
+          });
+        },
+        load: function (id, album, artist, title, albumart, mp3) {
+          var currentTrack, totalTrack;
+          totalTrack = $('.play-list>a').length;
+          currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
+          $('.play-position').text('Song ' + currentTrack + ' of ' + totalTrack);
+          albumart = albumart ? '<img src="' + albumart + '">' : '';
+          album = album ? album : 'Unknown Album';
+          title = title ? title : 'Unknown Title';
+          artist = artist ? artist : 'Unknown Artist';
+          $('.album-art').html(albumart);
+          $('.current-info .song-album').html('<i class="fa fa-music"></i> ' + album);
+          $('.current-info .song-title').html('<i class="fa fa-headphones"></i> ' + title);
+          $('.current-info .song-artist').html('<i class="fa fa-user"></i> ' + artist);
+          if (mp3)
+            $('.audio').html('<audio class="music" data-id="' + id + '" src="' + mp3 + '"></audio>');
+        }
+      },
+      player: function () {
+        var id, album, artist, albumart, title, mp3;
+        $('.play-list .play').each(function () {
+          $(this).on('click', function (e) {
+            e.preventDefault();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            clearInterval(intval);
+            id = $(this).data('id');
+            album = $(this).data('album');
+            artist = $(this).data('artist');
+            albumart = $(this).data('albumart');
+            title = $(this).data('title');
+            mp3 = $(this).data('url');
+            Audio.info.load(id, album, artist, title, albumart, mp3);
+            Audio.play($('.music'));
+            $('.music').prop('volume', $('.volume').val());
+            Audio.playlist.hide();
+          });
+        });
+        $('.play-pause').on('click', function (e) {
+          e.preventDefault();
+          if ($('.audio').is(':empty')) {
+            $('.play-list a:first-child').click();
+          } else {
+            var music = $('.music')[0];
+            if (music.paused) {
+              setInterval(intval);
+              Audio.play($('.music'));
+              $(this).addClass('active');
+            } else {
+              clearInterval(intval);
+              Audio.pause($('.music'));
+              $(this).removeClass('active');
+            }
+          }
+        });
+
+        $('.stop').on('click', function (e) {
+          e.preventDefault();
+          clearInterval(intval);
+          Audio.stop($('.music'));
+          $('.music')[0].currentTime = 0;
+          $('.progress .bar').css('width', 0);
+        });
+        $('.volume').on('change', function () {
+          var vol, css;
+          vol = $(this).val();
+          $(this).attr('data-css', vol);
+          $('.music').prop('volume', vol);
+        });
+        $('.prev').on('click', function (e) {
+          var index, firstIndex;
+          e.preventDefault();
+          index = $('.play-list a').length - $('.play-list a').index();
+          firstIndex = $('.play-list a').length - $('.play-list a').index($('.play-list a.active'));
+          if (index == firstIndex) {
+            $('.play-list a:last-child').click();
+          } else {
+            Audio.prev();
+          }
+        });
+        $('.next').on('click', function (e) {
+          var index, lastIndex;
+          e.preventDefault();
+          index = $('.play-list a').length;
+          lastIndex = $('.play-list a').index($('.play-list a.active')) + 1;
+          if (index == lastIndex) {
+            $('.play-list a:first-child').click();
+          } else {
+            Audio.next();
+          }
+        });
+        $('.toggle-play-list').on('click', function (e) {
+          e.preventDefault();
+          var toggle = $(this);
+          if (toggle.hasClass('active')) {
+            Audio.playlist.hide();
+          } else {
+            Audio.playlist.show();
+          }
+        });
+      },
+      playlist: {
+        show: function () {
+          $('.play-list').fadeIn(500);
+          $('.toggle-play-list').addClass('active');
+          $('.album-art').addClass('blur');
+        },
+        hide: function () {
+          $('.play-list').fadeOut(500);
+          $('.toggle-play-list').removeClass('active');
+          $('.album-art').removeClass('blur');
+        }
+      },
+      play: function (e) {
+        var bar, current, total;
+        e.trigger('play').bind('ended', function () {
+          $('.next').click();
+        });
+        intval = setInterval(function () {
+          current = e[0].currentTime;
+          $('.play-current-time').text(Audio.formatTime(current));
+
+          bar = (current / e[0].duration) * 100;
+          $('.progress .bar').css('width', bar + '%');
+
+        }, 1000);
+
+        var totalDur = setInterval(function (t) {
+          if ($('.audio .music')[0].readyState > 0) {
+            total = e[0].duration;
+            $('.play-total-time').text(Audio.formatTime(total));
+            clearInterval(totalDur);
+          }
+        }, 1000);
+        $('.play-pause').addClass('active');
+      },
+      pause: function (e) {
+        e.trigger('pause');
+        $('.play-pause').removeClass('active');
+      },
+      stop: function (e) {
+        e.trigger('pause').prop('currentTime', 0);
+        $('.play-pause').removeClass('active');
+      },
+      mute: function (e) {
+        prop('muted', !e.prop('muted'));
+      },
+      volumeUp: function (e) {
+        var volume = e.prop('volume') + 0.2;
+        if (volume > 1) {
+          volume = 1;
+        }
+        e.prop('volume', volume);
+      },
+      volumeDown: function (e) {
+        var volume = e.prop('volume') - 0.2;
+        if (volume < 0) {
+          volume = 0;
+        }
+        e.prop('volume', volume);
+      },
+      prev: function () {
+        var curr = $('.music').data('id');
+        var
+          prev = $('a[data-id="' + curr + '" ]').prev();
+        if (curr && prev) {
+          prev.click();
+        }
+      },
+      next: function () {
+        var
+          curr = $('.music').data('id');
+        var next = $('a[data-id="' + curr + '" ]').next();
+        if (curr && next) {
+          next.click();
+        }
+      },
+      scrollbar: function () {
+        if (typeof $.fn.enscroll !== 'undefined') {
+          $('.play-list').enscroll({
+            showOnHover: true,
+            verticalTrackClass: 'track',
+            verticalHandleClass: 'handle'
+          });
+        }
+      }
+    }
+  </script>
+  <script>
+    (function () {
+      'use strict'
+
+      document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function () {
+        document.querySelector('.offcanvas-collapse').classList.toggle('open')
+      })
+    })()
+  </script>
 </body>
 
 </html>

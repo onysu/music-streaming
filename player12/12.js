@@ -43,7 +43,7 @@ var Audio = {
       var currentTrack, totalTrack;
       totalTrack = $('.play-list>a').length;
       currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
-      $('.play-position').text(currentTrack + ' / ' + totalTrack);
+      $('.play-position').text('Song ' + currentTrack + ' of ' + totalTrack);
       albumart = albumart ? '<img src="' + albumart + '">' : '';
       album = album ? album : 'Unknown Album';
       title = title ? title : 'Unknown Title';
@@ -225,3 +225,11 @@ var Audio = {
     }
   }
 }
+
+(function () {
+  'use strict'
+
+  document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function () {
+    document.querySelector('.offcanvas-collapse').classList.toggle('open')
+  })
+})()
