@@ -112,16 +112,13 @@ body:before {
   left: 0;
 }
 
-.mhn-player .album-art img {
-  width: 100%;
-  display: block;
-}
+
 
 .mhn-player .album-art:before {
   top: -3px;
   left: 12%;
   width: 75%;
-  height: 237px;
+  height: 270px;
   content: 'O-Music';
   background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
   background-size: cover;
@@ -153,9 +150,11 @@ body:before {
       background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, 1));
     } */
 
+
+
 .mhn-player .album-art img {
   width: 75%;
-  /* height: 270px; */
+  height: 270px;
   position: relative;
   margin: auto;
   border-radius: 0 0 138px 138px;
@@ -163,6 +162,7 @@ body:before {
   border-left: 5px solid white;
   border-bottom: 5px solid white;
   border-right: 5px solid white;
+  display: block;
 }
 
 .mhn-player .album-art.blur img {
