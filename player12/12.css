@@ -5,8 +5,8 @@
 }
 
 body {
-  margin: 0;
-  color: #222;
+  display: grid;
+  /* color: #222; */
   /* background: url(); */
   /* font: 300 18px/18px Roboto, sans-serif; */
   font-family: Roboto, sans-serif;
@@ -77,7 +77,7 @@ body:before {
   width: 100%;
   max-width: 375px;
   height: 100vh;
-  max-height: 540px;
+  max-height: 480px;
   padding: 15px;
   position: relative;
   margin: auto;
