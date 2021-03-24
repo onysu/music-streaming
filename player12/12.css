@@ -14,8 +14,6 @@ body {
   height: 100vh;
 }
 
-
-
 body:before {
   content: "";
   position: fixed;
@@ -27,6 +25,10 @@ body:before {
   height: 100vh;
   filter: blur(3px);
   -webkit-filter: blur(3px);
+}
+
+.container-fluid{
+  padding: 0;
 }
 
 *,
