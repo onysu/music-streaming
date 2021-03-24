@@ -731,7 +731,7 @@ body {
 
 .navbar-light .navbar-toggler-icon {
   background-image: none;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
 }
 
 .navbar-toggler {
