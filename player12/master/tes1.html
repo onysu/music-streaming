@@ -25,16 +25,6 @@
       background-repeat: no-repeat;
     }
 
-    /* .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      width: 100%;
-      max-width: 320px;
-      max-height: 480px;
-    } */
-
     *,
     :after,
     :before {
@@ -123,15 +113,17 @@
 
     /* img jika tdk ada img artis */
     .mhn-player .album-art:before {
-      top: 30px;
+      top: 25%;
       left: 50%;
       width: 200px;
-      content: 'music';
-      font-size: 72px;
-      font-weight: 600;
+      content: 'O-music';
+      font-size: 50px;
+      /* font-weight: 600; */
       position: absolute;
       margin-left: -100px;
       color: rgba(255, 255, 255, .4);
+      background-image:
+        url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
     }
 
     /* img artis */
