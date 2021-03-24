@@ -121,7 +121,7 @@ body:before {
   top: -3px;
   left: 12%;
   width: 75%;
-  height: 270px;
+  height: 237px;
   content: 'O-Music';
   background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
   background-size: cover;
@@ -155,7 +155,7 @@ body:before {
 
 .mhn-player .album-art img {
   width: 75%;
-  height: 270px;
+  /* height: 270px; */
   position: relative;
   margin: auto;
   border-radius: 0 0 138px 138px;
