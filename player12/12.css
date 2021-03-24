@@ -332,9 +332,6 @@ body:before {
 .navbar-toggler-icon .fa-list-ul:before {
   content: "\f2bd";
 }
-.toggle-play-list .fa-list-ul:before {
-  content: "\f03a";
-}
 
 a.toggle-play-list.active {
   right: 10px;
@@ -673,7 +670,7 @@ body {
   visibility: hidden;
   background-color: rgba(255, 255, 255, .8);
   transition: transform .3s ease-in-out,
-  visibility .3s ease-in-out;
+    visibility .3s ease-in-out;
   overflow-y: scroll;
 }
 
