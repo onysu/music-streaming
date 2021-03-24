@@ -64,7 +64,7 @@ body {
   width: 100%;
   max-width: 375px;
   height: 100vh;
-  max-height: 540px;
+  max-height: 480px;
   padding: 15px;
   position: relative;
   margin: auto;
@@ -106,16 +106,30 @@ body {
 }
 
 .mhn-player .album-art:before {
-  top: 30px;
-  left: 50%;
-  width: 200px;
-  content: 'music';
-  font-size: 72px;
+  top: -3px;
+  left: 12%;
+  width: 75%;
+  height: 255px;
+  content: 'O-Music';
+  background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 45px;
   font-weight: 600;
   position: absolute;
-  margin-left: -100px;
-  color: rgba(255, 255, 255, .4);
-}
+  color: rgba(255, 255, 255, .1);
+  border-radius: 0 0 120px 120px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2em 1.5em -1em rgb(0 0 0 / 80%),
+  inset 0 0.0625em 0 rgb(255 255 255),
+  inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
+  }
 
 /* .mhn-player .album-art:after {
       top: 0;
