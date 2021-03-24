@@ -672,6 +672,10 @@ body {
   transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 }
 
+.navbar-expand-lg .navbar-toggler{
+  display: block;
+}
+
 .offcanvas-collapse.open {
   visibility: visible;
   transform: translateX(-100%);
