@@ -77,7 +77,7 @@ body:before {
   width: 100%;
   max-width: 375px;
   height: 100vh;
-  /* max-height: 540px; */
+  max-height: 540px;
   padding: 15px;
   position: relative;
   margin: auto;
