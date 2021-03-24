@@ -538,15 +538,15 @@ i.fas.fa-volume-up {
 }
 
 .volume::-webkit-slider-thumb {
-  background: #dc143c;
+  background: #666;
 }
 
 .volume::-moz-range-thumb {
-  background: #dc143c;
+  background: #666;
 }
 
 .volume::-ms-thumb {
-  background: #dc143c;
+  background: #666;
 }
 
 .volume::-webkit-slider-runnable-track {
