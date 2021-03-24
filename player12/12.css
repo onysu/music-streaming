@@ -329,10 +329,11 @@ body:before {
   z-index: 1031;
 }
 
-.fa-list-ul:before {
-  content: "\f0ca";
-  font-size: large;
-  color: #222;
+.navbar-toggler-icon .fa-list-ul:before {
+  content: "\f2bd";
+}
+.toggle-play-list .fa-list-ul:before {
+  content: "\f03a";
 }
 
 a.toggle-play-list.active {
