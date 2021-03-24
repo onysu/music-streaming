@@ -110,7 +110,7 @@ body {
   width: 75%;
   height: 270px;
   content: 'O-Music';
-  background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png);
+  background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -238,7 +238,7 @@ body {
   /* color: #222; */
   /* margin-left: -15px; */
   /* margin-right: -15px; */
-  /* line-height: 1.5; */
+  line-height: 1.2;
 }
 
 /* .mhn-player .current-info>div { */
