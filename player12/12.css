@@ -75,7 +75,7 @@ body:before {
 
 .mhn-player {
   width: 100%;
-  max-width: 540px;
+  max-width: 375px;
   height: 100vh;
   /* max-height: 540px; */
   padding: 15px;
@@ -764,7 +764,7 @@ body {
 }
 
 .fixed-top {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 0;
   left: 5px;
