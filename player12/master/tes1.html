@@ -113,17 +113,21 @@
 
     /* img jika tdk ada img artis */
     .mhn-player .album-art:before {
-      top: 25%;
-      left: 50%;
-      width: 200px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
       content: 'O-music';
-      font-size: 50px;
+      /* font-size: 50px; */
       /* font-weight: 600; */
-      position: absolute;
-      margin-left: -100px;
+      position: fixed;
+      /* margin-left: -100px; */
       color: rgba(255, 255, 255, .4);
-      background-image:
-        url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
+      background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      text-align: center;
     }
 
     /* img artis */
