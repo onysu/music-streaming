@@ -5,7 +5,7 @@
 }
 
 body {
-  display: grid;
+  /* display: grid; */
   /* color: #222; */
   /* background: url(); */
   /* font: 300 18px/18px Roboto, sans-serif; */
@@ -96,6 +96,7 @@ body:before {
 
 @media (min-width: 540px) {
   .mhn-player {
+    display: grid;
     /* transform: translate(0%, 15%); */
     border-radius: 15px;
   }
@@ -106,6 +107,10 @@ body:before {
 }
 
 @media (min-width: 992px) {
+  .mhn-player {
+    display: grid;
+    border-radius: 15px;
+  }
   .offcanvas-collapse{
     top: 30px;
   }
