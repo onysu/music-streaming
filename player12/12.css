@@ -105,6 +105,22 @@ body:before {
   }
 }
 
+@media (min-width: 992px) {
+  .offcanvas-collapse{
+    top: 30px;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-light .navbar-toggler{
+    position: absolute;
+    top: 10px;
+  }
+  .offcanvas-collapse.open{
+    top: 30px;
+  }
+}
+
 /* .mhn-player .album-art,
     .mhn-player .album-thumb {
       background: url() no-repeat center / 50%;
@@ -330,9 +346,9 @@ body:before {
 
 .mhn-player .toggle-play-list {
   right: 12px;
-  top: 15px;
-  /* color: #ccc; */
-  text-align: center;
+  /* top: 15px; */
+  color: tomato;
+  /* text-align: center; */
   position: absolute;
   z-index: 1031;
 }
@@ -351,6 +367,7 @@ a.toggle-play-list.active {
   background-color: crimson;
   color: white;
   z-index: 1031;
+  text-align: center;
 }
 
 .mhn-player .controls .fa-pp:before {
@@ -738,9 +755,10 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-  color: #111;
+  color: tomato;
   border-color: rgba(0, 0, 0, .1);
   z-index: 1031;
+  left: 4px;
 }
 
 .navbar-light .navbar-toggler-icon {
