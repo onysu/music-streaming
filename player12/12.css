@@ -675,6 +675,10 @@ body {
 .navbar-expand-lg .navbar-toggler{
   display: block;
 }
+.navbar-expand-lg .navbar-nav{
+  flex-direction: column;
+  width: 100%;
+}
 
 .offcanvas-collapse.open {
   visibility: visible;
