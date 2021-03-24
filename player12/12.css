@@ -81,7 +81,7 @@ body:before {
   position: relative;
   margin: auto;
   /* background: rgba(0, 0, 0, .9); */
-  background: blanchedalmond;
+  background: #eee;
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21);
 }
 
@@ -373,9 +373,9 @@ span.play-total-time {
   height: 2px;
   margin: 15px auto;
   position: relative;
-  /* background: #262626; */
-  background: #ccc;
   width: 65%;
+  background-color: #ddd;
+  box-shadow: 0 0.0625em rgb(255 255 255);
 }
 
 .mhn-player .controls .duration {
@@ -464,11 +464,14 @@ i.fas.fa-volume-up {
 }
 
 .volume::-webkit-slider-runnable-track {
-  /* height: .5em; */
-  height: 2px;
-  background: #d8d8d8;
-  border-radius: .25em;
   -webkit-appearance: none;
+  height: 2px;
+  background-color: #ddd;
+  box-shadow: 0 0.0625em rgb(255 255 255);
+  outline: none;
+  opacity: 0.7;
+  border-radius: .25em;
+  transition: opacity .2s;
 }
 
 .volume::-moz-range-track {
