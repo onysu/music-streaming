@@ -360,6 +360,8 @@ span.play-current-time {
   position: absolute;
   left: 13px;
   font-size: small;
+  opacity: .6;
+  text-shadow: none;
 }
 
 span.play-total-time {
@@ -367,6 +369,8 @@ span.play-total-time {
   position: absolute;
   right: 13px;
   font-size: small;
+  opacity: .6;
+  text-shadow: none;
 }
 
 .mhn-player .controls .progress {
@@ -388,7 +392,7 @@ span.play-total-time {
   display: block;
   height: inherit;
   /* background: #bc3958; */
-  background: red;
+  background: #666;
   /* box-shadow: 0 0 5px 0 #bc3958; */
 }
 
@@ -430,6 +434,8 @@ div.action-button {
 
 div.play-position {
   font-size: small;
+  opacity: .6;
+  text-shadow: none;
 }
 
 .vol {
