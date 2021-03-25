@@ -11,7 +11,7 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
     type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900"> -->
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 
@@ -19,22 +19,25 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
     body {
-      margin: 0;
       color: #444;
-      background:
-        url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-      font: 300 18px/18px Roboto, sans-serif;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      /* background:
+        url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); */
+      /* font: 300 18px/18px Roboto, sans-serif; */
+      /* background-size: cover; */
+      /* background-position: center; */
+      /* background-repeat: no-repeat; */
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
     }
 
-    *,
+    /* *,
     :after,
     :before {
       box-sizing: border-box
-    }
+    } */
 
     .pull-left {
       float: left
@@ -44,7 +47,7 @@
       float: right
     }
 
-    .clearfix:after,
+    /* .clearfix:after,
     .clearfix:before {
       content: '';
       display: table
@@ -53,7 +56,7 @@
     .clearfix:after {
       clear: both;
       display: block
-    }
+    } */
 
     .track {
       width: 2px;
@@ -244,14 +247,20 @@
     }
 
     .mhn-player .controls .progress {
-      height: 1.5px;
-      margin: 15px 0;
-      position: relative;
+      width: 80%;
+      height: 2px;
+      margin: 15px auto;
+      /* position: relative; */
       background: #999;
     }
 
-    .mhn-player .controls .duration {
+    .mhn-player .controls .durasi {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       font-size: small;
+      bottom: -24px;
+      position: relative;
     }
 
     .mhn-player .controls .progress .bar {
@@ -260,6 +269,14 @@
       height: inherit;
       background: red;
       /* box-shadow: 0 0 5px 0 #bc3958; */
+    }
+
+    .mhn-player .controls .durasi .play-current-time {
+      float: left;
+    }
+
+    .mhn-player .controls .durasi .play-total-time {
+      float: right;
     }
 
     .mhn-player .controls .action-button {
@@ -330,8 +347,6 @@
       /* background-color: crimson; */
       z-index: 1;
     }
-
-
 
     .volm {
       display: flex;
@@ -709,11 +724,11 @@
         </div>
 
 
+        <span class="pull-left play-position"></span>
 
-        <div class="duration clearfix">
-          <span class="pull-left play-position"></span>
-          <span class="pull-right"><span class="play-current-time">00:00</span> / <span
-              class="play-total-time">00:00</span></span>
+        <div class="durasi">
+          <div class="play-current-time">00:00</div>
+          <div class="play-total-time">00:00</div>
         </div>
 
         <div class="progress">
