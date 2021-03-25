@@ -161,11 +161,22 @@
     } */
 
     .mhn-player .album-art img {
-      width: 75%;
       position: relative;
-      top: 0;
-      left: 0;
-      border-radius: 0 0 120px 120px;
+      top: -2px;
+      left: 12%;
+      width: 75%;
+      height: 50%;
+      color: rgba(255, 255, 255, .1);
+      border-radius: 0 0 138px 138px;
+      border-left: 5px solid white;
+      border-bottom: 5px solid white;
+      border-right: 5px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1.5em 1.1em -1em rgb(0 0 0 / 80%),
+        inset 0 0.0625em 0 rgb(255 255 255),
+        inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
     }
 
     .mhn-player .album-art.blur img {
@@ -353,7 +364,7 @@
     }
 
     .mhn-player .toggle-play-list {
-      right: 4px;
+      right: 0;
       width: 40px;
       height: 40px;
       color: #222;
@@ -367,17 +378,17 @@
     }
 
     .mhn-player .toggle-artis-list {
-      left: 15px;
+      left: 0;
       width: 40px;
       height: 40px;
-      color: #ccc;
+      color: #222;
       top: 15px;
       /* border-radius: 50%; */
       line-height: 40px;
       text-align: center;
       position: fixed;
       /* background-color: crimson; */
-      z-index: 1;
+      z-index: 2;
     }
 
     .play-position {
