@@ -244,17 +244,18 @@
       left: 0;
     }
 
-    .mhn-player .controls .toggle-play-list {
+    .mhn-player .toggle-play-list {
       right: 15px;
       width: 40px;
       height: 40px;
       color: #ccc;
       top: 15px;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       line-height: 40px;
       text-align: center;
-      position: absolute;
-      background-color: crimson;
+      position: fixed;
+      /* background-color: crimson; */
+      z-index: 1;
     }
 
     .mhn-player .controls .fa-pp:before {
@@ -504,6 +505,8 @@
   <div class="container p-0">
     <div class="mhn-player">
 
+      <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
+
       <!-- album img -->
       <div class="album-art"></div>
 
@@ -676,7 +679,7 @@
           <div class="song-title"></div>
         </div>
 
-        <a href="#" class="toggle-play-list"><i class="fa fa-list-ul"></i></a>
+
 
         <div class="duration clearfix">
           <span class="pull-left play-position"></span>
