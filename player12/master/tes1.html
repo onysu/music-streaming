@@ -381,18 +381,22 @@
       z-index: 2;
     }
 
-    .mhn-player .toggle-artis-list {
+    /* .mhn-player .toggle-artis-list {
       left: 0;
       width: 13%;
       height: 13%;
       color: #222;
       top: 15px;
-      /* border-radius: 50%; */
+      border-radius: 50%;
       line-height: 40px;
       text-align: center;
       position: fixed;
-      /* background-color: crimson; */
+      background-color: crimson;
       z-index: 2;
+    } */
+
+    .mhn-player .artis {
+      z-index: 1000;
     }
 
     .play-position {
@@ -602,7 +606,27 @@
     <div class="mhn-player">
 
       <a href="#" class="toggle-play-list"><i class="fal fa-list"></i></a>
-      <a href="#" class="toggle-artis-list"><i class="fas fa-user-circle"></i></a>
+      <!-- <a href="#" class="toggle-artis-list"><i class="fas fa-user-circle"></i></a> -->
+
+      <!-- <div class="artis"> -->
+      <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="fas fa-user-circle"></i>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
 
       <!-- album img -->
       <div class="album-art"></div>
