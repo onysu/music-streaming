@@ -306,14 +306,23 @@
       font-size: inherit;
     }
 
-    .mhn-player .current-info {
+    .mhn-player .controls .current-info {
       display: flex;
       flex-direction: column;
       /* margin: 15px 0; */
       line-height: 1.5;
     }
 
-    .mhn-player .current-info .fa {
+    div.song-title {
+      font-weight: 600;
+    }
+
+    div.song-artist,
+    .song-album {
+      font-weight: 300;
+    }
+
+    .mhn-player .controls .current-info .fa {
       min-width: 30px;
       font-size: 18px;
       text-align: center;
@@ -724,9 +733,9 @@
       <div class="controls">
 
         <div class="current-info">
+          <div class="song-title"></div>
           <div class="song-artist"></div>
           <div class="song-album"></div>
-          <div class="song-title"></div>
         </div>
 
         <div class="durasi">
