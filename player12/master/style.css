@@ -409,7 +409,9 @@ div.song-artist,
   margin: 0 3%;
   cursor: pointer;
   -webkit-appearance: none;
-  background: transparent;
+  background: #ddd;
+  box-shadow: 0 0.0625em rgb(255 255 255);
+  border-radius: 0.0625em;
   margin-bottom: 3px;
 }
 
