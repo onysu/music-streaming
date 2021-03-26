@@ -302,12 +302,12 @@ i.fas.fa-volume-down {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .mhn-player .controls .action-button a {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   /* font-size: 16px; */
   margin-right: 5px;
   /* border: 2px solid; */
@@ -321,6 +321,7 @@ i.fas.fa-volume-down {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* color: #7a7a7a; */
 }
 
 .mhn-player .controls .action-button a:hover,
@@ -328,9 +329,9 @@ i.fas.fa-volume-down {
   color: #ccc;
 }
 
-.mhn-player .controls .action-button a .fa {
+/* .mhn-player .controls .action-button a .fa {
   font-size: inherit;
-}
+} */
 
 .mhn-player .controls .current-info {
   display: flex;
