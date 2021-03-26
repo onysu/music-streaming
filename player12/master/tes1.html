@@ -200,7 +200,7 @@
       overflow-y: auto;
       position: absolute;
       background: rgba(255, 255, 255, .9);
-      z-index: 1030;
+      z-index: 1;
       padding: 5px 0;
     }
 
@@ -643,44 +643,35 @@
 
       <a href="#" class="toggle-play-list"><i class="fal fa-list"></i></a>
 
-      <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <!-- artis -->
+      <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#artis">
         <i class="fas fa-user-circle"></i>
       </button>
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="artis" tabindex="-1" aria-labelledby="artisModal" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Artis</h5>
+              <h5 class="modal-title" id="artisModal">Artis</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="celion.html">Celion Dion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="mariah.html">Mariah Carey</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="whitney.html">Whitney Houston</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="rossa.html">Rossa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="islamic.html">Islamic Songs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Koleksi</a>
-                  </li>
-                </ul>
+              <div class="list-group">
+                <a href="celion.html" class="list-group-item list-group-item-action">Celion Dion</a>
+                <a href="mariah.html" class="list-group-item list-group-item-action">Mariah Carey</a>
+                <a href="whitney.html" class="list-group-item list-group-item-action">Whitney Houston</a>
+                <a href="rossa.html" class="list-group-item list-group-item-action">Rossa</a>
+                <a href="islamic.html" class="list-group-item list-group-item-action">Islamic Songs</a>
+                <a href="index.html" class="list-group-item list-group-item-action">Koleksi</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
+
 
       <!-- album img -->
       <div class="album-art"></div>
