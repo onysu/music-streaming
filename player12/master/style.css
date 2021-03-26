@@ -316,7 +316,7 @@ i.fas.fa-volume-down {
   text-align: center;
   display: inline-block;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, .5), 10px 10px 15px rgba(70, 70, 70, .12);
-  border: 8px solid #ececec;
+  border: 3px solid #ececec;
   outline: none;
   display: flex;
   justify-content: center;
@@ -327,6 +327,10 @@ i.fas.fa-volume-down {
 .mhn-player .controls .action-button a:hover,
 .mhn-player .controls .action-button a.active {
   color: red;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, .5),
+  10px 10px 15px rgba(70, 70, 70, .12),
+  inset -10px -10px 15px rgba(255, 255, 255, .5), inset
+  10px 10px 15px rgba(70, 70, 70, .12);
 }
 
 /* .mhn-player .controls .action-button a .fa {
@@ -379,20 +383,6 @@ div.song-artist,
   /* background-color: crimson; */
   z-index: 2;
 }
-
-/* .mhn-player .toggle-artis-list {
-      left: 0;
-      width: 13%;
-      height: 13%;
-      color: #222;
-      top: 15px;
-      border-radius: 50%;
-      line-height: 40px;
-      text-align: center;
-      position: fixed;
-      background-color: crimson;
-      z-index: 2;
-    } */
 
 .mhn-player .artis {
   left: 0;
