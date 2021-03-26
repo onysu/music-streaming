@@ -206,7 +206,7 @@ body {
   height: 35px;
   overflow: hidden;
   margin-right: 10px;
-  border: 1px solid #666;
+  /* border: 1px solid #666; */
 }
 
 .mhn-player .play-list .album-thumb img {
