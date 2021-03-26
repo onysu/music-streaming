@@ -29,10 +29,10 @@ var Audio = {
         artist = $(this).data('artist');
         title = $(this).data('title');
 
-        album = album ? '<span class="album">' + album + '</span>' : 'Unknown Album';
+        album = album ? '<span class="album">' + album + '</span>' : '-';
         albumart = albumart ? '<img src="' + albumart + '">' : '';
-        artist = artist ? '<span class="song-artist">' + artist + '</span>' : 'Unknown Artist';
-        title = title ? '<div class="song-title">' + title + '</div>' : 'Unknown Title';
+        artist = artist ? '<span class="song-artist">' + artist + '</span>' : '-';
+        title = title ? '<div class="song-title">' + title + '</div>' : '-';
 
         $(this).html('<div class="album-thumb pull-left">' + albumart +
           '</div><div class="songs-info pull-left">' + title + ' <div class="songs-detail"> ' + artist +
@@ -43,11 +43,11 @@ var Audio = {
       var currentTrack, totalTrack;
       totalTrack = $('.play-list>a').length;
       currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
-      $('.play-position').text('Lagu ' + currentTrack + ' of ' + totalTrack);
+      $('.play-position').text('Lagu ' + currentTrack + ' dr ' + totalTrack);
       albumart = albumart ? '<img src="' + albumart + '">' : '';
-      album = album ? album : 'Unknown Album';
-      title = title ? title : 'Unknown Title';
-      artist = artist ? artist : 'Unknown Artist';
+      album = album ? album : '-';
+      title = title ? title : '-';
+      artist = artist ? artist : '-';
       $('.album-art').html(albumart);
       $('.current-info .song-album').html(album);
       $('.current-info .song-title').html(title);
