@@ -244,6 +244,7 @@ body {
 .fal,
 .fas {
   font-weight: 900;
+  font-size: large;
 }
 
 .mhn-player .controls .fa-pp:before {
