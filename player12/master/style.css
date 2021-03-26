@@ -324,9 +324,8 @@ i.fas.fa-volume-down {
 .mhn-player .controls .action-button a.active {
   color: red;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, .5),
-  10px 10px 15px rgba(70, 70, 70, .3),
-  inset -10px -10px 15px rgba(255, 255, 255, .5), inset
-  10px 10px 15px rgba(70, 70, 70, .2);
+    10px 10px 15px rgba(70, 70, 70, .3),
+    inset -10px -10px 15px rgba(255, 255, 255, .5), inset 10px 10px 15px rgba(70, 70, 70, .2);
 }
 
 /* .mhn-player .controls .action-button a .fa {
@@ -644,7 +643,8 @@ div.song-artist,
   flex: 1 1 auto;
   padding: 0;
 }
-.list-group{
+
+.list-group {
   color: black;
   font-weight: 400;
 }
@@ -655,4 +655,13 @@ li.nav-item {
 
 a.list-group-item.list-group-item-action {
   background-color: rgba(255, 255, 255, .8);
+}
+
+.bg-warning {
+  background-color: #ddd !important;
+  color: #333;
+}
+
+.rounded-pill {
+  border-radius: unset !important;
 }
