@@ -326,7 +326,7 @@ i.fas.fa-volume-down {
 
 .mhn-player .controls .action-button a:hover,
 .mhn-player .controls .action-button a.active {
-  color: #ccc;
+  color: red;
 }
 
 /* .mhn-player .controls .action-button a .fa {
