@@ -35,15 +35,15 @@ var Audio = {
         title = title ? '<div class="song-title">' + title + '</div>' : 'Unknown Title';
 
         $(this).html('<div class="album-thumb pull-left">' + albumart +
-          '</div> <div class = "songs-info pull-left"> ' + title + ' <div class = "songs-detail" > ' +
-          artist + ' -' + album + ' <div /div> </div></div>');
+          '</div><div class="songs-info pull-left">' + title + ' <div class="songs-detail"> ' + artist +
+          ' / ' + album + '</div> </div> </div>');
       });
     },
     load: function (id, album, artist, title, albumart, mp3) {
       var currentTrack, totalTrack;
       totalTrack = $('.play-list>a').length;
       currentTrack = $('.play-list a').index($('.play-list .active')) + 1;
-      $('.play-position').text('Song ' + currentTrack + ' of ' + totalTrack);
+      $('.play-position').text('Lagu ' + currentTrack + ' of ' + totalTrack);
       albumart = albumart ? '<img src="' + albumart + '">' : '';
       album = album ? album : 'Unknown Album';
       title = title ? title : 'Unknown Title';
@@ -225,11 +225,3 @@ var Audio = {
     }
   }
 }
-
-(function () {
-  'use strict'
-
-  document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function () {
-    document.querySelector('.offcanvas-collapse').classList.toggle('open')
-  })
-})()
