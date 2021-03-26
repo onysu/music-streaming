@@ -123,7 +123,7 @@ body {
 .mhn-player .album-art:before {
   top: -2px;
   width: 75%;
-  height: 50%;
+  height: 55%;
   content: 'O-Music';
   background-image: url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/me.jpg);
   background-size: cover;
