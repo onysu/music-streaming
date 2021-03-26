@@ -104,6 +104,10 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
   }
+
+  .mhn-player .play-list {
+    border-radius: 15px;    
+  }
 }
 
 .mhn-player .album-art {
@@ -173,7 +177,7 @@ body {
   position: absolute;
   background-color: rgba(255, 235, 205, .9);
   z-index: 1;
-  padding: 5px 0;
+  padding: 10px;
 }
 
 .mhn-player .play-list a {
@@ -208,7 +212,8 @@ body {
 }
 
 .mhn-player .play-list .songs-info {
-  max-width: 240px;
+  max-width: 234px;
+  line-height: 1.3;
 }
 
 .mhn-player .play-list .songs-info .song-title {
