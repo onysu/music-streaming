@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 body {
-  /* color: #444; */
-  background:
-        url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-  /* font: 300 18px/18px Roboto, sans-serif; */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  /* background: #eee; */
+  background: #eee;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
@@ -80,6 +73,12 @@ body {
 }
 
 @media (min-width: 400px) {
+  body{
+    background: url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .mhn-player{
     position: relative;
     max-width: 375px;
