@@ -7,6 +7,8 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
+
+
 /* *,
     :after,
     :before {
@@ -73,13 +75,14 @@ body {
 }
 
 @media (min-width: 400px) {
-  body{
+  body {
     background: url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .mhn-player{
+
+  .mhn-player {
     position: relative;
     max-width: 375px;
     margin: auto;
@@ -87,8 +90,30 @@ body {
     min-height: 100vh;
     border-radius: 15px;
     box-shadow: 0 1.5em 2em -1em rgb(0 0 0 / 80%),
-    inset 0 0.0625em 0 rgb(255 255 255),
-    inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+      inset 0 0.0625em 0 rgb(255 255 255),
+      inset 0 -0.125em 0.0625em rgb(0 0 0 / 30%);
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
   }
 }
 
@@ -101,25 +126,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* height: 100%; */
-  /* overflow: hidden; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* border: 1px solid #000;
-      top: 0;
-      left: 0;
-      right: 0; */
 }
-
-/* .mhn-player .album-art img {
-      width: 100%;
-      display: block;
-    } */
 
 /* img jika tdk ada img artis */
 .mhn-player .album-art:before {
   top: -2px;
-  /* left: 12%; */
   width: 75%;
   height: 50%;
   content: 'O-Music';
@@ -127,32 +138,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  /* font-size: 45px; */
-  /* font-weight: 600; */
   position: absolute;
   color: rgba(255, 255, 255, .1);
   border-radius: 0 0 138px 138px;
   border-left: 5px solid white;
   border-bottom: 5px solid white;
   border-right: 5px solid white;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   box-shadow: 0 1.5em 1.1em -1em rgb(0 0 0 / 80%),
     inset 0 0.0625em 0 rgb(255 255 255),
     inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
 }
-
-/* img artis */
-/* .mhn-player .album-art:after {
-      top: 0;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 56%;
-      position: absolute;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    } */
 
 .mhn-player .album-art img {
   position: absolute;
@@ -612,6 +607,7 @@ div.song-artist,
   overflow: hidden;
   outline: 0;
 }
+
 .modal-header {
   display: flex;
   flex-shrink: 0;
