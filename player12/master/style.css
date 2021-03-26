@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Roboto Condensed',
-  sans-serif;
+    sans-serif;
   font-size: 100%;
   font-weight: 300;
   /* font-size: 18px; */
@@ -109,7 +109,7 @@ body {
   }
 
   .mhn-player .play-list {
-    border-radius: 15px;    
+    border-radius: 15px;
   }
 }
 
@@ -241,6 +241,7 @@ body {
   padding: 15px;
 }
 
+.fa,
 .fal,
 .fas {
   font-weight: 900;
