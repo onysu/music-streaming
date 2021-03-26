@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AudioPlayer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="layer"></div>
+  <div class="container p-0">
+    <div class="mhn-player">
+
+      <a href="#" class="toggle-play-list"><i class="fal fa-list"></i></a>
+
+      <!-- artis -->
+      <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#artis">
+        <i class="fas fa-user-circle"></i>
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="artis" tabindex="-1" aria-labelledby="artisModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="artisModal">Artis</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+                <a href="celion.html" class="list-group-item list-group-item-action">Celion Dion</a>
+                <a href="mariah.html" class="list-group-item list-group-item-action">Mariah Carey</a>
+                <a href="whitney.html" class="list-group-item list-group-item-action">Whitney Houston</a>
+                <a href="rossa.html" class="list-group-item list-group-item-action">Rossa</a>
+                <a href="islamic.html" class="list-group-item list-group-item-action">Islamic Songs</a>
+                <a href="dangdut.html" class="list-group-item list-group-item-action">Dangdut</a>
+                <a href="index.html" class="list-group-item list-group-item-action">Koleksi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- album img -->
+      <div class="album-art"></div>
+
+      <!-- playlist -->
+      <div class="play-list">
+        <a href="#" class="play" data-id="1" data-album="" data-artist="Safira Inema" data-title="Nutupi Laraku"
+          data-albumart="https://image.joox.com/JOOXcover/0/82d29f2f04691b80/300"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Safira%20Inema%20-%20Nutupi%20Laraku.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="2" data-album="" data-artist="Vita Alvia" data-title="Jalan Datar"
+          data-albumart="https://musikpantura.com/wp-content/uploads/2018/03/Vita-Alvia.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Vita%20Alvia%20-%20Jalan%20Datar.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="3" data-album="" data-artist="Era Syaqira" data-title="Cidro 2"
+          data-albumart="https://www.musikord.com/images/uploaded/artwork-Era-Syaqira--1604766365.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Era%20Syaqira%20-%20Cidro%202.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="4" data-album="" data-artist="Woro Widowati" data-title="Cidro 1"
+          data-albumart="https://th.bing.com/th/id/OIP.VJgvbc8xvIj7YhY2JV31HQDIDI?pid=ImgDet&rs=1"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Cidro%201.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="5" data-album="" data-artist="Happy Asmara" data-title="Tanpa Batas Waktu"
+          data-albumart="https://th.bing.com/th/id/OIP.HnMz7TyMDo9H5R7uHRTzAwAAAA?pid=ImgDet&rs=1"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Happy%20Asmara%20-%20Tanpa%20Batas%20Waktu.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="6" data-album="" data-artist="Denny Caknan Ft Happy Asmara" data-title="Satru"
+          data-albumart="https://th.bing.com/th/id/OIP.EglOoU4SIPTGW5oCrZF7uQHaHa?pid=ImgDet&rs=1"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Denny%20Caknan%20Ft%20Happy%20Asmara%20-%20Satru.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="7" data-album="" data-artist="Dj Tiktok" data-title="Kasmaran"
+          data-albumart="https://i1.sndcdn.com/avatars-000708802687-wz85i3-t500x500.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Dj%20Tiktok%20-%20Kasmaran.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="8" data-album="" data-artist="Happy Asmara" data-title="Tatu"
+          data-albumart="https://th.bing.com/th/id/OIP.7Egc-SHWQtMGl5plQ9xMbgHaHa?pid=ImgDet&rs=1"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Happy%20Asmara%20-%20Tatu.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="9" data-album="" data-artist="Vita Alvia" data-title="Salam Tresno"
+          data-albumart="https://www.music-bazaar.com/album-images/vol32/1575/1575951/3449599-big/New-Best-Vita-Alvia-cover.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Vita%20Alvia%20-%20Salam%20Tresno.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="10" data-album="" data-artist="Endrisucitra citra official"
+          data-title="Benci Ku Sangka Sayang"
+          data-albumart="https://media.istockphoto.com/vectors/classical-music-background-vector-id925671780?k=6&m=925671780&s=170667a&w=0&h=-7coGvZoIaJA0H258lZw6bOxyKy_bZJUaleGbMO6Nwg="
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Benci%20Ku%20Sangka%20Sayang.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="11" data-album="" data-artist="Vita Alvia" data-title="Angin Dalu"
+          data-albumart="https://lagutrending.wapqu.com/cover/33/400/7724759155fd5f1c6e4996.mp3.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Vita%20Alvia%20-%20Angin%20Dalu.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="12" data-album="" data-artist="Happy Asmara" data-title="Dalan Liyane"
+          data-albumart="https://gudangpemain.com/wp-content/uploads/2018/10/Foto-Happy-Asmara-10-630x600.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Happy%20Asmara%20-%20Dalan%20Liyane.mp3?raw=true"></a>
+
+        <a href="#" class="play" data-id="14" data-album="" data-artist="Anggun Pramudita" data-title="Bunga"
+          data-albumart="https://4.bp.blogspot.com/-MDDuaLmx8As/XpJLrJWdSTI/AAAAAAAAGJc/wD9xiuIGsrItiaxhrb5E9jm3Jlozg4wPACLcBGAsYHQ/s320/anggun-pramudita-selfi.jpg"
+          data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/Semongko%20Anggun%20Pramudita%20-%20Bunga.mp3?raw=true"></a>
+      </div>
+
+      <!-- audio -->
+      <div class="audio"></div>
+
+      <!-- controls -->
+      <div class="controls">
+
+        <div class="current-info">
+          <div class="song-title"></div>
+          <div class="song-artist"></div>
+          <div class="song-album"></div>
+        </div>
+
+        <div class="durasi">
+          <div class="play-current-time">00:00</div>
+          <div class="play-total-time">00:00</div>
+        </div>
+
+        <div class="progress">
+          <div class="bar"></div>
+        </div>
+
+        <div class="action-button">
+          <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
+          <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
+          <a href="#" class="stop"><i class="fa fa-stop"></i></a>
+          <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+        </div>
+
+        <div class="volm">
+          <span class="play-position"></span>
+          <span><i class="fas fa-volume-down"></i></span>
+          <input type="range" class="volume" min="0" max="1" step="0.1" value="0.5" data-css="0.5">
+          <span><i class="fas fa-volume-up"></i></span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="p12.js"></script>
+</body>
+
+</html>
