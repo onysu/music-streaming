@@ -661,7 +661,3 @@ a.list-group-item.list-group-item-action {
   background-color: #ddd !important;
   color: #333;
 }
-
-.rounded-pill {
-  border-radius: unset !important;
-}
