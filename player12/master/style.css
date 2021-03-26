@@ -117,11 +117,6 @@ body {
   }
 }
 
-/* .mhn-player .album-art,
-    .mhn-player .album-thumb {
-      background: url() no-repeat center / 50%;
-    } */
-
 .mhn-player .album-art {
   width: 100%;
   display: flex;
