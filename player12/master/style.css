@@ -55,7 +55,7 @@ body {
   /* box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21); */
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   body {
     background: url(https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
@@ -171,7 +171,7 @@ body {
   bottom: 0;
   overflow-y: auto;
   position: absolute;
-  background-color: rgba(255, 235, 205, .8);
+  background-color: rgba(255, 235, 205, .9);
   z-index: 1;
   padding: 5px 0;
 }
@@ -199,7 +199,7 @@ body {
   height: 35px;
   overflow: hidden;
   margin-right: 10px;
-  border: 1px solid #666;
+  /* border: 1px solid #666; */
 }
 
 .mhn-player .play-list .album-thumb img {
