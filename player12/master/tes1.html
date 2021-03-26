@@ -192,28 +192,25 @@
     }
 
     .mhn-player .play-list {
+      display: none;
       top: 0;
       left: 0;
       right: 0;
-      display: none;
       bottom: 0;
       overflow-y: auto;
       position: absolute;
-      background: linear-gradient(to bottom, black, white);
-      height: 100%;
-      z-index: 1;
-      /* width: auto !important; */
-      /* background: rgba(0, 0, 0, .8); */
-      /* padding-right: 1px !important; */
+      background: rgba(255, 255, 255, .9);
+      z-index: 1030;
+      padding: 5px 0;
     }
 
     .mhn-player .play-list a {
-      color: #ccc;
       display: block;
       overflow: hidden;
       padding: 6px 10px;
       white-space: nowrap;
       text-overflow: ellipsis;
+      border-bottom: 1px solid coral;
       transition: all .4s ease-in-out 0s;
     }
 
@@ -240,7 +237,6 @@
 
     .mhn-player .play-list .songs-info {
       max-width: 240px;
-      text-shadow: 0 2px 2px #000;
     }
 
     .mhn-player .play-list .songs-info .song-title {
@@ -249,9 +245,11 @@
     }
 
     .mhn-player .play-list .songs-info .songs-detail {
-      font-size: 13px;
+      font-size: 12px;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: darkgreen;
+      font-weight: 300;
     }
 
     .mhn-player .controls {
