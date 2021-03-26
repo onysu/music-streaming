@@ -7,14 +7,6 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
-
-
-/* *,
-    :after,
-    :before {
-      box-sizing: border-box
-    } */
-
 .pull-left {
   float: left
 }
@@ -22,17 +14,6 @@ body {
 .pull-right {
   float: right
 }
-
-/* .clearfix:after,
-    .clearfix:before {
-      content: '';
-      display: table
-    }
-
-    .clearfix:after {
-      clear: both;
-      display: block
-    } */
 
 .track {
   width: 2px;
