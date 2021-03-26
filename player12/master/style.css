@@ -320,11 +320,14 @@ body {
 
 .mhn-player .controls .current-info {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   line-height: 1.2;
 }
 
 div.song-title {
+  font-size: 20px;
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;

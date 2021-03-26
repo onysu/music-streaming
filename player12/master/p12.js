@@ -49,9 +49,9 @@ var Audio = {
       title = title ? title : 'Unknown Title';
       artist = artist ? artist : 'Unknown Artist';
       $('.album-art').html(albumart);
-      $('.current-info .song-album').html('<i class="fa fa-music"></i> ' + album);
-      $('.current-info .song-title').html('<i class="fa fa-headphones"></i> ' + title);
-      $('.current-info .song-artist').html('<i class="fa fa-user"></i> ' + artist);
+      $('.current-info .song-album').html(album);
+      $('.current-info .song-title').html(title);
+      $('.current-info .song-artist').html(artist);
       if (mp3)
         $('.audio').html('<audio class="music" data-id="' + id + '" src="' + mp3 + '"></audio>');
     }
