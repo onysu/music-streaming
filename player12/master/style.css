@@ -248,6 +248,12 @@ body {
   font-size: large;
 }
 
+i.fas.fa-volume-up,
+i.fas.fa-volume-down {
+  font-size: unset;
+  font-weight: 300;
+}
+
 .mhn-player .controls .fa-pp:before {
   content: '\f04b';
 }
