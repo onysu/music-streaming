@@ -316,7 +316,7 @@ i.fas.fa-volume-down {
   text-align: center;
   display: inline-block;
   box-shadow: -10px -10px 15px rgba(255, 255, 255, .5), 10px 10px 15px rgba(70, 70, 70, .12);
-  border: 3px solid #ececec;
+  border: 0 solid #ececec;
   outline: none;
   display: flex;
   justify-content: center;
