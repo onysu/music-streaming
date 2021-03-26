@@ -145,7 +145,7 @@ body {
   top: -2px;
   /* left: 12%; */
   width: 75%;
-  height: 52%;
+  height: 55%;
   /* color: rgba(255, 255, 255, .1); */
   border-radius: 0 0 138px 138px;
   border-left: 5px solid white;
@@ -324,6 +324,7 @@ body {
   align-items: center;
   flex-direction: column;
   line-height: 1.2;
+  margin-bottom: -15px;
 }
 
 div.song-title {
