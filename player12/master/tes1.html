@@ -607,6 +607,35 @@
     .volume[data-css="1"]::-moz-range-track {
       background-size: 100% 100%
     }
+
+    /* modal */
+    .modal-header {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid #222;
+      border-top-left-radius: calc(.3rem - 1px);
+      border-top-right-radius: calc(.3rem - 1px);
+    }
+
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      pointer-events: auto;
+      background-color: blanchedalmond;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .2);
+      border-radius: .3rem;
+      outline: 0;
+    }
+
+    li.nav-item {
+      border-bottom: 1px solid #222;
+    }
   </style>
 </head>
 
