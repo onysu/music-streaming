@@ -423,7 +423,7 @@ div.song-artist,
   background: #ddd;
   box-shadow: 0 0.0625em rgb(255 255 255);
   border-radius: 0.0625em;
-  margin-bottom: 3px;
+  /* margin-bottom: 3px; */
 }
 
 .volume::-webkit-slider-runnable-track {
