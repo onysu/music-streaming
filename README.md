@@ -31,8 +31,4 @@
 
   ![onysu github io_music-streaming_player15_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106858519-5f308200-66f4-11eb-9709-095887d0d54a.png)
 
-<li><a href="https://onysu.github.io/music-streaming/player16/index.html">Demo</a></li>
-
-![127 0 0 1_5501_play5er16_index html(Moto G4)](https://user-images.githubusercontent.com/14862922/106858351-1c6eaa00-66f4-11eb-8c7c-195279c84223.png)
-
 </ol>
