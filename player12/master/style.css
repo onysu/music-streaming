@@ -694,6 +694,15 @@ div.song-artist,
   outline: 0;
 }
 
+.modal-content.dark {
+  color: wheat;
+  background-color: rgb(105 105 105 / 90%);
+}
+
+.list-group.dark {
+  background-color: rgba(0, 0, 0, 1);
+}
+
 .modal-title {
   margin-bottom: 0;
   line-height: 1;
