@@ -208,6 +208,19 @@ body {
   padding: 10px;
 }
 
+.play-list.dark {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  position: absolute;
+  background-color: rgb(35 34 34 / 90%);
+  z-index: 1;
+  padding: 10px;
+}
+
 .mhnPlayer .play-list a {
   display: block;
   overflow: hidden;
@@ -223,7 +236,7 @@ body {
 }
 
 .mhnPlayer .play-list a.active {
-  color: blue;
+  color: tomato;
 }
 
 .mhnPlayer .play-list .album-thumb {
@@ -258,8 +271,16 @@ body {
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: darkgreen;
+  /* color: darkgreen; */
   font-weight: 300;
+}
+
+.song-artist.dark {
+  color: aquamarine;
+}
+
+.song-album.dark {
+  color: aquamarine;
 }
 
 .mhnPlayer .controls {

@@ -88,7 +88,7 @@
       <div class="album-art"></div>
 
       <!-- playlist -->
-      <div class="play-list">
+      <div class="play-list" id="play-list">
         <!-- <a href="#" class="play" data-id="62" data-album="" data-artist="" data-title="" data-albumart="" data-url="">
         </a> -->
 
@@ -417,9 +417,9 @@
       <div class="controls">
 
         <div class="current-info">
-          <div class="song-title"></div>
-          <div class="song-artist"></div>
-          <div class="song-album"></div>
+          <div class="song-title" id="song-title"></div>
+          <div class="song-artist" id="song-artist"></div>
+          <div class="song-album" id="song-album"></div>
         </div>
 
         <div class="durasi">
@@ -466,6 +466,9 @@
       document.getElementById('play-pause').classList.toggle('dark');
       document.getElementById('stop').classList.toggle('dark');
       document.getElementById('next').classList.toggle('dark');
+      document.getElementById('play-list').classList.toggle('dark');
+      document.getElementById('song-artist').classList.toggle('dark');
+      document.getElementById('song-album').classList.toggle('dark');
     });
   </script>
 </body>
