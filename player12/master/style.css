@@ -216,7 +216,7 @@ body {
   bottom: 0;
   overflow-y: auto;
   position: absolute;
-  background-color: rgb(35 34 34 / 90%);
+  background-color: rgb(35 34 34 / 95%);
   z-index: 1;
   padding: 10px;
 }
@@ -748,18 +748,22 @@ a.list-group-item.list-group-item-action {
 
 a#prev.dark {
   box-shadow: none;
+  border: 1px solid #555;
 }
 
 a#play-pause.dark {
   box-shadow: none;
+  border: 1px solid #555;
 }
 
 a#stop.dark {
   box-shadow: none;
+  border: 1px solid #555;
 }
 
 a#next.dark {
   box-shadow: none;
+  border: 1px solid #555;
 }
 
 .form-check-input:focus {
