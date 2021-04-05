@@ -19,25 +19,29 @@
 <body>
   <div class="layer"></div>
   <div class="container p-0">
-    <div class="mhn-player">
+    <div class="mhnPlayer" id="mhnPlayer">
 
-      <!-- <a href="#" class="toggle-play-list"><i class="fal fa-list"></i></a> -->
-      <a href="#" class="toggle-play-list"><i class="material-icons">queue_music</i></a>
+      <a href="#" class="toggle-play-list"><i class="material-icons" id="material-icons">queue_music</i></a>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="checkbox">
+        <label class="form-check-label" for="checkbox"></label>
+      </div>
 
       <!-- artis -->
       <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#artis">
-        <i class="fas fa-user-circle"></i>
+        <i class="fas fa-user-circle" id="fa-user-circle"></i>
       </button>
       <!-- Modal -->
       <div class="modal fade" id="artis" tabindex="-1" aria-labelledby="artisModal" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" id="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="artisModal">Artis</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="list-group">
+              <div class="list-group" id="list-group">
                 <a href="celion.html"
                   class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Celion
                   Dion
@@ -84,7 +88,7 @@
       <div class="album-art"></div>
 
       <!-- playlist -->
-      <div class="play-list">
+      <div class="play-list" id="play-list">
         <a href="#" class="play" data-id="1" data-album="A New Day Has Come (2002)" data-artist="Céline Dion"
           data-title="A New Day Has Come"
           data-albumart="https://images-na.ssl-images-amazon.com/images/I/81Qi7-sxp5L._SL1500_.jpg"
@@ -184,9 +188,9 @@
       <div class="controls">
 
         <div class="current-info">
-          <div class="song-title"></div>
-          <div class="song-artist"></div>
-          <div class="song-album"></div>
+          <div class="song-title" id="song-title"></div>
+          <div class="song-artist" id="song-artist"></div>
+          <div class="song-album" id="song-album"></div>
         </div>
 
         <div class="durasi">
@@ -199,10 +203,10 @@
         </div>
 
         <div class="action-button">
-          <a href="#" class="prev"><i class="fa fa-step-backward"></i></a>
-          <a href="#" class="play-pause"><i class="fa fa-pp"></i></a>
-          <a href="#" class="stop"><i class="fa fa-stop"></i></a>
-          <a href="#" class="next"><i class="fa fa-step-forward"></i></a>
+          <a href="#" class="prev" id="prev"><i class="fa fa-step-backward"></i></a>
+          <a href="#" class="play-pause" id="play-pause"><i class="fa fa-pp"></i></a>
+          <a href="#" class="stop" id="stop"><i class="fa fa-stop"></i></a>
+          <a href="#" class="next" id="next"><i class="fa fa-step-forward"></i></a>
         </div>
 
         <div class="volm">
@@ -223,6 +227,23 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="p12.js"></script>
+  <script>
+    const checkbox = document.getElementById('checkbox');
+    checkbox.addEventListener('change', () => {
+      document.getElementById('mhnPlayer').classList.toggle('dark');
+      document.getElementById('fa-user-circle').classList.toggle('dark');
+      document.getElementById('material-icons').classList.toggle('dark');
+      document.getElementById('prev').classList.toggle('dark');
+      document.getElementById('play-pause').classList.toggle('dark');
+      document.getElementById('stop').classList.toggle('dark');
+      document.getElementById('next').classList.toggle('dark');
+      document.getElementById('play-list').classList.toggle('dark');
+      document.getElementById('song-artist').classList.toggle('dark');
+      document.getElementById('song-album').classList.toggle('dark');
+      document.getElementById('modal-content').classList.toggle('dark');
+      document.getElementById('list-group').classList.toggle('dark');
+    });
+  </script>
 </body>
 
 </html>
