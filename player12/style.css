@@ -227,7 +227,7 @@ body {
   padding: 6px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  border-bottom: 1px solid brown;
+  border-bottom: 1px solid darkslategray;
   transition: all .4s ease-in-out 0s;
 }
 
