@@ -781,6 +781,7 @@ a.list-group-item.list-group-item-action {
   width: 12%;
   display: flex;
   justify-content: center;
+  transform: rotate(90deg);
 }
 
 .material-icons {
