@@ -432,8 +432,8 @@
           <div class="play-total-time">00:00</div>
         </div>
 
-        <div class="progress">
-          <div class="bar"></div>
+        <div class="progress" id="progress">
+          <div class="bar" id="bar"></div>
         </div>
 
         <div class="action-button">
@@ -476,6 +476,8 @@
       document.getElementById('song-album').classList.toggle('dark');
       document.getElementById('modal-content').classList.toggle('dark');
       document.getElementById('list-group').classList.toggle('dark');
+      document.getElementById('bar').classList.toggle('dark');
+      document.getElementById('progress').classList.toggle('dark');
     });
   </script>
 </body>
