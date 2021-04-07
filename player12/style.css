@@ -316,11 +316,12 @@ i.fas.fa-volume-down {
 
 .mhnPlayer .controls .progress {
   width: 70%;
-  height: 2px;
+  height: 3px;
   margin: 10px auto;
-  background: #ddd;
-  /* box-shadow: 0 0.0625em rgb(255 255 255);
-  border-radius: 0.0625em; */
+  background: none;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  border-top: solid 1px #000;
+  border-radius: 10px;
 }
 
 .mhnPlayer .controls .durasi {
@@ -342,8 +343,10 @@ i.fas.fa-volume-down {
   width: 0;
   display: block;
   height: inherit;
+  /* background: #666; */
   background: #666;
   /* box-shadow: 0 0 5px 0 #bc3958; */
+  box-shadow: 0 0 2px 2px cyan;
 }
 
 .mhnPlayer .controls .durasi .play-current-time {
@@ -466,21 +469,29 @@ div.song-artist,
   border-radius: 20px; */
 }
 
+
+
 .volume {
   margin: 0 3%;
   cursor: pointer;
   -webkit-appearance: none;
-  background: #ddd;
+  /* background: #ddd;
   box-shadow: 0 0.0625em rgb(255 255 255);
-  border-radius: 0.0625em;
-  margin-bottom: -1px;
+  border-radius: 0.0625em; */
+  background: none;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  border-top: solid 1px #000;
+  border-radius: 10px;
+  /* margin-bottom: -1px; */
 }
 
 .volume::-webkit-slider-runnable-track {
   /* height: .5em; */
   height: 2px;
-  background: #d8d8d8;
-  border-radius: .25em;
+  background: none;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  border-top: solid 1px #000;
+  border-radius: 10px;
   -webkit-appearance: none;
 }
 
@@ -545,7 +556,8 @@ div.song-artist,
 }
 
 .volume::-webkit-slider-thumb {
-  background: #dc143c;
+  /* background: #dc143c; */
+  background: #999;
 }
 
 .volume::-moz-range-thumb {
