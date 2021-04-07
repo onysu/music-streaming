@@ -499,8 +499,8 @@ div.song-artist,
 }
 
 .volume.dark {
-  border-top: solid 1px #000;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: none;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
   margin-bottom: 1px;
 }
 
@@ -519,8 +519,7 @@ div.song-artist,
   border-radius: 10px;
   background: #666;
   /* border-top: solid 1px #000; */
-  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
+  /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2); */
 }
 
 .volume::-moz-range-track {
