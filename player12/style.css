@@ -158,9 +158,9 @@ body {
   position: absolute;
   color: rgba(255, 255, 255, .1);
   border-radius: 0 0 145px 145px;
-  border-left: 5px solid blanchedalmond;
-  border-bottom: 5px solid blanchedalmond;
-  border-right: 5px solid blanchedalmond;
+  border-left: 5px solid antiquewhite;
+  border-bottom: 5px solid antiquewhite;
+  border-right: 5px solid antiquewhite;
   box-shadow: 0 1.5em 1.1em -1em rgb(0 0 0 / 80%),
     inset 0 0 0 rgb(255 255 255),
     inset 0 -0.125em 1.0625em rgb(0 0 0 / 30%);
@@ -177,9 +177,9 @@ body {
   height: 55%;
   /* color: rgba(255, 255, 255, .1); */
   border-radius: 0 0 145px 145px;
-  border-left: 5px solid blanchedalmond;
-  border-bottom: 5px solid blanchedalmond;
-  border-right: 5px solid blanchedalmond;
+  border-left: 5px solid antiquewhite;
+  border-bottom: 5px solid antiquewhite;
+  border-right: 5px solid antiquewhite;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
