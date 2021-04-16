@@ -72,7 +72,7 @@ var Audio = {
         mp3 = $(this).data('url');
         Audio.info.load(id, album, artist, title, albumart, mp3);
         Audio.play($('.music'));
-        $('.music').prop('volume', $('.volume').val(1));
+        $('.music').prop('volume', $('.volume').val());
         Audio.playlist.hide();
       });
     });
