@@ -822,6 +822,11 @@ a#next.dark {
   border: 1px solid #555;
 }
 
+a#repeat.dark {
+  box-shadow: none;
+  border: 1px solid #555;
+}
+
 .form-check-input:focus {
   border-color: #999;
   outline: 0;
