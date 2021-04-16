@@ -225,3 +225,23 @@ var Audio = {
     }
   }
 }
+
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', () => {
+  document.getElementById('mhnPlayer').classList.toggle('dark');
+  document.getElementById('fa-user-circle').classList.toggle('dark');
+  document.getElementById('material-icons').classList.toggle('dark');
+  document.getElementById('prev').classList.toggle('dark');
+  document.getElementById('play-pause').classList.toggle('dark');
+  document.getElementById('stop').classList.toggle('dark');
+  document.getElementById('next').classList.toggle('dark');
+  document.getElementById('play-list').classList.toggle('dark');
+  document.getElementById('song-artist').classList.toggle('dark');
+  document.getElementById('song-album').classList.toggle('dark');
+  document.getElementById('modal-content').classList.toggle('dark');
+  document.getElementById('list-group').classList.toggle('dark');
+  document.getElementById('bar').classList.toggle('dark');
+  document.getElementById('progress').classList.toggle('dark');
+  document.getElementById('volume').classList.toggle('dark');
+  document.getElementById('repeat').classList.toggle('dark');
+});
