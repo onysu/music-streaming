@@ -25,7 +25,7 @@
 
   <li><a href="https://onysu.github.io/music-streaming/player12/index.html">Demo</a></li>
 
-![127 0 0 1_5501_player12_index html(iPhone 6_7_8)](https://user-images.githubusercontent.com/14862922/108008005-e275a000-7031-11eb-8663-86e04cc78ee0.png)
+![onysu github io_music-streaming_player12_islamic html(Moto G4)](https://user-images.githubusercontent.com/14862922/116804866-7f81a880-ab4c-11eb-9d14-3c3d11116db7.png)
 
   <li><a href="https://onysu.github.io/music-streaming/player15/index.html">Demo</a></li>
 
