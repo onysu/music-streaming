@@ -27,7 +27,7 @@ $(document).ready(function () {
         'trackName': 'Skyfall',
         'trackArtist': 'Adele',
         'trackAlbum': '',
-        'time': '3:58'
+        'time': '4:49'
       }]
     };
     var arr = t.playList;
