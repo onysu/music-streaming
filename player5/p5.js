@@ -22,11 +22,11 @@ $(document).ready(function () {
         'trackAlbum': '25',
         'time': '4:55'
       },{
-        'file': '',
-        'thumb': 'https://madegrandbycam.com/wp-content/uploads/2017/02/dionceline_.jpg',
-        'trackName': 'All By Myself',
+        'file': 'https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall.mp3?raw=true',
+        'thumb': 'https://3.bp.blogspot.com/-kVKiQ7T3-4A/VPsK5Y1GbrI/AAAAAAAACXk/KmYRNDgDACY/s1600/ADELE%2B-%2BSkyfall.jpg',
+        'trackName': 'Skyfall',
         'trackArtist': 'Adele',
-        'trackAlbum': 'Falling into You (1996)',
+        'trackAlbum': '',
         'time': '3:58'
       }]
     };
