@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         .wadah {
-            width: 375px;
-            height: 812px;
+            width: 360px;
+            height: 740px;
             position: fixed;
             top: 0;
             right: 0;
@@ -18,11 +24,21 @@
             margin: auto;
             background: #333;
         }
+        
+        .kotak {
+            border: 1px solid tomato;
+            padding: 5px;
+            color: turquoise;
+            height: 100%;
+            margin: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="wadah"></div>
+    <div class="wadah">
+        <div class="kotak">kotak</div>
+    </div>
 </body>
 
 </html>
