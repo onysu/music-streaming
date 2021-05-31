@@ -1,11 +1,5 @@
 # Example App
 
-<ul>
-  <li>Bootstrap 5</li>
-  <li>APlayer.js</li>
-  <li>Grid Sistem</li>
-</ul>
-
 <ol>
   <li><a href="https://onysu.github.io/music-streaming/">Demo</a></li>
 
