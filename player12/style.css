@@ -13,18 +13,6 @@ body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
 }
 
-iframe {
-    width: 0 !important;
-    height: 0 !important;
-    display: none !important;
-}
-
-div#dse-quicksearch {
-    display: none !important;
-    position: unset !important;
-    z-index: 0 !important;
-}
-
 .pull-left {
     float: left
 }
