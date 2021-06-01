@@ -19,6 +19,12 @@ iframe {
     display: none !important;
 }
 
+div#dse-quicksearch {
+    display: none !important;
+    position: unset !important;
+    z-index: 0 !important;
+}
+
 .pull-left {
     float: left
 }
