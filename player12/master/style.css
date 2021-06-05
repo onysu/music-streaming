@@ -310,8 +310,8 @@ i.fas.fa-volume-down {
     height: 2px;
     margin: 10px auto;
     background: #ddd;
-    /* box-shadow: 0 0.0625em rgb(255 255 255);
-  border-radius: 0.0625em; */
+    box-shadow: 0 0.0625em rgb(255 255 255);
+  border-radius: 0.0625em;
 }
 
 .mhnPlayer .controls .progress.dark {
@@ -329,7 +329,7 @@ i.fas.fa-volume-down {
     display: block;
     height: inherit;
     background: #666;
-    /* box-shadow: 0 0 5px 0 #bc3958; */
+    box-shadow: 0 0 5px 0 #bc3958;
 }
 
 .mhnPlayer .controls .progress .bar.dark {
