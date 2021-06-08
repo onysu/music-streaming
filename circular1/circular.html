@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Draggable circle audio player with progress bar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="circular.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Draggable circle audio player with progress bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="circular.css">
+</head>
 
-  <body>
+<body>
 
-    <div class="slide__audio js-audio">
-      <audio class="slide__audio-player" controls="">
-        <source
-          src="https://github.com/onysu/music-streaming/blob/main/files/audio/Remix/DJ%20Desa%20ODADING.mp3?raw=true"
-          type="audio/mpeg" />
-      </audio>
-      <div class="audio__controls">
-        <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 100 100">
-          <path id="seekbar" fill="none" stroke-miterlimit="10"
-            d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
-          </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
-          <g class="equalizer-group">
-            <rect class="bar"></rect>
-            <rect class="bar"></rect>
-            <rect class="bar"></rect>
-            <rect class="bar"></rect>
-            <rect class="bar"></rect>
-          </g>
-        </svg>
-        <div class="audio__slider"></div>
-        <button class="play-pause"></button>
-      </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3/roundslider.js'></script>
-      <script src="circular.js"></script>
+  <div class="slide__audio js-audio">
+    <audio class="slide__audio-player" controls="">
+      <source
+        src="https://github.com/onysu/music-streaming/blob/main/files/audio/Remix/DJ%20Desa%20ODADING.mp3?raw=true"
+        type="audio/mpeg" />
+    </audio>
+    <div class="audio__controls">
+      <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 100 100">
+        <path id="seekbar" fill="none" stroke-miterlimit="10"
+          d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
+        <g class="equalizer-group">
+          <rect class="bar"></rect>
+          <rect class="bar"></rect>
+          <rect class="bar"></rect>
+          <rect class="bar"></rect>
+          <rect class="bar"></rect>
+        </g>
+      </svg>
+      <div class="audio__slider"></div>
+      <button class="play-pause"></button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3/roundslider.js'></script>
+    <script src="circular.js"></script>
 
-  </body>
+</body>
 
 </html>
