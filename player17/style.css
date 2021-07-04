@@ -95,7 +95,8 @@ body {
 }
 
 .song-details p {
-  color: var(--lightblack);
+  /* color: var(--lightblack); */
+  color: #ddd;
 }
 
 .song-details .name {
