@@ -77,7 +77,8 @@ body {
     /* height: 256px; */
     height: 300px;
     overflow: hidden;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 0px 6px 12px var(--lightbshadow);
 }
@@ -186,24 +187,30 @@ body {
 }
 
 .controls .play-pause {
-    height: 54px;
-    width: 54px;
+    /* height: 54px; */
+    /* width: 54px; */
+    height: 75px;
+    width: 75px;
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
-    box-shadow: 0px 0px 5px var(--pink);
+    /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
+    background: darkorange;
+    /* box-shadow: 0px 0px 5px var(--pink); */
 }
 
 .play-pause::before {
     position: absolute;
     content: "";
-    height: 43px;
-    width: 43px;
+    /* height: 43px; */
+    /* width: 43px; */
+    height: 70px;
+    width: 70px;
     border-radius: inherit;
-    background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+    background: #222;
 }
 
 .play-pause i {
@@ -220,15 +227,16 @@ body {
 
 .music-list {
     position: absolute;
-    background: var(--white);
+    /* background: var(--white); */
+    background: #111;
     width: 100%;
     left: 0;
     bottom: -55%;
     opacity: 0;
     pointer-events: none;
     z-index: 5;
-    padding: 15px 30px;
-    border-radius: 15px;
+    padding: 15px 15px;
+    border-radius: 10px;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.15s ease-out;
 }
@@ -243,7 +251,8 @@ body {
     display: flex;
     align-items: center;
     font-size: 19px;
-    color: var(--lightblack);
+    /* color: var(--lightblack); */
+    color: wheat;
 }
 
 .header .row i {
@@ -256,12 +265,14 @@ body {
 
 .header #close {
     font-size: 22px;
-    color: var(--lightblack);
+    /* color: var(--lightblack); */
+    color: wheat;
 }
 
 .music-list ul {
     margin: 10px 0;
-    max-height: 260px;
+    /* max-height: 260px; */
+    max-height: 400px;
     overflow: auto;
 }
 
@@ -273,9 +284,12 @@ body {
     list-style: none;
     display: flex;
     cursor: pointer;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding-bottom: 5px;
     margin-bottom: 5px;
-    color: var(--lightblack);
+    /* color: var(--lightblack); */
+    color: white;
+    font-weight: 200;
     border-bottom: 1px solid #E5E5E5;
 }
 
@@ -297,5 +311,6 @@ ul li .audio-duration {
 
 ul li.playing {
     pointer-events: none;
-    color: var(--violet);
+    /* color: var(--violet); */
+    color: sandybrown;
 }
