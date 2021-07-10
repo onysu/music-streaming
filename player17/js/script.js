@@ -23,9 +23,9 @@ window.addEventListener("load", () => {
 function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb - 1].name;
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
-    // musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
+    musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
     // mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
-    musicImg.src = `../../files/img/${allMusic[indexNumb - 1].src}.jpg`;
+    // musicImg.src = `../../files/img/${allMusic[indexNumb - 1].src}.jpg`;
     mainAudio.src = `../../files/audio/mysongs/${allMusic[indexNumb - 1].src}.mp3`;
 }
 

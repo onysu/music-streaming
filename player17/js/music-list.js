@@ -7,7 +7,7 @@ let allMusic = [{
     {
         name: "Down",
         artist: "Jason Walker",
-        img: "Cause-Of-Death",
+        img: "Jason Walker - Down",
         src: "Jason Walker - Down"
     },
     {
