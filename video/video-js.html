@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="video-js.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <!-- Di kepala dokumen Anda dengan CSS Anda yang lain termasuk... -->
+    <!-- Video.js base CSS -->
+    <!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" /> -->
+    <!-- City -->
+    <!-- <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="video-js.css"> -->
     <style>
         #instructions {
             max-width: 640px;
@@ -27,15 +33,14 @@
             display: flex;
         }
         /* Jadikan demo sedikit lebih cantik */
-        
-        body {
+        /* body {
             margin-top: 20px;
             background: #222;
             text-align: center;
             color: #aaa;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             background: radial-gradient(#333, hsl(200, 30%, 6%));
-        }
+        } */
         
         a,
         a:hover,
@@ -46,6 +51,20 @@
 </head>
 
 <body>
+    <!-- <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}"> -->
+    <!-- <video id="my-video" class="video-js vjs-theme-city" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+    <source src="https://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video> -->
+
+    <!-- <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script> -->
+    <!-- Jika Anda ingin mendukung IE8 (untuk versi Video.js sebelum v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+
     <div id="instructions">
 
         <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg' data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
