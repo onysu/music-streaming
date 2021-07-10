@@ -13,13 +13,13 @@ let allMusic = [{
     {
         name: "The Only Exception",
         artist: "Paramore",
-        img: "Cause-Of-Death",
+        img: "Paramore - The Only Exception",
         src: "Paramore - The Only Exception"
     },
     {
         name: "Face Down",
         artist: "The Red Jumpsuit Apparatus",
-        img: "Cause-Of-Death",
+        img: "The Red Jumpsuit Apparatus - Face Down",
         src: "The Red Jumpsuit Apparatus - Face Down"
     },
     // {
