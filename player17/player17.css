@@ -96,7 +96,7 @@ body {
 
 .song-details p {
     /* color: var(--lightblack); */
-    color: #ddd;
+    color: var(--darkwhite);
 }
 
 .song-details .name {
@@ -197,7 +197,7 @@ body {
     justify-content: center;
     border-radius: 50%;
     /* background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%); */
-    background: darkorange;
+    background: red;
     /* box-shadow: 0px 0px 5px var(--pink); */
 }
 
@@ -228,7 +228,7 @@ body {
 .music-list {
     position: absolute;
     /* background: var(--white); */
-    background: #111;
+    background: #222;
     width: 100%;
     left: 0;
     bottom: -55%;
@@ -239,6 +239,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.15s ease-out;
+    border: 1px solid currentColor;
 }
 
 .music-list.show {
