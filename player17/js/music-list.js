@@ -22,6 +22,12 @@ let allMusic = [{
         img: "The Red Jumpsuit Apparatus - Face Down",
         src: "The Red Jumpsuit Apparatus - Face Down"
     },
+    {
+        name: "Kim",
+        artist: "Eminem",
+        img: "Eminem - Kim",
+        src: "Eminem - Kim"
+    },
     // {
     //     name: "Harley Bird - Home",
     //     artist: "Jordan Schor",
