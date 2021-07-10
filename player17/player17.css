@@ -28,6 +28,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: #222;
+    border: 1px solid currentColor;
     /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
 }
 
