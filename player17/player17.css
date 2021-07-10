@@ -111,7 +111,7 @@ body {
 
 .progress-area {
     /* height: 6px; */
-    height: 3px;
+    height: 2px;
     width: 100%;
     /* border-radius: 50px; */
     background: #f0f0f0;
@@ -156,7 +156,7 @@ body {
     font-size: 13px;
     /* color: var(--lightblack); */
     color: #ddd;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .controls {
