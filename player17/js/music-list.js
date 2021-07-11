@@ -7,25 +7,25 @@ let allMusic = [{
     {
         name: "Down",
         artist: "Jason Walker",
-        img: "Jason Walker - Down",
+        img: "Jason-Walker-Down",
         src: "Jason-Walker-Down"
     },
     {
         name: "The Only Exception",
         artist: "Paramore",
-        img: "Paramore - The Only Exception",
+        img: "Paramore-The-Only-Exception",
         src: "Paramore-The-Only-Exception"
     },
     {
         name: "Face Down",
         artist: "The Red Jumpsuit Apparatus",
-        img: "The Red Jumpsuit Apparatus - Face Down",
+        img: "The-Red-Jumpsuit-Apparatus-Face-Down",
         src: "The-Red-Jumpsuit-Apparatus-Face-Down"
     },
     {
         name: "Kim",
         artist: "Eminem",
-        img: "Eminem - Kim",
+        img: "Eminem-Kim",
         src: "Eminem-Kim"
     },
     {
