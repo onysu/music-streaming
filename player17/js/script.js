@@ -24,9 +24,9 @@ function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb - 1].name;
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
     musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
-    // mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
     // musicImg.src = `../../files/img/${allMusic[indexNumb - 1].src}.jpg`;
-    mainAudio.src = `../../files/audio/mysongs/${allMusic[indexNumb - 1].src}.mp3`;
+    // mainAudio.src = `../../files/audio/mysongs/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
 // mainkan fungsi musik
@@ -185,7 +185,7 @@ for (let i = 0; i < allMusic.length; i++) {
                   <p>${allMusic[i].artist}</p>
                 </div>
                 <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
-                <audio class="${allMusic[i].src}" src="../../files/audio/mysongs/${allMusic[i].src}.mp3"></audio>
+                <audio class="${allMusic[i].src}" src="songs/${allMusic[i].src}.mp3"></audio>
               </li>`;
     ulTag.insertAdjacentHTML("beforeend", liTag); // memasukkan li di dalam tag ul
 
