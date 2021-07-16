@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 *::before,
@@ -33,7 +32,7 @@ body {
     background: #222;
     border: 1px solid currentColor;
     /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .wrapper {
