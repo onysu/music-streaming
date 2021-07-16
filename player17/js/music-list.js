@@ -5,6 +5,12 @@ let allMusic = [{
         src: "Bring-Me-The-Horizon-Drown"
     },
     {
+        name: "Face Down",
+        artist: "The Red Jumpsuit Apparatus",
+        img: "The-Red-Jumpsuit-Apparatus-Face-Down",
+        src: "The-Red-Jumpsuit-Apparatus-Face-Down"
+    },
+    {
         name: "Down",
         artist: "Jason Walker",
         img: "Jason-Walker-Down",
@@ -15,12 +21,6 @@ let allMusic = [{
         artist: "Paramore",
         img: "Paramore-The-Only-Exception",
         src: "Paramore-The-Only-Exception"
-    },
-    {
-        name: "Face Down",
-        artist: "The Red Jumpsuit Apparatus",
-        img: "The-Red-Jumpsuit-Apparatus-Face-Down",
-        src: "The-Red-Jumpsuit-Apparatus-Face-Down"
     },
     {
         name: "Kim",
