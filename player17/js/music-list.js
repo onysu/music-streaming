@@ -17,6 +17,12 @@ let allMusic = [{
         src: "The-Red-Jumpsuit-Apparatus-Face-Down"
     },
     {
+        name: "Kim",
+        artist: "Eminem",
+        img: "Eminem-Kim",
+        src: "Eminem-Kim"
+    },
+    {
         name: "Down",
         artist: "Jason Walker",
         img: "Jason-Walker-Down",
@@ -27,12 +33,6 @@ let allMusic = [{
         artist: "Paramore",
         img: "Paramore-The-Only-Exception",
         src: "Paramore-The-Only-Exception"
-    },
-    {
-        name: "Kim",
-        artist: "Eminem",
-        img: "Eminem-Kim",
-        src: "Eminem-Kim"
     },
     {
         name: "Harley Bird - Home",
