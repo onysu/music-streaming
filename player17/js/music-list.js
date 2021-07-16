@@ -1,4 +1,10 @@
 let allMusic = [{
+        name: "A Feast Of Friends",
+        artist: "The Doors",
+        img: "doors",
+        src: "The-Doors-A-Feast-Of-Friends"
+    },
+    {
         name: "Drown",
         artist: "Bring Me The Horizon",
         img: "Bring-Me-The-Horizon-Drown",
