@@ -35,6 +35,12 @@ let allMusic = [{
         src: "Paramore-The-Only-Exception"
     },
     {
+        name: "Jim - Sun Goes Down",
+        artist: "Jim Yosef x Roy",
+        img: "music-5",
+        src: "music-5"
+    },
+    {
         name: "Harley Bird - Home",
         artist: "Jordan Schor",
         img: "music-1",
@@ -57,12 +63,6 @@ let allMusic = [{
         artist: "Mike Archangelo",
         img: "music-4",
         src: "music-4"
-    },
-    {
-        name: "Jim - Sun Goes Down",
-        artist: "Jim Yosef x Roy",
-        img: "music-5",
-        src: "music-5"
     },
     {
         name: "Lost Sky - Vision NCS",
