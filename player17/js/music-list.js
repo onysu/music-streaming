@@ -34,12 +34,12 @@ let allMusic = [{
         img: "Paramore-The-Only-Exception",
         src: "Paramore-The-Only-Exception"
     },
-    {
-        name: "Jim - Sun Goes Down",
-        artist: "Jim Yosef x Roy",
-        img: "music-5",
-        src: "music-5"
-    },
+    // {
+    //     name: "Jim - Sun Goes Down",
+    //     artist: "Jim Yosef x Roy",
+    //     img: "music-5",
+    //     src: "music-5"
+    // },
     // {
     //     name: "Harley Bird - Home",
     //     artist: "Jordan Schor",
