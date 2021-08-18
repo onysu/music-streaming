@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="h-100">
 
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,236 +9,175 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../files/img/ony.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="layer"></div>
     <div class="container p-0">
-      <div class="mhnPlayer" id="mhnPlayer">
+        <div class="mhnPlayer" id="mhnPlayer">
 
-        <a href="#" class="toggle-play-list">
-          <i class="material-icons" id="material-icons">queue_music</i>
-        </a>
+            <a href="#" class="toggle-play-list">
+                <i class="material-icons" id="material-icons">queue_music</i>
+            </a>
 
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" id="checkbox">
-          <label class="form-check-label" for="checkbox"></label>
-        </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox"></label>
+            </div>
 
-        <!-- artis -->
-        <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#artis">
+            <!-- artis -->
+            <button class="artis" type="button" data-bs-toggle="modal" data-bs-target="#artis">
           <i class="fad fa-user-circle" id="fa-user-circle" style="font-size: x-large;"></i>
         </button>
-        <!-- Modal -->
-        <div class="modal fade" id="artis" tabindex="-1" aria-labelledby="artisModal" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content" id="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="artisModal">Artis</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="list-group" id="list-group">
-                  <a href="index.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Kompilasi
-                    Lagu<span class="badge bg-warning rounded-pill">61</span></a>
-                  <a href="remix.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Remix
-                    TikTok<span class="badge bg-warning rounded-pill">5</span></a>
-                  <a href="celion.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Celion
-                    Dion<span class="badge bg-warning rounded-pill">18</span></a>
-                  <a href="adele.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Adele<span
-                      class="badge bg-warning rounded-pill">21</span></a>
-                  <a href="rossa.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Rossa<span
-                      class="badge bg-warning rounded-pill">86</span></a>
-                  <a href="iwanfals.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Iwan
-                    Fals<span class="badge bg-warning rounded-pill">86</span></a>
-                  <a href="michaeljackson.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Michael
-                    Jackson<span class="badge bg-warning rounded-pill">17</span></a>
-                  <a href="maherzain.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Maher
-                    Zain<span class="badge bg-warning rounded-pill">16</span>
-                  </a>
-                  <a href="islamic.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Islamic
-                    Songs<span class="badge bg-warning rounded-pill">19</span>
-                  </a>
-                  <a href="doa.html"
-                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Do'a<span
-                      class="badge bg-warning rounded-pill">5</span></a>
+            <!-- Modal -->
+            <div class="modal fade" id="artis" tabindex="-1" aria-labelledby="artisModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="artisModal">Artis</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group" id="list-group">
+                                <a href="index.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Kompilasi Lagu<span class="badge bg-warning rounded-pill">61</span></a>
+                                <a href="remix.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Remix TikTok<span class="badge bg-warning rounded-pill">5</span></a>
+                                <a href="celion.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Celion Dion<span class="badge bg-warning rounded-pill">18</span></a>
+                                <a href="adele.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Adele<span class="badge bg-warning rounded-pill">21</span></a>
+                                <a href="rossa.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Rossa<span class="badge bg-warning rounded-pill">86</span></a>
+                                <a href="rossa.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Mayangsari<span class="badge bg-warning rounded-pill">7</span></a>
+                                <a href="mayangsari.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Iwan Fals<span class="badge bg-warning rounded-pill">86</span></a>
+                                <a href="michaeljackson.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Michael Jackson<span class="badge bg-warning rounded-pill">17</span></a>
+                                <a href="maherzain.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Maher Zain<span class="badge bg-warning rounded-pill">16</span></a>
+                                <a href="islamic.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Islamic Songs<span class="badge bg-warning rounded-pill">19</span></a>
+                                <a href="doa.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Do'a<span class="badge bg-warning rounded-pill">5</span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <!-- album img -->
-        <div class="album-art"></div>
+            <!-- album img -->
+            <div class="album-art"></div>
 
-        <!-- playlist -->
-        <div class="play-list" id="play-list">
-          <!-- album 19 -->
-          <a href="#" class="play" data-id="1" data-album="19" data-artist="Adele" data-title="Chasing Pavements"
-            data-albumart="https://thumbs.gfycat.com/FlatVengefulGecko-size_restricted.gif"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Chasing%20Pavements.mp3?raw=true">
-          </a>
+            <!-- playlist -->
+            <div class="play-list" id="play-list">
+                <!-- album 19 -->
+                <a href="#" class="play" data-id="1" data-album="19" data-artist="Adele" data-title="Chasing Pavements" data-albumart="https://thumbs.gfycat.com/FlatVengefulGecko-size_restricted.gif" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Chasing%20Pavements.mp3?raw=true">
+                </a>
 
-          <a href="#" class="play" data-id="2" data-album="19" data-artist="Adele" data-title="Make You Feel My Love"
-            data-albumart="https://i.gifer.com/SVUT.gif"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Make%20You%20Feel%20My%20Love.mp3?raw=true">
-          </a>
+                <a href="#" class="play" data-id="2" data-album="19" data-artist="Adele" data-title="Make You Feel My Love" data-albumart="https://i.gifer.com/SVUT.gif" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Make%20You%20Feel%20My%20Love.mp3?raw=true">
+                </a>
 
-          <!-- album 21 -->
-          <a href="#" class="play" data-id="3" data-album="21" data-artist="Adele" data-title="Don't You Remember"
-            data-albumart="https://th.bing.com/th/id/R874407d7c50d0f1bcb3d2ea1a4821dfd?rik=DC8mSmWQWvIR1w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-GxgTgLSNTbg%2fUhIHvfYnidI%2fAAAAAAAAAMo%2fHa8bE0A5YeU%2fs1600%2fAdele%2b-%2bDont%2bYou%2bRemember.png&ehk=0zghNFAZ5Nkus99vBcW%2f5BoUPjrBIIC27reG8D8%2bgYo%3d&risl=&pid=ImgRaw"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Don't%20You%20Remember.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="4" data-album="21" data-artist="Adele" data-title="One And Only"
-            data-albumart="https://th.bing.com/th/id/Rfe9ad5032d8cb3065cfa51cda855c351?rik=yTQ9u3XKbMrx0Q&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f36200000%2fAdele-image-adele-36244008-400-400.jpg&ehk=t%2furGMuMSVVy%2bl9tPO%2f7grNowCNFt35p9bGZSPNyNpk%3d&risl=&pid=ImgRaw"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20One%20And%20Only.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="5" data-album="21" data-artist="Adele" data-title="Rolling In The Deep"
-            data-albumart="https://th.bing.com/th/id/OIP.Ag2zTz5oLvpzHnYyXUL88wHaHa?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Rolling%20In%20The%20Deep.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="6" data-album="21" data-artist="Adele" data-title="Rumour Has It"
-            data-albumart="https://th.bing.com/th/id/R97ea540eb9d351a7d77642f9a61c59fe?rik=aM2dCzevZdR8cw&riu=http%3a%2f%2fwww.quirkbooks.com%2fsites%2fdefault%2ffiles%2fu1151%2fAdele_-_Rumour_Has_It.jpeg&ehk=fTan8fXVId2xLItPXOZ3RCTGkbRFeAw6JrIdwFgnzUk%3d&risl=&pid=ImgRaw"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Rumour%20Has%20It.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="7" data-album="21" data-artist="Adele" data-title="Set Fire To The Rain"
-            data-albumart="https://fanart.tv/fanart/music/cc2c9c3c-b7bc-4b8b-84d8-4fbd8779e493/albumcover/set-fire-to-the-rain-53027512195d1.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Set%20Fire%20To%20The%20Rain.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="8" data-album="21" data-artist="Adele" data-title="Someone Like You"
-            data-albumart="https://th.bing.com/th/id/OIP.YBN5kOluOiC2WAbaa30kaQHaHa?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Someone%20Like%20You.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="9" data-album="21" data-artist="Adele" data-title="Turning Tables"
-            data-albumart="https://th.bing.com/th/id/Rb8db7bdd31bd9f332944ccfbbed704bc?rik=cU8Z2Sp9Vn7qyA&riu=http%3a%2f%2fimages.genius.com%2ffb498c13d62edb2eb414d1bf821f0dbc.600x600x1.jpg&ehk=547p3P8G1VcLkz8ckY1SiUGIw%2fAV7zY24eeKWYBzl5Q%3d&risl=&pid=ImgRaw"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Turning%20Tables.mp3?raw=true">
-          </a>
+                <!-- album 21 -->
+                <a href="#" class="play" data-id="3" data-album="21" data-artist="Adele" data-title="Don't You Remember" data-albumart="https://th.bing.com/th/id/R874407d7c50d0f1bcb3d2ea1a4821dfd?rik=DC8mSmWQWvIR1w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-GxgTgLSNTbg%2fUhIHvfYnidI%2fAAAAAAAAAMo%2fHa8bE0A5YeU%2fs1600%2fAdele%2b-%2bDont%2bYou%2bRemember.png&ehk=0zghNFAZ5Nkus99vBcW%2f5BoUPjrBIIC27reG8D8%2bgYo%3d&risl=&pid=ImgRaw"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Don't%20You%20Remember.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="4" data-album="21" data-artist="Adele" data-title="One And Only" data-albumart="https://th.bing.com/th/id/Rfe9ad5032d8cb3065cfa51cda855c351?rik=yTQ9u3XKbMrx0Q&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f36200000%2fAdele-image-adele-36244008-400-400.jpg&ehk=t%2furGMuMSVVy%2bl9tPO%2f7grNowCNFt35p9bGZSPNyNpk%3d&risl=&pid=ImgRaw"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20One%20And%20Only.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="5" data-album="21" data-artist="Adele" data-title="Rolling In The Deep" data-albumart="https://th.bing.com/th/id/OIP.Ag2zTz5oLvpzHnYyXUL88wHaHa?pid=ImgDet&rs=1" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Rolling%20In%20The%20Deep.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="6" data-album="21" data-artist="Adele" data-title="Rumour Has It" data-albumart="https://th.bing.com/th/id/R97ea540eb9d351a7d77642f9a61c59fe?rik=aM2dCzevZdR8cw&riu=http%3a%2f%2fwww.quirkbooks.com%2fsites%2fdefault%2ffiles%2fu1151%2fAdele_-_Rumour_Has_It.jpeg&ehk=fTan8fXVId2xLItPXOZ3RCTGkbRFeAw6JrIdwFgnzUk%3d&risl=&pid=ImgRaw"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Rumour%20Has%20It.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="7" data-album="21" data-artist="Adele" data-title="Set Fire To The Rain" data-albumart="https://fanart.tv/fanart/music/cc2c9c3c-b7bc-4b8b-84d8-4fbd8779e493/albumcover/set-fire-to-the-rain-53027512195d1.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Set%20Fire%20To%20The%20Rain.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="8" data-album="21" data-artist="Adele" data-title="Someone Like You" data-albumart="https://th.bing.com/th/id/OIP.YBN5kOluOiC2WAbaa30kaQHaHa?pid=ImgDet&rs=1" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Someone%20Like%20You.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="9" data-album="21" data-artist="Adele" data-title="Turning Tables" data-albumart="https://th.bing.com/th/id/Rb8db7bdd31bd9f332944ccfbbed704bc?rik=cU8Z2Sp9Vn7qyA&riu=http%3a%2f%2fimages.genius.com%2ffb498c13d62edb2eb414d1bf821f0dbc.600x600x1.jpg&ehk=547p3P8G1VcLkz8ckY1SiUGIw%2fAV7zY24eeKWYBzl5Q%3d&risl=&pid=ImgRaw"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Turning%20Tables.mp3?raw=true">
+                </a>
 
-          <!-- album 25 -->
-          <a href="#" class="play" data-id="10" data-album="25" data-artist="Adele" data-title="All I Ask"
-            data-albumart="https://4.bp.blogspot.com/-OfDGwQ6iCMc/WAmjOkN6y3I/AAAAAAAAAwE/OKM-O-nXJfYckiy0oZEGiAT0hSm1QQ2cQCLcB/s1600/1026ccdf868a60877968999a14aab654.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20All%20I%20Ask.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="11" data-album="25" data-artist="Adele" data-title="Hello"
-            data-albumart="https://i1.sndcdn.com/artworks-000134117465-ns0cp7-t500x500.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Hello.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="12" data-album="25" data-artist="Adele" data-title="I Miss You"
-            data-albumart="https://i.pinimg.com/736x/6b/ed/7e/6bed7e79277da13363e62a503e550ce4--adele--iconic-women.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20I%20Miss%20You.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="13" data-album="25" data-artist="Adele" data-title="Love In The Dark"
-            data-albumart="https://i1.sndcdn.com/artworks-000157979180-v9v4wn-t500x500.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Love%20In%20The%20Dark.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="14" data-album="25" data-artist="Adele" data-title="Million Years Ago"
-            data-albumart="https://gossipgist.com/uploads/2498/adele-celebdonut.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Million%20Years%20Ago.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="15" data-album="25" data-artist="Adele" data-title="Remedy"
-            data-albumart="https://thegentlewoman.co.uk/img/eU10RWJONUJXeWFnNXlpVlNubEpvZz09/adele-01.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Remedy.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="16" data-album="25" data-artist="Adele" data-title="River Lea"
-            data-albumart="https://th.bing.com/th/id/OIP.17hsuzWErjh2B9mvlh6FpAHaJA?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20River%20Lea.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="17" data-album="25" data-artist="Adele"
-            data-title="Send My Love (To Your New Lover)"
-            data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Send%20My%20Love%20(To%20Your%20New%20Lover).mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="18" data-album="25" data-artist="Adele" data-title="Water Under The Bridge"
-            data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Water%20Under%20The%20Bridge.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="19" data-album="25" data-artist="Adele" data-title="When We Were Young"
-            data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20When%20We%20Were%20Young.mp3?raw=true">
-          </a>
-          <!--  -->
-          <a href="#" class="play" data-id="20" data-album="Skyfall" data-artist="Adele" data-title="Skyfall"
-            data-albumart="https://th.bing.com/th/id/R39afc657e7153f8af24cbd884e4ea462?rik=mrJB34tgkxwHQw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Voz5_fpxOeQ%2fVgOT5mL4_6I%2fAAAAAAAALD4%2fnqXae5vXHAI%2fs1600%2fadele_skyfall_custom_album_art_by_jasonh1234-d5gxds2.jpg&ehk=nenKBdgEPyuy0GyPjRtNPIJud3VmTd8ZFsIrZ%2f2zG6g%3d&risl=&pid=ImgRaw"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall.mp3?raw=true">
-          </a>
-          <a href="#" class="play" data-id="21" data-album="Skyfall" data-artist="Adele"
-            data-title="Skyfall Skrillex Remix"
-            data-albumart="https://th.bing.com/th/id/OIP.PNogqm5IPPkMuTtGTz9rhAHaHa?pid=ImgDet&rs=1"
-            data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall%20Skrillex%20Remix.mp3?raw=true">
-          </a>
-        </div>
+                <!-- album 25 -->
+                <a href="#" class="play" data-id="10" data-album="25" data-artist="Adele" data-title="All I Ask" data-albumart="https://4.bp.blogspot.com/-OfDGwQ6iCMc/WAmjOkN6y3I/AAAAAAAAAwE/OKM-O-nXJfYckiy0oZEGiAT0hSm1QQ2cQCLcB/s1600/1026ccdf868a60877968999a14aab654.jpg"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20All%20I%20Ask.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="11" data-album="25" data-artist="Adele" data-title="Hello" data-albumart="https://i1.sndcdn.com/artworks-000134117465-ns0cp7-t500x500.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Hello.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="12" data-album="25" data-artist="Adele" data-title="I Miss You" data-albumart="https://i.pinimg.com/736x/6b/ed/7e/6bed7e79277da13363e62a503e550ce4--adele--iconic-women.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20I%20Miss%20You.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="13" data-album="25" data-artist="Adele" data-title="Love In The Dark" data-albumart="https://i1.sndcdn.com/artworks-000157979180-v9v4wn-t500x500.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Love%20In%20The%20Dark.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="14" data-album="25" data-artist="Adele" data-title="Million Years Ago" data-albumart="https://gossipgist.com/uploads/2498/adele-celebdonut.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Million%20Years%20Ago.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="15" data-album="25" data-artist="Adele" data-title="Remedy" data-albumart="https://thegentlewoman.co.uk/img/eU10RWJONUJXeWFnNXlpVlNubEpvZz09/adele-01.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Remedy.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="16" data-album="25" data-artist="Adele" data-title="River Lea" data-albumart="https://th.bing.com/th/id/OIP.17hsuzWErjh2B9mvlh6FpAHaJA?pid=ImgDet&rs=1" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20River%20Lea.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="17" data-album="25" data-artist="Adele" data-title="Send My Love (To Your New Lover)" data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Send%20My%20Love%20(To%20Your%20New%20Lover).mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="18" data-album="25" data-artist="Adele" data-title="Water Under The Bridge" data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Water%20Under%20The%20Bridge.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="19" data-album="25" data-artist="Adele" data-title="When We Were Young" data-albumart="https://s-media-cache-ak0.pinimg.com/736x/a9/95/9c/a9959c17c8260650136fdc4a7d8bb218.jpg" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20When%20We%20Were%20Young.mp3?raw=true">
+                </a>
+                <!--  -->
+                <a href="#" class="play" data-id="20" data-album="Skyfall" data-artist="Adele" data-title="Skyfall" data-albumart="https://th.bing.com/th/id/R39afc657e7153f8af24cbd884e4ea462?rik=mrJB34tgkxwHQw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Voz5_fpxOeQ%2fVgOT5mL4_6I%2fAAAAAAAALD4%2fnqXae5vXHAI%2fs1600%2fadele_skyfall_custom_album_art_by_jasonh1234-d5gxds2.jpg&ehk=nenKBdgEPyuy0GyPjRtNPIJud3VmTd8ZFsIrZ%2f2zG6g%3d&risl=&pid=ImgRaw"
+                    data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall.mp3?raw=true">
+                </a>
+                <a href="#" class="play" data-id="21" data-album="Skyfall" data-artist="Adele" data-title="Skyfall Skrillex Remix" data-albumart="https://th.bing.com/th/id/OIP.PNogqm5IPPkMuTtGTz9rhAHaHa?pid=ImgDet&rs=1" data-url="https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall%20Skrillex%20Remix.mp3?raw=true">
+                </a>
+            </div>
 
-        <!-- audio -->
-        <div class="audio"></div>
+            <!-- audio -->
+            <div class="audio"></div>
 
-        <!-- controls -->
-        <div class="controls">
+            <!-- controls -->
+            <div class="controls">
 
-          <div class="current-info">
-            <div class="song-title" id="song-title"></div>
-            <div class="song-artist" id="song-artist"></div>
-            <div class="song-album" id="song-album"></div>
-          </div>
+                <div class="current-info">
+                    <div class="song-title" id="song-title"></div>
+                    <div class="song-artist" id="song-artist"></div>
+                    <div class="song-album" id="song-album"></div>
+                </div>
 
-          <div class="durasi">
-            <div class="play-current-time">00:00</div>
-            <div class="play-total-time">00:00</div>
-          </div>
+                <div class="durasi">
+                    <div class="play-current-time">00:00</div>
+                    <div class="play-total-time">00:00</div>
+                </div>
 
-          <div class="progress" id="progress">
-            <div class="bar" id="bar"></div>
-          </div>
+                <div class="progress" id="progress">
+                    <div class="bar" id="bar"></div>
+                </div>
 
-          <div class="action-button">
-            <a href="#" class="prev" id="prev">
-              <i class="fal fa-step-backward"></i>
-            </a>
-            <a href="#" class="play-pause" id="play-pause">
-              <i class="fal fa-pp"></i>
-            </a>
-            <a href="#" class="stop" id="stop">
-              <i class="fal fa-stop"></i>
-            </a>
-            <a href="#" class="next" id="next">
-              <i class="fal fa-step-forward"></i>
-            </a>
-            <a href="#" class="repeat_btn" id="repeat">
-              <i class="fad fa-repeat"></i>
-            </a>
-          </div>
+                <div class="action-button">
+                    <a href="#" class="prev" id="prev">
+                        <i class="fal fa-step-backward"></i>
+                    </a>
+                    <a href="#" class="play-pause" id="play-pause">
+                        <i class="fal fa-pp"></i>
+                    </a>
+                    <a href="#" class="stop" id="stop">
+                        <i class="fal fa-stop"></i>
+                    </a>
+                    <a href="#" class="next" id="next">
+                        <i class="fal fa-step-forward"></i>
+                    </a>
+                    <a href="#" class="repeat_btn" id="repeat">
+                        <i class="fad fa-repeat"></i>
+                    </a>
+                </div>
 
-          <div class="volm">
-            <span class="play-position"></span>
-            <span>
+                <div class="volm">
+                    <span class="play-position"></span>
+                    <span>
               <i class="fad fa-volume-down"></i>
             </span>
-            <input type="range" class="volume" id="volume" min="0" max="1" step="0.1" value="1" data-css="1">
-            <span>
+                    <input type="range" class="volume" id="volume" min="0" max="1" step="0.1" value="1" data-css="1">
+                    <span>
               <i class="fad fa-volume-up"></i>
             </span>
-          </div>
+                </div>
+
+            </div>
 
         </div>
-
-      </div>
     </div>
 
     <script src="../dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="p12.js"></script>
-  </body>
+</body>
 
 </html>
