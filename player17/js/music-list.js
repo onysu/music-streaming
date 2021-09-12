@@ -46,24 +46,24 @@ let allMusic = [{
         img: "skid-row",
         src: "Skid-Row-Monkey-Business"
     },
-    // {
-    //     name: "Ikson Anywhere – Ikson",
-    //     artist: "Audio Library",
-    //     img: "music-2",
-    //     src: "music-2"
-    // },
-    // {
-    //     name: "Beauz & Jvna - Crazy",
-    //     artist: "Beauz & Jvna",
-    //     img: "music-3",
-    //     src: "music-3"
-    // },
-    // {
-    //     name: "Hardwind - Want Me",
-    //     artist: "Mike Archangelo",
-    //     img: "music-4",
-    //     src: "music-4"
-    // },
+    {
+        name: "Symphony Of Destruction",
+        artist: "Megadeth",
+        img: "Megadeth-Symphony-Of-Destruction",
+        src: "Megadeth-Symphony-Of-Destruction"
+    },
+    {
+        name: "A Tout Le Monde",
+        artist: "Megadeth",
+        img: "Megadeth-A-Tout-Le-Monde",
+        src: "Megadeth-A-Tout-Le-Monde"
+    },
+    {
+        name: "A Secret Place",
+        artist: "Megadeth",
+        img: "Megadeth-A-Secret-Place",
+        src: "Megadeth-A-Secret-Place"
+    },
     // {
     //     name: "Lost Sky - Vision NCS",
     //     artist: "NCS Release",
