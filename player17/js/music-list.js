@@ -37,7 +37,7 @@ let allMusic = [{
     {
         name: "In A Darkened Room",
         artist: "Skid Row",
-        img: "skid-row",
+        img: "Skid-Row-Monkey-Business",
         src: "Skid-Row-In-A-Darkened-Room"
     },
     {
