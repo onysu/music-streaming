@@ -34,18 +34,18 @@ let allMusic = [{
         img: "Paramore-The-Only-Exception",
         src: "Paramore-The-Only-Exception"
     },
-    // {
-    //     name: "Jim - Sun Goes Down",
-    //     artist: "Jim Yosef x Roy",
-    //     img: "music-5",
-    //     src: "music-5"
-    // },
-    // {
-    //     name: "Harley Bird - Home",
-    //     artist: "Jordan Schor",
-    //     img: "music-1",
-    //     src: "music-1"
-    // },
+    {
+        name: "In A Darkened Room",
+        artist: "Skid Row",
+        img: "skid-row",
+        src: "Skid-Row-In-A-Darkened-Room"
+    },
+    {
+        name: "Monkey Business",
+        artist: "Skid Row",
+        img: "skid-row",
+        src: "Skid-Row-Monkey-Business"
+    },
     // {
     //     name: "Ikson Anywhere – Ikson",
     //     artist: "Audio Library",
