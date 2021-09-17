@@ -47,6 +47,12 @@ let allMusic = [{
         src: "Skid-Row-Monkey-Business"
     },
     {
+        name: "Breakin Down",
+        artist: "Skid Row",
+        img: "skid-row",
+        src: "Skid-Row-Breakin-Down"
+    },
+    {
         name: "Symphony Of Destruction",
         artist: "Megadeth",
         img: "Megadeth-Symphony-Of-Destruction",
