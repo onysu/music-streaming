@@ -49,7 +49,7 @@ let allMusic = [{
     {
         name: "Breakin Down",
         artist: "Skid Row",
-        img: "skid-row",
+        img: "Skid_Row_Breakin_Down_Part_one",
         src: "Skid-Row-Breakin-Down"
     },
     {
