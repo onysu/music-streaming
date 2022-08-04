@@ -29,7 +29,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #222;
-  background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+  /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
 }
 
 .wrapper {
