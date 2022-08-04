@@ -26,7 +26,7 @@ function loadMusic(indexNumb) {
     // musicImg.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
     // mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
     musicImg.src = `../../files/img/${allMusic[indexNumb - 1].src}.jpg`;
-    mainAudio.src = `../../files/audio/mysongs/${allMusic[indexNumb - 1].src}.mp3`;
+    mainAudio.src = `../../files/audio/CelineDion/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
 // mainkan fungsi musik
