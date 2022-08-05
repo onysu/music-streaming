@@ -16,8 +16,148 @@ $(document).ready(function () {
     var t = {
       playList: [{
         'file': '../files/audio/adele/All I Ask.mp3',
-        'thumb': '../files/img/All I Ask.jpg',
+        'thumb': '../files/img/All-I-Ask.jpg',
         'trackName': 'All I Ask',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Chasing Pavements.mp3',
+        'thumb': '../files/img/Chasing-Pavements.jpg',
+        'trackName': 'Chasing Pavements',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Dont You Remember.mp3',
+        'thumb': '../files/img/Dont-You-Remember.jpg',
+        'trackName': 'Dont You Remember',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Hello.mp3',
+        'thumb': '../files/img/Hello.png',
+        'trackName': 'Hello',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/I Miss You.mp3',
+        'thumb': '../files/img/I-Miss-You.jpg',
+        'trackName': 'I Miss You',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Love In The Dark.mp3',
+        'thumb': '../files/img/Love-In-The-Dark.jpg',
+        'trackName': 'Love In The Dark',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Make You Feel My Love.mp3',
+        'thumb': '../files/img/Make-You-Feel-My-Love.jpg',
+        'trackName': 'Make You Feel My Love',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Million Years Ago.mp3',
+        'thumb': '../files/img/Million-Years-Ago.jpg',
+        'trackName': 'Million Years Ago',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/One And Only.mp3',
+        'thumb': '../files/img/One-And-Only.jpg',
+        'trackName': 'One And Only',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Remedy.mp3',
+        'thumb': '../files/img/Remedy.jpg',
+        'trackName': 'Remedy',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/River Lea.mp3',
+        'thumb': '../files/img/River-Lea.jpg',
+        'trackName': 'River Lea',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Rolling In The Deep.mp3',
+        'thumb': '../files/img/Rolling-In-The-Deep.png',
+        'trackName': 'Rolling In The Deep',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Rumour Has It.mp3',
+        'thumb': '../files/img/Rumour-Has-It.jpg',
+        'trackName': 'Rumour Has It',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Send My Love (To Your New Lover).mp3',
+        'thumb': '../files/img/Send-My-Love.jpg',
+        'trackName': 'Send My Love (To Your New Lover)',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Set Fire To The Rain.mp3',
+        'thumb': '../files/img/Set-Fire-To-The-Rain.jpg',
+        'trackName': 'Set Fire To The Rain',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Skyfall Skrillex Remix.mp3',
+        'thumb': '../files/img/Skyfall-Skrillex-Remix.jpg',
+        'trackName': 'Skyfall Skrillex Remix',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Skyfall.mp3',
+        'thumb': '../files/img/Skyfall.jpg',
+        'trackName': 'Skyfall',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Someone Like You.mp3',
+        'thumb': '../files/img/Someone-Like-You.jpg',
+        'trackName': 'Someone Like You',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Turning Tables.mp3',
+        'thumb': '../files/img/Turning-Tables.jpg',
+        'trackName': 'Turning Tables',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/Water Under The Bridge.mp3',
+        'thumb': '../files/img/Water-Under-The-Bridge.jpg',
+        'trackName': 'Water Under The Bridge',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
+        'file': '../files/audio/adele/When We Were Young.mp3',
+        'thumb': '../files/img/When-We-Were-Young.jpg',
+        'trackName': 'When We Were Young',
         'trackArtist': 'Adele',
         'trackAlbum': '',
         'time': '3:28'
