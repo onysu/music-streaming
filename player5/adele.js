@@ -15,6 +15,13 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
+        'file': '../files/audio/adele/Easy On Me.mp3',
+        'thumb': '../files/img/Easy-On-Me.jpg',
+        'trackName': 'Easy On Me',
+        'trackArtist': 'Adele',
+        'trackAlbum': '',
+        'time': '3:28'
+      },{
         'file': '../files/audio/adele/All I Ask.mp3',
         'thumb': '../files/img/All-I-Ask.jpg',
         'trackName': 'All I Ask',
