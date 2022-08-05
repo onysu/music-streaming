@@ -15,20 +15,133 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
-        'file': 'https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Hello.mp3?raw=true',
-        'thumb': 'https://i1.sndcdn.com/artworks-000134117465-ns0cp7-t500x500.jpg',
-        'trackName': 'Hello',
-        'trackArtist': 'Adele',
-        'trackAlbum': '25',
-        'time': '4:55'
-      },{
-        'file': 'https://github.com/onysu/music-streaming/blob/main/files/audio/adele/Adele%20-%20Skyfall.mp3?raw=true',
-        'thumb': 'https://3.bp.blogspot.com/-kVKiQ7T3-4A/VPsK5Y1GbrI/AAAAAAAACXk/KmYRNDgDACY/s1600/ADELE%2B-%2BSkyfall.jpg',
-        'trackName': 'Skyfall',
-        'trackArtist': 'Adele',
+        'file': '../files/audio/CelineDion/All-By-Myself.mp3',
+        'thumb': '../files/img/All-By-Myself.jpg',
+        'trackName': 'All By Myself',
+        'trackArtist': 'Celine Dion',
         'trackAlbum': '',
-        'time': '4:49'
-      }]
+        'time': '3:28'
+      }, {
+        'file': '../files/audio/CelineDion/A-New-Day-Has-Come.mp3',
+        'thumb': '../files/img/A-New-Day-Has-Come.jpg',
+        'trackName': 'A New Day Has Come',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Because-You-Loved-Me.mp3',
+        'thumb': '../files/img/Because-You-Loved-Me.jpg',
+        'trackName': 'Because You Loved Me',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Goodbyes-(The Saddest Word).mp3',
+        'thumb': '../files/img/Goodbyes-(The Saddest Word).jpg',
+        'trackName': 'Goodbyes (The Saddest Word)',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/I-am-Alive.mp3',
+        'thumb': '../files/img/I-am-Alive.jpg',
+        'trackName': 'I am Alive',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/I-Drove-All-Night.mp3',
+        'thumb': '../files/img/I-Drove-All-Night.jpg',
+        'trackName': 'I Drove All Night',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Immortality.mp3',
+        'thumb': '../files/img/Immortality.jpg',
+        'trackName': 'Immortality',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/I-Surrender.mp3',
+        'thumb': '../files/img/I-Surrender.jpg',
+        'trackName': 'I Surrender',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Its-All-Coming-Back-To-Me-Now.mp3',
+        'thumb': '../files/img/Its-All-Coming-Back-To-Me-Now.jpg',
+        'trackName': 'Its All Coming Back To Me Now',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Prayer.mp3',
+        'thumb': '../files/img/Prayer.jpg',
+        'trackName': 'Prayer',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Sorry-For-Love.mp3',
+        'thumb': '../files/img/Sorry-For-Love.jpg',
+        'trackName': 'Sorry For Love',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Super-Love.mp3',
+        'thumb': '../files/img/Super-Love.jpg',
+        'trackName': 'Super Love',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Thats-The-Way-It-Is.mp3',
+        'thumb': '../files/img/Thats-The-Way-It-Is.jpg',
+        'trackName': 'Thats The Way It Is',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/The-Power-Of-Love.mp3',
+        'thumb': '../files/img/The-Power-Of-Love.jpg',
+        'trackName': 'The Power Of Love',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/To-Love-You-More.mp3',
+        'thumb': '../files/img/To-Love-You-More.jpg',
+        'trackName': 'To Love You More',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Water-From-The-Moon.mp3',
+        'thumb': '../files/img/Water-From-The-Moon.jpg',
+        'trackName': 'Water From The Moon',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/When-The-Wrong-One-Loves-You-Right.mp3',
+        'thumb': '../files/img/When-The-Wrong-One-Loves-You-Right.jpg',
+        'trackName': 'When The Wrong One Loves You Right',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/CelineDion/Where-Does-My-Heart-Beat-Now.mp3',
+        'thumb': '../files/img/Where-Does-My-Heart-Beat-Now.jpg',
+        'trackName': 'Where Does My Heart Beat Now',
+        'trackArtist': 'Celine Dion',
+        'trackAlbum': '',
+        'time': ''
+      },
+      ]
     };
     var arr = t.playList;
     var randomArr = arr.slice();
@@ -50,7 +163,7 @@ $(document).ready(function () {
           '<p class="artist_block">' + trackArtist + '</p>' +
           '</div>' +
           '<div class="song_time">' + trackTime + '</div>' +
-        '</li>';
+          '</li>';
 
         $(trackList).append(html);
       }
@@ -88,8 +201,8 @@ $(document).ready(function () {
 
       // masukkan cover
       var a = {
-          'background-image': 'url(' + cover + ')'
-        },
+        'background-image': 'url(' + cover + ')'
+      },
         // tidak ada cover / cover default
         b = {
           'background-image': 'url(https://raw.githubusercontent.com/onysu/music-streaming/main/files/img/ony.png)'
@@ -440,8 +553,8 @@ $(document).ready(function () {
         if (element.attachEvent)
           element.attachEvent('on' + event, handler);
         else
-        if (element.addEventListener)
-          element.addEventListener(event, handler, false);
+          if (element.addEventListener)
+            element.addEventListener(event, handler, false);
       }
 
       function removeSelection() {
