@@ -15,10 +15,45 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
-        'file': '',
-        'thumb': '',
-        'trackName': '',
-        'trackArtist': '',
+        'file': '../files/audio/mariah/Endless-Love.mp3',
+        'thumb': '../files/img/Endless-Love.jpg',
+        'trackName': 'Endless Love',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': '3:28'
+      }, {
+        'file': '../files/audio/mariah/Hero.mp3',
+        'thumb': '../files/img/Hero.jpg',
+        'trackName': 'Hero',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/mariah/I-Still-Believe.mp3',
+        'thumb': '../files/img/I-Still-Believe.jpg',
+        'trackName': 'I Still Believe',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/mariah/My-All.mp3',
+        'thumb': '../files/img/My-All.jpg',
+        'trackName': 'My All',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/mariah/We-Belong-Together.mp3',
+        'thumb': '../files/img/We-Belong-Together.jpg',
+        'trackName': 'We Belong Together',
+        'trackArtist': 'Mariah Carey',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/mariah/Without-You.mp3',
+        'thumb': '../files/img/Without-You.jpg',
+        'trackName': 'Without You',
+        'trackArtist': 'Mariah Carey',
         'trackAlbum': '',
         'time': ''
       },

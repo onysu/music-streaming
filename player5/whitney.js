@@ -15,10 +15,24 @@ $(document).ready(function () {
     var trackList = player.querySelector('.player_playlist_list');
     var t = {
       playList: [{
-        'file': '',
-        'thumb': '',
-        'trackName': '',
-        'trackArtist': '',
+        'file': '../files/audio/whitney/I-Have-Nothing.mp3',
+        'thumb': '../files/img/I-Have-Nothing.jpg',
+        'trackName': 'I Have Nothing',
+        'trackArtist': 'Whitney Houston',
+        'trackAlbum': '',
+        'time': '3:28'
+      }, {
+        'file': '../files/audio/whitney/I-Will-Always-Love-You.mp3',
+        'thumb': '../files/img/I-Will-Always-Love-You.jpg',
+        'trackName': 'I Will Always Love You',
+        'trackArtist': 'Whitney Houston',
+        'trackAlbum': '',
+        'time': ''
+      }, {
+        'file': '../files/audio/whitney/When-You-Believe.mp3',
+        'thumb': '../files/img/When-You-Believe.jpg',
+        'trackName': 'When You Believe',
+        'trackArtist': 'Whitney Houston',
         'trackAlbum': '',
         'time': ''
       },
