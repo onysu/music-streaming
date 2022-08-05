@@ -223,7 +223,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   width: 100%;
-  height: 100vh;
+  height: 470px;
   /* height: 314px; */
   -webkit-transition: top .2s ease-in-out;
   transition: top .2s ease-in-out;
