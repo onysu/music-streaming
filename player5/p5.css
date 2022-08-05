@@ -16,15 +16,15 @@ body {
   transition: top .2s ease-in-out;
 }
 
-.container {
+.wadah {
   /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "player_body"; */
   height: 100vh;
-  max-height: 569px;
+  /* max-height: 569px; */
   width: 100vw;
-  max-width: 375px;
+  /* max-width: 375px; */
   /* margin: 5% auto; */
   padding: 0;
 }
