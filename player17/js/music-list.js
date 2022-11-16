@@ -23,7 +23,7 @@ let allMusic = [{
   src: "Plastik-Seperti"
 },
 {
-  name: "RumahKita",
+  name: "Rumah Kita",
   artist: "GodBless",
   img: "GodBless-RumahKita",
   src: "GodBless-RumahKita"
