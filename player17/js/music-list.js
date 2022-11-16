@@ -16,4 +16,16 @@ let allMusic = [{
   img: "PayungTeduh-Untuk Perempuan",
   src: "PayungTeduh-Untuk Perempuan"
 },
+{
+  name: "Seperti",
+  artist: "Plastik",
+  img: "Plastik-Seperti",
+  src: "Plastik-Seperti"
+},
+{
+  name: "RumahKita",
+  artist: "GodBless",
+  img: "GodBless-RumahKita",
+  src: "GodBless-RumahKita"
+},
 ];
