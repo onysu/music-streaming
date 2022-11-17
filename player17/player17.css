@@ -288,15 +288,14 @@ body {
 
 .music-list ul li {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     cursor: pointer;
-    /* padding-bottom: 10px; */
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     /* color: var(--lightblack); */
     color: white;
     font-weight: 200;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #000;
 }
 
 .music-list ul li:last-child {
