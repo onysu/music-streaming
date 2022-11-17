@@ -29,13 +29,6 @@
         max-width: 42em;
       }
 
-      .container {
-        width: auto;
-        /* max-width: 680px; */
-        max-width: 360px;
-        padding: 0 15px;
-      }
-
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -54,7 +47,7 @@
       #playlist {
         /* list-style: none; */
         text-align: start;
-        margin-top: 10px;
+        margin-top: 20px;
       }
 
       #playlist li a {
@@ -76,39 +69,36 @@
 
   <body class="d-flex flex-column h-100 text-center">
 
-    <!-- Begin page content -->
     <main class="flex-shrink-0">
-      <div class="container">
 
-        <h1 class="mt-5">HTML5 Audio Player</h1>
+      <h1 class="my-4">HTML5 Audio Player</h1>
 
-        <audio src="" controls id="audioPlayer">
-          Sorry, your browser doesn't support html5!
-        </audio>
+      <audio src="" controls id="audioPlayer">
+        Maaf, browser Anda tidak mendukung html5!
+      </audio>
 
-        <ol id="playlist">
-          <li class="current-song">
-            <img src="https://i.scdn.co/image/ab67616d0000b2734fe255e0ba819e903f5fc4e5">
-            <a href="../files/audio/playlistku/Fourtwnty-AkuTenang.mp3">Fourtwnty - AkuTenang</a>
-          </li>
+      <ol id="playlist">
+        <li class="current-song text-truncate">
+          <img src="https://i.scdn.co/image/ab67616d0000b2734fe255e0ba819e903f5fc4e5">
+          <a href="../files/audio/playlistku/Fourtwnty-AkuTenang.mp3">Fourtwnty - AkuTenang</a>
+        </li>
 
-          <li><img src="https://i1.sndcdn.com/artworks-000241062140-r1zhun-t500x500.jpg">
-            <a href="../files/audio/playlistku/Fourtwnty-ZonaNyaman.mp3">Fourtwnty - Zona Nyaman</a>
-          </li>
+        <li class="text-truncate"><img src="https://i1.sndcdn.com/artworks-000241062140-r1zhun-t500x500.jpg">
+          <a href="../files/audio/playlistku/Fourtwnty-ZonaNyaman.mp3">Fourtwnty - Zona Nyaman</a>
+        </li>
 
-          <li><img src="https://suryakepri.com/wp-content/uploads/2020/03/artworks-000120678588-daicza-t500x500.jpg">
-            <a href="../files/audio/playlistku/GodBless-RumahKita.mp3">GodBless - Rumah Kita</a>
-          </li>
+        <li class="text-truncate"><img src="https://suryakepri.com/wp-content/uploads/2020/03/artworks-000120678588-daicza-t500x500.jpg">
+          <a href="../files/audio/playlistku/GodBless-RumahKita.mp3">GodBless - Rumah Kita</a>
+        </li>
 
-          <li><img src="https://i1.sndcdn.com/artworks-000064896730-qrh47p-t500x500.jpg">
-            <a href="../files/audio/playlistku/PayungTeduh-Untuk Perempuan.mp3">PayungTeduh - Untuk Perempuan</a>
-          </li>
-          <li><img src="https://i1.sndcdn.com/artworks-000041703406-xaydim-t500x500.jpg">
-            <a href="../files/audio/playlistku/Plastik-Seperti.mp3">Plastik - Seperti</a>
-          </li>
-        </ol>
+        <li class="text-truncate"><img src="https://i1.sndcdn.com/artworks-000064896730-qrh47p-t500x500.jpg">
+          <a href="../files/audio/playlistku/PayungTeduh-Untuk Perempuan.mp3">PayungTeduh - Untuk Perempuan</a>
+        </li>
+        <li class="text-truncate"><img src="https://i1.sndcdn.com/artworks-000041703406-xaydim-t500x500.jpg">
+          <a href="../files/audio/playlistku/Plastik-Seperti.mp3">Plastik - Seperti</a>
+        </li>
+      </ol>
 
-      </div>
     </main>
 
     <!-- <footer class="footer mt-auto py-3 bg-light">
